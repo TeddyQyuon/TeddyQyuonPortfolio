@@ -1,5 +1,0 @@
-# Place the current résumé PDF here named:
-# Wai_Yan_Hpone_Lat_Resume.pdf
-#
-# It is served directly from /resume/Wai_Yan_Hpone_Lat_Resume.pdf
-# and linked from the Hero and Resume sections.
