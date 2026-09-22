@@ -6,7 +6,10 @@ html {
 
 body {
   margin: 0;
-  background-color: #f8fafc;
+  background-color: #f1f5f9;
+  background-image: radial-gradient(circle at 20% 0%, #dbeafe 0, transparent 32rem),
+    radial-gradient(circle at 90% 10%, #cffafe 0, transparent 28rem);
+  background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
@@ -19,7 +22,7 @@ div[id] {
 
 /* Professional text selection */
 ::selection {
-  background-color: #1a5fb4;
+  background-color: #1d4ed8;
   color: #ffffff;
 }
 
@@ -31,7 +34,7 @@ img {
 /* Visible focus states for keyboard navigation */
 a:focus-visible,
 button:focus-visible {
-  outline: 2px solid #1a5fb4;
+  outline: 2px solid #1d4ed8;
   outline-offset: 2px;
   border-radius: 4px;
 }

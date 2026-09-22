@@ -1,21 +1,25 @@
 import { createTheme } from '@mui/material/styles';
 
-// Professional, restrained design system.
-// Change tokens here and every component reacts consistently.
+// Professional + modern design system.
+// Deep navy + vivid blue + cyan accent. Cool but recruiter-safe:
+// no neon, no heavy glass, just gradient hero + clean cards.
 
 const theme = createTheme({
   palette: {
     mode: 'light',
     primary: {
-      main: '#1a5fb4', // single professional accent — calm blue
-      dark: '#13467f',
-      light: '#e8eff9',
+      main: '#1d4ed8', // vivid professional blue
+      dark: '#1e3a8a',
+      light: '#dbeafe',
     },
     secondary: {
-      main: '#475569', // slate for muted text/icons
+      main: '#0891b2', // cyan accent for gradients/icons
+    },
+    success: {
+      main: '#059669',
     },
     background: {
-      default: '#f8fafc', // very light slate page background
+      default: '#f1f5f9', // cooler slate page background
       paper: '#ffffff',
     },
     text: {
@@ -40,7 +44,7 @@ const theme = createTheme({
     overline: { fontWeight: 700, letterSpacing: '0.08em' },
   },
   shape: {
-    borderRadius: 12,
+    borderRadius: 14,
   },
   shadows: [
     'none',
@@ -75,18 +79,18 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           textTransform: 'none',
-          fontWeight: 600,
-          borderRadius: 8,
+          fontWeight: 700,
+          borderRadius: 10,
         },
         contained: {
-          boxShadow: '0 1px 2px rgba(15, 23, 42, 0.12)',
+          boxShadow: '0 4px 14px rgba(29, 78, 216, 0.35)',
         },
       },
     },
     MuiCard: {
       styleOverrides: {
         root: {
-          borderRadius: 16,
+          borderRadius: 18,
           border: '1px solid #e2e8f0',
         },
       },
