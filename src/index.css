@@ -1,0 +1,37 @@
+/* Global base styles — keep minimal; MUI handles most styling. */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #f8fafc;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Offset anchored sections below the sticky navbar */
+section[id],
+div[id] {
+  scroll-margin-top: 76px;
+}
+
+/* Professional text selection */
+::selection {
+  background-color: #1a5fb4;
+  color: #ffffff;
+}
+
+/* Responsive images never overflow */
+img {
+  max-width: 100%;
+}
+
+/* Visible focus states for keyboard navigation */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #1a5fb4;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
