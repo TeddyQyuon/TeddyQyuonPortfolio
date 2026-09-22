@@ -15,6 +15,6 @@ export const personalInfo = {
   location: 'Singapore',
   email: 'waiyanhponelat.eduvalor.2024g@gmail.com',
   githubUrl: 'https://github.com/TeddyQyuon',
-  linkedinUrl: 'https://www.linkedin.com/in/wai-yan-hpone-lat-8172133a5',
+  linkedinUrl: 'https://www.linkedin.com/in/waiyanhponelat',
   resumePath: '/resume/Wai_Yan_Hpone_Lat_Resume.pdf',
 };
