@@ -26,12 +26,12 @@ export default function HeroSection() {
   return (
     <Box
       component="section"
-      sx={{
+      sx={(theme) => ({
         position: 'relative',
         overflow: 'hidden',
-        color: '#fff',
-        background: 'linear-gradient(135deg, #0f172a 0%, #1e3a8a 55%, #0e7490 100%)',
-      }}
+        color: theme.palette.common.white,
+        background: theme.custom.gradients.hero,
+      })}
     >
       {/* soft glows, pure CSS */}
       <Box
@@ -64,28 +64,42 @@ export default function HeroSection() {
             <Chip
               label="Open to 1-year technology internship · 2027"
               size="small"
-              sx={{
+              sx={(theme) => ({
                 mb: 2,
                 fontWeight: 700,
                 bgcolor: 'rgba(255,255,255,0.12)',
-                color: '#a7f3d0',
+                color: theme.custom.onDark.accentSoft,
                 border: '1px solid rgba(167,243,208,0.4)',
-              }}
+              })}
             />
-            <Typography variant="overline" component="p" sx={{ color: '#93c5fd' }}>
+            <Typography
+              variant="overline"
+              component="p"
+              sx={(theme) => ({ color: theme.custom.onDark.accent })}
+            >
               {personalInfo.role}
             </Typography>
             <Typography
               variant="h1"
               component="h1"
-              sx={{ fontSize: { xs: '2.4rem', sm: '3rem', md: '3.4rem' }, mb: 2, color: '#fff' }}
+              sx={{
+                fontSize: { xs: '2.4rem', sm: '3rem', md: '3.4rem' },
+                mb: 2,
+                color: 'common.white',
+              }}
             >
               {personalInfo.name}
             </Typography>
             <Typography
               variant="h6"
               component="p"
-              sx={{ maxWidth: 640, mb: 2, fontWeight: 400, lineHeight: 1.6, color: '#e2e8f0' }}
+              sx={(theme) => ({
+                maxWidth: 640,
+                mb: 2,
+                fontWeight: 400,
+                lineHeight: 1.6,
+                color: theme.custom.onDark.body,
+              })}
             >
               {personalInfo.intro}
             </Typography>
@@ -106,7 +120,7 @@ export default function HeroSection() {
                   py: 0.5,
                   borderRadius: 999,
                   border: '1px solid rgba(255,255,255,0.25)',
-                  bgcolor: '#ffffff',
+                  bgcolor: 'background.paper',
                 }}
               >
                 <Box
@@ -115,7 +129,7 @@ export default function HeroSection() {
                   alt="Nanyang Polytechnic logo"
                   sx={{ height: 22, width: 'auto', display: 'block' }}
                 />
-                <Typography variant="body2" sx={{ fontWeight: 700, color: '#0f172a' }}>
+                <Typography variant="body2" sx={{ fontWeight: 700, color: 'text.primary' }}>
                   Nanyang Polytechnic · Year 2
                 </Typography>
               </Box>
@@ -123,7 +137,11 @@ export default function HeroSection() {
                 icon={<LocationOnIcon fontSize="small" />}
                 label={personalInfo.location}
                 size="small"
-                sx={{ bgcolor: 'rgba(255,255,255,0.1)', color: '#e2e8f0', border: '1px solid rgba(255,255,255,0.2)' }}
+                sx={(theme) => ({
+                  bgcolor: 'rgba(255,255,255,0.1)',
+                  color: theme.custom.onDark.body,
+                  border: '1px solid rgba(255,255,255,0.2)',
+                })}
               />
             </Stack>
 
@@ -133,7 +151,11 @@ export default function HeroSection() {
                 variant="contained"
                 size="large"
                 endIcon={<ArrowDownwardIcon />}
-                sx={{ bgcolor: '#fff', color: '#1e3a8a', '&:hover': { bgcolor: '#e0e7ff' } }}
+                sx={(theme) => ({
+                  bgcolor: 'common.white',
+                  color: theme.palette.primary.dark,
+                  '&:hover': { bgcolor: theme.palette.primary.light },
+                })}
               >
                 View Projects
               </Button>
@@ -145,7 +167,11 @@ export default function HeroSection() {
                 variant="outlined"
                 size="large"
                 startIcon={<DescriptionIcon />}
-                sx={{ color: '#fff', borderColor: 'rgba(255,255,255,0.5)', '&:hover': { borderColor: '#fff' } }}
+                sx={{
+                  color: 'common.white',
+                  borderColor: 'rgba(255,255,255,0.5)',
+                  '&:hover': { borderColor: 'common.white' },
+                }}
               >
                 View Resume
               </Button>
@@ -155,7 +181,7 @@ export default function HeroSection() {
                 variant="text"
                 size="large"
                 startIcon={<EmailIcon />}
-                sx={{ color: '#fff' }}
+                sx={{ color: 'common.white' }}
               >
                 Contact Me
               </Button>
@@ -170,7 +196,7 @@ export default function HeroSection() {
                 size="small"
                 color="inherit"
                 startIcon={<GitHubIcon fontSize="small" />}
-                sx={{ color: '#e2e8f0' }}
+                sx={(theme) => ({ color: theme.custom.onDark.body })}
               >
                 GitHub
               </Button>
@@ -182,7 +208,7 @@ export default function HeroSection() {
                 size="small"
                 color="inherit"
                 startIcon={<LinkedInIcon fontSize="small" />}
-                sx={{ color: '#e2e8f0' }}
+                sx={(theme) => ({ color: theme.custom.onDark.body })}
               >
                 LinkedIn
               </Button>
@@ -193,32 +219,42 @@ export default function HeroSection() {
             <Box sx={{ position: 'relative', maxWidth: 360, mx: { xs: 'auto', md: 0 }, ml: { md: 'auto' } }}>
               <Box
                 aria-hidden="true"
-                sx={{
+                sx={(theme) => ({
                   position: 'absolute',
                   inset: 0,
                   transform: 'translate(14px, 14px)',
                   borderRadius: 5,
-                  background: 'linear-gradient(135deg, #22d3ee, #3b82f6)',
+                  background: theme.custom.gradients.avatarRing,
                   opacity: 0.6,
-                }}
+                })}
               />
               <Paper
                 elevation={6}
-                sx={{ position: 'relative', p: 1.5, borderRadius: 5, bgcolor: '#fff' }}
+                sx={{ position: 'relative', p: 1.5, borderRadius: 5, bgcolor: 'background.paper' }}
               >
                 <Box
                   component="img"
                   src={profilePhoto}
                   alt={`Portrait of ${personalInfo.name}`}
-                  sx={{
+                  // Intrinsic size lets the browser reserve space before decode
+                  // (avoids layout shift) and marks this as the LCP image.
+                  // The matching `height: auto` in sx is REQUIRED: without it the
+                  // height attribute wins over aspect-ratio and the image renders
+                  // at its full intrinsic height instead of the 4/5 crop.
+                  width={964}
+                  height={1280}
+                  fetchpriority="high"
+                  decoding="async"
+                  sx={(theme) => ({
                     width: '100%',
+                    height: 'auto',
                     aspectRatio: '4 / 5',
                     objectFit: 'cover',
                     objectPosition: '50% 20%',
                     borderRadius: 3.5,
                     display: 'block',
-                    bgcolor: '#e2e8f0',
-                  }}
+                    bgcolor: theme.palette.divider,
+                  })}
                 />
                 <Box sx={{ px: 1.5, pt: 1.5, pb: 1 }}>
                   <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>
@@ -240,7 +276,14 @@ export default function HeroSection() {
             </Box>
             <Typography
               variant="caption"
-              sx={{ display: 'block', textAlign: { xs: 'center', md: 'right' }, mt: 1.5, maxWidth: 360, ml: { md: 'auto' }, color: '#cbd5e1' }}
+              sx={(theme) => ({
+                display: 'block',
+                textAlign: { xs: 'center', md: 'right' },
+                mt: 1.5,
+                maxWidth: 360,
+                ml: { md: 'auto' },
+                color: theme.custom.onDark.muted,
+              })}
             >
               {personalInfo.currentStudy}
             </Typography>

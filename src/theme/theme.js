@@ -4,7 +4,57 @@ import { createTheme } from '@mui/material/styles';
 // Deep navy + vivid blue + cyan accent. Cool but recruiter-safe:
 // no neon, no heavy glass, just gradient hero + clean cards.
 
+// Tokens that MUI's palette does not model: gradients, the dark navy surface
+// family, and text colours used on top of those dark surfaces.
+// Kept here so components never hardcode a colour value.
+const tokens = {
+  gradients: {
+    // Hero background and the dark case-study accents.
+    hero: 'linear-gradient(135deg, #0f172a 0%, #1e3a8a 55%, #0e7490 100%)',
+    // Brand rule used under headings and on top of cards.
+    brand: 'linear-gradient(90deg, #1d4ed8, #0891b2)',
+    // Ring behind the portrait.
+    avatarRing: 'linear-gradient(135deg, #22d3ee, #3b82f6)',
+    // Soft tile behind feature icons.
+    iconTile: 'linear-gradient(135deg, #dbeafe, #cffafe)',
+    // Per-category cover treatments. Used for the project card artwork when a
+    // project has no screenshot, so every card still reads as designed.
+    category: {
+      'Full-Stack': 'linear-gradient(135deg, #1d4ed8 0%, #0891b2 100%)',
+      'Predictive Analytics': 'linear-gradient(135deg, #0e7490 0%, #059669 100%)',
+      'Data Wrangling': 'linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 100%)',
+    },
+    // Fallback for a category that has no dedicated treatment yet.
+    categoryFallback: 'linear-gradient(135deg, #334155 0%, #1d4ed8 100%)',
+  },
+  surfaces: {
+    navy: '#0f172a',
+    navyBorder: '#1e293b',
+    slateBorder: '#334155',
+    tile: '#f8fafc',
+  },
+  // Text and borders drawn on top of the navy surfaces.
+  onDark: {
+    strong: '#ffffff',
+    body: '#e2e8f0',
+    muted: '#cbd5e1',
+    subtle: '#94a3b8',
+    faint: '#64748b',
+    accent: '#93c5fd',
+    accentSoft: '#a7f3d0',
+  },
+  // Supporting text on top of primary.main fills.
+  onPrimary: {
+    soft: '#dbeafe',
+  },
+  chip: {
+    bg: '#eff6ff',
+    border: '#bfdbfe',
+  },
+};
+
 const theme = createTheme({
+  custom: tokens,
   palette: {
     mode: 'light',
     primary: {

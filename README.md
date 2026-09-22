@@ -36,7 +36,7 @@ portfolio/
 │   ├── assets/images/           # Profile and project screenshots
 │   ├── components/
 │   │   ├── layout/              # Navbar, Footer
-│   │   ├── common/              # SectionHeading, SkillChip, ExternalLinkButton
+│   │   ├── common/              # SectionHeading, SkillChip, BackToTop
 │   │   └── projects/            # ProjectCard, ProjectGallery
 │   ├── data/                    # personalInfo, skills, projects, education
 │   ├── pages/                   # HomePage, ProjectDetailPage, NotFoundPage

@@ -4,6 +4,15 @@
 // - repositoryUrl / demoUrl / reportUrl are nullable; UI hides buttons when absent.
 // - No fabricated metrics, demos, repositories or screenshots.
 // - Restaurant Ordering / Feedback System is excluded (sister's work).
+//
+// Screenshots are real figures taken from the author's own submitted reports.
+// No stock imagery is used, so nothing on this page implies work that was not done.
+import caloriesVsDuration from '../assets/images/projects/gym-calories-predictive-analysis/calories-vs-duration.png';
+import knimeWorkflow from '../assets/images/projects/gym-calories-predictive-analysis/knime-preparation-workflow.png';
+import trainValidation from '../assets/images/projects/gym-calories-predictive-analysis/train-validation-partition.png';
+import caloriesByWorkout from '../assets/images/projects/gym-calories-predictive-analysis/calories-by-workout-type.png';
+import modelComparisonChart from '../assets/images/projects/gym-calories-predictive-analysis/model-comparison.png';
+import leaveSignIn from '../assets/images/projects/annual-leave/sign-in-rbac.png';
 
 export const projects = [
   {
@@ -12,6 +21,8 @@ export const projects = [
     name: 'Annual Leave Management System',
     category: 'Full-Stack',
     type: 'Team Full-Stack project',
+    // Stated directly in myContribution below — not an inference.
+    role: 'Team member (Member 3)',
     summary:
       'A web application for managing staff annual leave requests, with a Supervisor → Manager approval workflow, acting/delegated approvers, leave balance deduction and audit history.',
     problem:
@@ -51,7 +62,16 @@ export const projects = [
       'Coordinating the multi-level approval flow so a request moves correctly between supervisor and manager, handling delegated approvers without breaking ownership rules, and making sure leave balances are only deducted once at final approval.',
     learnings:
       'Working as part of a team on a shared codebase, designing state transitions for an approval workflow, enforcing authorization on the server, and keeping an audit trail consistent with the actual state changes.',
-    screenshots: [],
+    // Screenshot of the deployed application's sign-in screen, which lists the
+    // role-based demo accounts and states the RBAC enforcement.
+    screenshots: [
+      {
+        src: leaveSignIn,
+        alt: 'Sign-in screen of the deployed leave management application listing the role-based demo accounts',
+        caption:
+          'Deployed application sign-in — one account per role, with access enforced by JWT and server-side RBAC.',
+      },
+    ],
     repositoryUrl: null,
     demoUrl: 'https://innovare-leave-client.vercel.app/',
     apiUrl: 'https://innovare-leave.vercel.app/',
@@ -63,6 +83,7 @@ export const projects = [
     name: 'Gym Calories Predictive Analysis',
     category: 'Predictive Analytics',
     type: 'Academic analytics project',
+    role: 'Individual project',
     summary:
       'Predictive analysis of gym exercise data to model Calories_Burned, using KNIME for data preparation and SAS Viya for modelling and comparison.',
     problem:
@@ -77,6 +98,20 @@ export const projects = [
       'SAS Viya partition: 665 training (70%) / 285 validation (30%). Models: Linear Regression, Decision Tree, Random Forest, Gradient Boosting — compared on the same partition using validation ASE.',
     results:
       'Validation ASE on same 285-row validation set: Gradient Boosting 431.8658 (RMSE 20.78, champion), Linear Regression 1469.6926 (RMSE 38.34, R² approx. 0.979686), Forest 4982.7305 (RMSE 70.59), Decision Tree 6457.5496 (RMSE 80.36). Champion 70.6% lower ASE than Linear Regression.',
+    // Structured form of the same numbers so the case study can render a
+    // comparison table instead of a paragraph. Lower ASE is better.
+    modelComparison: {
+      metric: 'Validation ASE',
+      secondaryMetric: 'RMSE',
+      lowerIsBetter: true,
+      validationRows: 285,
+      rows: [
+        { model: 'Gradient Boosting', ase: 431.8658, rmse: 20.78, champion: true },
+        { model: 'Linear Regression', ase: 1469.6926, rmse: 38.34, note: 'R² ≈ 0.980' },
+        { model: 'Random Forest', ase: 4982.7305, rmse: 70.59 },
+        { model: 'Decision Tree', ase: 6457.5496, rmse: 80.36 },
+      ],
+    },
     technologies: ['KNIME', 'SAS Viya'],
     features: [
       'Duplicate detection and removal (3,892 rows)',
@@ -93,7 +128,35 @@ export const projects = [
       'Separating true duplicates from valid repeated measurements, defining defensible heart-rate validation rules, and avoiding leakage between preparation and validation.',
     learnings:
       'Systematic data-quality checking before modelling, keeping a reproducible preparation workflow, and comparing models on a consistent validation partition with a single metric.',
-    screenshots: [],
+    // Figures from the submitted report, used as the case-study visuals.
+    // Captions describe what each figure actually shows.
+    screenshots: [
+      {
+        src: caloriesVsDuration,
+        alt: 'Scatter plot of calories burned against exercise duration',
+        caption: 'Calories burned vs exercise duration — the strongest single predictor.',
+      },
+      {
+        src: knimeWorkflow,
+        alt: 'KNIME workflow used for data quality checking and preparation',
+        caption: 'KNIME workflow: duplicate removal, heart-rate validation and BMI recalculation.',
+      },
+      {
+        src: trainValidation,
+        alt: '70% training and 30% validation partition diagram',
+        caption: '70/30 training and validation partition applied before modelling.',
+      },
+      {
+        src: caloriesByWorkout,
+        alt: 'Box plots of calories burned grouped by workout type',
+        caption: 'Calories burned by workout type, with HIIT showing the widest spread.',
+      },
+      {
+        src: modelComparisonChart,
+        alt: 'Comparison of the four candidate models for calories burned',
+        caption: 'Champion model selection across the four candidates.',
+      },
+    ],
     repositoryUrl: null,
     demoUrl: null,
     reportUrl: '/reports/IT2214_Gym_Predictive_Analysis_WaiYanHponeLat.pdf',
@@ -103,6 +166,7 @@ export const projects = [
     slug: 'nanyang-trading-data-wrangling',
     name: 'Nanyang Trading Company Data Wrangling',
     category: 'Data Wrangling',
+    role: 'Individual assignment',
     type: 'Academic data project',
     summary:
       'Integration and cleaning of four regional customer datasets into a single analysis-ready customer file with privacy handling and derived analytical variables.',
@@ -143,6 +207,7 @@ export const projects = [
     slug: 'full-stack-course-practical',
     name: 'Full-Stack Course Practical (Tutorials App)',
     category: 'Full-Stack',
+    role: 'Individual coursework',
     type: 'Course practical',
     summary:
       'Progressive Full-Stack Development practical: a tutorial/learning application with React frontend, Express REST API, MySQL database, authentication and file upload.',

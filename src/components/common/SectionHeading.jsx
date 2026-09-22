@@ -36,13 +36,13 @@ export default function SectionHeading({ title, subtitle, eyebrow }) {
       </Typography>
       <Box
         aria-hidden="true"
-        sx={{
+        sx={(theme) => ({
           width: 56,
           height: 4,
           borderRadius: 2,
-          background: 'linear-gradient(90deg, #1d4ed8, #0891b2)',
+          background: theme.custom.gradients.brand,
           mb: subtitle ? 1.5 : 0,
-        }}
+        })}
       />
       {subtitle && (
         <Typography variant="body1" color="text.secondary">
