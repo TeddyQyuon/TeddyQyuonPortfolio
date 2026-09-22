@@ -9,6 +9,7 @@ import {
 import EmailIcon from '@mui/icons-material/Email';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import SectionHeading from '../components/common/SectionHeading';
 import { personalInfo } from '../data/personalInfo';
 
@@ -32,7 +33,7 @@ export default function ContactSection() {
             {personalInfo.email}
           </Typography>
           <Grid container spacing={2}>
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={12} sm={3}>
               <Button
                 component="a"
                 href={`mailto:${personalInfo.email}`}
@@ -43,7 +44,7 @@ export default function ContactSection() {
                 Email Me
               </Button>
             </Grid>
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={12} sm={3}>
               <Button
                 component="a"
                 href={personalInfo.githubUrl}
@@ -56,7 +57,7 @@ export default function ContactSection() {
                 GitHub
               </Button>
             </Grid>
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={12} sm={3}>
               <Button
                 component="a"
                 href={personalInfo.linkedinUrl}
@@ -67,6 +68,19 @@ export default function ContactSection() {
                 fullWidth
               >
                 LinkedIn
+              </Button>
+            </Grid>
+            <Grid item xs={12} sm={3}>
+              <Button
+                component="a"
+                href={personalInfo.whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="outlined"
+                startIcon={<WhatsAppIcon />}
+                fullWidth
+              >
+                WhatsApp
               </Button>
             </Grid>
           </Grid>

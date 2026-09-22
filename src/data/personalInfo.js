@@ -14,6 +14,8 @@ export const personalInfo = {
     'Year 2, Diploma in Applied AI & Analytics, Nanyang Polytechnic — Expected graduation May 2028',
   location: 'Singapore',
   email: 'waiyanhponelat.eduvalor.2024g@gmail.com',
+  phone: '+65 9897 4250',
+  whatsappUrl: 'https://wa.me/6598974250',
   githubUrl: 'https://github.com/TeddyQyuon',
   linkedinUrl: 'https://www.linkedin.com/in/waiyanhponelat',
   resumePath: '/resume/Wai_Yan_Hpone_Lat_Resume.pdf',
