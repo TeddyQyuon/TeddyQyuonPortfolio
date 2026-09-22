@@ -14,9 +14,17 @@ body {
   overflow-x: hidden;
 }
 
-/* Offset anchored sections below the sticky navbar */
+/* Offset anchored sections below the sticky navbar.
+   Headings are included because case-study sections put their id on the
+   heading element rather than a wrapping section. */
 section[id],
-div[id] {
+div[id],
+h1[id],
+h2[id],
+h3[id],
+h4[id],
+h5[id],
+h6[id] {
   scroll-margin-top: 76px;
 }
 
@@ -37,4 +45,30 @@ button:focus-visible {
   outline: 2px solid #1d4ed8;
   outline-offset: 2px;
   border-radius: 4px;
+}
+
+/* Skip link — visually hidden until it receives keyboard focus. */
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  transform: translateY(-120%);
+  padding: 0.75rem 1.25rem;
+  background-color: #1d4ed8;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 0 0 12px 0;
+  transition: transform 0.15s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skip-link {
+    transition: none;
+  }
 }

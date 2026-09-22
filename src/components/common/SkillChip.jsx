@@ -7,20 +7,20 @@ export default function SkillChip({ label }) {
     <Chip
       label={label}
       size="small"
-      sx={{
-        bgcolor: '#eff6ff',
-        borderColor: '#bfdbfe',
-        color: '#1e3a8a',
+      sx={(theme) => ({
+        bgcolor: theme.custom.chip.bg,
+        borderColor: theme.custom.chip.border,
+        color: theme.palette.primary.dark,
         fontWeight: 600,
         borderRadius: 999,
         transition: 'transform 0.15s ease, box-shadow 0.15s ease',
         '&:hover': {
-          bgcolor: '#dbeafe',
-          borderColor: 'primary.main',
+          bgcolor: theme.palette.primary.light,
+          borderColor: theme.palette.primary.main,
           transform: 'translateY(-1px)',
-          boxShadow: '0 2px 8px rgba(29, 78, 216, 0.2)',
+          boxShadow: `0 2px 8px ${theme.palette.primary.main}33`,
         },
-      }}
+      })}
       variant="outlined"
     />
   );

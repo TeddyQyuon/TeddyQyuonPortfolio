@@ -6,30 +6,40 @@ import {
   Typography,
   Button,
   IconButton,
-  Menu,
-  MenuItem,
+  Drawer,
+  Divider,
+  List,
+  ListItemButton,
+  ListItemText,
   Box,
   Container,
+  Stack,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 import DescriptionIcon from '@mui/icons-material/Description';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import EmailIcon from '@mui/icons-material/Email';
 import { personalInfo } from '../../data/personalInfo';
-
-const sectionLinks = [
-  { label: 'About', href: '#about' },
-  { label: 'Skills', href: '#skills' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Education', href: '#education' },
-  { label: 'Resume', href: '#resume' },
-  { label: 'Contact', href: '#contact' },
-];
+import { sectionLinks, sectionIds, NAV_OFFSET } from '../../data/navigation';
+import useScrollSpy from '../../hooks/useScrollSpy';
+import useSectionLink from '../../hooks/useSectionLink';
 
 export default function Navbar() {
-  const [anchorEl, setAnchorEl] = useState(null);
-  const open = Boolean(anchorEl);
+  const [open, setOpen] = useState(false);
+  // Highlights the section currently in view. Empty on routes without sections.
+  const activeId = useScrollSpy(sectionIds, NAV_OFFSET + 24);
+  const handleSectionLink = useSectionLink();
 
-  const handleOpen = (event) => setAnchorEl(event.currentTarget);
-  const handleClose = () => setAnchorEl(null);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
+  // Section links inside the drawer must also close it after navigating.
+  const handleSectionClick = (event, id) => {
+    handleSectionLink(event, id);
+    handleClose();
+  };
 
   return (
     <AppBar
@@ -37,6 +47,7 @@ export default function Navbar() {
       color="default"
       elevation={0}
       sx={{
+        top: 0,
         borderBottom: 1,
         borderColor: 'divider',
         backdropFilter: 'blur(12px)',
@@ -62,7 +73,7 @@ export default function Navbar() {
                 height: 36,
                 borderRadius: 2,
                 bgcolor: 'primary.main',
-                color: '#fff',
+                color: 'primary.contrastText',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -89,16 +100,38 @@ export default function Navbar() {
 
           {/* Desktop navigation */}
           <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 0.5, alignItems: 'center' }}>
-            {sectionLinks.map((link) => (
-              <Button
-                key={link.href}
-                href={link.href}
-                color="inherit"
-                sx={{ color: 'text.secondary', '&:hover': { color: 'text.primary' } }}
-              >
-                {link.label}
-              </Button>
-            ))}
+            {sectionLinks.map((link) => {
+              const active = activeId === link.id;
+              return (
+                <Button
+                  key={link.id}
+                  href={`#${link.id}`}
+                  onClick={(event) => handleSectionClick(event, link.id)}
+                  color="inherit"
+                  aria-current={active ? 'true' : undefined}
+                  sx={{
+                    position: 'relative',
+                    color: active ? 'primary.main' : 'text.secondary',
+                    '&:hover': { color: 'text.primary' },
+                    // Underline indicator that animates in for the active section.
+                    '&::after': {
+                      content: '""',
+                      position: 'absolute',
+                      left: 12,
+                      right: 12,
+                      bottom: 4,
+                      height: 2,
+                      borderRadius: 1,
+                      bgcolor: 'primary.main',
+                      transform: active ? 'scaleX(1)' : 'scaleX(0)',
+                      transition: 'transform 0.2s ease',
+                    },
+                  }}
+                >
+                  {link.label}
+                </Button>
+              );
+            })}
             <Button
               component="a"
               href={personalInfo.resumePath}
@@ -127,32 +160,97 @@ export default function Navbar() {
             </Button>
             <IconButton
               aria-label="Open navigation menu"
-              aria-controls="nav-menu"
+              aria-controls="nav-drawer"
               aria-expanded={open}
               onClick={handleOpen}
               size="large"
             >
               <MenuIcon />
             </IconButton>
-            <Menu
-              id="nav-menu"
-              anchorEl={anchorEl}
+            <Drawer
+              id="nav-drawer"
+              anchor="right"
               open={open}
               onClose={handleClose}
-              anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
-              transformOrigin={{ vertical: 'top', horizontal: 'right' }}
+              // Intentionally NOT keepMounted: a kept-mounted drawer parks its
+              // content off-screen but still in layout, which widens the
+              // document on narrow viewports and creates a horizontal scroll.
+              PaperProps={{ sx: { width: 300, p: 2 } }}
             >
-              {sectionLinks.map((link) => (
-                <MenuItem
-                  key={link.href}
+              <Box
+                sx={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  mb: 1,
+                }}
+              >
+                <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>
+                  Menu
+                </Typography>
+                <IconButton onClick={handleClose} aria-label="Close navigation menu">
+                  <CloseIcon />
+                </IconButton>
+              </Box>
+              <Divider />
+              <List sx={{ py: 1 }}>
+                {sectionLinks.map((link) => (
+                  <ListItemButton
+                    key={link.id}
+                    href={`#${link.id}`}
+                    selected={activeId === link.id}
+                    onClick={(event) => handleSectionClick(event, link.id)}
+                    sx={{ borderRadius: 2, mb: 0.5 }}
+                  >
+                    <ListItemText
+                      primary={link.label}
+                      primaryTypographyProps={{ fontWeight: 600 }}
+                    />
+                  </ListItemButton>
+                ))}
+              </List>
+              <Divider />
+              <Stack spacing={1.5} sx={{ px: 1, pt: 2 }}>
+                <Button
                   component="a"
-                  href={link.href}
-                  onClick={handleClose}
+                  href={personalInfo.resumePath}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  variant="contained"
+                  startIcon={<DescriptionIcon />}
+                  fullWidth
                 >
-                  {link.label}
-                </MenuItem>
-              ))}
-            </Menu>
+                  View Resume
+                </Button>
+                <Stack direction="row" spacing={1} sx={{ justifyContent: 'center' }}>
+                  <IconButton
+                    component="a"
+                    href={personalInfo.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub profile"
+                  >
+                    <GitHubIcon />
+                  </IconButton>
+                  <IconButton
+                    component="a"
+                    href={personalInfo.linkedinUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn profile"
+                  >
+                    <LinkedInIcon />
+                  </IconButton>
+                  <IconButton
+                    component="a"
+                    href={`mailto:${personalInfo.email}`}
+                    aria-label="Send an email"
+                  >
+                    <EmailIcon />
+                  </IconButton>
+                </Stack>
+              </Stack>
+            </Drawer>
           </Box>
         </Toolbar>
       </Container>

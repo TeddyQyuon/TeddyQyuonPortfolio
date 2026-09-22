@@ -65,7 +65,7 @@ export default function AboutSection() {
               }}
             >
               <Box
-                sx={{
+                sx={(theme) => ({
                   mb: 1.5,
                   width: 40,
                   height: 40,
@@ -73,8 +73,8 @@ export default function AboutSection() {
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  background: 'linear-gradient(135deg, #dbeafe, #cffafe)',
-                }}
+                  background: theme.custom.gradients.iconTile,
+                })}
               >
                 {item.icon}
               </Box>

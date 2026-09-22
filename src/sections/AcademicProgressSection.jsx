@@ -78,18 +78,26 @@ export default function AcademicProgressSection() {
         ))}
         <Grid item xs={12} sm={6} md={3}>
           <Paper
-            sx={{ p: 2.5, height: '100%', bgcolor: 'primary.main', color: '#fff' }}
+            sx={{
+              p: 2.5,
+              height: '100%',
+              bgcolor: 'primary.main',
+              color: 'primary.contrastText',
+            }}
           >
-            <Typography variant="subtitle2" sx={{ color: '#dbeafe' }}>
+            <Typography variant="subtitle2" sx={(theme) => ({ color: theme.custom.onPrimary.soft })}>
               Current GPA
             </Typography>
             <Typography variant="h4" component="p" sx={{ my: 0.5 }}>
               {currentGpa}
             </Typography>
-            <Typography variant="caption" sx={{ color: '#dbeafe' }}>
+            <Typography variant="caption" sx={(theme) => ({ color: theme.custom.onPrimary.soft })}>
               Official figure shown on NYP result statement
             </Typography>
-            <Typography variant="body2" sx={{ mt: 1.5, color: '#dbeafe' }}>
+            <Typography
+              variant="body2"
+              sx={(theme) => ({ mt: 1.5, color: theme.custom.onPrimary.soft })}
+            >
               3.00 → 2.80 → 3.70
             </Typography>
           </Paper>

@@ -31,7 +31,7 @@ export default function EducationSection() {
                     height: 40,
                     borderRadius: 2,
                     bgcolor: 'primary.main',
-                    color: '#fff',
+                    color: 'primary.contrastText',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -66,13 +66,13 @@ export default function EducationSection() {
                       {stage.marks.map((m) => (
                         <Grid item xs={6} sm={4} key={m.subject}>
                           <Box
-                            sx={{
+                            sx={(theme) => ({
                               border: 1,
                               borderColor: 'divider',
                               borderRadius: 2,
                               p: 1.25,
-                              bgcolor: '#f8fafc',
-                            }}
+                              bgcolor: theme.custom.surfaces.tile,
+                            })}
                           >
                             <Typography variant="subtitle2">{m.subject}</Typography>
                             <Typography variant="h6">{m.mark}</Typography>
@@ -99,15 +99,6 @@ export default function EducationSection() {
                         </Typography>
                       </Box>
                     ))}
-                  </Box>
-                )}
-
-                {false && ( // MTU programme now user-provided
-                  <Box sx={{ display: 'flex', gap: 1, alignItems: 'center', mt: 1 }}>
-                    <SchoolIcon color="action" fontSize="small" />
-                    <Typography variant="caption" color="text.secondary">
-                      Programme/major not listed — awaiting verification, not assumed.
-                    </Typography>
                   </Box>
                 )}
               </Paper>

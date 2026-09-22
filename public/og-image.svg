@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Wai Yan Hpone Lat — Applied AI and Analytics Portfolio">
+  <title>Wai Yan Hpone Lat — Applied AI &amp; Analytics Portfolio</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="55%" stop-color="#1e3a8a" />
+      <stop offset="100%" stop-color="#0e7490" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <radialGradient id="glowA" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glowB" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <circle cx="1080" cy="80" r="320" fill="url(#glowA)" />
+  <circle cx="120" cy="580" r="300" fill="url(#glowB)" />
+
+  <g font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif">
+    <!-- Monogram badge -->
+    <rect x="96" y="96" width="88" height="88" rx="20" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.28" />
+    <text x="140" y="153" text-anchor="middle" font-size="34" font-weight="800" fill="#ffffff" letter-spacing="1">WY</text>
+
+    <!-- Name -->
+    <text x="96" y="306" font-size="82" font-weight="800" fill="#ffffff" letter-spacing="-1.5">Wai Yan Hpone Lat</text>
+
+    <!-- Role -->
+    <text x="96" y="366" font-size="30" font-weight="500" fill="#93c5fd">Applied AI &amp; Analytics Student · Nanyang Polytechnic</text>
+
+    <!-- Accent underline -->
+    <rect x="96" y="404" width="120" height="6" rx="3" fill="url(#accent)" />
+
+    <!-- Tagline -->
+    <text x="96" y="466" font-size="26" font-weight="500" fill="#e2e8f0">Full-Stack Development · Data &amp; Analytics · Seeking 2027 internship</text>
+
+    <!-- Footer handle -->
+    <text x="1104" y="560" text-anchor="end" font-size="24" font-weight="600" fill="#94a3b8">github.com/TeddyQyuon</text>
+  </g>
+</svg>
