@@ -35,6 +35,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <!-- Strip a homepage section hash before the body is parsed, so a shared
+         or reloaded link always opens on the hero. External file to satisfy
+         the `script-src 'self'` CSP. -->
+    <script src="/hash-guard.js"></script>
     <title>Wai Yan Hpone Lat | Applied AI & Analytics Portfolio</title>
   </head>
   <body>
