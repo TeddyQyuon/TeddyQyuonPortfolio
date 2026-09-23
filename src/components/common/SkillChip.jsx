@@ -1,13 +1,13 @@
 import TechnologyChip from './TechnologyChip';
 
 // Reusable skill chip. Renders nothing if there is no label.
+// Uses a verified brand logo when one exists for the skill.
 export default function SkillChip({ label }) {
   if (!label) return null;
   return (
     <TechnologyChip
       label={label}
       size="small"
-      className="skill-chip"
       sx={(theme) => ({
         bgcolor: theme.custom.chip.bg,
         borderColor: theme.custom.chip.border,
