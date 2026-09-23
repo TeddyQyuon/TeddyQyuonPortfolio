@@ -3,7 +3,7 @@ import { Typography, Box } from '@mui/material';
 // Shared, compact heading hierarchy for all portfolio sections.
 export default function SectionHeading({ title, subtitle, eyebrow }) {
   return (
-    <Box className="section-heading" sx={{ mb: { xs: 3.5, md: 5 }, maxWidth: 760 }}>
+    <Box className="section-heading" sx={{ mb: { xs: 3.5, md: 5 }, maxWidth: 1040 }}>
       {eyebrow && (
         <Box
           className="section-eyebrow"

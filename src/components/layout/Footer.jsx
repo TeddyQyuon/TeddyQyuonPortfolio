@@ -1,157 +1,60 @@
-import { Typography, Container, Box, Link, IconButton, Grid } from '@mui/material';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import EmailIcon from '@mui/icons-material/Email';
+import { useLocation } from 'react-router-dom';
+import { Box, Container, Grid, Link, Typography } from '@mui/material';
 import { personalInfo } from '../../data/personalInfo';
 import { sectionLinks } from '../../data/navigation';
 import useSectionLink from '../../hooks/useSectionLink';
 
 export default function Footer() {
+  const { pathname } = useLocation();
   const handleSectionLink = useSectionLink();
+  const dark = pathname === '/';
 
   return (
-    <Box
-      component="footer"
-      className="portfolio-footer"
-      sx={(theme) => ({
-        pt: 6,
-        pb: 4,
-        mt: 'auto',
-        borderTop: 1,
-        borderColor: 'divider',
-        bgcolor: theme.custom.surfaces.navy,
-        color: theme.custom.onDark.muted,
-      })}
-    >
-      <Container maxWidth="lg">
-        <Grid container spacing={4}>
+    <Box component="footer" className={`portfolio-footer ${dark ? 'portfolio-footer--dark' : 'portfolio-footer--light'}`}>
+      <Container maxWidth="lg" className="portfolio-footer-main">
+        <Grid container columnSpacing={5} rowSpacing={3}>
           <Grid item xs={12} md={5}>
-            <Typography variant="h6" sx={{ color: 'common.white', fontWeight: 700, mb: 1 }}>
+            <Typography className="portfolio-footer-name" component="p">
               {personalInfo.name}
             </Typography>
-            <Typography
-              variant="body2"
-              sx={(theme) => ({ color: theme.custom.onDark.subtle, maxWidth: 360 })}
-            >
+            <Typography className="portfolio-footer-description" component="p">
               Year 2 Applied AI &amp; Analytics student at Nanyang Polytechnic,
               seeking a 1-year technology internship in software, full-stack and
               data/analytics roles.
             </Typography>
-            <Box sx={{ mt: 2 }}>
-              <IconButton
-                component="a"
-                href={personalInfo.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub profile"
-                size="small"
-                sx={(theme) => ({
-                  mr: 1,
-                  color: theme.custom.onDark.muted,
-                  border: 1,
-                  borderColor: theme.custom.surfaces.slateBorder,
-                })}
-              >
-                <GitHubIcon fontSize="small" />
-              </IconButton>
-              <IconButton
-                component="a"
-                href={personalInfo.linkedinUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn profile"
-                size="small"
-                sx={(theme) => ({
-                  mr: 1,
-                  color: theme.custom.onDark.muted,
-                  border: 1,
-                  borderColor: theme.custom.surfaces.slateBorder,
-                })}
-              >
-                <LinkedInIcon fontSize="small" />
-              </IconButton>
-              <IconButton
-                component="a"
-                href={`mailto:${personalInfo.email}`}
-                aria-label="Send an email"
-                size="small"
-                sx={(theme) => ({
-                  color: theme.custom.onDark.muted,
-                  border: 1,
-                  borderColor: theme.custom.surfaces.slateBorder,
-                })}
-              >
-                <EmailIcon fontSize="small" />
-              </IconButton>
-            </Box>
           </Grid>
-
-          <Grid item xs={12} sm={6} md={3}>
-            <Typography variant="subtitle2" sx={{ color: 'common.white', mb: 1.5 }}>
-              Navigate
-            </Typography>
-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.75 }}>
+          <Grid item xs={12} sm={6} md={4}>
+            <Typography className="portfolio-footer-label" component="p">Navigate</Typography>
+            <Box className="portfolio-footer-links">
               {sectionLinks.map((link) => (
                 <Link
                   key={link.id}
                   href={`#${link.id}`}
                   onClick={(event) => handleSectionLink(event, link.id)}
                   underline="hover"
-                  variant="body2"
-                  sx={(theme) => ({ color: theme.custom.onDark.subtle, width: 'fit-content' })}
                 >
                   {link.label}
                 </Link>
               ))}
             </Box>
           </Grid>
-
-          <Grid item xs={12} sm={6} md={4}>
-            <Typography variant="subtitle2" sx={{ color: 'common.white', mb: 1.5 }}>
-              Contact
-            </Typography>
-            <Typography
-              variant="body2"
-              sx={(theme) => ({ color: theme.custom.onDark.subtle, mb: 1 })}
-            >
+          <Grid item xs={12} sm={6} md={3}>
+            <Typography className="portfolio-footer-label" component="p">Contact</Typography>
+            <Link className="portfolio-footer-email" href={`mailto:${personalInfo.email}`} underline="hover">
               {personalInfo.email}
-            </Typography>
-            <Typography
-              variant="body2"
-              sx={(theme) => ({ color: theme.custom.onDark.subtle })}
-            >
+            </Link>
+            <Typography className="portfolio-footer-location" component="p">
               Singapore · Open to 1-year internship (2027)
             </Typography>
           </Grid>
         </Grid>
-
-        <Box
-          sx={(theme) => ({
-            display: 'flex',
-            flexDirection: { xs: 'column', sm: 'row' },
-            alignItems: { xs: 'flex-start', sm: 'center' },
-            justifyContent: 'space-between',
-            gap: 1,
-            mt: 5,
-            pt: 3,
-            borderTop: 1,
-            borderColor: theme.custom.surfaces.navyBorder,
-          })}
-        >
-          <Typography
-            variant="body2"
-            sx={(theme) => ({ color: theme.custom.onDark.faint })}
-          >
-            © {new Date().getFullYear()} {personalInfo.name}. All rights reserved.
-          </Typography>
-          <Typography
-            variant="body2"
-            sx={(theme) => ({ color: theme.custom.onDark.faint })}
-          >
-            Built with React, Vite, MUI and React Router.
-          </Typography>
-        </Box>
       </Container>
+      <Box className="portfolio-footer-bottom">
+        <Container maxWidth="lg">
+          <Typography component="span">© {new Date().getFullYear()} {personalInfo.name}. All rights reserved.</Typography>
+          <Typography component="span">Built with React, Vite, MUI and React Router.</Typography>
+        </Container>
+      </Box>
     </Box>
   );
 }
