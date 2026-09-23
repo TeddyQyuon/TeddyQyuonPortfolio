@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import {
   AppBar,
   Toolbar,
@@ -30,6 +30,8 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
   // Highlights the section currently in view. Empty on routes without sections.
   const activeId = useScrollSpy(sectionIds, NAV_OFFSET + 24);
+  const { pathname } = useLocation();
+  const darkSurface = pathname === '/' && (!activeId || activeId === 'projects' || activeId === 'contact');
   const handleSectionLink = useSectionLink();
 
   const handleOpen = () => setOpen(true);
@@ -43,6 +45,7 @@ export default function Navbar() {
 
   return (
     <AppBar
+      className={`portfolio-navbar ${darkSurface ? 'portfolio-navbar--dark' : 'portfolio-navbar--light'}`}
       position="sticky"
       color="default"
       elevation={0}
@@ -148,16 +151,6 @@ export default function Navbar() {
 
           {/* Mobile navigation */}
           <Box sx={{ display: { xs: 'flex', md: 'none' }, alignItems: 'center', gap: 1 }}>
-            <Button
-              component="a"
-              href={personalInfo.resumePath}
-              target="_blank"
-              rel="noopener noreferrer"
-              variant="contained"
-              size="small"
-            >
-              Resume
-            </Button>
             <IconButton
               aria-label="Open navigation menu"
               aria-controls="nav-drawer"
@@ -175,7 +168,7 @@ export default function Navbar() {
               // Intentionally NOT keepMounted: a kept-mounted drawer parks its
               // content off-screen but still in layout, which widens the
               // document on narrow viewports and creates a horizontal scroll.
-              PaperProps={{ sx: { width: 300, p: 2 } }}
+              PaperProps={{ className: 'portfolio-mobile-drawer', sx: { width: '100vw', maxWidth: 420, height: '100dvh', p: 2.5 } }}
             >
               <Box
                 sx={{
@@ -194,6 +187,14 @@ export default function Navbar() {
               </Box>
               <Divider />
               <List sx={{ py: 1 }}>
+                <ListItemButton
+                  component={Link}
+                  to="/"
+                  onClick={handleClose}
+                  sx={{ borderRadius: 2, mb: 0.5 }}
+                >
+                  <ListItemText primary="Home" primaryTypographyProps={{ fontWeight: 600 }} />
+                </ListItemButton>
                 {sectionLinks.map((link) => (
                   <ListItemButton
                     key={link.id}

@@ -8,20 +8,21 @@ import {
 } from '@mui/material';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import DownloadIcon from '@mui/icons-material/Download';
-import DescriptionIcon from '@mui/icons-material/Description';
 import SectionHeading from '../components/common/SectionHeading';
 import { personalInfo } from '../data/personalInfo';
+import resumePreview from '../assets/images/resume-preview.webp';
 
 // View and download use the same static PDF from /public/resume.
 export default function ResumeSection() {
   return (
-    <Container maxWidth="lg" sx={{ py: { xs: 6, md: 8 } }} id="resume" component="section">
+    <Container maxWidth="lg" className="portfolio-section resume-section" sx={{ py: { xs: 6, md: 8 } }} id="resume" component="section">
       <SectionHeading
         eyebrow="Resume"
         title="Resume"
         subtitle="One document for viewing and download — education, skills and project work"
       />
       <Paper
+        className="resume-card"
         variant="outlined"
         sx={{
           p: { xs: 2.5, md: 4 },
@@ -33,6 +34,7 @@ export default function ResumeSection() {
         }}
       >
         <Box
+          className="resume-preview"
           sx={{
             width: 56,
             height: 56,
@@ -44,7 +46,13 @@ export default function ResumeSection() {
             flexShrink: 0,
           }}
         >
-          <DescriptionIcon color="primary" fontSize="large" />
+          <Box
+            component="img"
+            src={resumePreview}
+            alt="Preview of the first page of Wai Yan Hpone Lat's resume"
+            loading="lazy"
+            decoding="async"
+          />
         </Box>
         <Box sx={{ flexGrow: 1 }}>
           <Typography variant="h6" gutterBottom>

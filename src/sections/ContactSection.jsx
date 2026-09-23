@@ -56,84 +56,85 @@ export default function ContactSection() {
   };
 
   return (
-    <Box sx={{ bgcolor: 'background.paper', borderTop: 1, borderColor: 'divider' }}>
-      <Container maxWidth="lg" sx={{ py: { xs: 6, md: 8 } }} id="contact" component="section">
+    <Box className="contact-band" sx={{ bgcolor: 'background.paper', borderTop: 1, borderColor: 'divider' }}>
+      <Container maxWidth="lg" className="portfolio-section contact-section" sx={{ py: { xs: 6, md: 8 } }} id="contact" component="section">
         <SectionHeading
           eyebrow="Contact"
           title="Contact"
           subtitle="Looking for a 1-year technology internship — the fastest way to reach me is by email"
         />
-        <Paper variant="outlined" sx={{ p: { xs: 2.5, md: 4 }, maxWidth: 780 }}>
-          <Typography paragraph color="text.secondary" sx={{ maxWidth: 640 }}>
-            If you have an internship opportunity in Software Engineering,
-            Full-Stack Development, Data/Analytics or a related technical role —
-            or would like to see more of my work — get in touch.
-          </Typography>
-          <Stack direction="row" spacing={0.5} alignItems="center" sx={{ mb: 2 }}>
-            <Typography variant="body1" sx={{ fontWeight: 600, wordBreak: 'break-all' }}>
-              {personalInfo.email}
-            </Typography>
-            <Tooltip title={copied ? 'Copied' : 'Copy email address'}>
-              <IconButton
-                onClick={handleCopy}
-                size="small"
-                color={copied ? 'success' : 'primary'}
-                aria-label="Copy email address to clipboard"
-              >
-                {copied ? <CheckIcon fontSize="small" /> : <ContentCopyIcon fontSize="small" />}
-              </IconButton>
-            </Tooltip>
-          </Stack>
-          <Grid container spacing={2}>
-            <Grid item xs={12} sm={3}>
+        <Paper className="contact-card" variant="outlined">
+          <Grid container spacing={{ xs: 3, md: 5 }}>
+            <Grid item xs={12} md={7}>
+              <Typography className="contact-card-eyebrow" variant="overline">Let’s connect</Typography>
+              <Typography paragraph color="text.secondary" sx={{ maxWidth: 640, mt: 1 }}>
+                If you have an internship opportunity in Software Engineering,
+                Full-Stack Development, Data/Analytics or a related technical role —
+                or would like to see more of my work — get in touch.
+              </Typography>
+              <Stack direction="row" spacing={0.5} alignItems="center" sx={{ mb: 2 }}>
+                <Typography className="contact-email" variant="h6" sx={{ fontWeight: 700, overflowWrap: 'anywhere' }}>
+                  {personalInfo.email}
+                </Typography>
+                <Tooltip title={copied ? 'Copied' : 'Copy email address'}>
+                  <IconButton
+                    onClick={handleCopy}
+                    size="small"
+                    color={copied ? 'success' : 'primary'}
+                    aria-label="Copy email address to clipboard"
+                  >
+                    {copied ? <CheckIcon fontSize="small" /> : <ContentCopyIcon fontSize="small" />}
+                  </IconButton>
+                </Tooltip>
+              </Stack>
               <Button
                 component="a"
                 href={`mailto:${personalInfo.email}`}
                 variant="contained"
                 startIcon={<EmailIcon />}
-                fullWidth
               >
                 Email Me
               </Button>
             </Grid>
-            <Grid item xs={12} sm={3}>
-              <Button
-                component="a"
-                href={personalInfo.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                variant="outlined"
-                startIcon={<GitHubIcon />}
-                fullWidth
-              >
-                GitHub
-              </Button>
-            </Grid>
-            <Grid item xs={12} sm={3}>
-              <Button
-                component="a"
-                href={personalInfo.linkedinUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                variant="outlined"
-                startIcon={<LinkedInIcon />}
-                fullWidth
-              >
-                LinkedIn
-              </Button>
-            </Grid>
-            <Grid item xs={12} sm={3}>
-              <Button
-                component="a"
-                href={personalInfo.whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                variant="outlined"
-                startIcon={<WhatsAppIcon />}
-                fullWidth
-              >
-                WhatsApp
-              </Button>
+            <Grid item xs={12} md={5}>
+              <Stack className="contact-links" spacing={1.5}>
+                <Button
+                  component="a"
+                  href={personalInfo.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  variant="outlined"
+                  startIcon={<GitHubIcon />}
+                  fullWidth
+                  className="contact-link"
+                >
+                  GitHub
+                </Button>
+                <Button
+                  component="a"
+                  href={personalInfo.linkedinUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  variant="outlined"
+                  startIcon={<LinkedInIcon />}
+                  fullWidth
+                  className="contact-link"
+                >
+                  LinkedIn
+                </Button>
+                <Button
+                  component="a"
+                  href={personalInfo.whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  variant="outlined"
+                  startIcon={<WhatsAppIcon />}
+                  fullWidth
+                  className="contact-link"
+                >
+                  WhatsApp
+                </Button>
+              </Stack>
             </Grid>
           </Grid>
         </Paper>

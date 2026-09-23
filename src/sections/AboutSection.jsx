@@ -1,8 +1,10 @@
-import { Typography, Container, Box, Grid, Paper } from '@mui/material';
+import { Typography, Container, Box, Grid, Paper, Stack } from '@mui/material';
 import CodeIcon from '@mui/icons-material/Code';
 import AnalyticsIcon from '@mui/icons-material/Analytics';
 import GroupsIcon from '@mui/icons-material/Groups';
 import SectionHeading from '../components/common/SectionHeading';
+import profilePhoto from '../assets/images/profile/profile.jpg';
+import { personalInfo } from '../data/personalInfo';
 
 const highlights = [
   {
@@ -25,68 +27,58 @@ const highlights = [
 // Concise student-appropriate background. No employment claims.
 export default function AboutSection() {
   return (
-    <Container maxWidth="lg" sx={{ py: { xs: 6, md: 8 } }} id="about" component="section">
+    <Container maxWidth="lg" className="portfolio-section about-section" sx={{ py: { xs: 6, md: 8 } }} id="about" component="section">
       <SectionHeading
         eyebrow="About"
         title="About Me"
         subtitle="Student background, hands-on areas and internship goal"
       />
-      <Box sx={{ maxWidth: 760, mb: 4 }}>
-        <Typography paragraph>
-          I am a Year 2 student in the Diploma in Applied AI &amp; Analytics at
-          Nanyang Polytechnic. I enjoy building practical software systems and
-          learning how complete web applications work — from the user interface
-          down to the database.
-        </Typography>
-        <Typography paragraph>
-          Through coursework I have learned Full-Stack Development with React,
-          Node.js and Express, REST APIs, and MySQL with Sequelize, including
-          authentication with JWT and input validation with Formik and Yup. I
-          have applied this in academic team projects with approval workflows,
-          audit history and notifications.
-        </Typography>
-        <Typography paragraph sx={{ mb: 0 }}>
-          I am applying for a 1-year technology internship in 2027 in Software
-          Engineering, Full-Stack Development or related technical roles.
-        </Typography>
-      </Box>
-
-      <Grid container spacing={2}>
-        {highlights.map((item) => (
-          <Grid item xs={12} sm={4} key={item.title}>
-            <Paper
-              variant="outlined"
-              sx={{
-                p: 2.5,
-                height: '100%',
-                borderRadius: 3,
-                transition: 'box-shadow 0.2s ease, transform 0.2s ease',
-                '&:hover': { boxShadow: 4, transform: 'translateY(-3px)' },
-              }}
-            >
+      <Grid container spacing={{ xs: 2.5, md: 3 }} className="about-layout">
+        <Grid item xs={12} md={7}>
+          <Paper className="about-copy" variant="outlined">
+            <Typography paragraph>
+              I am a Year 2 student in the Diploma in Applied AI &amp; Analytics at
+              Nanyang Polytechnic. I enjoy building practical software systems and
+              learning how complete web applications work — from the user interface
+              down to the database.
+            </Typography>
+            <Typography paragraph>
+              Through coursework I have learned Full-Stack Development with React,
+              Node.js and Express, REST APIs, and MySQL with Sequelize, including
+              authentication with JWT and input validation with Formik and Yup. I
+              have applied this in academic team projects with approval workflows,
+              audit history and notifications.
+            </Typography>
+            <Typography paragraph sx={{ mb: 0 }}>
+              I am applying for a 1-year technology internship in 2027 in Software
+              Engineering, Full-Stack Development or related technical roles.
+            </Typography>
+          </Paper>
+        </Grid>
+        <Grid item xs={12} md={5}>
+          <Box className="about-sidebar">
+            <Paper className="about-photo-frame" variant="outlined">
               <Box
-                sx={(theme) => ({
-                  mb: 1.5,
-                  width: 40,
-                  height: 40,
-                  borderRadius: 2,
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  background: theme.custom.gradients.iconTile,
-                })}
-              >
-                {item.icon}
-              </Box>
-              <Typography variant="subtitle1" gutterBottom>
-                {item.title}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                {item.text}
-              </Typography>
+                component="img"
+                src={profilePhoto}
+                alt={`Portrait of ${personalInfo.name}`}
+                loading="lazy"
+                decoding="async"
+              />
             </Paper>
-          </Grid>
-        ))}
+            <Stack spacing={1.5} className="about-highlight-list">
+              {highlights.map((item) => (
+                <Paper className="about-highlight" variant="outlined" key={item.title}>
+                  <Box className="about-highlight-icon" aria-hidden="true">{item.icon}</Box>
+                  <Box>
+                    <Typography variant="subtitle2">{item.title}</Typography>
+                    <Typography variant="body2" color="text.secondary">{item.text}</Typography>
+                  </Box>
+                </Paper>
+              ))}
+            </Stack>
+          </Box>
+        </Grid>
       </Grid>
     </Container>
   );

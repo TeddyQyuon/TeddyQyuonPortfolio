@@ -27,8 +27,8 @@ const categoryIcons = {
 // Verified skills only, grouped by category. No percentage bars.
 export default function SkillsSection() {
   return (
-    <Box sx={{ bgcolor: 'background.paper', borderTop: 1, borderBottom: 1, borderColor: 'divider' }}>
-      <Container maxWidth="lg" sx={{ py: { xs: 6, md: 8 } }} id="skills" component="section">
+    <Box className="skills-band" sx={{ bgcolor: 'background.paper', borderTop: 1, borderBottom: 1, borderColor: 'divider' }}>
+      <Container maxWidth="lg" className="portfolio-section skills-section" sx={{ py: { xs: 6, md: 8 } }} id="skills" component="section">
         <SectionHeading
           eyebrow="Skills"
           title="Skills"

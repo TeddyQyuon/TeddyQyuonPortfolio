@@ -5,8 +5,8 @@ import { projects } from '../data/projects';
 
 export default function ProjectsSection() {
   return (
-    <Box sx={{ bgcolor: 'background.default' }}>
-      <Container maxWidth="lg" sx={{ py: { xs: 6, md: 8 } }} id="projects" component="section">
+    <Box className="projects-band" sx={{ bgcolor: 'background.default' }}>
+      <Container maxWidth="lg" className="portfolio-section projects-section" sx={{ py: { xs: 6, md: 8 } }} id="projects" component="section">
         <SectionHeading
           eyebrow="Projects"
           title="Featured Projects"

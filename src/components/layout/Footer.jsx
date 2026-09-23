@@ -12,6 +12,7 @@ export default function Footer() {
   return (
     <Box
       component="footer"
+      className="portfolio-footer"
       sx={(theme) => ({
         pt: 6,
         pb: 4,
@@ -85,7 +86,7 @@ export default function Footer() {
             </Box>
           </Grid>
 
-          <Grid item xs={6} md={3}>
+          <Grid item xs={12} sm={6} md={3}>
             <Typography variant="subtitle2" sx={{ color: 'common.white', mb: 1.5 }}>
               Navigate
             </Typography>
@@ -105,7 +106,7 @@ export default function Footer() {
             </Box>
           </Grid>
 
-          <Grid item xs={6} md={4}>
+          <Grid item xs={12} sm={6} md={4}>
             <Typography variant="subtitle2" sx={{ color: 'common.white', mb: 1.5 }}>
               Contact
             </Typography>

@@ -7,14 +7,14 @@ import { educationJourney } from '../data/education';
 // MTU programme wording is user-provided, interruption wording is factual/neutral.
 export default function EducationSection() {
   return (
-    <Box sx={{ bgcolor: 'background.paper', borderTop: 1, borderBottom: 1, borderColor: 'divider' }}>
-      <Container maxWidth="lg" sx={{ py: { xs: 6, md: 8 } }} id="education" component="section">
+    <Box className="education-band" sx={{ bgcolor: 'background.paper', borderTop: 1, borderBottom: 1, borderColor: 'divider' }}>
+      <Container maxWidth="lg" className="portfolio-section education-section" sx={{ py: { xs: 6, md: 8 } }} id="education" component="section">
         <SectionHeading
           eyebrow="Education"
           title="Education Journey"
           subtitle="Chronological academic background — from Myanmar to Singapore"
         />
-        <Stack spacing={2.5} sx={{ maxWidth: 820 }}>
+        <Stack spacing={2.5} className="education-timeline">
           {educationJourney.map((stage, index) => (
             <Box key={stage.id} sx={{ display: 'flex', gap: 2 }}>
               <Box
