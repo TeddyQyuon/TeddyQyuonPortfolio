@@ -6,13 +6,15 @@
 // - Restaurant Ordering / Feedback System is excluded (sister's work).
 //
 // Screenshots are real figures taken from the author's own submitted reports.
-// No stock imagery is used, so nothing on this page implies work that was not done.
+// Two later project cards use labelled illustrative covers, never presented as screenshots.
 import caloriesVsDuration from '../assets/images/projects/gym-calories-predictive-analysis/calories-vs-duration.png';
 import knimeWorkflow from '../assets/images/projects/gym-calories-predictive-analysis/knime-preparation-workflow.png';
 import trainValidation from '../assets/images/projects/gym-calories-predictive-analysis/train-validation-partition.png';
 import caloriesByWorkout from '../assets/images/projects/gym-calories-predictive-analysis/calories-by-workout-type.png';
 import modelComparisonChart from '../assets/images/projects/gym-calories-predictive-analysis/model-comparison.png';
 import leaveSignIn from '../assets/images/projects/annual-leave/sign-in-rbac.png';
+import nanyangTradingCover from '../assets/images/projects/nanyang-trading-cover.webp';
+import fullStackCourseCover from '../assets/images/projects/full-stack-course-cover.webp';
 
 export const projects = [
   {
@@ -198,6 +200,10 @@ export const projects = [
     learnings:
       'Planning a mashup-clean-transform sequence, tracking counts at each stage, and documenting corrections and privacy decisions for reproducibility.',
     screenshots: [],
+    coverImage: {
+      src: nanyangTradingCover,
+      alt: 'Illustrative artwork showing regional source data being combined into one cleaned dataset; not a project screenshot',
+    },
     repositoryUrl: null,
     demoUrl: null,
     reportUrl: null,
@@ -256,6 +262,10 @@ export const projects = [
     learnings:
       'How frontend state, REST conventions, ORM models and auth middleware fit together in one deployable CRUD system.',
     screenshots: [],
+    coverImage: {
+      src: fullStackCourseCover,
+      alt: 'Illustrative artwork representing a frontend, API and database flow; not a project screenshot',
+    },
     repositoryUrl: null,
     demoUrl: null,
     reportUrl: null,

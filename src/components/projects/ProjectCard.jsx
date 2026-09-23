@@ -21,6 +21,7 @@ import AnalyticsIcon from '@mui/icons-material/Analytics';
 import StorageIcon from '@mui/icons-material/Storage';
 import PersonIcon from '@mui/icons-material/Person';
 import GroupsIcon from '@mui/icons-material/Groups';
+import TechnologyChip from '../common/TechnologyChip';
 
 // Icon per project category, used for the cover artwork when a project has no
 // screenshot. Keeps cards visually distinct without inventing imagery.
@@ -66,7 +67,9 @@ function secondaryLinks(project) {
 // - no repository/demo/report URL → link is not rendered (never fake "#" links)
 export default function ProjectCard({ project }) {
   const navigate = useNavigate();
-  const cover = project.screenshots && project.screenshots[0];
+  const screenshot = project.screenshots?.[0];
+  const cover = screenshot || project.coverImage;
+  const isIllustration = !screenshot && Boolean(project.coverImage);
   const visibleTech = (project.technologies || []).slice(0, 6);
   const hiddenCount = (project.technologies || []).length - visibleTech.length;
   const links = secondaryLinks(project);
@@ -76,6 +79,7 @@ export default function ProjectCard({ project }) {
 
   return (
     <Card
+      className="portfolio-project-card"
       sx={{
         height: '100%',
         display: 'flex',
@@ -87,20 +91,25 @@ export default function ProjectCard({ project }) {
     >
       {/* Cover: real screenshot when available, otherwise branded artwork. */}
       {cover ? (
-        <CardMedia
-          component="img"
-          image={cover.src}
-          alt={cover.alt}
-          loading="lazy"
-          // `contain` rather than `cover`: these are data charts, and cropping
-          // to a 16:9 box would cut off axis labels and titles.
-          sx={{
-            aspectRatio: '16 / 9',
-            objectFit: 'contain',
-            width: '100%',
-            bgcolor: 'background.paper',
-          }}
-        />
+        <Box className="project-card-cover">
+          <CardMedia
+            component="img"
+            image={cover.src}
+            alt={cover.alt}
+            loading="lazy"
+            // Charts retain their complete labels; conceptual covers fill the
+            // frame without implying they are screenshots of the project.
+            sx={{
+              aspectRatio: '16 / 9',
+              objectFit: isIllustration ? 'cover' : 'contain',
+              width: '100%',
+              bgcolor: 'background.paper',
+            }}
+          />
+          {isIllustration && (
+            <Box className="project-cover-note">Illustrative cover</Box>
+          )}
+        </Box>
       ) : (
         <Box
           sx={(theme) => ({
@@ -146,7 +155,7 @@ export default function ProjectCard({ project }) {
         </Box>
       )}
 
-      <CardContent sx={{ flexGrow: 1 }}>
+      <CardContent className="project-card-content" sx={{ flexGrow: 1 }}>
         <Stack direction="row" spacing={0.5} sx={{ mb: 1.5, flexWrap: 'wrap', rowGap: 0.5 }}>
           <Chip
             icon={<RoleIcon sx={{ fontSize: 16 }} />}
@@ -165,6 +174,7 @@ export default function ProjectCard({ project }) {
         {/* Contribution leads the card: it is the strongest differentiator and
             was previously buried below the summary. */}
         <Box
+          className="project-contribution"
           sx={(theme) => ({
             bgcolor: theme.palette.primary.light,
             borderLeft: 3,
@@ -200,7 +210,7 @@ export default function ProjectCard({ project }) {
 
         <Stack direction="row" spacing={0.5} useFlexGap sx={{ flexWrap: 'wrap', rowGap: 0.5 }}>
           {visibleTech.map((tech) => (
-            <Chip key={tech} label={tech} size="small" variant="outlined" />
+            <TechnologyChip key={tech} label={tech} size="small" variant="outlined" />
           ))}
           {hiddenCount > 0 && <Chip label={`+${hiddenCount} more`} size="small" />}
         </Stack>

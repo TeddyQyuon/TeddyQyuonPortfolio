@@ -2,7 +2,6 @@ import { useParams, Link as RouterLink } from 'react-router-dom';
 import {
   Container,
   Typography,
-  Chip,
   Stack,
   Button,
   Paper,
@@ -26,6 +25,7 @@ import GroupsIcon from '@mui/icons-material/Groups';
 import CategoryIcon from '@mui/icons-material/Category';
 import ProjectGallery from '../components/projects/ProjectGallery';
 import ModelComparison from '../components/projects/ModelComparison';
+import TechnologyChip from '../components/common/TechnologyChip';
 import { projects } from '../data/projects';
 
 // Case-study page for a single project, found by slug.
@@ -100,9 +100,9 @@ export default function ProjectDetailPage() {
   ].filter(Boolean);
 
   return (
-    <Container maxWidth="lg" sx={{ py: { xs: 4, md: 6 } }}>
-      <Button component={RouterLink} to="/" startIcon={<ArrowBackIcon />} sx={{ mb: 3 }}>
-        Back to Home
+    <Container maxWidth="lg" className="portfolio-section project-detail" sx={{ py: { xs: 4, md: 6 } }}>
+      <Button component={RouterLink} to="/#projects" startIcon={<ArrowBackIcon />} sx={{ mb: 3 }}>
+        Back to Projects
       </Button>
 
       <Typography variant="h2" component="h1" gutterBottom sx={{ fontSize: { xs: '2rem', md: '2.75rem' } }}>
@@ -136,9 +136,9 @@ export default function ProjectDetailPage() {
       <Grid container spacing={{ xs: 3, md: 4 }}>
         {/* Main case-study content */}
         <Grid item xs={12} md={8} sx={{ order: { xs: 2, md: 1 } }}>
-          <ProjectGallery screenshots={project.screenshots} />
+          <ProjectGallery screenshots={project.screenshots} coverImage={project.coverImage} />
 
-          <Box sx={{ mt: project.screenshots?.length ? 4 : 0 }}>
+          <Box sx={{ mt: project.screenshots?.length || project.coverImage ? 4 : 0 }}>
             <Typography variant="h5" component="h2" id="problem" gutterBottom>
               Problem
             </Typography>
@@ -219,7 +219,7 @@ export default function ProjectDetailPage() {
               sx={{ mb: 4, flexWrap: 'wrap', rowGap: 1 }}
             >
               {project.technologies.map((tech) => (
-                <Chip key={tech} label={tech} variant="outlined" />
+                <TechnologyChip key={tech} label={tech} variant="outlined" />
               ))}
             </Stack>
 

@@ -1,74 +1,176 @@
-/* Global base styles — keep minimal; MUI handles most styling. */
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  background-color: #f1f5f9;
-  background-image: radial-gradient(circle at 20% 0%, #dbeafe 0, transparent 32rem),
-    radial-gradient(circle at 90% 10%, #cffafe 0, transparent 28rem);
-  background-attachment: fixed;
+:root {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: #1b2634;
+  background: #f7f9fc;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
+  --navy: #19232f;
+  --navy-card: #243243;
+  --blue: #3168e9;
+  --muted: #58677a;
+  --line: #e2e8f1;
 }
 
-/* Offset anchored sections below the sticky navbar.
-   Headings are included because case-study sections put their id on the
-   heading element rather than a wrapping section. */
-section[id],
-div[id],
-h1[id],
-h2[id],
-h3[id],
-h4[id],
-h5[id],
-h6[id] {
-  scroll-margin-top: 76px;
-}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; }
+#root { display: flex; flex-direction: column; min-height: 100vh; }
+main { flex: 1; }
+img { max-width: 100%; }
+section[id], h2[id], .portfolio-section[id] { scroll-margin-top: 76px; }
+:focus-visible { outline: 3px solid #7eb0ff; outline-offset: 3px; }
+.skip-link { position: fixed; top: -100px; left: 14px; z-index: 2000; padding: 12px 18px; border-radius: 8px; background: #fff; color: #102b60; }
+.skip-link:focus { top: 12px; }
+.MuiContainer-maxWidthLg { max-width: 1296px !important; }
 
-/* Professional text selection */
-::selection {
-  background-color: #1d4ed8;
-  color: #ffffff;
-}
+/* One quiet light surface and two dark bands preserve the supplied visual rhythm. */
+.portfolio-section { position: relative; }
+.section-heading { position: relative; }
+.section-eyebrow { background: #edf3ff; border: 1px solid #d7e4ff; border-radius: 40px; padding: 5px 11px; line-height: 1.2 !important; }
+.section-title.MuiTypography-root { font-size: clamp(2rem, 3vw, 3.1rem); letter-spacing: -.045em; line-height: 1.13; font-weight: 800; }
+.section-subtitle.MuiTypography-root { max-width: 720px; line-height: 1.65; }
 
-/* Responsive images never overflow */
-img {
-  max-width: 100%;
-}
+/* The sticky header changes with the section in view. */
+.portfolio-navbar.MuiAppBar-root { transition: background-color .25s, border-color .25s, color .25s; }
+.portfolio-navbar--dark.MuiAppBar-root { background: rgba(25, 35, 47, .98) !important; color: #f8fbff !important; border-color: #354356 !important; }
+.portfolio-navbar--light.MuiAppBar-root { background: rgba(255, 255, 255, .97) !important; color: #1b2634 !important; border-color: var(--line) !important; }
+.portfolio-navbar--dark .MuiButton-text { color: #e4eaf4 !important; }
+.portfolio-navbar--dark .MuiButton-text:hover, .portfolio-navbar--dark .MuiButton-text[aria-current="true"] { color: #fff !important; }
+.portfolio-navbar--dark .MuiTypography-caption { color: #b4c0d0 !important; }
+.portfolio-navbar--dark .MuiIconButton-root { color: #fff; }
+.portfolio-mobile-drawer.MuiPaper-root { background: var(--navy); color: #fff; }
+.portfolio-mobile-drawer .MuiIconButton-root { color: #e5ebf3; }
+.portfolio-mobile-drawer .MuiDivider-root { border-color: #3a4858; }
+.portfolio-mobile-drawer .MuiListItemButton-root { color: #e5ebf3; min-height: 48px; }
+.portfolio-mobile-drawer .MuiListItemButton-root.Mui-selected { background: #304561; color: #fff; }
 
-/* Visible focus states for keyboard navigation */
-a:focus-visible,
-button:focus-visible {
-  outline: 2px solid #1d4ed8;
-  outline-offset: 2px;
-  border-radius: 4px;
-}
+/* Hero uses the actual profile portrait and retains every existing action. */
+.portfolio-hero { background: linear-gradient(115deg, #19232f 10%, #1d2a3d 66%, #233a5b 100%) !important; }
+.hero-container { padding-top: clamp(64px, 8vw, 116px) !important; padding-bottom: clamp(76px, 9vw, 132px) !important; }
+.hero-copy { position: relative; z-index: 1; }
+.hero-status.MuiChip-root { background: rgba(53, 92, 140, .26); color: #bde1cf; border: 1px solid #456a68; height: auto; min-height: 30px; }
+.hero-status .MuiChip-label { white-space: normal; padding-block: 5px; }
+.hero-title.MuiTypography-root { color: #a4bee9; letter-spacing: .19em; margin-bottom: 12px; }
+.hero-copy h1.MuiTypography-root { font-size: clamp(3.15rem, 5.5vw, 5.6rem); max-width: 11ch; line-height: 1.04; letter-spacing: -.055em; margin-bottom: 24px; }
+.hero-copy h1 + p { max-width: 610px; }
+.hero-copy .MuiButton-contained { background: var(--blue); color: #fff; min-height: 45px; }
+.hero-copy .MuiButton-contained:hover { background: #2057d4; }
+.hero-copy .MuiButton-outlined { border-color: #8696aa; color: #fff; min-height: 45px; }
+.hero-copy .MuiButton-text { color: #ebf2ff; }
+.hero-profile-card.MuiPaper-root { border: 1px solid rgba(255,255,255,.45); border-radius: 22px; padding: 11px; box-shadow: 0 24px 70px rgba(2,10,22,.38); }
+.hero-profile-card img { border-radius: 14px; }
+.hero-profile-column > div { max-width: 460px; }
 
-/* Skip link — visually hidden until it receives keyboard focus. */
-.skip-link {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2000;
-  transform: translateY(-120%);
-  padding: 0.75rem 1.25rem;
-  background-color: #1d4ed8;
-  color: #ffffff;
-  font-weight: 700;
-  text-decoration: none;
-  border-radius: 0 0 12px 0;
-  transition: transform 0.15s ease;
-}
+/* About: concise copy beside a second use of the genuine portrait. */
+.about-section, .academic-section, .resume-section, .project-detail, .not-found-page { background: #f7f9fc; }
+.about-copy.MuiPaper-root { height: 100%; padding: clamp(24px, 3.5vw, 54px); border-color: var(--line); border-radius: 18px; box-shadow: 0 12px 40px rgba(35,61,100,.045); }
+.about-copy p.MuiTypography-root { font-size: 1.05rem; line-height: 1.9; margin-bottom: 24px; }
+.about-copy p:last-child { margin-bottom: 0; }
+.about-sidebar { display: grid; gap: 16px; }
+.about-photo-frame.MuiPaper-root { overflow: hidden; height: clamp(250px, 25vw, 360px); border-radius: 17px; border-color: #dce5f3; background: #eaf1f9; }
+.about-photo-frame img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: 50% 25%; }
+.about-highlight-list { width: 100%; }
+.about-highlight.MuiPaper-root { padding: 15px 18px; border-color: var(--line); border-radius: 12px; display: flex; align-items: flex-start; gap: 14px; }
+.about-highlight-icon { display: grid; place-items: center; width: 38px; height: 38px; flex: 0 0 38px; background: #eff4ff; border-radius: 10px; }
+.about-highlight .MuiTypography-body2 { line-height: 1.5; }
 
-.skip-link:focus {
-  transform: translateY(0);
-}
+/* Verifiable skill labels get real brand SVGs; concepts remain text. */
+.skills-band.MuiBox-root, .education-band.MuiBox-root { background: #f7f9fc; border-color: var(--line); }
+.skills-section .MuiGrid-item > .MuiPaper-root { border: 1px solid var(--line); border-radius: 14px; padding: 25px; box-shadow: 0 10px 30px rgba(30,52,82,.045); }
+.skills-section .MuiGrid-item .MuiTypography-subtitle1 { font-size: 1.05rem; font-weight: 750; }
+.skill-chip.MuiChip-root, .project-detail .MuiChip-outlined { background: #f5f8fe; border-color: #dae4f3; }
+.MuiChip-icon img { display: block; object-fit: contain; }
 
+/* Real screenshots stay uncropped; generated conceptual covers are labelled. */
+.projects-band.MuiBox-root { background: var(--navy); }
+.projects-section .section-eyebrow { background: #2e4158; color: #aac8ff; border-color: #405671; }
+.projects-section .section-title.MuiTypography-root { color: #fff; }
+.projects-section .section-subtitle.MuiTypography-root { color: #bbc8d8; }
+.portfolio-project-card.MuiCard-root { background: var(--navy-card); color: #f3f7fd; border: 1px solid #3b4a5e; border-radius: 16px; box-shadow: 0 12px 34px rgba(0,0,0,.13); }
+.portfolio-project-card:hover { border-color: #7199d6; }
+.project-card-cover { position: relative; background: #e9eef6; overflow: hidden; }
+.project-card-cover img { display: block; }
+.project-cover-note { position: absolute; right: 12px; bottom: 12px; padding: 6px 10px; border-radius: 6px; background: rgba(16,26,39,.88); color: #f1f6fd; font-size: .7rem; font-weight: 700; letter-spacing: .02em; }
+.portfolio-project-card .MuiTypography-h5 { color: #fff; font-weight: 750; line-height: 1.3; }
+.portfolio-project-card .MuiTypography-body2 { color: #c9d3df; }
+.portfolio-project-card .MuiChip-root { background: #2f4054; border-color: #526780; color: #e3eaf4; }
+.portfolio-project-card .MuiChip-colorPrimary { background: #346be7; border-color: #346be7; color: #fff; }
+.portfolio-project-card .MuiChip-icon { color: inherit; }
+.portfolio-project-card .MuiChip-icon img { filter: none; }
+.project-contribution.MuiBox-root { background: #2b3e57; border-color: #75a3f2; }
+.project-contribution .MuiTypography-overline { color: #a9c8ff; }
+.project-contribution .MuiTypography-body2 { color: #ecf1fa; }
+.portfolio-project-card .MuiCardActions-root { padding: 0 20px 21px; }
+.portfolio-project-card .MuiIconButton-root { color: #cbd6e6; }
+.portfolio-project-card .MuiIconButton-root:hover { background: #35475f; }
+
+/* Education remains chronological, with every existing detail visible. */
+.education-timeline .MuiPaper-root { border-color: var(--line); border-radius: 14px; box-shadow: 0 8px 30px rgba(20,44,70,.04); }
+.education-timeline .MuiTypography-h6 { font-weight: 750; }
+.academic-section .MuiPaper-root { border-color: var(--line); border-radius: 14px; }
+.academic-overview.MuiPaper-root { background: linear-gradient(110deg, #234571, #3269ea); color: #fff; border: 0; padding: clamp(22px, 3vw, 38px); margin-bottom: 20px; }
+.academic-overview .MuiTypography-root { color: inherit; }
+.academic-semester.MuiPaper-root { padding: 24px; height: 100%; }
+.academic-semester .MuiTypography-h4 { font-weight: 800; color: #2e66df; }
+.academic-semester .MuiChip-root { flex-shrink: 0; }
+.academic-highlights.MuiPaper-root { padding: clamp(22px, 3vw, 34px); }
+
+/* Resume file, view and download are all kept. */
+.resume-card.MuiPaper-root { max-width: none; width: 100%; min-height: 280px; padding: clamp(24px, 4vw, 54px); gap: clamp(24px, 4vw, 60px); border: 1px solid #dce5f3; border-radius: 18px; box-shadow: 0 14px 35px rgba(31,66,113,.06); }
+.resume-preview.MuiBox-root { width: min(245px, 100%); height: 215px; border-radius: 16px; flex: 0 0 245px; background: linear-gradient(135deg, #edf3ff, #dfeaff); }
+.resume-preview img { display: block; width: auto; height: 190px; max-width: 85%; object-fit: contain; box-shadow: 0 8px 24px rgba(24,47,87,.2); border: 1px solid #dce5f3; }
+.resume-card .MuiTypography-h6 { font-size: clamp(1.3rem, 2vw, 1.7rem); font-weight: 750; overflow-wrap: anywhere; }
+
+/* Contact uses direct links and the existing copy control, no new backend. */
+.contact-band.MuiBox-root { background: var(--navy); border-color: #344354; }
+.contact-section .section-eyebrow { background: #30445e; border-color: #47607e; color: #b4d0fa; }
+.contact-section .section-title.MuiTypography-root { color: #fff; }
+.contact-section .section-subtitle.MuiTypography-root { color: #bbc8d8; }
+.contact-card.MuiPaper-root { padding: clamp(24px, 4vw, 58px); background: #243344; border: 1px solid #43566e; color: #fff; border-radius: 18px; }
+.contact-card .MuiTypography-body1 { color: #c6d2e0; }
+.contact-card-eyebrow.MuiTypography-root { color: #a7c9ff; }
+.contact-email.MuiTypography-root { color: #fff; font-size: clamp(1rem, 2vw, 1.55rem); }
+.contact-card .MuiIconButton-root { color: #bdd2f9; }
+.contact-link.MuiButton-root { border-color: #5a718b; color: #ecf4ff; min-height: 52px; justify-content: flex-start; padding-left: 22px; }
+.contact-link.MuiButton-root:hover { background: #32475f; border-color: #a1c0ee; }
+.portfolio-footer.MuiBox-root { background: #151e29; border-color: #334358; }
+
+/* Project case studies keep original evidence, links and in-page navigation. */
+.project-detail { padding-bottom: 80px !important; }
+.project-detail > h1.MuiTypography-root { letter-spacing: -.045em; font-weight: 800; }
+.project-detail .MuiGrid-item > .MuiPaper-root { border-color: var(--line); }
+.project-detail h2[id] { margin-top: 24px; font-weight: 750; }
+.project-detail .MuiButton-root { min-height: 38px; }
+
+@media (max-width: 1199px) {
+  .portfolio-navbar .MuiToolbar-root { gap: 12px; }
+  .portfolio-navbar .MuiButton-text { min-width: auto; padding-inline: 9px; }
+}
+@media (max-width: 899px) {
+  .hero-container { padding-top: 56px !important; padding-bottom: 74px !important; }
+  .hero-profile-column > div { margin-inline: auto; }
+  .hero-profile-column .MuiTypography-caption { margin-inline: auto; text-align: center; }
+  .about-photo-frame.MuiPaper-root { height: 340px; }
+}
+@media (max-width: 599px) {
+  .portfolio-section { padding-top: 58px !important; padding-bottom: 62px !important; }
+  .hero-container { padding-top: 50px !important; }
+  .hero-copy h1.MuiTypography-root { font-size: clamp(2.8rem, 11vw, 4.1rem); }
+  .hero-copy .MuiButton-root { min-height: 44px; }
+  .hero-profile-column > div { width: min(100%, 370px); }
+  .section-heading { margin-bottom: 30px !important; }
+  .section-title.MuiTypography-root { font-size: 2.15rem; }
+  .about-photo-frame.MuiPaper-root { height: 300px; }
+  .skills-section .MuiGrid-item > .MuiPaper-root { padding: 20px; }
+  .portfolio-project-card .MuiCardActions-root { flex-wrap: wrap; row-gap: 8px; }
+  .portfolio-project-card .MuiCardActions-root > .MuiBox-root { margin-left: 0; }
+  .resume-card.MuiPaper-root { align-items: stretch; }
+  .resume-preview.MuiBox-root { width: 100%; flex-basis: auto; height: 150px; }
+  .resume-preview img { height: 132px; }
+  .contact-card.MuiPaper-root { padding: 24px; }
+}
 @media (prefers-reduced-motion: reduce) {
-  .skip-link {
-    transition: none;
-  }
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }

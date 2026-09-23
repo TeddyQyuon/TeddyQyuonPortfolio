@@ -15,17 +15,15 @@ import EmailIcon from '@mui/icons-material/Email';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { personalInfo } from '../data/personalInfo';
-// To use your photo (Image 1): save it as
-// src/assets/images/profile/profile.jpg (overwrite the placeholder).
 import profilePhoto from '../assets/images/profile/profile.jpg';
 import nypLogo from '../assets/images/nyp_logo.png';
 
-// Recruiter-first hero: name, study, areas, internship goal, CTAs.
-// Dark navy gradient + glow = cool but professional. Two-column desktop.
+// Recruiter-first hero: name, study, areas, internship goal and direct actions.
 export default function HeroSection() {
   return (
     <Box
       component="section"
+      className="portfolio-hero"
       sx={(theme) => ({
         position: 'relative',
         overflow: 'hidden',
@@ -33,35 +31,11 @@ export default function HeroSection() {
         background: theme.custom.gradients.hero,
       })}
     >
-      {/* soft glows, pure CSS */}
-      <Box
-        aria-hidden="true"
-        sx={{
-          position: 'absolute',
-          width: 480,
-          height: 480,
-          top: -160,
-          right: -120,
-          borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(34,211,238,0.35) 0, transparent 65%)',
-        }}
-      />
-      <Box
-        aria-hidden="true"
-        sx={{
-          position: 'absolute',
-          width: 420,
-          height: 420,
-          bottom: -180,
-          left: -120,
-          borderRadius: '50%',
-          background: 'radial-gradient(circle, rgba(59,130,246,0.35) 0, transparent 65%)',
-        }}
-      />
-      <Container maxWidth="lg" sx={{ py: { xs: 6, md: 10 }, position: 'relative' }}>
+      <Container maxWidth="lg" className="hero-container" sx={{ py: { xs: 6, md: 10 }, position: 'relative' }}>
         <Grid container spacing={{ xs: 4, md: 6 }} alignItems="center">
-          <Grid item xs={12} md={7}>
+          <Grid item xs={12} md={7} className="hero-copy">
             <Chip
+              className="hero-status"
               label="Open to 1-year technology internship · 2027"
               size="small"
               sx={(theme) => ({
@@ -73,6 +47,7 @@ export default function HeroSection() {
               })}
             />
             <Typography
+              className="hero-title"
               variant="overline"
               component="p"
               sx={(theme) => ({ color: theme.custom.onDark.accent })}
@@ -215,20 +190,21 @@ export default function HeroSection() {
             </Stack>
           </Grid>
 
-          <Grid item xs={12} md={5}>
-            <Box sx={{ position: 'relative', maxWidth: 360, mx: { xs: 'auto', md: 0 }, ml: { md: 'auto' } }}>
+          <Grid item xs={12} md={5} className="hero-profile-column">
+            <Box sx={{ position: 'relative', maxWidth: 460, mx: { xs: 'auto', md: 0 }, ml: { md: 'auto' } }}>
               <Box
                 aria-hidden="true"
                 sx={(theme) => ({
                   position: 'absolute',
                   inset: 0,
-                  transform: 'translate(14px, 14px)',
+                  transform: 'translate(8px, 8px)',
                   borderRadius: 5,
                   background: theme.custom.gradients.avatarRing,
-                  opacity: 0.6,
+                  opacity: 0.3,
                 })}
               />
               <Paper
+                className="hero-profile-card"
                 elevation={6}
                 sx={{ position: 'relative', p: 1.5, borderRadius: 5, bgcolor: 'background.paper' }}
               >
@@ -280,7 +256,7 @@ export default function HeroSection() {
                 display: 'block',
                 textAlign: { xs: 'center', md: 'right' },
                 mt: 1.5,
-                maxWidth: 360,
+                maxWidth: 460,
                 ml: { md: 'auto' },
                 color: theme.custom.onDark.muted,
               })}

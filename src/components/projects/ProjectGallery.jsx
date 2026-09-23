@@ -11,14 +11,18 @@ import { Box, Typography } from '@mui/material';
 // figure links to the full-size image for close inspection.
 //
 // Renders nothing when there are no images.
-export default function ProjectGallery({ screenshots }) {
-  if (!screenshots || screenshots.length === 0) {
+export default function ProjectGallery({ screenshots, coverImage }) {
+  const figures = screenshots?.length
+    ? screenshots
+    : coverImage ? [{ ...coverImage, caption: 'Illustrative cover — this is not a project screenshot.' }] : [];
+
+  if (figures.length === 0) {
     return null;
   }
 
   return (
     <Box component="figure" sx={{ m: 0 }}>
-      {screenshots.map((shot) => (
+      {figures.map((shot) => (
         <Box
           key={shot.src}
           component="figcaption"

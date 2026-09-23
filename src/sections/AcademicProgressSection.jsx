@@ -18,22 +18,33 @@ import { semesterResults, currentGpa, recentHighlights } from '../data/academicR
 // Compact academic progress: semester cards keep GPA less dominant than projects.
 // Semester GPAs are calculated; current GPA is the official NYP figure.
 export default function AcademicProgressSection() {
-  const [expanded, setExpanded] = useState(null);
+  const [expanded, setExpanded] = useState(() => semesterResults.map((semester) => semester.id));
 
-  const toggle = (id) => setExpanded((prev) => (prev === id ? null : id));
+  const toggle = (id) => setExpanded((previous) => previous.includes(id)
+    ? previous.filter((semesterId) => semesterId !== id)
+    : [...previous, id]);
 
   return (
-    <Container maxWidth="lg" sx={{ py: { xs: 6, md: 8 } }} id="academic-progress" component="section">
+    <Container maxWidth="lg" className="portfolio-section academic-section" sx={{ py: { xs: 6, md: 8 } }} id="academic-progress" component="section">
       <SectionHeading
         eyebrow="Academic progress"
         title="Academic Progress"
         subtitle="Semester results with full module transparency — projects remain the main evidence"
       />
 
+      <Paper className="academic-overview" variant="outlined">
+        <Typography variant="subtitle2">Current official GPA</Typography>
+        <Typography variant="h3" component="p" sx={{ fontWeight: 800, my: 0.5 }}>
+          {currentGpa}
+        </Typography>
+        <Typography variant="body2">Official figure shown on NYP result statement</Typography>
+        <Typography variant="body2" sx={{ mt: 1.5 }}>Semester progress: 3.00 → 2.80 → 3.70</Typography>
+      </Paper>
+
       <Grid container spacing={2} sx={{ mb: 3 }}>
         {semesterResults.map((sem) => (
-          <Grid item xs={12} sm={6} md={3} key={sem.id}>
-            <Paper variant="outlined" sx={{ p: 2.5, height: '100%' }}>
+          <Grid item xs={12} md={4} key={sem.id}>
+            <Paper variant="outlined" className="academic-semester">
               <Typography variant="subtitle2" color="text.secondary">
                 {sem.label}
               </Typography>
@@ -49,16 +60,16 @@ export default function AcademicProgressSection() {
                 endIcon={
                   <ExpandMoreIcon
                     sx={{
-                      transform: expanded === sem.id ? 'rotate(180deg)' : 'none',
+                      transform: expanded.includes(sem.id) ? 'rotate(180deg)' : 'none',
                       transition: 'transform 0.2s',
                     }}
                   />
                 }
-                aria-expanded={expanded === sem.id}
+                aria-expanded={expanded.includes(sem.id)}
               >
-                {expanded === sem.id ? 'Hide modules' : 'View modules'}
+                {expanded.includes(sem.id) ? 'Hide modules' : 'View modules'}
               </Button>
-              <Collapse in={expanded === sem.id}>
+              <Collapse in={expanded.includes(sem.id)}>
                 <Box sx={{ mt: 1.5, display: 'flex', flexDirection: 'column', gap: 0.75 }}>
                   {sem.modules.map((m) => (
                     <Box
@@ -76,35 +87,9 @@ export default function AcademicProgressSection() {
             </Paper>
           </Grid>
         ))}
-        <Grid item xs={12} sm={6} md={3}>
-          <Paper
-            sx={{
-              p: 2.5,
-              height: '100%',
-              bgcolor: 'primary.main',
-              color: 'primary.contrastText',
-            }}
-          >
-            <Typography variant="subtitle2" sx={(theme) => ({ color: theme.custom.onPrimary.soft })}>
-              Current GPA
-            </Typography>
-            <Typography variant="h4" component="p" sx={{ my: 0.5 }}>
-              {currentGpa}
-            </Typography>
-            <Typography variant="caption" sx={(theme) => ({ color: theme.custom.onPrimary.soft })}>
-              Official figure shown on NYP result statement
-            </Typography>
-            <Typography
-              variant="body2"
-              sx={(theme) => ({ mt: 1.5, color: theme.custom.onPrimary.soft })}
-            >
-              3.00 → 2.80 → 3.70
-            </Typography>
-          </Paper>
-        </Grid>
       </Grid>
 
-      <Paper variant="outlined" sx={{ p: { xs: 2.5, md: 3 }, maxWidth: 820 }}>
+      <Paper variant="outlined" className="academic-highlights">
         <Box sx={{ display: 'flex', gap: 1, alignItems: 'center', mb: 1.5 }}>
           <EmojiEventsIcon color="primary" />
           <Typography variant="subtitle1">Recent academic highlights</Typography>
