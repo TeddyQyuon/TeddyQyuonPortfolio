@@ -95,8 +95,6 @@ export default function HeroSection() {
                 component="img"
                 src={profilePhoto}
                 alt={`Portrait of ${personalInfo.name}`}
-                width={964}
-                height={1280}
                 fetchPriority="high"
                 decoding="async"
                 className="hero-profile-photo"
