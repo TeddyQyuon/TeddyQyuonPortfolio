@@ -18,11 +18,13 @@ No backend and no database are required for this version. All content is stored 
 
 ## Main Features
 
-- Single-page homepage with Hero, About, Skills, Projects, Education, Resume and Contact sections
+- Single-page homepage with Hero, About, Skills, Projects, Education, Academic Progress, Resume and Contact sections
 - Dynamic project detail pages (`/projects/:slug`) with case-study content
 - Responsive navigation with mobile menu
-- Résumé viewing and download (static PDF)
-- Contact via email, GitHub and LinkedIn (no contact form backend)
+- Real technology logos from Devicon for verified technologies; concepts without a brand icon remain text
+- Real project screenshots where available and clearly labelled illustrative covers for projects without screenshots
+- A thumbnail rendered from the actual résumé PDF, with links to view or download that same static PDF
+- Contact via email, GitHub, LinkedIn and WhatsApp (no contact form backend)
 - Custom 404 page and project-not-found state
 - Defensive rendering: buttons hidden when repository/demo URLs are missing
 
@@ -33,10 +35,10 @@ portfolio/
 ├── public/
 │   └── resume/                  # Résumé PDF
 ├── src/
-│   ├── assets/images/           # Profile and project screenshots
+│   ├── assets/images/           # Profile, project evidence, illustrative covers, résumé thumbnail, logos
 │   ├── components/
 │   │   ├── layout/              # Navbar, Footer
-│   │   ├── common/              # SectionHeading, SkillChip, BackToTop
+│   │   ├── common/              # SectionHeading, SkillChip, TechnologyLogo, BackToTop
 │   │   └── projects/            # ProjectCard, ProjectGallery
 │   ├── data/                    # personalInfo, skills, projects, education
 │   ├── pages/                   # HomePage, ProjectDetailPage, NotFoundPage
@@ -97,3 +99,7 @@ Deployed on **Vercel** (hosting platform only — not presented as a development
 2. Import the repository into Vercel.
 3. Build command: `npm run build`, output directory: `dist`.
 4. `vercel.json` rewrites non-file routes to `index.html` so React Router direct URLs (e.g. `/projects/annual-leave-management`) work after refresh.
+
+## Asset provenance
+
+The React, Node.js and other technology marks are original Devicon SVGs; their source is recorded in `src/assets/images/technology/README.md`. The two conceptual project covers are labelled as illustrations on cards and detail pages. Actual project screenshots are kept separate. The résumé thumbnail is rendered from the same public PDF that the buttons open and download.
