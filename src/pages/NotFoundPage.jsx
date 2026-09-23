@@ -3,7 +3,7 @@ import { Link as RouterLink } from 'react-router-dom';
 
 export default function NotFoundPage() {
   return (
-    <Container maxWidth="md" className="portfolio-section not-found-page" sx={{ py: 10, textAlign: 'center' }}>
+    <Container maxWidth="md" sx={{ py: 10, textAlign: 'center' }}>
       <Typography variant="h2" component="h1" gutterBottom>
         404
       </Typography>

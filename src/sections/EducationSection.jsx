@@ -1,60 +1,110 @@
-import { Typography, Container, Paper, Box } from '@mui/material';
+import { Typography, Container, Paper, Box, Chip, Stack, Grid } from '@mui/material';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import SectionHeading from '../components/common/SectionHeading';
 import { educationJourney } from '../data/education';
-import './mockupContent.css';
 
+// Chronological education journey: Matriculation → MTU → NYP.
+// MTU programme wording is user-provided, interruption wording is factual/neutral.
 export default function EducationSection() {
   return (
-    <Box className="education-band">
-      <Container maxWidth="lg" className="portfolio-section mockup-content-section education-section" id="education" component="section">
+    <Box sx={{ bgcolor: 'background.paper', borderTop: 1, borderBottom: 1, borderColor: 'divider' }}>
+      <Container maxWidth="lg" sx={{ py: { xs: 6, md: 8 } }} id="education" component="section">
         <SectionHeading
           eyebrow="Education"
           title="Education Journey"
           subtitle="Chronological academic background — from Myanmar to Singapore"
         />
-        <Box className="education-timeline">
+        <Stack spacing={2.5} sx={{ maxWidth: 820 }}>
           {educationJourney.map((stage, index) => (
-            <Paper variant="outlined" className={`education-card education-card--${index + 1}`} key={stage.id}>
-              <Box className="education-stage-number" aria-label={`Stage ${index + 1}`}>{index + 1}</Box>
-              <Box className="education-stage-content">
-                <Typography className="education-period">{stage.period}</Typography>
-                <Typography variant="h3" component="h3" className="education-institution">
+            <Box key={stage.id} sx={{ display: 'flex', gap: 2 }}>
+              <Box
+                sx={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  flexShrink: 0,
+                }}
+              >
+                <Box
+                  sx={{
+                    width: 40,
+                    height: 40,
+                    borderRadius: 2,
+                    bgcolor: 'primary.main',
+                    color: 'primary.contrastText',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontWeight: 700,
+                  }}
+                >
+                  {index + 1}
+                </Box>
+                {index < educationJourney.length - 1 && (
+                  <Box sx={{ width: 2, flexGrow: 1, bgcolor: 'divider', my: 1, minHeight: 24 }} />
+                )}
+              </Box>
+
+              <Paper variant="outlined" sx={{ p: { xs: 2.5, md: 3 }, flexGrow: 1 }}>
+                <Chip label={stage.period} size="small" color="primary" sx={{ mb: 1 }} />
+                <Typography variant="h6" component="h3">
                   {stage.institution}
                 </Typography>
-                <Typography className="education-location">{stage.location}</Typography>
-                <Typography className="education-qualification">{stage.qualification}</Typography>
-                <Typography className="education-summary">{stage.summary}</Typography>
+                <Typography variant="body2" color="text.secondary" gutterBottom>
+                  {stage.location}
+                </Typography>
+                <Typography variant="subtitle2" sx={{ mt: 1 }}>
+                  {stage.qualification}
+                </Typography>
+                <Typography variant="body2" color="text.secondary" paragraph>
+                  {stage.summary}
+                </Typography>
 
                 {stage.marks && (
-                  <Box className="education-results">
-                    <Typography className="education-detail-heading">Subject results</Typography>
-                    <Box component="ul" className="education-marks-grid">
-                      {stage.marks.map((mark) => (
-                        <Box component="li" className="education-mark" key={mark.subject}>
-                          <Typography component="span" className="education-mark-subject">{mark.subject}</Typography>
-                          <Typography component="span" className="education-mark-value">
-                            {mark.mark} · {mark.result}
-                          </Typography>
-                        </Box>
+                  <Box sx={{ mt: 2 }}>
+                    <Grid container spacing={1}>
+                      {stage.marks.map((m) => (
+                        <Grid item xs={6} sm={4} key={m.subject}>
+                          <Box
+                            sx={(theme) => ({
+                              border: 1,
+                              borderColor: 'divider',
+                              borderRadius: 2,
+                              p: 1.25,
+                              bgcolor: theme.custom.surfaces.tile,
+                            })}
+                          >
+                            <Typography variant="subtitle2">{m.subject}</Typography>
+                            <Typography variant="h6">{m.mark}</Typography>
+                            <Chip
+                              label={m.result}
+                              size="small"
+                              color={m.result === 'Distinction' ? 'primary' : 'default'}
+                              variant={m.result === 'Distinction' ? 'filled' : 'outlined'}
+                            />
+                          </Box>
+                        </Grid>
                       ))}
-                    </Box>
+                    </Grid>
                   </Box>
                 )}
 
                 {stage.coursework && (
-                  <Box className="education-coursework">
-                    <Typography className="education-detail-heading">Relevant coursework</Typography>
-                    <Box component="ul">
-                      {stage.coursework.map((item) => (
-                        <Box component="li" key={item}>{item}</Box>
-                      ))}
-                    </Box>
+                  <Box sx={{ mt: 1 }}>
+                    {stage.coursework.map((item) => (
+                      <Box key={item} sx={{ display: 'flex', gap: 1.25, alignItems: 'flex-start', mt: 1 }}>
+                        <CheckCircleIcon color="primary" fontSize="small" sx={{ mt: 0.3 }} />
+                        <Typography variant="body2" color="text.secondary">
+                          {item}
+                        </Typography>
+                      </Box>
+                    ))}
                   </Box>
                 )}
-              </Box>
-            </Paper>
+              </Paper>
+            </Box>
           ))}
-        </Box>
+        </Stack>
       </Container>
     </Box>
   );
