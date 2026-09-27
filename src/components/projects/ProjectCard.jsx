@@ -9,8 +9,6 @@ import {
   Chip,
   Stack,
   Box,
-  IconButton,
-  Tooltip,
 } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
@@ -21,6 +19,7 @@ import AnalyticsIcon from '@mui/icons-material/Analytics';
 import StorageIcon from '@mui/icons-material/Storage';
 import PersonIcon from '@mui/icons-material/Person';
 import GroupsIcon from '@mui/icons-material/Groups';
+import QueueMusicIcon from '@mui/icons-material/QueueMusic';
 import TechnologyChip from '../common/TechnologyChip';
 
 // Icon per project category, used for the cover artwork when a project has no
@@ -31,8 +30,11 @@ const categoryIcons = {
   'Data Wrangling': StorageIcon,
 };
 
-// Secondary destinations as compact icon buttons, so a card is not dominated
-// by a row of up to five text buttons.
+const projectIcons = {
+  'playlist-port-spotify-mover': QueueMusicIcon,
+};
+
+// Visible labels distinguish each external destination without requiring hover.
 function secondaryLinks(project) {
   return [
     project.repositoryUrl && {
@@ -73,7 +75,7 @@ export default function ProjectCard({ project }) {
   const visibleTech = (project.technologies || []).slice(0, 6);
   const hiddenCount = (project.technologies || []).length - visibleTech.length;
   const links = secondaryLinks(project);
-  const CategoryIcon = categoryIcons[project.category] || WebIcon;
+  const CoverIcon = projectIcons[project.slug] || categoryIcons[project.category] || WebIcon;
   const isTeam = Boolean(project.role && /team/i.test(project.role));
   const RoleIcon = isTeam ? GroupsIcon : PersonIcon;
 
@@ -129,7 +131,7 @@ export default function ProjectCard({ project }) {
                 'linear-gradient(115deg, rgba(255,255,255,0.16) 0%, rgba(255,255,255,0) 45%)',
             }}
           />
-          <CategoryIcon
+          <CoverIcon
             aria-hidden="true"
             sx={{ fontSize: 56, color: 'rgba(255,255,255,0.9)', position: 'relative' }}
           />
@@ -209,7 +211,7 @@ export default function ProjectCard({ project }) {
         </Stack>
       </CardContent>
 
-      <CardActions sx={{ px: 2, pb: 2, gap: 0.5, alignItems: 'center' }}>
+      <CardActions sx={{ px: 2, pb: 2, gap: 1, alignItems: 'center', flexWrap: 'wrap' }}>
         <Button
           component="a"
           href={`/projects/${project.slug}`}
@@ -224,22 +226,21 @@ export default function ProjectCard({ project }) {
           View Case Study
         </Button>
 
-        {/* Secondary destinations as icon buttons with tooltips + a11y labels. */}
-        <Box sx={{ ml: 'auto', display: 'flex', alignItems: 'center' }}>
+        <Box sx={{ ml: 'auto', display: 'flex', alignItems: 'center', gap: 1, flexWrap: 'wrap' }}>
           {links.map((link) => (
-            <Tooltip key={link.key} title={link.label}>
-              <IconButton
-                component="a"
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                size="small"
-                aria-label={`${link.label} — ${project.name}`}
-                sx={{ color: 'text.secondary' }}
-              >
-                {link.icon}
-              </IconButton>
-            </Tooltip>
+            <Button
+              key={link.key}
+              component="a"
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              size="small"
+              variant="outlined"
+              startIcon={link.icon}
+              aria-label={`${link.label} — ${project.name}`}
+            >
+              {link.label}
+            </Button>
           ))}
         </Box>
       </CardActions>
