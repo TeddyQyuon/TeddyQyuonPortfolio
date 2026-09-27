@@ -270,4 +270,37 @@ export const projects = [
     demoUrl: null,
     reportUrl: null,
   },
+  {
+    id: 5,
+    slug: 'playlist-port-spotify-mover',
+    name: 'Playlist Port — Spotify Playlist Mover',
+    category: 'Full-Stack',
+    type: 'Personal MVP',
+    role: 'Personal project (AI-assisted MVP)',
+    summary:
+      'A React and Express app that copies an owned or collaborative Spotify playlist to a new private playlist in the same account or a second account. The public demo shows the workflow; Spotify sign-in awaits owner configuration.',
+    problem:
+      'Moving playlists between Spotify accounts takes manual re-creation, and large playlists are easy to copy incompletely or out of order.',
+    solution:
+      'Connect a source account through Spotify OAuth, select a playlist, choose the same or a second destination account, and create a private copy. The app reads every playlist page, keeps item order, writes in Spotify-sized batches, and reports items that cannot be copied.',
+    technologies: ['React', 'Vite', 'JavaScript', 'Node.js', 'Express.js', 'Spotify Web API', 'REST APIs'],
+    features: [
+      'Spotify OAuth connection for source and optional destination account',
+      'Owned and collaborative playlist selection with pagination',
+      'Private playlist creation with ordered track and episode copies',
+      'Skipped-item and partial-transfer reporting',
+      'Encrypted HttpOnly session cookies for serverless hosting',
+    ],
+    myContribution:
+      'I chose the first-release scope and shaped the Spotify-to-Spotify transfer flow from my React and JavaScript learning. I developed this MVP with AI assistance and am validating it against Spotify developer-account limits.',
+    architecture: ['React + Vite frontend', 'Express REST API', 'Spotify OAuth + Web API'],
+    challenges:
+      'Handling two account connections, Spotify playlist pagination and write limits, and preserving sign-in state across serverless requests.',
+    learnings:
+      'How an OAuth flow, protected API routes and paginated third-party data fit together in a full-stack app.',
+    screenshots: [],
+    repositoryUrl: null,
+    demoUrl: 'https://playlist-port-nine.vercel.app/',
+    reportUrl: null,
+  },
 ];
