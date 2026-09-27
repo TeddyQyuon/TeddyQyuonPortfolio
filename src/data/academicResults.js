@@ -53,8 +53,8 @@ export const recentHighlights = [
   {
     module: 'Data Wrangling',
     grade: 'A',
-    evidence: 'Data Wrangling project',
-    href: '/projects/nanyang-trading-data-wrangling',
+    evidence: 'Module grade shown in semester results',
+    href: null,
   },
   {
     module: 'Full Stack Application Development',

@@ -115,9 +115,15 @@ export default function AcademicProgressSection() {
               <Box sx={{ border: 1, borderColor: 'divider', borderRadius: 2, p: 1.5 }}>
                 <Chip label={h.grade} size="small" color="primary" sx={{ mb: 1 }} />
                 <Typography variant="subtitle2">{h.module}</Typography>
-                <Link href={h.href} variant="body2">
-                  {h.evidence}
-                </Link>
+                {h.href ? (
+                  <Link href={h.href} variant="body2">
+                    {h.evidence}
+                  </Link>
+                ) : (
+                  <Typography variant="body2" color="text.secondary">
+                    {h.evidence}
+                  </Typography>
+                )}
               </Box>
             </Grid>
           ))}

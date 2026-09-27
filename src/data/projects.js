@@ -6,15 +6,13 @@
 // - Restaurant Ordering / Feedback System is excluded (sister's work).
 //
 // Screenshots are real figures taken from the author's own submitted reports.
-// Two later project cards use labelled illustrative covers, never presented as screenshots.
+// Projects without screenshots use a category or project-specific icon cover.
 import caloriesVsDuration from '../assets/images/projects/gym-calories-predictive-analysis/calories-vs-duration.png';
 import knimeWorkflow from '../assets/images/projects/gym-calories-predictive-analysis/knime-preparation-workflow.png';
 import trainValidation from '../assets/images/projects/gym-calories-predictive-analysis/train-validation-partition.png';
 import caloriesByWorkout from '../assets/images/projects/gym-calories-predictive-analysis/calories-by-workout-type.png';
 import modelComparisonChart from '../assets/images/projects/gym-calories-predictive-analysis/model-comparison.png';
 import leaveSignIn from '../assets/images/projects/annual-leave/sign-in-rbac.png';
-import nanyangTradingCover from '../assets/images/projects/nanyang-trading-cover.webp';
-import fullStackCourseCover from '../assets/images/projects/full-stack-course-cover.webp';
 
 export const projects = [
   {
@@ -164,113 +162,6 @@ export const projects = [
     reportUrl: '/reports/IT2214_Gym_Predictive_Analysis_WaiYanHponeLat.pdf',
   },
   {
-    id: 3,
-    slug: 'nanyang-trading-data-wrangling',
-    name: 'Nanyang Trading Company Data Wrangling',
-    category: 'Data Wrangling',
-    role: 'Individual assignment',
-    type: 'Academic data project',
-    summary:
-      'Integration and cleaning of four regional customer datasets into a single analysis-ready customer file with privacy handling and derived analytical variables.',
-    problem:
-      'Four regional files (East, North, South, West) needed to be integrated, cleaned, anonymised and transformed into one consistent customer dataset for analysis.',
-    solution:
-      'Built a KNIME data mashup that integrated the four files, added Region, cleaned text and names, handled duplicates and invalid values, applied privacy suppression, derived analytical fields and produced a cleaned output dataset with documentation.',
-    dataset:
-      'Source files: East 364 rows, North 408 rows, South 347 rows, West 387 rows. Total raw records: 1,506.',
-    dataPreparation:
-      'Integrated four regional datasets with Region derivation, text trimming, name splitting, 6 duplicate records removed, invalid/inconsistent values corrected (approx. 12 birth-year, 11 income, 19 purchase-count, 25 spending-value corrections — corrected, not deleted), SSN anonymised with names/birthdate suppressed where required.',
-    models: null,
-    results:
-      'Final customer dataset: 1,500 records. Derived fields: Age, Age Group, Income Band, Credit Card Status, Average Spend per Purchase. Produced cleaned output data plus analysis/visualisations.',
-    technologies: ['KNIME'],
-    features: [
-      'Four-region integration (1,506 raw records)',
-      'Region derivation and data mashup',
-      'Duplicate handling (6 removed → 1,500 final)',
-      'Value corrections with audit trail',
-      'Privacy: SSN anonymisation, name/birthdate suppression',
-      'Derived: Age, Age Group, Income Band, Card Status, Avg Spend',
-    ],
-    myContribution:
-      'Individually completed assignment. I built the KNIME integration/cleaning/transformation workflow, verified row counts through each stage, applied privacy steps and derived the analytical variables.',
-    architecture: ['Regional Excel sources', 'KNIME mashup + clean + transform', 'Cleaned customer dataset'],
-    challenges:
-      'Reconciling inconsistent formats across four files while preserving a verifiable row count, and correcting invalid values without silently dropping records.',
-    learnings:
-      'Planning a mashup-clean-transform sequence, tracking counts at each stage, and documenting corrections and privacy decisions for reproducibility.',
-    screenshots: [],
-    coverImage: {
-      src: nanyangTradingCover,
-      alt: 'Illustrative artwork showing regional source data being combined into one cleaned dataset; not a project screenshot',
-    },
-    repositoryUrl: null,
-    demoUrl: null,
-    reportUrl: null,
-  },
-  {
-    id: 4,
-    slug: 'full-stack-course-practical',
-    name: 'Full-Stack Course Practical (Tutorials App)',
-    category: 'Full-Stack',
-    role: 'Individual coursework',
-    type: 'Course practical',
-    summary:
-      'Progressive Full-Stack Development practical: a tutorial/learning application with React frontend, Express REST API, MySQL database, authentication and file upload.',
-    problem:
-      'Learn full-stack delivery end-to-end through guided practicals: listing, search, CRUD, authentication, ownership rules and image upload.',
-    solution:
-      'Built tutorial listing with search, add/retrieve-by-ID/edit/delete via dynamic React Router paths and Axios integration, Formik/Yup validation, JWT login with ownership authorization, and Multer image upload with preview and size validation.',
-    technologies: [
-      'React',
-      'Vite',
-      'JavaScript',
-      'Material UI',
-      'React Router',
-      'Axios',
-      'Formik',
-      'Yup',
-      'Node.js',
-      'Express.js',
-      'Sequelize ORM',
-      'MySQL',
-      'JWT',
-      'bcrypt',
-      'Multer',
-    ],
-    features: [
-      'Tutorial listing with search',
-      'Add / retrieve by ID / edit / delete',
-      'Dynamic routes with useParams and useNavigate',
-      'Formik + Yup client-side validation',
-      'Registration, login and JWT auth',
-      'Ownership authorization middleware',
-      'React Context + Axios interceptors + localStorage tokens',
-      'Image upload with preview and size validation',
-    ],
-    myContribution:
-      'Completed as guided coursework practicals. Scope reflects module exercises I personally worked through; presented as a practical, not a large independent product.',
-    architecture: [
-      'React frontend',
-      'REST API',
-      'Node.js + Express',
-      'Sequelize',
-      'MySQL',
-    ],
-    challenges:
-      'Connecting each layer correctly — routing params to API calls, validation errors to form state, and tokens to protected routes — while debugging with Postman and DevTools.',
-    learnings:
-      'How frontend state, REST conventions, ORM models and auth middleware fit together in one deployable CRUD system.',
-    screenshots: [],
-    coverImage: {
-      src: fullStackCourseCover,
-      alt: 'Illustrative artwork representing a frontend, API and database flow; not a project screenshot',
-    },
-    repositoryUrl: null,
-    demoUrl: null,
-    reportUrl: null,
-  },
-  {
     id: 5,
     slug: 'playlist-port-spotify-mover',
     name: 'Playlist Port — Spotify Playlist Mover',
@@ -278,7 +169,7 @@ export const projects = [
     type: 'Personal MVP',
     role: 'Personal project (AI-assisted MVP)',
     summary:
-      'A React and Express app that copies an owned or collaborative Spotify playlist to a new private playlist in the same account or a second account. The public demo shows the workflow; Spotify sign-in awaits owner configuration.',
+      'A React and Express app that copies an owned or collaborative Spotify playlist to a new private playlist in the same account or a second account. Spotify sign-in is available to accounts on the app\'s Development Mode allowlist.',
     problem:
       'Moving playlists between Spotify accounts takes manual re-creation, and large playlists are easy to copy incompletely or out of order.',
     solution:

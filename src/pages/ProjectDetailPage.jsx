@@ -13,8 +13,6 @@ import {
   ListItem,
   ListItemButton,
   ListItemText,
-  IconButton,
-  Tooltip,
 } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
@@ -66,19 +64,19 @@ export default function ProjectDetailPage() {
     project.demoUrl && {
       key: 'demo',
       href: project.demoUrl,
-      label: 'Live Demo',
+      label: 'Live demo',
       icon: <LaunchIcon fontSize="small" />,
     },
     project.apiUrl && {
       key: 'api',
       href: project.apiUrl,
-      label: 'API',
+      label: 'REST API',
       icon: <LaunchIcon fontSize="small" />,
     },
     project.reportUrl && {
       key: 'report',
       href: project.reportUrl,
-      label: 'Report',
+      label: 'Project report (PDF)',
       icon: <DescriptionIcon fontSize="small" />,
     },
   ].filter(Boolean);
@@ -433,21 +431,21 @@ export default function ProjectDetailPage() {
               {externalLinks.length > 0 && (
                 <>
                   <Divider sx={{ my: 2 }} />
-                  <Stack direction="row" spacing={0.5}>
+                  <Stack direction="row" spacing={1} useFlexGap sx={{ flexWrap: 'wrap' }}>
                     {externalLinks.map((link) => (
-                      <Tooltip key={link.key} title={link.label}>
-                        <IconButton
-                          component="a"
-                          href={link.href}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          size="small"
-                          aria-label={`${link.label} — ${project.name}`}
-                          sx={{ border: 1, borderColor: 'divider' }}
-                        >
-                          {link.icon}
-                        </IconButton>
-                      </Tooltip>
+                      <Button
+                        key={link.key}
+                        component="a"
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        size="small"
+                        variant="outlined"
+                        startIcon={link.icon}
+                        aria-label={`${link.label} — ${project.name}`}
+                      >
+                        {link.label}
+                      </Button>
                     ))}
                   </Stack>
                 </>
