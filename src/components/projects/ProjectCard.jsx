@@ -20,6 +20,8 @@ import StorageIcon from '@mui/icons-material/Storage';
 import PersonIcon from '@mui/icons-material/Person';
 import GroupsIcon from '@mui/icons-material/Groups';
 import QueueMusicIcon from '@mui/icons-material/QueueMusic';
+import SwapHorizIcon from '@mui/icons-material/SwapHoriz';
+import spotifyLogo from '../../assets/images/projects/spotify.svg';
 import TechnologyChip from '../common/TechnologyChip';
 
 // Icon per project category, used for the cover artwork when a project has no
@@ -28,10 +30,6 @@ const categoryIcons = {
   'Full-Stack': WebIcon,
   'Predictive Analytics': AnalyticsIcon,
   'Data Wrangling': StorageIcon,
-};
-
-const projectIcons = {
-  'playlist-port-spotify-mover': QueueMusicIcon,
 };
 
 // Visible labels distinguish each external destination without requiring hover.
@@ -75,7 +73,8 @@ export default function ProjectCard({ project }) {
   const visibleTech = (project.technologies || []).slice(0, 6);
   const hiddenCount = (project.technologies || []).length - visibleTech.length;
   const links = secondaryLinks(project);
-  const CoverIcon = projectIcons[project.slug] || categoryIcons[project.category] || WebIcon;
+  const CoverIcon = categoryIcons[project.category] || WebIcon;
+  const isPlaylistPort = project.slug === 'playlist-port-spotify-mover';
   const isTeam = Boolean(project.role && /team/i.test(project.role));
   const RoleIcon = isTeam ? GroupsIcon : PersonIcon;
 
@@ -131,10 +130,29 @@ export default function ProjectCard({ project }) {
                 'linear-gradient(115deg, rgba(255,255,255,0.16) 0%, rgba(255,255,255,0) 45%)',
             }}
           />
-          <CoverIcon
-            aria-hidden="true"
-            sx={{ fontSize: 56, color: 'rgba(255,255,255,0.9)', position: 'relative' }}
-          />
+          {isPlaylistPort ? (
+            <Stack
+              direction="row"
+              alignItems="center"
+              spacing={{ xs: 1.5, sm: 2 }}
+              aria-hidden="true"
+              sx={{ position: 'relative', color: '#fff' }}
+            >
+              <Box
+                component="img"
+                src={spotifyLogo}
+                alt=""
+                sx={{ width: { xs: 64, sm: 80 }, height: { xs: 64, sm: 80 } }}
+              />
+              <SwapHorizIcon sx={{ fontSize: { xs: 32, sm: 40 } }} />
+              <QueueMusicIcon sx={{ fontSize: { xs: 64, sm: 80 } }} />
+            </Stack>
+          ) : (
+            <CoverIcon
+              aria-hidden="true"
+              sx={{ fontSize: 56, color: 'rgba(255,255,255,0.9)', position: 'relative' }}
+            />
+          )}
           <Typography
             variant="overline"
             sx={{
