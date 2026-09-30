@@ -179,6 +179,7 @@ export const projects = [
       'Spotify OAuth connection for source and optional destination account',
       'Owned and collaborative playlist selection with pagination',
       'Private playlist creation with ordered track and episode copies',
+      'Destination playlist item count and order verification',
       'Skipped-item and partial-transfer reporting',
       'Encrypted HttpOnly session cookies for serverless hosting',
     ],
@@ -190,7 +191,7 @@ export const projects = [
     learnings:
       'How an OAuth flow, protected API routes and paginated third-party data fit together in a full-stack app.',
     screenshots: [],
-    repositoryUrl: null,
+    repositoryUrl: 'https://github.com/TeddyQyuon/playlist-port',
     demoUrl: 'https://playlist-port-nine.vercel.app/',
     reportUrl: null,
   },
