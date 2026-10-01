@@ -169,16 +169,16 @@ export const projects = [
     type: 'Personal MVP',
     role: 'Personal project (AI-assisted MVP)',
     summary:
-      'A React and Express app that copies an owned or collaborative Spotify playlist to a new private playlist in the same account or a second account. Spotify sign-in is available to accounts on the app\'s Development Mode allowlist.',
+      'A React and Express app that copies an owned or collaborative Spotify playlist to a new playlist in the same account or a second account. Copies stay off the destination\'s public profile. Spotify sign-in is available to accounts on the app\'s Development Mode allowlist.',
     problem:
       'Moving playlists between Spotify accounts takes manual re-creation, and large playlists are easy to copy incompletely or out of order.',
     solution:
-      'Connect a source account through Spotify OAuth, select a playlist, choose the same or a second destination account, and create a private copy. The app reads every playlist page, keeps item order, writes in Spotify-sized batches, and reports items that cannot be copied.',
+      'Connect a source account through Spotify OAuth, select a playlist, choose the same or a second destination account, and create a new copy. The app reads every playlist page, keeps item order, writes in Spotify-sized batches, and reports items that cannot be copied. Restrict link access by choosing Make private in Spotify.',
     technologies: ['React', 'Vite', 'JavaScript', 'Node.js', 'Express.js', 'Spotify Web API', 'REST APIs'],
     features: [
       'Spotify OAuth connection for source and optional destination account',
       'Owned and collaborative playlist selection with pagination',
-      'Private playlist creation with ordered track and episode copies',
+      'Playlist copies hidden from the public profile, with ordered tracks and episodes',
       'Destination playlist item count and order verification',
       'Skipped-item and partial-transfer reporting',
       'Encrypted HttpOnly session cookies for serverless hosting',
