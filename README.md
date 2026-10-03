@@ -18,7 +18,7 @@ No backend and no database are required for this version. All content is stored 
 
 ## Main Features
 
-- Single-page homepage with Hero, About, Skills, Projects, Education, Academic Progress, Resume and Contact sections
+- Single-page homepage with Hero, Projects, About, Skills, Education, Academic Progress, Resume and Contact sections
 - Dynamic project detail pages (`/projects/:slug`) with case-study content
 - Responsive navigation with mobile menu
 - Real technology logos from Devicon for verified technologies; concepts without a brand icon remain text
@@ -103,3 +103,16 @@ Deployed on **Vercel** (hosting platform only — not presented as a development
 ## Asset provenance
 
 The React, Node.js and other technology marks are original Devicon SVGs; their source is recorded in `src/assets/images/technology/README.md`. The two conceptual project covers are labelled as illustrations on cards and detail pages. Actual project screenshots are kept separate. The résumé thumbnail is rendered from the same public PDF that the buttons open and download.
+
+## Portfolio redesign — October 2026
+
+Personal projects lead the homepage and case-study navigation: MeterWise, then
+Playlist Port. The two school projects follow: Annual Leave Management and
+Gym Calories Predictive Analysis. Explicit projectGroup and displayOrder fields
+in src/data/projects.js control this order. Full project descriptions, ownership
+and AI-assistance notes remain in the case studies.
+
+The layout uses a shared restrained theme, smaller corner radii, compact skill
+groups with the original technology logos, and responsive project previews.
+The Playlist Port preview is a real screenshot from the deployed app; provenance
+is recorded in src/assets/images/projects/playlist-port-source.md.
