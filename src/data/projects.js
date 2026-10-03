@@ -13,6 +13,8 @@ import trainValidation from '../assets/images/projects/gym-calories-predictive-a
 import caloriesByWorkout from '../assets/images/projects/gym-calories-predictive-analysis/calories-by-workout-type.png';
 import modelComparisonChart from '../assets/images/projects/gym-calories-predictive-analysis/model-comparison.png';
 import leaveSignIn from '../assets/images/projects/annual-leave/sign-in-rbac.png';
+import meterwiseOverview from '../assets/images/projects/meterwise/energy-overview.jpg';
+import meterwiseImports from '../assets/images/projects/meterwise/csv-validation.jpg';
 
 export const projects = [
   {
@@ -193,6 +195,68 @@ export const projects = [
     screenshots: [],
     repositoryUrl: 'https://github.com/TeddyQyuon/playlist-port',
     demoUrl: 'https://playlist-port-nine.vercel.app/',
+    reportUrl: null,
+  },
+  {
+    id: 6,
+    slug: 'meterwise-building-energy-analytics',
+    name: 'MeterWise — Building Energy Analytics',
+    category: 'Full-Stack',
+    type: 'Personal portfolio MVP',
+    role: 'AI-assisted personal project',
+    summary:
+      'A building electricity dashboard for understanding consumption, estimated costs, missing readings and tenant meter mappings, with validated CSV imports and an investigation queue.',
+    problem:
+      'Meter readings spread across files make it difficult to compare tenant consumption, distinguish missing intervals from real zero usage, and track follow-up on unusual readings.',
+    solution:
+      'A React dashboard connects hourly electricity readings to registered meters and tenants. Facilities managers can validate CSV files, review consumption and coverage, investigate rule-based alerts, and export daily reports. A read-only tenant demo shows the server-enforced view boundaries.',
+    dataset:
+      'Synthetic hourly electricity readings for six meters, three tenants and shared building areas. Timestamps are stored in UTC and grouped in Asia/Singapore. The configured S$0.285/kWh tariff is fictional; costs exclude taxes and other fees. No employer, client or live building data is used.',
+    dataPreparation:
+      'CSV validation checks registered meter IDs, valid timezone-aware timestamps, completed hourly intervals, non-negative consumption and duplicate meter/timestamp pairs. Missing readings remain visible rather than being estimated.',
+    results:
+      'Version 1.1 passed 11 automated calculation, workflow and security tests plus TypeScript and production build checks. Cloud-browser checks exercised imports, report downloads, tenant filtering, invalid-date exports and 390 px/768 px layouts. The npm audit reported zero known dependency vulnerabilities after the update. Browser testing used the local Express/SQLite demo; production D1 and a running MySQL server were not tested through the browser.',
+    technologies: [
+      'React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Node.js', 'Express.js',
+      'SQL', 'SQLite', 'Cloudflare D1', 'Sequelize ORM', 'MySQL',
+    ],
+    features: [
+      'Consumption and estimated-cost charts with equal-length period comparisons',
+      'Meter directory, tenant mappings and received-versus-expected interval coverage',
+      'CSV preview with row-specific errors, duplicate handling and import history',
+      'Rule-based consumption and missing-data alerts with investigation notes',
+      'Daily CSV reports and a read-only tenant demo view',
+      'Responsive navigation with keyboard focus handling and accessible chart data tables',
+      'Bounded JSON uploads, workspace-scoped database queries and security response headers',
+    ],
+    myContribution:
+      'I selected this personal portfolio project and directed its building-energy workflow, UI improvements and security review. I built and validated the MVP with AI assistance, including cloud-browser checks and automated tests. This is a synthetic learning project, not a deployed client system.',
+    architecture: [
+      'React + Vite dashboard with shared TypeScript analytics and validation',
+      'Shared REST API with workspace scope and manager/tenant demo checks',
+      'Hosted Worker + Cloudflare D1; local Express + SQLite demo',
+      'Optional Sequelize/MySQL adapter supplied; live MySQL integration not tested',
+    ],
+    challenges:
+      'Keeping Singapore reporting dates consistent with UTC readings, counting expected intervals accurately, handling repeated imports safely, and making filter/loading states clear enough to prevent exporting stale totals.',
+    learnings:
+      'How data quality, tenant scope, timestamp rules and accessible dashboard states fit together in an energy analytics workflow, and how to document security fixes with repeatable tests.',
+    screenshots: [
+      {
+        src: meterwiseOverview,
+        alt: 'MeterWise energy overview showing synthetic electricity consumption, estimated SGD cost, data coverage and a daily chart.',
+        caption: 'Version 1.1 dashboard — real screenshot of the synthetic local demo.',
+      },
+      {
+        src: meterwiseImports,
+        alt: 'MeterWise CSV validation preview with one valid reading, two duplicate rows and one invalid meter ID.',
+        caption: 'Validation separates new readings, duplicate intervals and invalid rows before import.',
+      },
+    ],
+    repositoryUrl: null,
+    demoUrl: 'https://meterwise-teddy.teddyhpone007.chatgpt.site',
+    demoLabel: 'Private demo',
+    demoAccessNote: 'The interactive demo is owner-private and requires the authorised ChatGPT account. Public visitors can review the screenshots and case study here.',
     reportUrl: null,
   },
 ];
