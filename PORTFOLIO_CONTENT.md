@@ -69,3 +69,11 @@ Excluded: PostgreSQL/SQLite (unless personally completed and comfortable explain
 4. Add real screenshots with alt text
 5. Place résumé PDF in `public/resume/`
 6. Add `public/favicon.png`
+
+## MeterWise addition — 3 October 2026
+
+- Personal, AI-assisted portfolio MVP with synthetic electricity data; no employer/client dataset or fabricated business impact.
+- Source and evidence: the existing MeterWise Site repository, `VERIFICATION.md`, `SECURITY.md`, and real version 1.1 cloud-browser screenshots.
+- Version 1.1: 11 automated tests pass, TypeScript/build pass, and npm audit reports 0 known dependency vulnerabilities. The case study states the Express/SQLite browser-testing boundary and the untested live MySQL adapter.
+- Interactive demo is owner-private. Its link is visibly labelled Private demo and the access note explains the restriction. No public GitHub repository URL is invented.
+- Existing Annual Leave, Gym analysis and Playlist Port entries remain in place. Project-specific technologies do not automatically add unverified personal skills to the global skills list.
