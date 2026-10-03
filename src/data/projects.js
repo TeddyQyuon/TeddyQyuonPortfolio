@@ -15,10 +15,16 @@ import modelComparisonChart from '../assets/images/projects/gym-calories-predict
 import leaveSignIn from '../assets/images/projects/annual-leave/sign-in-rbac.png';
 import meterwiseOverview from '../assets/images/projects/meterwise/energy-overview.jpg';
 import meterwiseWorkOrders from '../assets/images/projects/meterwise/work-order-audit.jpg';
+import playlistPortHome from '../assets/images/projects/playlist-port-live-home.jpg';
 
-export const projects = [
+const projectData = [
   {
     id: 1,
+    projectGroup: 'school',
+    displayOrder: 1,
+    cardSummary: 'A staff leave system with two-stage approval, delegated approvers, notifications and an auditable request history.',
+    cardContribution: 'Member 3: approval workflows, delegation, audit history and notifications.',
+    cardTechnologies: ['React', 'Node.js', 'Express.js', 'MySQL'],
     slug: 'annual-leave-management',
     name: 'Annual Leave Management System',
     category: 'Full-Stack',
@@ -81,6 +87,11 @@ export const projects = [
   },
   {
     id: 2,
+    projectGroup: 'school',
+    displayOrder: 2,
+    cardSummary: 'Prepared 950 valid gym records and compared four regression models to predict calories burned on a consistent validation split.',
+    cardContribution: 'Individual project: data preparation, modelling, evaluation and the report.',
+    cardTechnologies: ['KNIME', 'SAS Viya'],
     slug: 'gym-calories-predictive-analysis',
     name: 'Gym Calories Predictive Analysis',
     category: 'Predictive Analytics',
@@ -165,6 +176,14 @@ export const projects = [
   },
   {
     id: 5,
+    projectGroup: 'personal',
+    displayOrder: 2,
+    displayName: 'Playlist Port',
+    cardSubtitle: 'Spotify playlist transfer',
+    cardSummary: 'Copy Spotify playlists between accounts with OAuth sign-in, preserved track order and transfer verification.',
+    cardContribution: 'Project scope, transfer flow and full-stack development with AI assistance.',
+    cardTechnologies: ['React', 'Vite', 'Node.js', 'Express.js', 'Spotify Web API'],
+    cardNote: 'Free & Premium accounts · Spotify developer allowlist required.',
     slug: 'playlist-port-spotify-mover',
     name: 'Playlist Port — Spotify Playlist Mover',
     category: 'Full-Stack',
@@ -192,13 +211,25 @@ export const projects = [
       'Handling two account connections, Spotify playlist pagination and write limits, and preserving sign-in state across serverless requests.',
     learnings:
       'How an OAuth flow, protected API routes and paginated third-party data fit together in a full-stack app.',
-    screenshots: [],
+    screenshots: [{
+      src: playlistPortHome,
+      alt: 'Live Playlist Port interface with Spotify service selection and playlist transfer introduction.',
+      caption: 'Public interface captured from the deployed Vercel app on 4 October 2026. Spotify is available; other music services are marked as coming later.',
+    }],
     repositoryUrl: 'https://github.com/TeddyQyuon/playlist-port',
     demoUrl: 'https://playlist-port-nine.vercel.app/',
     reportUrl: null,
   },
   {
     id: 6,
+    projectGroup: 'personal',
+    displayOrder: 1,
+    displayName: 'MeterWise',
+    cardSubtitle: 'Singapore estate energy operations',
+    cardSummary: 'An estate energy dashboard connecting public HDB building data, simulated meter readings and an evidence-based maintenance workflow.',
+    cardContribution: 'Project direction, energy workflows, data validation and deployment, with AI assistance.',
+    cardTechnologies: ['React', 'Vite', 'Node.js', 'Express.js', 'SQL'],
+    cardNote: 'Independent pilot · operational data is simulated.',
     slug: 'meterwise-building-energy-analytics',
     name: 'MeterWise — Singapore Estate Energy Operations',
     category: 'Full-Stack',
@@ -260,3 +291,9 @@ export const projects = [
     reportUrl: null,
   },
 ];
+
+// Shared explicit order for the homepage and previous/next case-study navigation.
+export const projects = [...projectData].sort((a, b) => {
+  const groupOrder = { personal: 0, school: 1 };
+  return groupOrder[a.projectGroup] - groupOrder[b.projectGroup] || a.displayOrder - b.displayOrder;
+});

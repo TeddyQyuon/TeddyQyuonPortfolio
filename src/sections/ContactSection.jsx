@@ -2,7 +2,6 @@ import { useState } from 'react';
 import {
   Typography,
   Container,
-  Paper,
   Button,
   Grid,
   Box,
@@ -57,13 +56,13 @@ export default function ContactSection() {
 
   return (
     <Box sx={{ bgcolor: 'background.paper', borderTop: 1, borderColor: 'divider' }}>
-      <Container maxWidth="lg" sx={{ py: { xs: 6, md: 8 } }} id="contact" component="section">
+      <Container maxWidth="lg" className="section-shell" id="contact" component="section">
         <SectionHeading
           eyebrow="Contact"
-          title="Contact"
-          subtitle="Looking for a 1-year technology internship — the fastest way to reach me is by email"
+          title="Let's build something useful."
+          subtitle="Open to 1-year technology internships in 2027."
         />
-        <Paper variant="outlined" sx={{ p: { xs: 2.5, md: 4 }, maxWidth: 780 }}>
+        <Box className="contact-surface" sx={{ maxWidth: 860 }}>
           <Typography paragraph color="text.secondary" sx={{ maxWidth: 640 }}>
             If you have an internship opportunity in Software Engineering,
             Full-Stack Development, Data/Analytics or a related technical role —
@@ -136,7 +135,7 @@ export default function ContactSection() {
               </Button>
             </Grid>
           </Grid>
-        </Paper>
+        </Box>
         <Snackbar
           open={copied}
           autoHideDuration={2500}

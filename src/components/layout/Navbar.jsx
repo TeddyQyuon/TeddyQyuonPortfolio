@@ -17,7 +17,6 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import DescriptionIcon from '@mui/icons-material/Description';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
@@ -58,6 +57,7 @@ export default function Navbar() {
           <Box
             component={Link}
             to="/"
+            aria-label={`${personalInfo.name} portfolio homepage`}
             sx={{
               display: 'flex',
               alignItems: 'center',
@@ -66,41 +66,23 @@ export default function Navbar() {
               color: 'inherit',
             }}
           >
-            <Box
-              aria-hidden="true"
-              sx={{
-                width: 36,
-                height: 36,
-                borderRadius: 2,
-                bgcolor: 'primary.main',
-                color: 'primary.contrastText',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontWeight: 800,
-                fontSize: '0.85rem',
-                letterSpacing: '0.02em',
-              }}
-            >
-              WY
-            </Box>
             <Box sx={{ lineHeight: 1.2 }}>
-              <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>
-                {personalInfo.name}
+              <Typography variant="subtitle1" sx={{ fontWeight: 700, fontSize: '1.25rem', letterSpacing: '-0.04em' }}>
+                teddy<Box component="span" sx={{ color: 'secondary.main' }}>.</Box>
               </Typography>
               <Typography
                 variant="caption"
                 color="text.secondary"
                 sx={{ display: { xs: 'none', sm: 'block' } }}
               >
-                Applied AI &amp; Analytics · NYP
+                Software &amp; data
               </Typography>
             </Box>
           </Box>
 
           {/* Desktop navigation */}
-          <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 0.5, alignItems: 'center' }}>
-            {sectionLinks.map((link) => {
+          <Box component="nav" aria-label="Main navigation" sx={{ display: { xs: 'none', md: 'flex' }, gap: 0.5, alignItems: 'center' }}>
+            {sectionLinks.filter((link) => link.id !== 'resume').map((link) => {
               const active = activeId === link.id;
               return (
                 <Button
@@ -139,10 +121,9 @@ export default function Navbar() {
               rel="noopener noreferrer"
               variant="contained"
               size="small"
-              startIcon={<DescriptionIcon fontSize="small" />}
               sx={{ ml: 1 }}
             >
-              Resume
+              Résumé
             </Button>
           </Box>
 
@@ -156,7 +137,7 @@ export default function Navbar() {
               variant="contained"
               size="small"
             >
-              Resume
+              Résumé
             </Button>
             <IconButton
               aria-label="Open navigation menu"
@@ -175,7 +156,7 @@ export default function Navbar() {
               // Intentionally NOT keepMounted: a kept-mounted drawer parks its
               // content off-screen but still in layout, which widens the
               // document on narrow viewports and creates a horizontal scroll.
-              PaperProps={{ sx: { width: 300, p: 2 } }}
+              PaperProps={{ component: 'nav', 'aria-label': 'Mobile navigation', sx: { width: 'min(320px, 100vw)', p: 2 } }}
             >
               <Box
                 sx={{
@@ -217,10 +198,9 @@ export default function Navbar() {
                   target="_blank"
                   rel="noopener noreferrer"
                   variant="contained"
-                  startIcon={<DescriptionIcon />}
                   fullWidth
                 >
-                  View Resume
+                  View résumé
                 </Button>
                 <Stack direction="row" spacing={1} sx={{ justifyContent: 'center' }}>
                   <IconButton
