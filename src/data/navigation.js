@@ -3,9 +3,9 @@
 // section list can never drift out of sync between them.
 
 export const sectionLinks = [
+  { label: 'Projects', id: 'projects' },
   { label: 'About', id: 'about' },
   { label: 'Skills', id: 'skills' },
-  { label: 'Projects', id: 'projects' },
   { label: 'Education', id: 'education' },
   { label: 'Resume', id: 'resume' },
   { label: 'Contact', id: 'contact' },
@@ -16,7 +16,7 @@ export const sectionIds = sectionLinks.map((link) => link.id);
 
 // Height of the sticky AppBar plus breathing room. Keep in sync with the
 // `scroll-margin-top` value in index.css.
-export const NAV_OFFSET = 76;
+export const NAV_OFFSET = 88;
 
 // Smooth-scrolls to a section, compensating for the sticky navbar.
 // Returns false when the section is not on the current page.
@@ -25,6 +25,7 @@ export function scrollToSection(id) {
   if (!target) return false;
 
   const top = target.getBoundingClientRect().top + window.scrollY - NAV_OFFSET;
-  window.scrollTo({ top, behavior: 'smooth' });
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  window.scrollTo({ top, behavior: reducedMotion ? 'auto' : 'smooth' });
   return true;
 }
