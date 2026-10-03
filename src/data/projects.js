@@ -14,7 +14,7 @@ import caloriesByWorkout from '../assets/images/projects/gym-calories-predictive
 import modelComparisonChart from '../assets/images/projects/gym-calories-predictive-analysis/model-comparison.png';
 import leaveSignIn from '../assets/images/projects/annual-leave/sign-in-rbac.png';
 import meterwiseOverview from '../assets/images/projects/meterwise/energy-overview.jpg';
-import meterwiseImports from '../assets/images/projects/meterwise/csv-validation.jpg';
+import meterwiseWorkOrders from '../assets/images/projects/meterwise/work-order-audit.jpg';
 
 export const projects = [
   {
@@ -200,63 +200,63 @@ export const projects = [
   {
     id: 6,
     slug: 'meterwise-building-energy-analytics',
-    name: 'MeterWise — Building Energy Analytics',
+    name: 'MeterWise — Singapore Estate Energy Operations',
     category: 'Full-Stack',
-    type: 'Personal portfolio MVP',
+    type: 'Independent public-housing pilot',
     role: 'AI-assisted personal project',
     summary:
-      'A building electricity dashboard for understanding consumption, estimated costs, missing readings and tenant meter mappings, with validated CSV imports and an investigation queue.',
+      'A Singapore estate operations pilot that combines real HDB building metadata with simulated common-service energy, solar accounting, CSV repairs and evidence-based maintenance.',
     problem:
-      'Meter readings spread across files make it difficult to compare tenant consumption, distinguish missing intervals from real zero usage, and track follow-up on unusual readings.',
+      'Estate teams need to compare lighting, lift and pump consumption across blocks, account for daytime solar, and follow up on exceptions without treating missing readings as zero usage or unverified alerts as equipment faults.',
     solution:
-      'A React dashboard connects hourly electricity readings to registered meters and tenants. Facilities managers can validate CSV files, review consumption and coverage, investigate rule-based alerts, and export daily reports. A read-only tenant demo shows the server-enforced view boundaries.',
+      'A React dashboard models six HDB blocks and 24 simulated service meters. Managers filter by town and block, repair missing CSV intervals, match solar and load for each block and hour, and assign inspections through completion and verification. An area-viewer preview is restricted by the server to two Ang Mo Kio blocks. The workflow is informed by public HDB Green Towns and SolarNova materials; it is not an official government project.',
     dataset:
-      'Synthetic hourly electricity readings for six meters, three tenants and shared building areas. Timestamps are stored in UTC and grouped in Asia/Singapore. The configured S$0.285/kWh tariff is fictional; costs exclude taxes and other fees. No employer, client or live building data is used.',
+      'Six real public HDB Property Information records from data.gov.sg cover Ang Mo Kio, Bishan and Tampines, totalling 620 dwelling units. The snapshot records source IDs, licence and retrieval date. All meter installations, electricity readings and maintenance records are simulated. UTC intervals are grouped in Asia/Singapore. S$0.285/kWh is illustrative, and the 0.402 kg CO₂/kWh factor is explicitly the historical EMA 2024 grid factor. No resident details or live agency systems are used.',
     dataPreparation:
-      'CSV validation checks registered meter IDs, valid timezone-aware timestamps, completed hourly intervals, non-negative consumption and duplicate meter/timestamp pairs. Missing readings remain visible rather than being estimated.',
+      'Public building metadata is kept separate from simulated operational records. CSV validation checks registered assets, timezone-aware completed hourly intervals, non-negative consumption, the fourteen-day demo window and duplicate meter/timestamp pairs. Missing intervals withhold derived grid, export, cost and carbon estimates. Solar surplus in one block or hour cannot cancel imports elsewhere.',
     results:
-      'Version 1.2 is live on Vercel with persistent Turso storage. All 14 automated calculation, workflow and security tests, frontend and NodeNext server TypeScript checks, and the production build passed. Ten live HTTP checks verified remote imports, reports, saved edits, tenant restrictions and separate visitor workspaces. Cloud-browser checks confirmed import history survives reload, coverage reaches 100%, CSV reports contain 42 daily meter rows, and tenant views expose two assigned meters. The npm audit reported zero known dependency vulnerabilities. Earlier local checks covered 390 px/768 px layouts; live MySQL and real meter hardware were not tested.',
+      'Version 2.0 runs on Vercel with persistent Turso storage. All 19 automated calculation, import, workflow and security tests, both TypeScript checks and the production build passed; npm audit reported zero known dependency advisories. Cloud-browser verification covered CSV repair, reload persistence, 100% coverage, maintenance assignment through verification, area restrictions and the centered review dialogs. Eleven production HTTP checks verified repairs, traceable six-block reports, maintenance evidence, stale-write rejection and visitor/area isolation. Live MySQL, real meter hardware, agency authentication and actual emissions reporting remain outside this pilot.',
     technologies: [
       'React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Node.js', 'Express.js',
       'SQL', 'SQLite', 'Vercel', 'Turso / libSQL', 'Sequelize ORM', 'MySQL',
     ],
     features: [
-      'Consumption and estimated-cost charts with equal-length period comparisons',
-      'Meter directory, tenant mappings and received-versus-expected interval coverage',
-      'CSV preview with row-specific errors, duplicate handling and import history',
-      'Rule-based consumption and missing-data alerts with investigation notes',
-      'Daily CSV reports and a read-only tenant demo view',
-      'Responsive navigation with keyboard focus handling and accessible chart data tables',
-      'Bounded JSON uploads, workspace-scoped database queries and security response headers',
+      'Real HDB public inventory: six blocks, three towns and 620 dwelling units',
+      'Simulated lighting, lift, water-pump and solar assets with per-block hourly energy balance',
+      'Missing-data safeguards, CSV gap repairs, duplicate handling and persistent import history',
+      'Assigned inspection workflow with evidence, verification and concurrent-update protection',
+      'Server-enforced area views and separate visitor workspaces',
+      'Traceable block CSV reports, historical carbon assumptions and a lighting-load scenario',
+      'Accessible chart tables, keyboard-operable dialogs and responsive navigation',
     ],
     myContribution:
-      'I selected this personal portfolio project and directed its building-energy workflow, UI improvements and security review. I built and validated the MVP with AI assistance, including cloud-browser checks and automated tests. This is a synthetic learning project, not a deployed client system.',
+      'I selected the project and directed its expansion from a building dashboard into a Singapore public-housing operations pilot. I built and validated the workflows with AI assistance, researched public government sources, and used automated and cloud-browser checks. This is an independent portfolio project, not commissioned work for HDB or a Town Council.',
     architecture: [
       'React + Vite dashboard with shared TypeScript analytics and validation',
-      'Shared REST API with workspace scope and manager/tenant demo checks',
+      'Workspace-scoped REST API, manager/area-viewer controls and version-checked audit events',
       'Vercel Node API + persistent Turso/libSQL storage; local Express + SQLite demo',
       'Optional Sequelize/MySQL adapter supplied; live MySQL integration not tested',
     ],
     challenges:
-      'Keeping Singapore reporting dates consistent with UTC readings, counting expected intervals accurately, handling repeated imports safely, and making filter/loading states clear enough to prevent exporting stale totals.',
+      'Distinguishing real public inventory from simulated equipment, matching solar and load without netting unrelated intervals, withholding incomplete estimates, and preventing competing maintenance updates from creating false audit evidence.',
     learnings:
-      'How data quality, tenant scope, timestamp rules and accessible dashboard states fit together in an energy analytics workflow, and how to document security fixes with repeatable tests.',
+      'How energy accounting, source provenance, data quality, area permissions and maintenance evidence fit into an estate operations workflow, and how to validate deployment behaviour without claiming real government integration.',
     screenshots: [
       {
         src: meterwiseOverview,
-        alt: 'MeterWise energy overview showing synthetic electricity consumption, estimated SGD cost, data coverage and a daily chart.',
-        caption: 'Version 1.2 on Vercel — real screenshot after importing eight missing readings into the synthetic workspace.',
+        alt: 'MeterWise Singapore estate dashboard showing common-service load, rooftop solar, derived grid import and meter coverage.',
+        caption: 'Version 2.0 on Vercel — real HDB building metadata with clearly labelled simulated estate energy.',
       },
       {
-        src: meterwiseImports,
-        alt: 'MeterWise CSV validation preview with one valid reading, two duplicate rows and one invalid meter ID.',
-        caption: 'Live Vercel validation separates one new reading, two duplicate intervals and one invalid meter before import.',
+        src: meterwiseWorkOrders,
+        alt: 'MeterWise maintenance queue showing a simulated pump inspection with verified status, an assigned review team and four workflow stages.',
+        caption: 'A simulated inspection records evidence through assignment, completion and a separate verification step. No real contractor is dispatched.',
       },
     ],
     repositoryUrl: null,
     demoUrl: 'https://meterwise-kappa.vercel.app/',
     demoLabel: 'Live demo',
-    demoAccessNote: 'Public Vercel demo with a separate synthetic workspace for each browser. The manager/tenant switch demonstrates server-enforced permissions; it is not real tenant authentication. Use sample data only.',
+    demoAccessNote: 'Independent pilot; not affiliated with HDB, any Town Council or the Singapore Government. Public building metadata is real; meters, readings and maintenance are simulated. Each browser has a separate demo workspace. The role switch previews area permissions, not real agency authentication. Use sample data only.',
     reportUrl: null,
   },
 ];
