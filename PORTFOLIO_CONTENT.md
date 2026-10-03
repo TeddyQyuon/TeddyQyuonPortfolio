@@ -73,7 +73,7 @@ Excluded: PostgreSQL/SQLite (unless personally completed and comfortable explain
 ## MeterWise addition — 3 October 2026
 
 - Personal, AI-assisted portfolio MVP with synthetic electricity data; no employer/client dataset or fabricated business impact.
-- Source and evidence: the existing MeterWise Site repository, `VERIFICATION.md`, `SECURITY.md`, and real version 1.1 cloud-browser screenshots.
-- Version 1.1: 11 automated tests pass, TypeScript/build pass, and npm audit reports 0 known dependency vulnerabilities. The case study states the Express/SQLite browser-testing boundary and the untested live MySQL adapter.
-- Interactive demo is owner-private. Its link is visibly labelled Private demo and the access note explains the restriction. No public GitHub repository URL is invented.
+- Source and evidence: the private MeterWise GitHub repository, `VERIFICATION.md`, `SECURITY.md`, and real version 1.2 screenshots captured from the public Vercel app.
+- Version 1.2: 14 automated tests, frontend/NodeNext TypeScript checks and build pass; npm audit reports 0 known dependency vulnerabilities. Ten production HTTP checks and cloud-browser imports, reload persistence, report downloads, tenant views and CSV validation use the live Vercel/Turso deployment. The case study distinguishes earlier local responsive checks and the untested live MySQL adapter/hardware.
+- Interactive demo is public at https://meterwise-kappa.vercel.app/ and is labelled Live demo. The access note explains synthetic per-browser workspaces and the demo role switch. The private source repository remains unlinked for public visitors.
 - Existing Annual Leave, Gym analysis and Playlist Port entries remain in place. Project-specific technologies do not automatically add unverified personal skills to the global skills list.
