@@ -1,154 +1,41 @@
-import { Typography, Container, Box, Link, IconButton, Grid } from '@mui/material';
+import { Typography, Container, Box, Grid, Stack, IconButton } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import EmailIcon from '@mui/icons-material/Email';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import { personalInfo } from '../../data/personalInfo';
 import { sectionLinks } from '../../data/navigation';
 import useSectionLink from '../../hooks/useSectionLink';
 
 export default function Footer() {
+  const { surfaces, onDark } = useTheme().custom;
   const handleSectionLink = useSectionLink();
-
   return (
-    <Box
-      component="footer"
-      sx={(theme) => ({
-        pt: 6,
-        pb: 4,
-        mt: 'auto',
-        borderTop: 1,
-        borderColor: 'divider',
-        bgcolor: theme.custom.surfaces.navy,
-        color: theme.custom.onDark.muted,
-      })}
-    >
-      <Container maxWidth="lg">
+    <Box component="footer" sx={{ bgcolor: surfaces.navy, color: 'common.white' }}>
+      <Container maxWidth="lg" sx={{ py: { xs: 5, md: 7 } }}>
         <Grid container spacing={4}>
-          <Grid item xs={12} md={5}>
-            <Typography variant="h6" sx={{ color: 'common.white', fontWeight: 700, mb: 1 }}>
-              {personalInfo.name}
-            </Typography>
-            <Typography
-              variant="body2"
-              sx={(theme) => ({ color: theme.custom.onDark.subtle, maxWidth: 360 })}
-            >
-              Year 2 Applied AI &amp; Analytics student at Nanyang Polytechnic,
-              seeking a 1-year technology internship in software, full-stack and
-              data/analytics roles.
-            </Typography>
-            <Box sx={{ mt: 2 }}>
-              <IconButton
-                component="a"
-                href={personalInfo.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub profile"
-                size="small"
-                sx={(theme) => ({
-                  mr: 1,
-                  color: theme.custom.onDark.muted,
-                  border: 1,
-                  borderColor: theme.custom.surfaces.slateBorder,
-                })}
-              >
-                <GitHubIcon fontSize="small" />
-              </IconButton>
-              <IconButton
-                component="a"
-                href={personalInfo.linkedinUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn profile"
-                size="small"
-                sx={(theme) => ({
-                  mr: 1,
-                  color: theme.custom.onDark.muted,
-                  border: 1,
-                  borderColor: theme.custom.surfaces.slateBorder,
-                })}
-              >
-                <LinkedInIcon fontSize="small" />
-              </IconButton>
-              <IconButton
-                component="a"
-                href={`mailto:${personalInfo.email}`}
-                aria-label="Send an email"
-                size="small"
-                sx={(theme) => ({
-                  color: theme.custom.onDark.muted,
-                  border: 1,
-                  borderColor: theme.custom.surfaces.slateBorder,
-                })}
-              >
-                <EmailIcon fontSize="small" />
-              </IconButton>
-            </Box>
+          <Grid item xs={12} md={6}>
+            <Typography variant="h6" gutterBottom>{personalInfo.name}</Typography>
+            <Typography variant="body2" sx={{ color: onDark.muted, maxWidth: 410 }}>Year 2 Applied AI &amp; Analytics student at Nanyang Polytechnic, seeking a 1-year technology internship in software, full-stack and data/analytics roles.</Typography>
+            <Stack direction="row" spacing={1} sx={{ mt: 2 }}>
+              <IconButton component="a" href={personalInfo.githubUrl} target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" sx={{ color: onDark.muted }}><GitHubIcon /></IconButton>
+              <IconButton component="a" href={personalInfo.linkedinUrl} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" sx={{ color: onDark.muted }}><LinkedInIcon /></IconButton>
+              <IconButton component="a" href={`mailto:${personalInfo.email}`} aria-label="Send an email" sx={{ color: onDark.muted }}><EmailOutlinedIcon /></IconButton>
+            </Stack>
           </Grid>
-
-          <Grid item xs={6} md={3}>
-            <Typography variant="subtitle2" sx={{ color: 'common.white', mb: 1.5 }}>
-              Navigate
-            </Typography>
-            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 0.75 }}>
-              {sectionLinks.map((link) => (
-                <Link
-                  key={link.id}
-                  href={`#${link.id}`}
-                  onClick={(event) => handleSectionLink(event, link.id)}
-                  underline="hover"
-                  variant="body2"
-                  sx={(theme) => ({ color: theme.custom.onDark.subtle, width: 'fit-content' })}
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </Box>
+          <Grid item xs={5} md={2}>
+            <Typography variant="subtitle2" sx={{ mb: 1 }}>Explore</Typography>
+            <nav aria-label="Footer navigation">{sectionLinks.map((link) => <a className="footer-link" href={`/#${link.id}`} key={link.id} onClick={(event) => handleSectionLink(event, link.id)}>{link.label}</a>)}</nav>
           </Grid>
-
-          <Grid item xs={6} md={4}>
-            <Typography variant="subtitle2" sx={{ color: 'common.white', mb: 1.5 }}>
-              Contact
-            </Typography>
-            <Typography
-              variant="body2"
-              sx={(theme) => ({ color: theme.custom.onDark.subtle, mb: 1 })}
-            >
-              {personalInfo.email}
-            </Typography>
-            <Typography
-              variant="body2"
-              sx={(theme) => ({ color: theme.custom.onDark.subtle })}
-            >
-              Singapore · Open to 1-year internship (2027)
-            </Typography>
+          <Grid item xs={7} md={4}>
+            <Typography variant="subtitle2" sx={{ mb: 1 }}>Get in touch</Typography>
+            <Typography variant="body2" sx={{ color: onDark.muted, overflowWrap: 'anywhere', mb: 1 }}>{personalInfo.email}</Typography>
+            <Typography variant="body2" sx={{ color: onDark.subtle }}>Singapore · 2027 internship</Typography>
           </Grid>
         </Grid>
-
-        <Box
-          sx={(theme) => ({
-            display: 'flex',
-            flexDirection: { xs: 'column', sm: 'row' },
-            alignItems: { xs: 'flex-start', sm: 'center' },
-            justifyContent: 'space-between',
-            gap: 1,
-            mt: 5,
-            pt: 3,
-            borderTop: 1,
-            borderColor: theme.custom.surfaces.navyBorder,
-          })}
-        >
-          <Typography
-            variant="body2"
-            sx={(theme) => ({ color: theme.custom.onDark.faint })}
-          >
-            © {new Date().getFullYear()} {personalInfo.name}. All rights reserved.
-          </Typography>
-          <Typography
-            variant="body2"
-            sx={(theme) => ({ color: theme.custom.onDark.faint })}
-          >
-            Built with React, Vite, MUI and React Router.
-          </Typography>
+        <Box sx={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: 1.5, mt: 5, pt: 3, borderTop: 1, borderColor: surfaces.navyBorder }}>
+          <Typography variant="caption" sx={{ color: onDark.subtle }}>© {new Date().getFullYear()} {personalInfo.name}. All rights reserved.</Typography>
+          <Typography variant="caption" sx={{ color: onDark.subtle }}>Built with React, Vite, MUI and React Router.</Typography>
         </Box>
       </Container>
     </Box>
