@@ -1,267 +1,39 @@
-import { useNavigate } from 'react-router-dom';
-import {
-  Card,
-  CardMedia,
-  CardContent,
-  CardActions,
-  Typography,
-  Button,
-  Chip,
-  Stack,
-  Box,
-} from '@mui/material';
+import { Link } from 'react-router-dom';
+import { Typography, Button } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
-import DescriptionIcon from '@mui/icons-material/Description';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import WebIcon from '@mui/icons-material/Web';
-import AnalyticsIcon from '@mui/icons-material/Analytics';
-import StorageIcon from '@mui/icons-material/Storage';
-import PersonIcon from '@mui/icons-material/Person';
-import GroupsIcon from '@mui/icons-material/Groups';
-import QueueMusicIcon from '@mui/icons-material/QueueMusic';
-import SwapHorizIcon from '@mui/icons-material/SwapHoriz';
-import spotifyLogo from '../../assets/images/projects/spotify.svg';
-import TechnologyChip from '../common/TechnologyChip';
+import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
+import CodeIcon from '@mui/icons-material/Code';
+import TechnologyLogo, { hasTechnologyLogo } from '../common/TechnologyLogo';
 
-// Icon per project category, used for the cover artwork when a project has no
-// screenshot. Keeps cards visually distinct without inventing imagery.
-const categoryIcons = {
-  'Full-Stack': WebIcon,
-  'Predictive Analytics': AnalyticsIcon,
-  'Data Wrangling': StorageIcon,
-};
-
-// Visible labels distinguish each external destination without requiring hover.
-function secondaryLinks(project) {
-  return [
-    project.repositoryUrl && {
-      key: 'repo',
-      href: project.repositoryUrl,
-      label: 'GitHub repository',
-      icon: <GitHubIcon fontSize="small" />,
-    },
-    project.demoUrl && {
-      key: 'demo',
-      href: project.demoUrl,
-      label: project.demoLabel || 'Live demo',
-      icon: <LaunchIcon fontSize="small" />,
-    },
-    project.apiUrl && {
-      key: 'api',
-      href: project.apiUrl,
-      label: 'REST API',
-      icon: <LaunchIcon fontSize="small" />,
-    },
-    project.reportUrl && {
-      key: 'report',
-      href: project.reportUrl,
-      label: 'Project report (PDF)',
-      icon: <DescriptionIcon fontSize="small" />,
-    },
-  ].filter(Boolean);
-}
-
-// Project card. Defensive rendering:
-// - no screenshot → branded category cover, project still reads correctly
-// - no repository/demo/report URL → link is not rendered (never fake "#" links)
-export default function ProjectCard({ project }) {
-  const navigate = useNavigate();
-  // Real screenshot first; otherwise a labelled illustrative cover when the
-  // project provides one; otherwise the branded category artwork below.
-  const cover = (project.screenshots && project.screenshots[0]) || project.coverImage;
-  const visibleTech = (project.technologies || []).slice(0, 6);
-  const hiddenCount = (project.technologies || []).length - visibleTech.length;
-  const links = secondaryLinks(project);
-  const CoverIcon = categoryIcons[project.category] || WebIcon;
-  const isPlaylistPort = project.slug === 'playlist-port-spotify-mover';
-  const isTeam = Boolean(project.role && /team/i.test(project.role));
-  const RoleIcon = isTeam ? GroupsIcon : PersonIcon;
-
+export default function ProjectCard({ project, number }) {
+  const cover = project.screenshots?.[0] || project.coverImage;
+  const personal = project.projectGroup === 'personal';
+  const route = `/projects/${project.slug}`;
+  const technologies = project.cardTechnologies || project.technologies || [];
   return (
-    <Card
-      sx={{
-        height: '100%',
-        display: 'flex',
-        flexDirection: 'column',
-        overflow: 'hidden',
-        transition: 'box-shadow 0.25s ease, transform 0.25s ease',
-        '&:hover': { boxShadow: 6, transform: 'translateY(-4px)' },
-      }}
-    >
-      {/* Cover: real screenshot when available, otherwise branded artwork. */}
-      {cover ? (
-        <CardMedia
-          component="img"
-          image={cover.src}
-          alt={cover.alt}
-          loading="lazy"
-          // `contain` rather than `cover`: these are data charts, and cropping
-          // to a 16:9 box would cut off axis labels and titles.
-          sx={{
-            aspectRatio: '16 / 9',
-            objectFit: 'contain',
-            width: '100%',
-            bgcolor: 'background.paper',
-          }}
-        />
-      ) : (
-        <Box
-          sx={(theme) => ({
-            aspectRatio: '16 / 9',
-            width: '100%',
-            position: 'relative',
-            overflow: 'hidden',
-            background:
-              theme.custom.gradients.category[project.category] ||
-              theme.custom.gradients.categoryFallback,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          })}
-        >
-          {/* Subtle sheen so the flat gradient reads with a little depth. */}
-          <Box
-            aria-hidden="true"
-            sx={{
-              position: 'absolute',
-              inset: 0,
-              background:
-                'linear-gradient(115deg, rgba(255,255,255,0.16) 0%, rgba(255,255,255,0) 45%)',
-            }}
-          />
-          {isPlaylistPort ? (
-            <Stack
-              direction="row"
-              alignItems="center"
-              spacing={{ xs: 1.5, sm: 2 }}
-              aria-hidden="true"
-              sx={{ position: 'relative', color: '#fff' }}
-            >
-              <Box
-                component="img"
-                src={spotifyLogo}
-                alt=""
-                sx={{ width: { xs: 64, sm: 80 }, height: { xs: 64, sm: 80 } }}
-              />
-              <SwapHorizIcon sx={{ fontSize: { xs: 32, sm: 40 } }} />
-              <QueueMusicIcon sx={{ fontSize: { xs: 64, sm: 80 } }} />
-            </Stack>
-          ) : (
-            <CoverIcon
-              aria-hidden="true"
-              sx={{ fontSize: 56, color: 'rgba(255,255,255,0.9)', position: 'relative' }}
-            />
-          )}
-          <Typography
-            variant="overline"
-            sx={{
-              position: 'absolute',
-              bottom: 12,
-              left: 16,
-              color: 'rgba(255,255,255,0.92)',
-              fontWeight: 700,
-              letterSpacing: '0.1em',
-            }}
-          >
-            {project.category}
-          </Typography>
-        </Box>
-      )}
-
-      <CardContent sx={{ flexGrow: 1 }}>
-        <Stack direction="row" spacing={0.5} sx={{ mb: 1.5, flexWrap: 'wrap', rowGap: 0.5 }}>
-          <Chip
-            icon={<RoleIcon sx={{ fontSize: 16 }} />}
-            label={project.role || project.type}
-            size="small"
-            color={isTeam ? 'default' : 'primary'}
-            variant={isTeam ? 'outlined' : 'filled'}
-            sx={{ fontWeight: 600 }}
-          />
-        </Stack>
-
-        <Typography variant="h5" component="h3" gutterBottom>
-          {project.name}
-        </Typography>
-
-        {/* Contribution leads the card: it is the strongest differentiator and
-            was previously buried below the summary. */}
-        <Box
-          sx={(theme) => ({
-            bgcolor: theme.palette.primary.light,
-            borderLeft: 3,
-            borderColor: 'primary.main',
-            borderRadius: 1.5,
-            p: 1.25,
-            mb: 1.5,
-          })}
-        >
-          <Typography
-            variant="overline"
-            sx={{ color: 'primary.dark', fontWeight: 800, lineHeight: 1.6 }}
-          >
-            My contribution
-          </Typography>
-          <Typography
-            variant="body2"
-            sx={{
-              color: 'text.primary',
-              display: '-webkit-box',
-              WebkitLineClamp: 3,
-              WebkitBoxOrient: 'vertical',
-              overflow: 'hidden',
-            }}
-          >
-            {project.myContribution}
-          </Typography>
-        </Box>
-
-        <Typography variant="body2" color="text.secondary" sx={{ mb: 1.5 }}>
-          {project.summary}
-        </Typography>
-
-        <Stack direction="row" spacing={0.5} useFlexGap sx={{ flexWrap: 'wrap', rowGap: 0.5 }}>
-          {visibleTech.map((tech) => (
-            <TechnologyChip key={tech} label={tech} size="small" variant="outlined" />
-          ))}
-          {hiddenCount > 0 && <Chip label={`+${hiddenCount} more`} size="small" />}
-        </Stack>
-      </CardContent>
-
-      <CardActions sx={{ px: 2, pb: 2, gap: 1, alignItems: 'center', flexWrap: 'wrap' }}>
-        <Button
-          component="a"
-          href={`/projects/${project.slug}`}
-          onClick={(event) => {
-            event.preventDefault();
-            navigate(`/projects/${project.slug}`);
-          }}
-          size="small"
-          variant="contained"
-          endIcon={<ArrowForwardIcon />}
-        >
-          View Case Study
-        </Button>
-
-        <Box sx={{ ml: 'auto', display: 'flex', alignItems: 'center', gap: 1, flexWrap: 'wrap' }}>
-          {links.map((link) => (
-            <Button
-              key={link.key}
-              component="a"
-              href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              size="small"
-              variant="outlined"
-              startIcon={link.icon}
-              aria-label={`${link.label} — ${project.name}`}
-            >
-              {link.label}
-            </Button>
-          ))}
-        </Box>
-      </CardActions>
-    </Card>
+    <article className={`project-card project-card-${personal ? 'personal' : 'school'}`} data-project={project.slug} aria-labelledby={`project-${project.id}`}>
+      <Link to={route} className="project-cover-link" aria-label={`View ${project.name} case study`}>
+        {cover ? <img className="project-cover" src={cover.src} alt={cover.alt} loading="lazy" width="1348" height="926" /> : <div className="project-cover-fallback"><CodeIcon aria-hidden="true" sx={{ fontSize: 48 }} /></div>}
+      </Link>
+      <div className="project-body">
+        <div className="project-meta"><span>{personal ? 'Personal project' : project.id === 1 ? 'School · team project' : 'School · individual project'}</span><span>{String(number).padStart(2, '0')}</span></div>
+        <Typography variant="h5" component="h4" id={`project-${project.id}`} className="project-title"><Link to={route}>{project.displayName || project.name}</Link></Typography>
+        {project.cardSubtitle && <Typography className="project-subtitle">{project.cardSubtitle}</Typography>}
+        <Typography className="project-summary" variant="body2">{project.cardSummary || project.summary}</Typography>
+        {project.cardContribution && <Typography className="project-contribution"><strong>My work: </strong>{project.cardContribution}</Typography>}
+        <div className="project-tech" aria-label="Technologies used">
+          {technologies.map((tech) => <span className="project-tech-item" key={tech}>{hasTechnologyLogo(tech) && <TechnologyLogo name={tech} size={16} />}{tech}</span>)}
+        </div>
+        <div className="project-actions">
+          <Button component={Link} to={route} variant="contained" size="small" aria-label={`Case study — ${project.name}`}>Case study</Button>
+          {project.demoUrl && <Button component="a" href={project.demoUrl} target="_blank" rel="noopener noreferrer" variant="outlined" size="small" startIcon={<LaunchIcon sx={{ fontSize: 16 }} />} aria-label={`Live demo — ${project.name}`}>Live demo</Button>}
+          {project.reportUrl && <Button component="a" href={project.reportUrl} target="_blank" rel="noopener noreferrer" variant="outlined" size="small" startIcon={<DescriptionOutlinedIcon sx={{ fontSize: 16 }} />} aria-label={`Project report — ${project.name}`}>Report</Button>}
+          {project.repositoryUrl && <a className="quiet-link" href={project.repositoryUrl} target="_blank" rel="noopener noreferrer" aria-label={`GitHub repository — ${project.name}`}><GitHubIcon sx={{ fontSize: 17 }} />GitHub</a>}
+          {project.apiUrl && <a className="quiet-link" href={project.apiUrl} target="_blank" rel="noopener noreferrer" aria-label={`REST API — ${project.name}`}>API</a>}
+        </div>
+        {project.cardNote && <Typography className="project-note">{project.cardNote}</Typography>}
+      </div>
+    </article>
   );
 }

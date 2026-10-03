@@ -8,11 +8,11 @@ import { educationJourney } from '../data/education';
 export default function EducationSection() {
   return (
     <Box sx={{ bgcolor: 'background.paper', borderTop: 1, borderBottom: 1, borderColor: 'divider' }}>
-      <Container maxWidth="lg" sx={{ py: { xs: 6, md: 8 } }} id="education" component="section">
+      <Container maxWidth="lg" className="section-shell" id="education" component="section">
         <SectionHeading
           eyebrow="Education"
-          title="Education Journey"
-          subtitle="Chronological academic background — from Myanmar to Singapore"
+          title="My education journey."
+          subtitle="From Myanmar to Singapore — continuing my path in technology."
         />
         <Stack spacing={2.5} sx={{ maxWidth: 820 }}>
           {educationJourney.map((stage, index) => (
@@ -45,7 +45,7 @@ export default function EducationSection() {
                 )}
               </Box>
 
-              <Paper variant="outlined" sx={{ p: { xs: 2.5, md: 3 }, flexGrow: 1 }}>
+              <Paper variant="outlined" sx={{ p: { xs: 2, md: 3 }, flexGrow: 1, minWidth: 0 }}>
                 <Chip label={stage.period} size="small" color="primary" sx={{ mb: 1 }} />
                 <Typography variant="h6" component="h3">
                   {stage.institution}

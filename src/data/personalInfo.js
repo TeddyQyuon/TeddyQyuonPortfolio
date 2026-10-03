@@ -6,7 +6,7 @@ export const personalInfo = {
   role: 'Applied AI & Analytics Student · Nanyang Polytechnic',
   // Short factual introduction used in the hero section.
   intro:
-    'Year 2 Applied AI & Analytics student with hands-on academic experience building full-stack web applications and working with data preparation and predictive analytics. Applying for a 1-year technology internship in 2027.',
+    'I build web applications and work with data, from the interface to the API and database. I’m a Year 2 Applied AI & Analytics student at Nanyang Polytechnic, seeking a 1-year technology internship in 2027.',
   // 1-year internship objective.
   internshipObjective:
     'Seeking a 1-year technology internship (2027) in Software Engineering, Full-Stack Development, Data / Analytics, or related technical roles.',

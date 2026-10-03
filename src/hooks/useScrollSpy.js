@@ -17,7 +17,8 @@ export default function useScrollSpy(sectionIds, offset = 96) {
   useEffect(() => {
     const elements = sectionIds
       .map((id) => document.getElementById(id))
-      .filter(Boolean);
+      .filter(Boolean)
+      .sort((a, b) => a.getBoundingClientRect().top - b.getBoundingClientRect().top);
 
     // Routes without sections (project case studies) clear any stale highlight.
     if (elements.length === 0) {

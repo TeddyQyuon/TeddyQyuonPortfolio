@@ -1,4 +1,4 @@
-import { Typography, Container, Stack, Paper, Grid, Box } from '@mui/material';
+import { Typography, Container, Box } from '@mui/material';
 import WebIcon from '@mui/icons-material/Web';
 import DnsIcon from '@mui/icons-material/Dns';
 import StorageIcon from '@mui/icons-material/Storage';
@@ -9,57 +9,29 @@ import AnalyticsIcon from '@mui/icons-material/Analytics';
 import BuildIcon from '@mui/icons-material/Build';
 import ForkRightIcon from '@mui/icons-material/ForkRight';
 import SectionHeading from '../components/common/SectionHeading';
-import SkillChip from '../components/common/SkillChip';
+import TechnologyLogo, { hasTechnologyLogo } from '../components/common/TechnologyLogo';
 import { skillCategories } from '../data/skills';
 
-const categoryIcons = {
-  Frontend: <WebIcon color="primary" fontSize="small" />,
-  Backend: <DnsIcon color="primary" fontSize="small" />,
-  Database: <StorageIcon color="primary" fontSize="small" />,
-  'API / Integration': <SyncAltIcon color="primary" fontSize="small" />,
-  Authentication: <LockIcon color="primary" fontSize="small" />,
-  'Forms / Validation': <FactCheckIcon color="primary" fontSize="small" />,
-  'Data / Analytics': <AnalyticsIcon color="primary" fontSize="small" />,
-  'Development Tools': <BuildIcon color="primary" fontSize="small" />,
-  'Version Control': <ForkRightIcon color="primary" fontSize="small" />,
-};
+const categoryIcons = { Frontend: WebIcon, Backend: DnsIcon, Database: StorageIcon, 'API / Integration': SyncAltIcon, Authentication: LockIcon, 'Forms / Validation': FactCheckIcon, 'Data / Analytics': AnalyticsIcon, 'Development Tools': BuildIcon, 'Version Control': ForkRightIcon };
+const coreTools = ['JavaScript', 'React', 'Node.js', 'MySQL', 'Python', 'Git'];
 
-// Verified skills only, grouped by category. No percentage bars.
 export default function SkillsSection() {
   return (
     <Box sx={{ bgcolor: 'background.paper', borderTop: 1, borderBottom: 1, borderColor: 'divider' }}>
-      <Container maxWidth="lg" sx={{ py: { xs: 6, md: 8 } }} id="skills" component="section">
-        <SectionHeading
-          eyebrow="Skills"
-          title="Skills"
-          subtitle="Technologies I have studied and used in coursework and projects — grouped by area, no inflated percentages"
-        />
-        <Grid container spacing={2}>
-          {skillCategories.map((category) => (
-            <Grid item xs={12} sm={6} md={4} key={category.title}>
-              <Paper
-                variant="outlined"
-                sx={{
-                  p: 2.5,
-                  height: '100%',
-                  borderRadius: 3,
-                  transition: 'box-shadow 0.2s ease, transform 0.2s ease',
-                  '&:hover': { boxShadow: 4, transform: 'translateY(-3px)' },
-                }}
-              >
-                <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 1.5 }}>
-                  {categoryIcons[category.title]}
-                  <Typography variant="subtitle1">{category.title}</Typography>
-                </Box>
-                <Stack direction="row" spacing={0.5} useFlexGap sx={{ flexWrap: 'wrap', rowGap: 0.75 }}>
-                  {category.skills.map((skill) => (
-                    <SkillChip key={skill} label={skill} />
-                  ))}
-                </Stack>
-              </Paper>
-            </Grid>
-          ))}
-        </Grid>
+      <Container maxWidth="lg" className="section-shell" id="skills" component="section">
+        <SectionHeading eyebrow="Toolkit" title="The tools behind the work." subtitle="Technologies I use in personal projects and coursework." />
+        <div className="core-tools" aria-label="Core technologies">{coreTools.map((tool) => <span key={tool} className="core-tool"><TechnologyLogo name={tool} size={26} />{tool}</span>)}</div>
+        <div className="skills-grid">
+          {skillCategories.map((category) => {
+            const Icon = categoryIcons[category.title] || BuildIcon;
+            return (
+              <div className="skill-category" key={category.title}>
+                <Typography component="h3" variant="subtitle1" className="skill-heading"><Icon aria-hidden="true" />{category.title}</Typography>
+                <div className="skill-terms">{category.skills.map((skill) => <span className="skill-term" key={skill}>{hasTechnologyLogo(skill) && <TechnologyLogo name={skill} size={16} />}<span>{skill}</span></span>)}</div>
+              </div>
+            );
+          })}
+        </div>
       </Container>
     </Box>
   );
