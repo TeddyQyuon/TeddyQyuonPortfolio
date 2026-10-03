@@ -44,7 +44,7 @@ function secondaryLinks(project) {
     project.demoUrl && {
       key: 'demo',
       href: project.demoUrl,
-      label: 'Live demo',
+      label: project.demoLabel || 'Live demo',
       icon: <LaunchIcon fontSize="small" />,
     },
     project.apiUrl && {
