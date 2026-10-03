@@ -215,10 +215,10 @@ export const projects = [
     dataPreparation:
       'CSV validation checks registered meter IDs, valid timezone-aware timestamps, completed hourly intervals, non-negative consumption and duplicate meter/timestamp pairs. Missing readings remain visible rather than being estimated.',
     results:
-      'Version 1.1 passed 11 automated calculation, workflow and security tests plus TypeScript and production build checks. Cloud-browser checks exercised imports, report downloads, tenant filtering, invalid-date exports and 390 px/768 px layouts. The npm audit reported zero known dependency vulnerabilities after the update. Browser testing used the local Express/SQLite demo; production D1 and a running MySQL server were not tested through the browser.',
+      'Version 1.2 is live on Vercel with persistent Turso storage. All 14 automated calculation, workflow and security tests, frontend and NodeNext server TypeScript checks, and the production build passed. Ten live HTTP checks verified remote imports, reports, saved edits, tenant restrictions and separate visitor workspaces. Cloud-browser checks confirmed import history survives reload, coverage reaches 100%, CSV reports contain 42 daily meter rows, and tenant views expose two assigned meters. The npm audit reported zero known dependency vulnerabilities. Earlier local checks covered 390 px/768 px layouts; live MySQL and real meter hardware were not tested.',
     technologies: [
       'React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Node.js', 'Express.js',
-      'SQL', 'SQLite', 'Cloudflare D1', 'Sequelize ORM', 'MySQL',
+      'SQL', 'SQLite', 'Vercel', 'Turso / libSQL', 'Sequelize ORM', 'MySQL',
     ],
     features: [
       'Consumption and estimated-cost charts with equal-length period comparisons',
@@ -234,7 +234,7 @@ export const projects = [
     architecture: [
       'React + Vite dashboard with shared TypeScript analytics and validation',
       'Shared REST API with workspace scope and manager/tenant demo checks',
-      'Hosted Worker + Cloudflare D1; local Express + SQLite demo',
+      'Vercel Node API + persistent Turso/libSQL storage; local Express + SQLite demo',
       'Optional Sequelize/MySQL adapter supplied; live MySQL integration not tested',
     ],
     challenges:
@@ -245,18 +245,18 @@ export const projects = [
       {
         src: meterwiseOverview,
         alt: 'MeterWise energy overview showing synthetic electricity consumption, estimated SGD cost, data coverage and a daily chart.',
-        caption: 'Version 1.1 dashboard — real screenshot of the synthetic local demo.',
+        caption: 'Version 1.2 on Vercel — real screenshot after importing eight missing readings into the synthetic workspace.',
       },
       {
         src: meterwiseImports,
         alt: 'MeterWise CSV validation preview with one valid reading, two duplicate rows and one invalid meter ID.',
-        caption: 'Validation separates new readings, duplicate intervals and invalid rows before import.',
+        caption: 'Live Vercel validation separates one new reading, two duplicate intervals and one invalid meter before import.',
       },
     ],
     repositoryUrl: null,
-    demoUrl: 'https://meterwise-teddy.teddyhpone007.chatgpt.site',
-    demoLabel: 'Private demo',
-    demoAccessNote: 'The interactive demo is owner-private and requires the authorised ChatGPT account. Public visitors can review the screenshots and case study here.',
+    demoUrl: 'https://meterwise-kappa.vercel.app/',
+    demoLabel: 'Live demo',
+    demoAccessNote: 'Public Vercel demo with a separate synthetic workspace for each browser. The manager/tenant switch demonstrates server-enforced permissions; it is not real tenant authentication. Use sample data only.',
     reportUrl: null,
   },
 ];
