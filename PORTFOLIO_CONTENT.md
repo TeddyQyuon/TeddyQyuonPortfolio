@@ -77,3 +77,13 @@ Excluded: PostgreSQL/SQLite (unless personally completed and comfortable explain
 - Version 1.2: 14 automated tests, frontend/NodeNext TypeScript checks and build pass; npm audit reports 0 known dependency vulnerabilities. Ten production HTTP checks and cloud-browser imports, reload persistence, report downloads, tenant views and CSV validation use the live Vercel/Turso deployment. The case study distinguishes earlier local responsive checks and the untested live MySQL adapter/hardware.
 - Interactive demo is public at https://meterwise-kappa.vercel.app/ and is labelled Live demo. The access note explains synthetic per-browser workspaces and the demo role switch. The private source repository remains unlinked for public visitors.
 - Existing Annual Leave, Gym analysis and Playlist Port entries remain in place. Project-specific technologies do not automatically add unverified personal skills to the global skills list.
+
+
+## MeterWise Singapore estate upgrade — 3 October 2026 UTC
+
+- Version 2.0 is an independent public-housing operations pilot, not commissioned work or an official government service.
+- Six public HDB Property Information records cover 620 dwelling units in Ang Mo Kio, Bishan and Tampines. Equipment installations, hourly readings, work orders and response targets are simulated.
+- The case study documents per-block hourly solar accounting, missing-data safeguards, CSV repair, maintenance evidence, optimistic concurrency and server-enforced area permissions.
+- Historical EMA 2024 emissions factor and illustrative tariff are explicit; no real savings, bill reductions, hardware integration or verified carbon performance are claimed.
+- Nineteen automated tests and both TypeScript checks pass; browser evidence comes from the Vercel deployment. Live API evidence is retained with the private project repository.
+- AI assistance is disclosed and the existing project URL remains stable. Other portfolio entries and global personal skills are preserved.
