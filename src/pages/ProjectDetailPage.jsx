@@ -64,7 +64,7 @@ export default function ProjectDetailPage() {
     project.demoUrl && {
       key: 'demo',
       href: project.demoUrl,
-      label: 'Live demo',
+      label: project.demoLabel || 'Live demo',
       icon: <LaunchIcon fontSize="small" />,
     },
     project.apiUrl && {
@@ -131,6 +131,11 @@ export default function ProjectDetailPage() {
           </Button>
         ))}
       </Stack>
+      {project.demoAccessNote && (
+        <Typography variant="body2" color="text.secondary" sx={{ mt: -2, mb: 4, maxWidth: 760 }}>
+          {project.demoAccessNote}
+        </Typography>
+      )}
 
       <Grid container spacing={{ xs: 3, md: 4 }}>
         {/* Main case-study content */}
