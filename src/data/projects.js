@@ -228,7 +228,7 @@ const projectData = [
     cardSubtitle: 'Singapore estate energy operations',
     cardSummary: 'An estate energy dashboard connecting public HDB building data, simulated meter readings and an evidence-based maintenance workflow.',
     cardContribution: 'Project direction, energy workflows, data validation and deployment, with AI assistance.',
-    cardTechnologies: ['React', 'Vite', 'Node.js', 'Express.js', 'SQL'],
+    cardTechnologies: ['React', 'Python', 'FastAPI', 'Vercel', 'SQL'],
     cardNote: 'Independent pilot · operational data is simulated.',
     slug: 'meterwise-building-energy-analytics',
     name: 'MeterWise — Singapore Estate Energy Operations',
@@ -240,16 +240,16 @@ const projectData = [
     problem:
       'Estate teams need to compare lighting, lift and pump consumption across blocks, account for daytime solar, and follow up on exceptions without treating missing readings as zero usage or unverified alerts as equipment faults.',
     solution:
-      'A React dashboard models six HDB blocks and 24 simulated service meters. Managers filter by town and block, repair missing CSV intervals, match solar and load for each block and hour, and assign inspections through completion and verification. An area-viewer preview is restricted by the server to two Ang Mo Kio blocks. The workflow is informed by public HDB Green Towns and SolarNova materials; it is not an official government project.',
+      'A React dashboard with a Python/FastAPI backend models six HDB blocks and 24 simulated service meters. Managers filter by town and block, repair missing CSV intervals, match solar and load for each block and hour, and assign inspections through completion and verification. An area-viewer preview is restricted by the server to two Ang Mo Kio blocks. The workflow is informed by public HDB Green Towns and SolarNova materials; it is not an official government project.',
     dataset:
       'Six real public HDB Property Information records from data.gov.sg cover Ang Mo Kio, Bishan and Tampines, totalling 620 dwelling units. The snapshot records source IDs, licence and retrieval date. All meter installations, electricity readings and maintenance records are simulated. UTC intervals are grouped in Asia/Singapore. S$0.285/kWh is illustrative, and the 0.402 kg CO₂/kWh factor is explicitly the historical EMA 2024 grid factor. No resident details or live agency systems are used.',
     dataPreparation:
       'Public building metadata is kept separate from simulated operational records. CSV validation checks registered assets, timezone-aware completed hourly intervals, non-negative consumption, the fourteen-day demo window and duplicate meter/timestamp pairs. Missing intervals withhold derived grid, export, cost and carbon estimates. Solar surplus in one block or hour cannot cancel imports elsewhere.',
     results:
-      'Version 2.0 runs on Vercel with persistent Turso storage. All 19 automated calculation, import, workflow and security tests, both TypeScript checks and the production build passed; npm audit reported zero known dependency advisories. Cloud-browser verification covered CSV repair, reload persistence, 100% coverage, maintenance assignment through verification, area restrictions and the centered review dialogs. Eleven production HTTP checks verified repairs, traceable six-block reports, maintenance evidence, stale-write rejection and visitor/area isolation. Live MySQL, real meter hardware, agency authentication and actual emissions reporting remain outside this pilot.',
+      'Version 2.1 runs a Python 3.12/FastAPI backend on Vercel with persistent Turso storage. All 45 pytest cases, Ruff, the frontend TypeScript check and the production build passed; Python and npm audits reported zero known dependency advisories. Tests compare the new API with the original TypeScript responses and verify old cookies, saved data, bounded imports, role restrictions, atomic audit events and competing writes. Production cloud-browser checks confirmed that repaired readings, 100% coverage, import history and a verified work order with its audit timeline survived the Python deployment. The live CSV preview identified duplicates and the area-viewer UI restricted access to two blocks. Eleven production HTTP checks verified repairs, traceable six-block reports, maintenance evidence, stale-write rejection and visitor/area isolation. Real meter hardware, agency authentication and actual emissions reporting remain outside this pilot. The former Node/Express, MySQL and Worker adapters were retired.',
     technologies: [
-      'React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Node.js', 'Express.js',
-      'SQL', 'SQLite', 'Vercel', 'Turso / libSQL', 'Sequelize ORM', 'MySQL',
+      'React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Python', 'FastAPI',
+      'SQL', 'SQLite', 'Vercel', 'Turso / libSQL', 'pytest',
     ],
     features: [
       'Real HDB public inventory: six blocks, three towns and 620 dwelling units',
@@ -263,10 +263,10 @@ const projectData = [
     myContribution:
       'I selected the project and directed its expansion from a building dashboard into a Singapore public-housing operations pilot. I built and validated the workflows with AI assistance, researched public government sources, and used automated and cloud-browser checks. This is an independent portfolio project, not commissioned work for HDB or a Town Council.',
     architecture: [
-      'React + Vite dashboard with shared TypeScript analytics and validation',
-      'Workspace-scoped REST API, manager/area-viewer controls and version-checked audit events',
-      'Vercel Node API + persistent Turso/libSQL storage; local Express + SQLite demo',
-      'Optional Sequelize/MySQL adapter supplied; live MySQL integration not tested',
+      'React + Vite dashboard; TypeScript is used for the frontend only',
+      'Python 3.12 + FastAPI REST API with workspace/area controls and version-checked audit events',
+      'Vercel Python ASGI function + persistent Turso/libSQL HTTPS storage',
+      'Python SQLite development adapter, idempotent SQL migrations and pytest contract/security checks',
     ],
     challenges:
       'Distinguishing real public inventory from simulated equipment, matching solar and load without netting unrelated intervals, withholding incomplete estimates, and preventing competing maintenance updates from creating false audit evidence.',
