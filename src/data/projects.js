@@ -16,8 +16,60 @@ import leaveSignIn from '../assets/images/projects/annual-leave/sign-in-rbac.png
 import meterwiseOverview from '../assets/images/projects/meterwise/energy-overview.jpg';
 import meterwiseWorkOrders from '../assets/images/projects/meterwise/work-order-audit.jpg';
 import playlistPortHome from '../assets/images/projects/playlist-port-live-home.jpg';
+import scenthausOverview from '../assets/images/projects/scenthaus/admin-overview.png';
 
 const projectData = [
+  {
+    id: 7,
+    projectGroup: 'personal',
+    displayOrder: 1,
+    displayName: 'SCENTHAUS Intelligence',
+    cardSubtitle: 'Fragrance discovery and demand forecasting',
+    cardSummary: 'A fragrance storefront with explainable recommendations, weekly demand forecasts and a protected business dashboard.',
+    cardContribution: 'Project scope, full-stack integration, ML pipelines and validation with AI assistance.',
+    cardTechnologies: ['React', 'Python', 'FastAPI', 'PostgreSQL', 'scikit-learn'],
+    cardNote: 'Simulated historical orders · Vercel deployment pending.',
+    slug: 'scenthaus-intelligence',
+    name: 'SCENTHAUS Intelligence — Fragrance Shop and ML Pipeline',
+    category: 'Full-Stack',
+    type: 'Personal ML portfolio project',
+    role: 'AI-assisted personal project',
+    summary: 'A React/Vite and Python FastAPI fragrance shop backed by PostgreSQL, combining a scent quiz, persistent wishlist and cart with recommendations, demand forecasts and a protected admin dashboard.',
+    problem: 'A new fragrance shop needs a way to help customers discover suitable scents and plan inventory before it has real order history.',
+    solution: 'A reproducible simulated-commerce pipeline supports TF-IDF similarity, item-item collaborative filtering, Apriori basket rules, a validation-tuned hybrid ranker and cold-start quiz profiles. Weekly SKU forecasts compare seasonal naive, ETS, SARIMA, LightGBM and Croston. React and Python are configured to deploy together on Vercel Services; the dedicated hosted database and live deployment are pending.',
+    dataset: '2,000 fictional customers, 12,139 simulated orders, 90,495 events and 104 weeks of history; 36 fictional products and 108 SKUs. Hidden tastes, noise, trends and Singapore holidays/promotions generate demand. No real customer history or commercial uplift is claimed.',
+    dataPreparation: 'Training gates check nulls, duplicate order lines, invalid prices/quantities and outliers. Evaluation uses temporal cutoffs, excludes previously bought scents, and keeps an untouched forecasting holdout.',
+    models: 'Content similarity, item-item CF and a hybrid recommender; a five-method forecast ladder with three rolling validation origins. Two-tower and session embeddings are labelled experimental.',
+    results: 'On simulated data, hybrid NDCG@5 is 0.3600 versus 0.1592 for popularity; CF scores 0.3642. Forecast holdout WAPE is 62.79%; measured 80/95% band coverage is 82.87/94.44%. Local validation: 29 Python tests passed, one native PostgreSQL concurrency test deferred to CI, three browser journeys passed and the frontend build passed. Local SQL integration used PostgreSQL compiled to WASM. These are method/pipeline results, not validated real-market performance.',
+    technologies: ['React', 'Vite', 'JavaScript', 'Tailwind CSS', 'Python', 'FastAPI', 'PostgreSQL', 'SQLAlchemy', 'scikit-learn', 'LightGBM', 'MLflow', 'Vercel', 'pytest'],
+    features: [
+      'Quiz profiles, persistent wishlist/cart and demo checkout',
+      'Content, collaborative and basket recommendations with explanations',
+      'Budget, size, season and stock filters; diversity and substitutes',
+      'SKU/brand/category forecasts with 80/95% uncertainty bands',
+      'Protected sales, inventory, customer segments and model-health panels',
+      'Default-off personalization, withdrawal, model cards and human overrides',
+      'Vercel Services configuration, authenticated maintenance and separate scheduled training',
+    ],
+    myContribution: 'I chose the fragrance-shop scope and the React/Vite frontend with a Python backend, directed implementation with AI assistance, and reviewed the pipeline and test evidence. Historical data is simulated and experimental models are clearly separated from validated baselines.',
+    architecture: [
+      'React + Vite storefront and admin interface',
+      'FastAPI session authentication, CSRF and role-protected REST API',
+      'PostgreSQL customer state, events, orders and forecast snapshots',
+      'Precomputed recommendation/forecast artifacts; separate batch training and MLflow tracking',
+      'Vercel Services frontend/API hosting configuration; hosted database setup pending',
+    ],
+    challenges: 'Avoiding temporal leakage, handling sparse/new SKUs, preserving stock and checkout consistency, and separating heavy training from the serverless serving runtime.',
+    learnings: 'How recommendation evaluation, forecast uncertainty, inventory planning and privacy-aware personalization fit into a complete application, while reporting simulation limits honestly.',
+    screenshots: [{
+      src: scenthausOverview,
+      alt: 'SCENTHAUS protected admin dashboard showing sales, forecast intervals and inventory indicators on simulated data.',
+      caption: 'Actual interface captured during local browser verification. This is simulated history; a working public deployment is not yet claimed.',
+    }],
+    repositoryUrl: 'https://github.com/TeddyQyuon/scenthaus-intelligence',
+    demoUrl: null,
+    reportUrl: null,
+  },
   {
     id: 1,
     projectGroup: 'school',
@@ -177,7 +229,7 @@ const projectData = [
   {
     id: 5,
     projectGroup: 'personal',
-    displayOrder: 2,
+    displayOrder: 3,
     displayName: 'Playlist Port',
     cardSubtitle: 'Spotify playlist transfer',
     cardSummary: 'Copy Spotify playlists between accounts with OAuth sign-in, preserved track order and transfer verification.',
@@ -223,7 +275,7 @@ const projectData = [
   {
     id: 6,
     projectGroup: 'personal',
-    displayOrder: 1,
+    displayOrder: 2,
     displayName: 'MeterWise',
     cardSubtitle: 'Singapore estate energy operations',
     cardSummary: 'An estate energy dashboard connecting public HDB building data, simulated meter readings and an evidence-based maintenance workflow.',
