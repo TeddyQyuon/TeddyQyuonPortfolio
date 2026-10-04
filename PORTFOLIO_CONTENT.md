@@ -87,3 +87,10 @@ Excluded: PostgreSQL/SQLite (unless personally completed and comfortable explain
 - Historical EMA 2024 emissions factor and illustrative tariff are explicit; no real savings, bill reductions, hardware integration or verified carbon performance are claimed.
 - Nineteen automated tests and both TypeScript checks pass; browser evidence comes from the Vercel deployment. Live API evidence is retained with the private project repository.
 - AI assistance is disclosed and the existing project URL remains stable. Other portfolio entries and global personal skills are preserved.
+
+## MeterWise Python migration — 4 October 2026 SGT
+
+- The existing MeterWise entry now describes a Python 3.12/FastAPI API on Vercel with persistent Turso storage. TypeScript remains frontend-only; Node/Express, Sequelize/MySQL and Worker runtime adapters are retired.
+- All 45 pytest cases, Ruff, frontend checking and the Vite build pass; Python and npm dependency audits report zero known advisories. The suite compares the original TypeScript API contract and checks old cookie identity, saved windows/imports, body/CSV limits, roles, workspace isolation and atomic audit events.
+- Current live verification is retained in the private MeterWise repository. The existing screenshots are labelled as version 2.0 UI evidence; backend migration does not change that interface.
+- Stable case-study/demo URLs, private-source status, AI-assistance disclosure, personal-project order, school projects and global personal skills remain unchanged.
