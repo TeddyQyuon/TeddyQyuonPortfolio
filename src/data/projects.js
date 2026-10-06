@@ -25,7 +25,7 @@ const projectData = [
     displayOrder: 1,
     displayName: 'SCENTHAUS Intelligence',
     cardSubtitle: 'Fragrance discovery and demand forecasting',
-    cardSummary: 'A fragrance discovery storefront with explainable recommendations and demand forecasts, using a real-product reference catalogue and simulated commerce.',
+    cardSummary: 'A beauty-retail fragrance storefront with a searchable directory of 35 houses, 150 product references, explainable recommendations and demand forecasts. Prices and commerce are simulated.',
     cardContribution: 'Project scope, full-stack integration, ML pipelines and validation with AI assistance.',
     cardTechnologies: ['React', 'Python', 'FastAPI', 'PostgreSQL', 'scikit-learn'],
     cardNote: 'Older live demo · updated release awaits separate Preview and Production databases.',
@@ -34,15 +34,16 @@ const projectData = [
     category: 'Full-Stack',
     type: 'Personal ML portfolio project',
     role: 'AI-assisted personal project',
-    summary: 'A React/Vite and Python FastAPI fragrance shop backed by PostgreSQL, combining a scent quiz, persistent wishlist and cart with recommendations, demand forecasts and a protected admin dashboard.',
+    summary: 'A React/Vite and Python FastAPI fragrance shop backed by PostgreSQL, combining a searchable 35-house brand directory, direct brand filters, a scent quiz, persistent wishlist and bag with recommendations, demand forecasts and a protected admin dashboard.',
     problem: 'A new fragrance shop needs a way to help customers discover suitable scents and plan inventory before it has real order history.',
     solution: 'A simulated-commerce pipeline compares content, collaborative, basket and quiz-based recommendations with seasonal-naive, LightGBM, LSTM and N-BEATS SKU forecasts. The deployment configuration prepares the React/Vite storefront and FastAPI service for Vercel Services with separate Neon PostgreSQL databases.',
     dataset: '2,000 simulated users, 78 weeks of history, 150 fragrance product references across 35 brands and 297 size variants. Orders, browsing activity and demand are simulated; product authenticity and availability are not verified. No real customer history or commercial uplift is claimed.',
     dataPreparation: 'Training gates check nulls, duplicate order lines, invalid prices/quantities and outliers. Evaluation uses temporal cutoffs, excludes previously bought scents, and keeps an untouched forecasting holdout.',
     models: 'Popularity, item-item CF, hybrid and two-tower recommender variants; BM25/dense/hybrid search on 60 unreviewed draft labels; seasonal-naive, LightGBM, LSTM and N-BEATS forecasts evaluated across three origins.',
-    results: 'On simulated data, item-item CF NDCG@10 is 0.13731, full two-tower 0.13405 and popularity 0.10609; the BPR variant scores 0.14087. LSTM SKU WAPE averages 86.70% and MASE 0.795 across three seeds and three test origins. Hybrid search MRR@10 is 0.95278 on 60 rule-generated labels with none human-reviewed. Native CI passed 65 Python tests and Ruff; the published runtime passed three browser journeys and the frontend build. Vercel Preview built the storefront but stopped before API initialization because its database URL is missing; Production still serves the legacy catalogue. Results measure pipelines on simulated data, not real-market performance.',
+    results: 'On simulated data, item-item CF NDCG@10 is 0.13731, full two-tower 0.13405 and popularity 0.10609; the BPR variant scores 0.14087. LSTM SKU WAPE averages 86.70% and MASE 0.795 across three seeds and three test origins. Hybrid search MRR@10 is 0.95278 on 60 rule-generated labels with none human-reviewed. Native CI passed 65 Python tests and Ruff; the earlier runtime passed three browser journeys and the frontend build. The beauty-retail refresh adds a fourth brand-navigation journey and passes a local production build. Vercel Preview built the storefront but stopped before API initialization because its database URL is missing; Production still serves the legacy catalogue. Results measure pipelines on simulated data, not real-market performance.',
     technologies: ['React', 'Vite', 'JavaScript', 'Tailwind CSS', 'Python', 'FastAPI', 'PostgreSQL', 'SQLAlchemy', 'scikit-learn', 'LightGBM', 'MLflow', 'Vercel', 'pytest'],
     features: [
+      'Searchable directory of all 35 fragrance houses, direct brand filters and quick bag actions',
       'Quiz profiles, persistent wishlist/cart and demo checkout',
       'Content, collaborative and basket recommendations with explanations',
       'Budget, size, season and stock filters; diversity and substitutes',
@@ -351,3 +352,4 @@ export const projects = [...projectData].sort((a, b) => {
   const groupOrder = { personal: 0, school: 1 };
   return groupOrder[a.projectGroup] - groupOrder[b.projectGroup] || a.displayOrder - b.displayOrder;
 });
+
