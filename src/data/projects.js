@@ -18,6 +18,7 @@ import meterwiseWorkOrders from '../assets/images/projects/meterwise/work-order-
 import playlistPortHome from '../assets/images/projects/playlist-port-live-home.jpg';
 import scenthausOverview from '../assets/images/projects/scenthaus/admin-overview.png';
 import scenthausStorefront from '../assets/images/projects/scenthaus/storefront-verified.jpg';
+import scenthausQuickAdd from '../assets/images/projects/scenthaus/quick-add-verified.jpg';
 
 const projectData = [
   {
@@ -25,26 +26,32 @@ const projectData = [
     projectGroup: 'personal',
     displayOrder: 1,
     displayName: 'SCENTHAUS Intelligence',
-    cardSubtitle: 'Fragrance discovery and demand forecasting',
-    cardSummary: 'A beauty-retail fragrance storefront with a searchable directory of 35 houses, 150 product references, explainable recommendations and demand forecasts. Prices and commerce are simulated.',
+    cardSubtitle: 'Fast fragrance discovery, secure accounts and ML',
+    cardSummary: 'A responsive fragrance storefront with 35 houses, 150 product references, size-and-quantity Quick add, secure accounts, explainable recommendations and demand forecasts. Commerce is simulated.',
     cardContribution: 'Project scope, full-stack integration, ML pipelines and validation with AI assistance.',
     cardTechnologies: ['React', 'Python', 'FastAPI', 'PostgreSQL', 'scikit-learn'],
-    cardNote: 'Live demo · 35 fragrance houses · 150 product references.',
+    cardNote: 'Live demo · ml Quick add · 35 fragrance houses.',
     slug: 'scenthaus-intelligence',
     name: 'SCENTHAUS Intelligence — Fragrance Shop and ML Pipeline',
     category: 'Full-Stack',
     type: 'Personal ML portfolio project',
     role: 'AI-assisted personal project',
-    summary: 'A React/Vite and Python FastAPI fragrance shop backed by PostgreSQL, combining a searchable 35-house brand directory, direct brand filters, a scent quiz, persistent wishlist and bag with recommendations, demand forecasts and a protected admin dashboard.',
+    summary: 'A React/Vite and Python FastAPI fragrance shop backed by PostgreSQL. The public catalogue renders independently of account initialization, with a mobile-friendly storefront, searchable 35-house directory, ml-and-quantity Quick add, persistent wishlist and bag, account security, recommendations, forecasts and a protected admin dashboard.',
     problem: 'A new fragrance shop needs a way to help customers discover suitable scents and plan inventory before it has real order history.',
     solution: 'A simulated-commerce pipeline compares content, collaborative, basket and quiz-based recommendations with seasonal-naive, LightGBM, LSTM and N-BEATS SKU forecasts. The deployment uses Vercel Services for the React/Vite storefront and FastAPI service with separate Neon PostgreSQL databases.',
     dataset: '2,000 simulated users, 78 weeks of history, 150 fragrance product references across 35 brands and 297 size variants. Orders, browsing activity and demand are simulated; product authenticity and availability are not verified. No real customer history or commercial uplift is claimed.',
     dataPreparation: 'Training gates check nulls, duplicate order lines, invalid prices/quantities and outliers. Evaluation uses temporal cutoffs, excludes previously bought scents, and keeps an untouched forecasting holdout.',
     models: 'Popularity, item-item CF, hybrid and two-tower recommender variants; BM25/dense/hybrid search on 60 unreviewed draft labels; seasonal-naive, LightGBM, LSTM and N-BEATS forecasts evaluated across three origins.',
-    results: 'On simulated CI data, item-item CF NDCG@10 is 0.13731, full two-tower 0.13405 and popularity 0.10609; the BPR variant scores 0.14087. LSTM SKU WAPE averages 86.70% and MASE 0.795 across three seeds and three test origins. Hybrid search MRR@10 is 0.95278 on 60 rule-generated labels with none human-reviewed. The storefront passed full native CI: actual training, 65 Python tests, Ruff, four browser journeys and the production frontend build. The current deployment initializer passed seven native PostgreSQL runtime, build-lock and timeout tests, four browser journeys, Ruff and the build. The database timeout override applies only to the training transaction. The packaged API passed isolated runtime-only checks without training libraries. Hosted Preview and Production checks verified catalogue counts, model startup, semantic search, access restrictions, persistent bags and simulated checkout against separate Neon databases. Results measure pipelines on simulated data, not real-market performance.',
+    results: 'Historical simulated-data evaluation reports item-item CF NDCG@10 of 0.13731, full two-tower 0.13405 and popularity 0.10609; the BPR variant scores 0.14087. LSTM SKU WAPE averages 86.70% and MASE 0.795 across three seeds and three test origins. Hybrid search MRR@10 is 0.95278 on 60 rule-generated labels with none human-reviewed. Scores vary with each trained deployment. The 7 October 2026 Quick add and account-security release passed 84 Python tests on native PostgreSQL after full model training, six native Chromium journeys, Ruff and the production frontend build. Six staged hosted browser checks passed, including trusted session metadata and remote logout; Quick add and 2FA passed again on the public site. Tests cover concurrent bag additions, single-use recovery codes, session revocation, password changes and exports without secrets. The packaged API also passed isolated runtime-only checks without training libraries. Hosted verification used customer and guest flows; privileged admin and maintenance checks used the isolated native runtime. Results measure pipelines on simulated data, not real-market performance.',
     technologies: ['React', 'Vite', 'JavaScript', 'Tailwind CSS', 'Python', 'FastAPI', 'PostgreSQL', 'SQLAlchemy', 'scikit-learn', 'LightGBM', 'MLflow', 'Vercel', 'pytest'],
     features: [
-      'Searchable directory of all 35 fragrance houses, direct brand filters and quick bag actions',
+      'Public home and catalogue render without waiting for account, bag or optional recommendation requests',
+      'Mobile-friendly navigation, searchable directory of 35 fragrance houses and direct brand filters',
+      'Quick add with explicit ml selection, quantity controls, exact totals and current stock limits',
+      'Atomic bag additions, duplicate-submit protection and accessible dialog focus restoration',
+      'Authenticator-based two-factor authentication, recovery codes, password changes and device-session controls',
+      'Session login and last-active times, device/browser, IP and approximate location; revoke one or all other sessions',
+      'Security event history and personal data export without authentication secrets',
       'Quiz profiles, persistent wishlist/cart and demo checkout',
       'Content, collaborative and basket recommendations with explanations',
       'Budget, size, season and stock filters; diversity and substitutes',
@@ -56,26 +63,31 @@ const projectData = [
     myContribution: 'I chose the fragrance-shop scope and the React/Vite frontend with a Python backend, directed implementation with AI assistance, and reviewed the pipeline and test evidence. Historical data is simulated and experimental models are clearly separated from validated baselines.',
     architecture: [
       'React + Vite storefront and admin interface',
-      'FastAPI session authentication, CSRF and role-protected REST API',
-      'PostgreSQL customer state, events, orders and forecast snapshots',
+      'FastAPI session authentication, enforced second factors, CSRF and role-protected REST API',
+      'PostgreSQL customer state, revocable sessions, encrypted authenticator secrets, hashed recovery codes and atomic bag updates',
+      'Security events retained for 90 days independently of personalization consent',
       'Precomputed recommendation/forecast artifacts; separate batch training and MLflow tracking',
       'Vercel Services storefront/API with separate Preview and Production Neon databases',
     ],
-    challenges: 'Avoiding temporal leakage, handling sparse/new SKUs, preserving stock and checkout consistency, and separating heavy training from the serverless serving runtime.',
-    learnings: 'How recommendation evaluation, forecast uncertainty, inventory planning and privacy-aware personalization fit into a complete application, while reporting simulation limits honestly.',
+    challenges: 'Avoiding temporal leakage, handling sparse/new SKUs, preserving stock and checkout consistency, separating heavy training from the serving runtime, and removing account initialization from the public rendering path while retaining consented event tracking.',
+    learnings: 'How recommendation evaluation, forecast uncertainty, inventory planning, accessible shopping flows and account security fit into a complete application, while reporting simulation limits honestly.',
     screenshots: [{
       src: scenthausStorefront,
-      alt: 'SCENTHAUS fragrance storefront with real product references, brand navigation and quick bag actions.',
-      caption: '35-house storefront captured during hosted verification. Product references are real; prices, stock and commerce are simulated.',
+      alt: 'SCENTHAUS updated fragrance storefront with compact navigation and a searchable product catalogue.',
+      caption: 'Updated storefront captured during hosted verification. The hero artwork uses a WebP file approximately 92% smaller than the original. Prices, stock and commerce are simulated.',
+    }, {
+      src: scenthausQuickAdd,
+      alt: 'SCENTHAUS Quick add dialog with ml size selection, quantity controls and a precise bag total.',
+      caption: 'Live Quick add flow: choose a bottle size and quantity, review the exact total and add to the persistent bag.',
     }, {
       src: scenthausOverview,
       alt: 'SCENTHAUS protected admin dashboard showing sales, forecast intervals and inventory indicators on simulated data.',
       caption: 'Admin interface captured during browser verification. Sales and demand are simulated.',
     }],
-    repositoryUrl: 'https://github.com/TeddyQyuon/scenthaus-intelligence',
+    repositoryUrl: 'https://github.com/TeddyQyuon/scenthaus-intelligence/tree/complete-phases-real-catalog',
     demoUrl: 'https://scenthaus-intelligence.vercel.app/',
     demoLabel: 'Live demo',
-    demoAccessNote: 'The live demo includes all 35 fragrance houses and 150 product references. Prices, stock and orders are simulated; checkout takes no payment and there is no fulfilment.',
+    demoAccessNote: 'The live demo includes 35 fragrance houses, 150 product references and Quick add. Create an account to try authenticator 2FA, recovery codes and session controls. Locations are approximate; older sessions may have no recorded metadata. Prices, stock and orders are simulated; checkout takes no payment and there is no fulfilment.',
     reportUrl: null,
   },
   {
@@ -357,4 +369,3 @@ export const projects = [...projectData].sort((a, b) => {
   const groupOrder = { personal: 0, school: 1 };
   return groupOrder[a.projectGroup] - groupOrder[b.projectGroup] || a.displayOrder - b.displayOrder;
 });
-
