@@ -102,12 +102,12 @@ Deployed on **Vercel** (hosting platform only — not presented as a development
 
 ## Asset provenance
 
-The React, Node.js and other technology marks are original Devicon SVGs; their source is recorded in `src/assets/images/technology/README.md`. The two conceptual project covers are labelled as illustrations on cards and detail pages. Actual project screenshots are kept separate. The résumé thumbnail is rendered from the same public PDF that the buttons open and download.
+The React, Node.js and other technology marks are original Devicon SVGs; their source is recorded in `src/assets/images/technology/README.md`. The two conceptual project covers are labelled as illustrations on cards and detail pages. Actual project screenshots are kept separate. The resume buttons open and download the maintained public PDF.
 
 ## Portfolio redesign — October 2026
 
-Personal projects lead the homepage and case-study navigation: MeterWise, then
-Playlist Port. The two school projects follow: Annual Leave Management and
+Personal projects lead the homepage and case-study navigation: SOLE DISTRICT,
+SCENTHAUS Intelligence, MeterWise and Playlist Port. The two school projects follow: Annual Leave Management and
 Gym Calories Predictive Analysis. Explicit projectGroup and displayOrder fields
 in src/data/projects.js control this order. Full project descriptions, ownership
 and AI-assistance notes remain in the case studies.
@@ -116,3 +116,17 @@ The layout uses a shared restrained theme, smaller corner radii, compact skill
 groups with the original technology logos, and responsive project previews.
 The Playlist Port preview is a real screenshot from the deployed app; provenance
 is recorded in src/assets/images/projects/playlist-port-source.md.
+
+## Content and UX refresh - October 2026
+
+The homepage presents SOLE DISTRICT, SCENTHAUS Intelligence, MeterWise and
+Playlist Port before the two school projects. ScamDar has a separate hackathon
+prototype panel. GPA and module grades remain in the academic data source;
+project case studies retain contribution, AI-assistance and demo-limit notes.
+Authentic technology marks and their sources are recorded alongside the assets.
+The public resume now includes the current projects and internship window.
+Rebuild it with `python scripts/build-resume.py` (requires ReportLab).
+
+Hero availability, project preview surfaces, tool chips and grouped skills have
+been refined for desktop and mobile, with keyboard focus and reduced-motion
+support preserved.
