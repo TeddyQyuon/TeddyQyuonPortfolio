@@ -5,7 +5,7 @@
 // - No fabricated metrics, demos, repositories or screenshots.
 // - Restaurant Ordering / Feedback System is excluded (sister's work).
 //
-// Screenshots are real figures taken from the author's own submitted reports.
+// Screenshots are actual deployed app captures or figures from submitted reports.
 // Projects without screenshots use a category or project-specific icon cover.
 import caloriesVsDuration from '../assets/images/projects/gym-calories-predictive-analysis/calories-vs-duration.png';
 import knimeWorkflow from '../assets/images/projects/gym-calories-predictive-analysis/knime-preparation-workflow.png';
@@ -13,15 +13,16 @@ import trainValidation from '../assets/images/projects/gym-calories-predictive-a
 import caloriesByWorkout from '../assets/images/projects/gym-calories-predictive-analysis/calories-by-workout-type.png';
 import modelComparisonChart from '../assets/images/projects/gym-calories-predictive-analysis/model-comparison.png';
 import leaveSignIn from '../assets/images/projects/annual-leave/sign-in-rbac.png';
-import meterwiseOverview from '../assets/images/projects/meterwise/energy-overview.jpg';
+import meterwiseOverview from '../assets/images/projects/uiux-meterwise-overview.jpg';
 import meterwiseWorkOrders from '../assets/images/projects/meterwise/work-order-audit.jpg';
 import playlistPortHome from '../assets/images/projects/playlist-port-live-home.jpg';
 import scenthausOverview from '../assets/images/projects/scenthaus/admin-overview.png';
 import scenthausStorefront from '../assets/images/projects/scenthaus/storefront-verified.jpg';
+import scenthausFilters from '../assets/images/projects/uiux-scenthaus-filters.jpg';
 import scenthausQuickAdd from '../assets/images/projects/scenthaus/quick-add-verified.jpg';
 import scenthausCheckout from '../assets/images/projects/scenthaus/checkout-verified.jpg';
 import scenthausPayment from '../assets/images/projects/scenthaus/payment-confirmed.jpg';
-import soleDistrictStorefront from '../assets/images/projects/sole-district/storefront-20261008.jpg';
+import soleDistrictStorefront from '../assets/images/projects/uiux-sole-storefront.jpg';
 import soleDistrictProduct from '../assets/images/projects/sole-district/product-20261008.jpg';
 import soleDistrictCheckout from '../assets/images/projects/sole-district/checkout-20261008.jpg';
 
@@ -147,6 +148,10 @@ const projectData = [
     challenges: 'Avoiding temporal leakage, handling sparse/new SKUs, preserving stock and checkout consistency, separating heavy training from the serving runtime, and removing account initialization from the public rendering path while retaining consented event tracking.',
     learnings: 'How recommendation evaluation, forecast uncertainty, inventory planning, accessible shopping flows, secure payment boundaries and account security fit into a complete application, while reporting simulation limits honestly.',
     screenshots: [{
+      src: scenthausFilters,
+      alt: 'SCENTHAUS live collection with the Dior filter chip, Clear all action and six matching scents.',
+      caption: 'October 2026 UI refresh captured from the deployed collection. Active filters can be removed individually or cleared together; prices and stock are seeded portfolio data.',
+    }, {
       src: scenthausStorefront,
       alt: 'SCENTHAUS updated fragrance storefront with compact navigation and a searchable product catalogue.',
       caption: 'Updated storefront captured during hosted verification. The hero artwork uses a WebP file approximately 92% smaller than the original. Prices and stock remain seeded portfolio data; Stripe checkout runs in test mode.',
@@ -369,7 +374,7 @@ const projectData = [
     screenshots: [{
       src: playlistPortHome,
       alt: 'Live Playlist Port interface with Spotify service selection and playlist transfer introduction.',
-      caption: 'Public interface captured from the deployed Vercel app on 4 October 2026. Spotify is available; other music services are marked as coming later.',
+      caption: 'October 2026 UI refresh captured from the deployed Vercel app, with authentic service logos and a Start with Spotify action. Spotify is available; other services are marked as coming later.',
     }],
     repositoryUrl: 'https://github.com/TeddyQyuon/playlist-port',
     demoUrl: 'https://playlist-port-nine.vercel.app/',
@@ -431,7 +436,7 @@ const projectData = [
       {
         src: meterwiseOverview,
         alt: 'MeterWise Singapore estate dashboard showing common-service load, rooftop solar, derived grid import and meter coverage.',
-        caption: 'Version 2.0 on Vercel — real HDB building metadata with clearly labelled simulated estate energy.',
+        caption: 'October 2026 UI refresh on Vercel: larger filters, readable metrics and keyboard-accessible data tables. Building metadata is real; estate energy is clearly labelled as simulated.',
       },
       {
         src: meterwiseWorkOrders,
