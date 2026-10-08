@@ -11,15 +11,19 @@ export const skillCategories = [
       'React Router',
       'Vite',
       'Material UI',
+      'HTML',
+      'CSS',
+      'Tailwind CSS',
+      'TypeScript',
     ],
   },
   {
     title: 'Backend',
-    skills: ['Node.js', 'Express.js', 'RESTful APIs', 'Middleware'],
+    skills: ['Python', 'FastAPI', 'Django', 'Node.js', 'Express.js', 'RESTful APIs', 'Middleware'],
   },
   {
     title: 'Database',
-    skills: ['MySQL', 'Sequelize ORM', 'CRUD', 'Relational associations'],
+    skills: ['PostgreSQL', 'MySQL', 'SQLite', 'SQLAlchemy', 'Sequelize ORM', 'CRUD', 'Relational associations'],
   },
   {
     title: 'API / Integration',
@@ -28,6 +32,10 @@ export const skillCategories = [
       'HTTP GET / POST / PUT / DELETE',
       'REST API integration',
       'Axios interceptors',
+      'Stripe',
+      'Spotify Web API',
+      'OAuth 2.0',
+      'Signed webhooks',
     ],
   },
   {
@@ -40,6 +48,9 @@ export const skillCategories = [
       'Authorization / ownership checks',
       'React Context',
       'localStorage token handling',
+      'Secure sessions',
+      'CSRF protection',
+      'Role-based access',
     ],
   },
   {
@@ -61,11 +72,14 @@ export const skillCategories = [
       'Exploratory analysis',
       'Predictive modelling',
       'Model comparison',
+      'scikit-learn',
+      'PyTorch',
+      'MLflow',
     ],
   },
   {
     title: 'Development Tools',
-    skills: ['VS Code', 'npm', 'Postman', 'MySQL Workbench'],
+    skills: ['VS Code', 'npm', 'Postman', 'MySQL Workbench', 'Vercel', 'pytest'],
   },
   {
     title: 'Version Control',
