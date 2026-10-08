@@ -439,7 +439,7 @@ const projectData = [
         caption: 'A simulated inspection records evidence through assignment, completion and a separate verification step. No real contractor is dispatched.',
       },
     ],
-    repositoryUrl: null,
+    repositoryUrl: 'https://github.com/TeddyQyuon/meterwise',
     demoUrl: 'https://meterwise-kappa.vercel.app/',
     demoLabel: 'Live demo',
     demoAccessNote: 'Independent pilot; not affiliated with HDB, any Town Council or the Singapore Government. Public building metadata is real; meters, readings and maintenance are simulated. Each browser has a separate demo workspace. The role switch previews area permissions, not real agency authentication. Use sample data only.',

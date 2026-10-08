@@ -21,7 +21,7 @@ export const educationJourney = [
   },
   {
     id: 'mandalay-tech',
-    period: 'After 2019',
+    period: '2019 – 2020',
     institution: 'Mandalay Technological University',
     location: 'Myanmar · Centre of Excellence',
     qualification:
@@ -41,6 +41,9 @@ export const educationJourney = [
       'Full Stack Application Development — React, Express, MySQL, JWT, validation',
       'Data Wrangling — KNIME integration, cleaning, transformation and privacy',
       'Predictive Analytics & Forecasting — SAS Viya modelling and comparison',
+      'Data Structures & Algorithms — problem solving and efficient algorithms',
+      'Responsible AI for Sustainability — responsible technology and sustainability',
+      'Earlier modules include Programming, UX Design in Web Development, Network Technologies, AI & Data Analytics, Database Design & Administration, Statistical Research Methods, Cybersecurity Technologies & Ethics and Web Development Project',
     ],
   },
 ];
