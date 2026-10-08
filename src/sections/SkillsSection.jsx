@@ -13,13 +13,13 @@ import TechnologyLogo, { hasTechnologyLogo } from '../components/common/Technolo
 import { skillCategories } from '../data/skills';
 
 const categoryIcons = { Frontend: WebIcon, Backend: DnsIcon, Database: StorageIcon, 'API / Integration': SyncAltIcon, Authentication: LockIcon, 'Forms / Validation': FactCheckIcon, 'Data / Analytics': AnalyticsIcon, 'Development Tools': BuildIcon, 'Version Control': ForkRightIcon };
-const coreTools = ['JavaScript', 'React', 'Node.js', 'MySQL', 'Python', 'Git'];
+const coreTools = ['React', 'JavaScript', 'Python', 'FastAPI', 'Django', 'PostgreSQL', 'Node.js', 'Git'];
 
 export default function SkillsSection() {
   return (
     <Box sx={{ bgcolor: 'background.paper', borderTop: 1, borderBottom: 1, borderColor: 'divider' }}>
       <Container maxWidth="lg" className="section-shell" id="skills" component="section">
-        <SectionHeading eyebrow="Toolkit" title="The tools behind the work." subtitle="Technologies I use in personal projects and coursework." />
+        <SectionHeading eyebrow="Toolkit" title="The tools behind the work." subtitle="Applied across deployed projects and coursework. Every technology links back to work I can explain." />
         <div className="core-tools" aria-label="Core technologies">{coreTools.map((tool) => <span key={tool} className="core-tool"><TechnologyLogo name={tool} size={26} />{tool}</span>)}</div>
         <div className="skills-grid">
           {skillCategories.map((category) => {
