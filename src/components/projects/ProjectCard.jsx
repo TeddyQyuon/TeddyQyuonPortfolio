@@ -12,12 +12,12 @@ export default function ProjectCard({ project, number }) {
   const route = `/projects/${project.slug}`;
   const technologies = project.cardTechnologies || project.technologies || [];
   return (
-    <article className={`project-card project-card-${personal ? 'personal' : 'school'}`} data-project={project.slug} aria-labelledby={`project-${project.id}`}>
+    <article className={`project-card project-card-${personal ? 'personal' : 'school'}`} id={project.slug} data-project={project.slug} aria-labelledby={`project-${project.id}`}>
       <Link to={route} className="project-cover-link" aria-label={`View ${project.name} case study`}>
         {cover ? <img className="project-cover" src={cover.src} alt={cover.alt} loading="lazy" width="1348" height="926" /> : <div className="project-cover-fallback"><CodeIcon aria-hidden="true" sx={{ fontSize: 48 }} /></div>}
       </Link>
       <div className="project-body">
-        <div className="project-meta"><span>{personal ? 'Personal project' : project.id === 1 ? 'School · team project' : 'School · individual project'}</span><span>{String(number).padStart(2, '0')}</span></div>
+        <div className="project-meta"><span>{personal ? 'Personal project' : project.id === 1 ? 'School · team project' : 'School · individual project'}</span><span className="project-number">{String(number).padStart(2, '0')}</span></div>
         <Typography variant="h5" component="h4" id={`project-${project.id}`} className="project-title"><Link to={route}>{project.displayName || project.name}</Link></Typography>
         {project.cardSubtitle && <Typography className="project-subtitle">{project.cardSubtitle}</Typography>}
         <Typography className="project-summary" variant="body2">{project.cardSummary || project.summary}</Typography>
