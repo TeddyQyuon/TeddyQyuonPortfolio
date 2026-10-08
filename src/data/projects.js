@@ -21,8 +21,72 @@ import scenthausStorefront from '../assets/images/projects/scenthaus/storefront-
 import scenthausQuickAdd from '../assets/images/projects/scenthaus/quick-add-verified.jpg';
 import scenthausCheckout from '../assets/images/projects/scenthaus/checkout-verified.jpg';
 import scenthausPayment from '../assets/images/projects/scenthaus/payment-confirmed.jpg';
+import soleDistrictStorefront from '../assets/images/projects/sole-district/storefront-20261008.jpg';
+import soleDistrictProduct from '../assets/images/projects/sole-district/product-20261008.jpg';
+import soleDistrictCheckout from '../assets/images/projects/sole-district/checkout-20261008.jpg';
 
 const projectData = [
+  {
+    id: 8,
+    projectGroup: 'personal',
+    displayOrder: 0,
+    displayName: 'SOLE DISTRICT',
+    cardSubtitle: 'Streetwear storefront and Django merchant workspace',
+    cardSummary: 'An editorial streetwear storefront with size selection, wishlist and a persistent bag. The Django commerce API and merchant workspace are implemented; hosted accounts and payments await activation.',
+    cardContribution: 'Product direction, storefront, Django commerce workflows and release verification with AI assistance.',
+    cardTechnologies: ['React', 'Python', 'Django', 'Stripe'],
+    cardNote: 'Live storefront preview · Illustrative catalogue · Payments disabled.',
+    slug: 'sole-district',
+    name: 'SOLE DISTRICT — Streetwear Commerce Platform',
+    category: 'Full-Stack',
+    type: 'Personal commerce portfolio project',
+    role: 'AI-assisted personal project',
+    summary: 'A React/Vite storefront and Python/Django commerce system for one curated streetwear retailer. The live preview supports product browsing, size selection, wishlist and a browser-persistent bag. Protected merchant workflows, size-level inventory, orders, returns, analytics and Stripe Checkout are implemented in the source. Hosted accounts and the merchant API await a dedicated production database, and purchases remain disabled.',
+    problem: 'A streetwear retailer needs a coherent customer journey together with size-level stock control, fulfilment and reporting in one system.',
+    solution: 'An off-white, black and acid-yellow storefront connects the retail experience to a Django model for variant SKUs, stock reservations, order price snapshots, role-protected JSON endpoints and signed Stripe webhooks. The published preview returns a clear activation message for unavailable account and merchant requests.',
+    dataset: 'Six illustrative products across sneakers, clothing and accessories, with generated product imagery and preview stock. Supplier authenticity, brand authorisation and real stock availability have not been verified. No real customer history or commercial performance is claimed.',
+    results: 'The release passed 10 Django tests, four storefront packaging checks, the frontend production build and migration consistency checks. Desktop verification on the deployed storefront covered enabled and sold-out sizes, wishlist selection, bag quantities, SGD totals, reload persistence and the disabled payment action. Stripe calls in the backend tests are mocked; no real payment, refund, hosted webhook or production database verification is claimed.',
+    technologies: ['React', 'Vite', 'JavaScript', 'CSS', 'Python', 'Django', 'SQLite', 'Stripe', 'Vercel'],
+    features: [
+      'Editorial storefront, category and brand browsing, product search and product detail pages',
+      'Explicit UK size selection, unavailable-size states and product image enlargement',
+      'Browser-persistent wishlist and bag with quantity controls and SGD totals',
+      'Preview checkout with payment disabled until sourcing, stock and payment setup are complete',
+      'Django session authentication, CSRF checks and role-protected merchant endpoints',
+      'Variant-level inventory, stock reservations and immutable order price snapshots',
+      'Stripe-hosted Checkout and signature-verified webhook workflows implemented in the backend',
+      'Merchant inventory, order, return and analytics views implemented; hosted access awaits database activation',
+    ],
+    myContribution: 'I defined the SOLE DISTRICT brand and single-retailer scope, directed the customer-first design and React/Python stack, and developed the storefront and commerce workflows with AI assistance. Release evidence distinguishes implemented backend functionality from features currently available on the public preview.',
+    architecture: [
+      'React 19 + Vite storefront and merchant interface',
+      'Python 3.12 + Django JSON endpoints with session authentication, CSRF and role checks',
+      'SQLite verified locally; PostgreSQL is the intended production database and is not yet provisioned',
+      'Server-owned prices, variant stock, reservations and order snapshots',
+      'Stripe-hosted Checkout and signed webhook code; payments are not activated',
+      'Vercel hosts the live storefront; account and merchant API routes return an activation notice',
+    ],
+    challenges: 'Separating illustrative catalogue data from sellable inventory, maintaining stock and order consistency, and presenting the release limits clearly while preserving a usable browsing experience.',
+    learnings: 'How retail interaction design, variant data modelling, Django access controls and payment boundaries fit together, and how to distinguish source implementation, automated checks and live verification.',
+    screenshots: [{
+      src: soleDistrictStorefront,
+      alt: 'SOLE DISTRICT live storefront with its editorial streetwear hero and illustrative preview banner.',
+      caption: 'Actual Vercel storefront captured during desktop verification. The imagery and catalogue are illustrative, and purchases are disabled.',
+    }, {
+      src: soleDistrictProduct,
+      alt: 'SOLE DISTRICT New Balance 2002R product page with UK size eight and wishlist selected.',
+      caption: 'Live product flow with explicit size selection, disabled sold-out sizes and a wishlist control. Product imagery and stock are preview data.',
+    }, {
+      src: soleDistrictCheckout,
+      alt: 'SOLE DISTRICT preview checkout with two UK size eight items, a 458 Singapore dollar total and payment disabled.',
+      caption: 'Live bag and preview checkout: two items total S$458, with the payment action disabled. No payment or order was created.',
+    }],
+    repositoryUrl: null,
+    demoUrl: 'https://sole-district-green.vercel.app/',
+    demoLabel: 'Live storefront',
+    demoAccessNote: 'Public storefront preview with generated sample imagery and a browser-local bag and wishlist. Hosted accounts and merchant access await database activation. Payments are disabled, and source is private. Commercial launch requires verified sourcing and stock, approved store policies and Stripe setup.',
+    reportUrl: null,
+  },
   {
     id: 7,
     projectGroup: 'personal',
