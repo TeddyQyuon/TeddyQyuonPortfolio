@@ -17,12 +17,13 @@ export default function ProjectGallery({ screenshots }) {
   }
 
   return (
-    <Box component="figure" sx={{ m: 0 }}>
+    <Box>
       {screenshots.map((shot) => (
         <Box
           key={shot.src}
-          component="figcaption"
+          component="figure"
           sx={{
+            m: 0,
             mb: 2.5,
             border: 1,
             borderColor: 'divider',
@@ -56,6 +57,7 @@ export default function ProjectGallery({ screenshots }) {
           </Box>
           {shot.caption && (
             <Typography
+              component="figcaption"
               variant="caption"
               color="text.secondary"
               sx={{ display: 'block', px: 1.5, py: 1 }}
