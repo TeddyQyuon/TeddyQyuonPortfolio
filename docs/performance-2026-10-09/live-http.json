@@ -1,0 +1,99 @@
+{
+  "portfolio": {
+    "url": "https://teddy-qyuon-portfolio.vercel.app/",
+    "status": 200,
+    "cache": "HIT",
+    "cacheControl": "public, max-age=0, must-revalidate",
+    "setCookie": false,
+    "scripts": [
+      {
+        "path": "/assets/index-ZSlOmLKo.js",
+        "status": 200,
+        "bytes": 538565,
+        "contentType": "application/javascript; charset=utf-8"
+      }
+    ]
+  },
+  "sole": {
+    "url": "https://sole-district-green.vercel.app/",
+    "status": 200,
+    "cache": "HIT",
+    "cacheControl": "public, max-age=0, must-revalidate",
+    "setCookie": false,
+    "scripts": [
+      {
+        "path": "/assets/index-DF_vIEHb.js",
+        "status": 200,
+        "bytes": 321634,
+        "contentType": "application/javascript; charset=utf-8"
+      }
+    ]
+  },
+  "meter": {
+    "url": "https://meterwise-kappa.vercel.app/",
+    "status": 200,
+    "cache": "HIT",
+    "cacheControl": "public, max-age=0, must-revalidate",
+    "setCookie": false,
+    "scripts": [
+      {
+        "path": "/assets/index-BfzgE3iK.js",
+        "status": 200,
+        "bytes": 252334,
+        "contentType": "application/javascript; charset=utf-8"
+      }
+    ]
+  },
+  "playlist": {
+    "url": "https://playlist-port-nine.vercel.app/",
+    "status": 200,
+    "cache": "MISS",
+    "cacheControl": "no-store",
+    "setCookie": false,
+    "scripts": [
+      {
+        "path": "/assets/index-BRMTKS_z.js",
+        "status": 200,
+        "bytes": 169282,
+        "contentType": "application/javascript; charset=UTF-8"
+      }
+    ],
+    "documentHeaders": {
+      "ETag": null,
+      "Last-Modified": null,
+      "X-Matched-Path": null,
+      "X-Vercel-Cache": "MISS",
+      "Cache-Control": "no-store",
+      "X-Powered-By": null
+    }
+  },
+  "scent": {
+    "url": "https://scenthaus-intelligence.vercel.app/",
+    "status": 200,
+    "cache": "MISS",
+    "cacheControl": "public, max-age=0, must-revalidate",
+    "setCookie": false,
+    "scripts": [
+      {
+        "path": "/assets/index-BKIiDoM3.js",
+        "status": 200,
+        "bytes": 378967,
+        "contentType": "application/javascript; charset=utf-8"
+      }
+    ],
+    "catalogue": {
+      "path": "/api/products",
+      "status": 200,
+      "bytes": 238343,
+      "elapsedSeconds": 23.273,
+      "serverTiming": "app;dur=5367.6",
+      "cacheControl": "no-store",
+      "keys": [
+        "products",
+        "brands"
+      ],
+      "productsCount": 150,
+      "brandsCount": 35
+    }
+  }
+}
