@@ -1,0 +1,121 @@
+{
+  "portfolio": {
+    "initial": [
+      {
+        "file": "/assets/index-ZSlOmLKo.js",
+        "bytes": 538565,
+        "gzipBytes": 177681
+      }
+    ],
+    "chunks": [
+      {
+        "file": "assets/ProjectDetailPage-CQgAC3gO.js",
+        "bytes": 31369
+      },
+      {
+        "file": "assets/index-ZSlOmLKo.js",
+        "bytes": 538565
+      }
+    ]
+  },
+  "sole-district": {
+    "initial": [
+      {
+        "file": "/assets/index-DF_vIEHb.js",
+        "bytes": 321634,
+        "gzipBytes": 98109
+      }
+    ],
+    "chunks": [
+      {
+        "file": "assets/Admin-CyMCxbZZ.js",
+        "bytes": 82691
+      },
+      {
+        "file": "assets/index-DF_vIEHb.js",
+        "bytes": 321634
+      }
+    ]
+  },
+  "meterwise": {
+    "initial": [
+      {
+        "file": "/assets/index-BfzgE3iK.js",
+        "bytes": 252334,
+        "gzipBytes": 76983
+      }
+    ],
+    "chunks": [
+      {
+        "file": "assets/ComposedChart-C0letr2A.js",
+        "bytes": 364758
+      },
+      {
+        "file": "assets/index-yCrMbYg-.js",
+        "bytes": 617894
+      },
+      {
+        "file": "assets/index-BfzgE3iK.js",
+        "bytes": 252334
+      },
+      {
+        "file": "assets/App-Dm7lDMBN.js",
+        "bytes": 45615
+      },
+      {
+        "file": "assets/App-C1RIJgS-.js",
+        "bytes": 45574
+      },
+      {
+        "file": "assets/EstateChart-DhG59z3f.js",
+        "bytes": 1106
+      }
+    ]
+  },
+  "scenthaus-intelligence": {
+    "initial": [
+      {
+        "file": "/assets/index-BKIiDoM3.js",
+        "bytes": 378967,
+        "gzipBytes": 122118
+      }
+    ],
+    "chunks": [
+      {
+        "file": "assets/AccountSecurity-CXJTzCoR.js",
+        "bytes": 11578
+      },
+      {
+        "file": "assets/index-BKIiDoM3.js",
+        "bytes": 378967
+      },
+      {
+        "file": "assets/browser-Dvc7z0Ka.js",
+        "bytes": 25776
+      },
+      {
+        "file": "assets/Admin-DbMxsn4F.js",
+        "bytes": 413836
+      },
+      {
+        "file": "assets/refresh-cw-ug9Uwlzu.js",
+        "bytes": 317
+      }
+    ]
+  },
+  "playlist-port": {
+    "initial": [
+      {
+        "file": "/assets/index-BRMTKS_z.js",
+        "bytes": 169282,
+        "gzipBytes": 54491
+      }
+    ],
+    "chunks": [
+      {
+        "file": "assets/index-BRMTKS_z.js",
+        "bytes": 169282
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "scent-catalogue": {
+    "url": "https://scenthaus-intelligence.vercel.app/api/products",
+    "status": 200,
+    "bytes": 238343,
+    "elapsedSeconds": 23.651,
+    "serverTiming": "app;dur=5882.0",
+    "cacheControl": "no-store",
+    "products": 150,
+    "brands": 35
+  },
+  "playlist-session": {
+    "url": "https://playlist-port-nine.vercel.app/api/session",
+    "status": 200,
+    "bytes": 52,
+    "elapsedSeconds": 8.207,
+    "serverTiming": null,
+    "cacheControl": "no-store"
+  },
+  "meter-health": {
+    "url": "https://meterwise-kappa.vercel.app/api/health",
+    "status": 200,
+    "bytes": 126,
+    "elapsedSeconds": 8.945,
+    "serverTiming": null,
+    "cacheControl": "no-store"
+  }
+}
