@@ -1,9 +1,16 @@
+import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import BackToTop from './components/common/BackToTop';
 import HomePage from './pages/HomePage';
-import ProjectDetailPage from './pages/ProjectDetailPage';
+const ProjectDetailPage = lazy(async () => {
+  const { default: Page } = await import('./pages/ProjectDetailPage');
+  return { default: function LoadedProjectPage() {
+    useScrollToHash();
+    return <Page />;
+  } };
+});
 import NotFoundPage from './pages/NotFoundPage';
 import useScrollToHash from './hooks/useScrollToHash';
 
@@ -25,11 +32,13 @@ export default function App() {
       </a>
       <Navbar />
       <main id="main-content">
+        <Suspense fallback={<p role="status" style={{ padding: '4rem 1.5rem' }}>Opening project…</p>}>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/projects/:slug" element={<ProjectDetailPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
+        </Suspense>
       </main>
       <Footer />
       <BackToTop />
