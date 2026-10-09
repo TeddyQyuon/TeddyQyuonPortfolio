@@ -26,3 +26,13 @@ SCENTHAUS documentation subsequently changed in `635169ee762f8b1dda2d1f1f7251501
 - Authenticated playlist transfers, live commercial payments and private merchant administration were outside this UI refresh verification. Existing demo limitations remain visible on the portfolio.
 
 `portfolio-desktop.jpg` is an actual capture of the published portfolio hero. The refreshed personal-site captures in `src/assets/images/projects` are also actual browser screenshots, not generated mockups.
+
+## 9 October follow-up (Singapore time)
+
+The follow-up source and live DOM review found 36 px social links, 34.5 px footer links and 40 px icon controls. They now have a minimum 44 px touch target. Narrow grid columns can shrink safely and technology labels can wrap.
+
+Each case-study screenshot now has its own `figure` and `figcaption`. Previously one figure contained all six SCENTHAUS screenshot captions. The new structure keeps each image and description associated for assistive technology while preserving the full-size image link.
+
+The production build and whitespace checks passed. Mobile emulation remains unavailable in the cloud browser, so this is a source review and live desktop verification, not a completed mobile-browser test.
+
+Live verification confirmed all seven social links, the footer links and three footer icon buttons at 44 px high, plus six separate SCENTHAUS figures with one image and caption each. `portfolio-accessibility-followup.jpg` captures the published contact and footer view.
