@@ -25,12 +25,84 @@ import scenthausPayment from '../assets/images/projects/scenthaus/payment-confir
 import soleDistrictStorefront from '../assets/images/projects/uiux-sole-storefront.jpg';
 import soleDistrictProduct from '../assets/images/projects/sole-district/product-20261008.jpg';
 import soleDistrictCheckout from '../assets/images/projects/sole-district/checkout-20261008.jpg';
+import gamevaultHome from '../assets/images/projects/gamevault/gamevault-home.jpg';
+import gamevaultProduct from '../assets/images/projects/gamevault/gamevault-product.jpg';
+import gamevaultSubscriptions from '../assets/images/projects/gamevault/gamevault-subscriptions.jpg';
 
 const projectData = [
   {
-    id: 8,
+    id: 9,
     projectGroup: 'personal',
     displayOrder: 0,
+    displayName: 'GameVault',
+    cardSubtitle: 'Digital gaming marketplace & Stripe checkout',
+    cardSummary: 'A full-stack digital marketplace for game subscriptions and gift cards featuring 23 verified products, instant brand-tile routing, live search autocomplete, server-authoritative Stripe Checkout, and a manual 1-hour email fulfillment queue.',
+    cardContribution: 'Full-stack architecture, high-conversion UI/UX overhaul, Express REST API, Sequelize MySQL schema, Stripe Checkout integration, and release verification with AI assistance.',
+    cardTechnologies: ['React', 'Node.js', 'Express.js', 'MySQL', 'Sequelize ORM', 'Stripe'],
+    cardNote: 'Storefront deployed · 23 live products · Stripe Checkout ready.',
+    slug: 'gamevault-marketplace',
+    name: 'GameVault — Digital Game Subscriptions & Gift Cards Marketplace',
+    category: 'Full-Stack',
+    type: 'Personal commerce portfolio project',
+    role: 'AI-assisted personal project',
+    summary: 'A responsive full-stack digital marketplace built with React/Vite, Node.js/Express, and MySQL/Sequelize. Features 23 verified products across 15 game subscriptions and 8 gift cards, real vector platform branding, instant service tile routing, live autocomplete search, server-priced Stripe Checkout, webhook signature verification, and a staff-managed 1-hour manual email delivery operations queue.',
+    problem: 'Gamers and digital subscription buyers need transparent regional eligibility, instant access to pricing, and reliable delivery without confusing redirects or unverified third-party keys.',
+    solution: 'GameVault provides a verified catalogue where each product displays exact supported regions, terms, and delivery assurances. Direct purchase buttons route instantly from brand tiles to product pages with cart drawers. The Express backend enforces server-owned pricing, prevents live sales of unverified demo listings, verifies signed Stripe webhook events idempotently, and routes paid orders into a staff fulfillment queue for manual email delivery.',
+    dataset: '23 verified digital products: 15 popular subscriptions (Xbox Game Pass, PlayStation Plus, Nintendo Switch Online, EA Play, Discord Nitro, Spotify, Netflix, NordVPN) and 8 digital gift cards (Steam, PlayStation, Xbox, Nintendo, Apple, Google Play, Roblox, Razer Gold). Prices, activation terms, and regional restrictions are documented; demo listings are guarded from live transactions.',
+    results: 'All 68 automated tests passed (56 backend integration, security, pricing, and live-guard tests + 12 frontend component tests). The production Vite build completed cleanly. Hosted Vercel deployment serves the responsive storefront with client-side SPA routing rewrites. Release verification confirmed direct service routing, live search autocomplete, product detail CTAs, payment trust badges, and public API health reporting checkoutReady.',
+    technologies: ['React', 'Vite', 'JavaScript', 'Node.js', 'Express.js', 'Sequelize ORM', 'MySQL', 'Stripe', 'Tailwind CSS', 'Vercel'],
+    features: [
+      'Responsive gaming marketplace storefront with dark/light visual identity and authentic vector brand assets',
+      'Curated catalogue with 23 verified products across 15 popular subscriptions and 8 digital gift cards',
+      'Direct service tile routing linking brand badges (NordVPN, Game Pass, PS Plus) straight to dedicated purchase pages',
+      'Live autocomplete search dropdown with instant pricing, badge indicators, and product thumbnails',
+      'High-conversion product detail page with immediate Buy Now CTA, Add to Cart drawer, and delivery guarantees',
+      'Stripe-hosted Checkout with payment method trust badges (Visa, Mastercard, Apple Pay, Google Pay, Stripe)',
+      'Server-owned price validation and anti-tampering guards ensuring client prices cannot be manipulated',
+      'Signature-verified Stripe webhook handling with an idempotent event ledger preventing duplicate order fulfillment',
+      'Safety guard preventing live Stripe checkout sessions for demo listings or unstocked inventory',
+      'Manual 1-hour email fulfillment workflow with staff management queue and customer order tracking',
+      'Protected staff console for catalogue publishing, order processing, and fulfillment dispatch',
+      'Comprehensive 68-test automated test suite covering live guards, pricing calculations, webhooks, and UI logic',
+    ],
+    myContribution: 'I scoped and built the GameVault marketplace, directed the gaming brand identity and high-converting UI/UX overhaul, implemented the Express/Sequelize API and MySQL schema, integrated Stripe Checkout and webhook verification, created the 23-product catalogue, and verified the production Vercel release with AI assistance.',
+    architecture: [
+      'React + Vite storefront with Tailwind CSS and responsive layout',
+      'Node.js + Express REST API with cookie sessions, input validation, and role-based guards',
+      'Sequelize ORM with MySQL schema migrations covering products, orders, customers, and webhook ledgers',
+      'Stripe Checkout Session API and cryptographic webhook signature verification',
+      'Manual email fulfillment operational workflow and staff order queue',
+      'Vercel frontend hosting with vercel.json SPA rewrites; Express and MySQL ready for containerized cloud deployment',
+    ],
+    challenges: 'Ensuring bulletproof separation between live and test checkout modes, guarding against demo listings being purchased with real money, guaranteeing webhook idempotency against duplicate delivery, and fixing navigation paths so brand badges take shoppers directly to buying pages.',
+    learnings: 'How server-authoritative pricing, payment gateway webhooks, digital fulfillment lifecycles, and high-conversion e-commerce UX connect end-to-end in a production-ready application.',
+    screenshots: [
+      {
+        src: gamevaultHome,
+        alt: 'GameVault live marketplace storefront featuring popular subscriptions, platform categories, and curated game deals.',
+        caption: 'Actual Vercel storefront captured during live verification. Curated subscriptions and gift cards with authentic brand assets and direct purchase actions.',
+      },
+      {
+        src: gamevaultProduct,
+        alt: 'GameVault NordVPN product details page showing instant Buy Now CTA, pricing, and 1-hour email delivery assurance.',
+        caption: 'Dedicated product purchase view with prominent Buy Now and Add to Cart actions, regional terms, and customer delivery guarantees.',
+      },
+      {
+        src: gamevaultSubscriptions,
+        alt: 'GameVault subscriptions collection showcasing game, entertainment, and software memberships.',
+        caption: 'Subscriptions directory with platform badges, direct pricing, and one-click purchase routing across 15 popular services.',
+      },
+    ],
+    repositoryUrl: 'https://github.com/TeddyQyuon/gamevault',
+    demoUrl: 'https://gamevault-alpha-ten.vercel.app/',
+    demoLabel: 'Live storefront',
+    demoAccessNote: 'Public storefront deployed on Vercel with verified catalogue of 23 products. Stripe checkout and webhook architecture is fully implemented; live processing requires production API and MySQL hosting per the included Docker/cloud runbook.',
+    reportUrl: null,
+  },
+  {
+    id: 8,
+    projectGroup: 'personal',
+    displayOrder: 1,
     displayName: 'SOLE DISTRICT',
     cardSubtitle: 'Streetwear storefront and Django merchant workspace',
     cardSummary: "An editorial streetwear storefront with a deployed Django API, dedicated PostgreSQL database, SKU inventory, customer recovery and a merchant workspace. Owner setup, email and payments remain pending.",
@@ -96,7 +168,7 @@ const projectData = [
   {
     id: 7,
     projectGroup: 'personal',
-    displayOrder: 1,
+    displayOrder: 2,
     displayName: 'SCENTHAUS Intelligence',
     cardSubtitle: 'Fragrance discovery, secure Stripe checkout and ML',
     cardSummary: 'A responsive fragrance storefront with 35 houses, 150 product references, size-and-quantity Quick add, secure accounts, Stripe checkout, explainable recommendations and demand forecasts. Payments run in test mode.',
@@ -337,7 +409,7 @@ const projectData = [
   {
     id: 5,
     projectGroup: 'personal',
-    displayOrder: 3,
+    displayOrder: 4,
     displayName: 'Playlist Port',
     cardSubtitle: 'Spotify playlist transfer',
     cardSummary: 'Copy Spotify playlists between accounts with OAuth sign-in, preserved track order and transfer verification.',
@@ -383,7 +455,7 @@ const projectData = [
   {
     id: 6,
     projectGroup: 'personal',
-    displayOrder: 2,
+    displayOrder: 3,
     displayName: 'MeterWise',
     cardSubtitle: 'Singapore estate energy operations',
     cardSummary: 'An estate energy dashboard connecting public HDB building data, simulated meter readings and an evidence-based maintenance workflow.',
