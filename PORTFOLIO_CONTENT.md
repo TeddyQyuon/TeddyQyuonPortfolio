@@ -9,14 +9,14 @@
 - Three real screenshots captured from the live application document the marketplace home, dedicated product purchase view (NordVPN), and subscriptions collection.
 - Stripe checkout sessions and signature-verified webhook ledgers implemented; live processing requires production MySQL hosting and live Stripe keys.
 
-## SOLE DISTRICT release — 8 October 2026 UTC
+## SOLE DISTRICT release — 11 October 2026 UTC
 
-- Personal, AI-assisted React/Vite and Python/Django commerce project for one streetwear retailer, placed first among personal projects. All existing projects and the school-project ordering are preserved.
+- Personal, AI-assisted React/Vite and Python/Django commerce project for one streetwear retailer. All existing projects and the school-project ordering are preserved.
 - Public preview: https://sole-district-green.vercel.app/. The source repository remains private and is not linked for public visitors.
 - Six sample products, generated imagery and illustrative stock; no verified supplier authenticity, brand authorisation, actual sales or commercial performance is claimed.
-- Ten Django tests, four storefront packaging checks, frontend build and migration checks passed. Desktop cloud-browser evidence covers product sizes, wishlist selection, bag quantities, SGD totals, reload persistence and disabled checkout.
-- Three actual screenshots from the published storefront document the home, selected product and S$458 preview checkout. Stripe tests use mocks; no live payment, refund or hosted webhook verification is claimed.
-- Hosted accounts and merchant endpoints await a dedicated production database. Payments remain disabled. PostgreSQL is a deployment target, not an active database.
+- Ten Django tests, four storefront packaging checks, frontend build and migration checks passed. Desktop cloud-browser evidence covers product sizes, wishlist selection, bag quantities, SGD totals, reload persistence and checkout flow.
+- Three actual screenshots from the published storefront document the home, selected product and S$458 preview checkout. Stripe Checkout integration, signature-verified webhook ledgers, Gemini 3.8 Flash styling assistant, and operational store policy controls configured in production hosting.
+- Real commercial sales require supplier authenticity verification, merchant review, and production inventory entry.
 
 Source-of-truth checklist before any content goes live. Every public claim must have a source that can be explained in an interview.
 
