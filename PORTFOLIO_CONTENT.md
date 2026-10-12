@@ -4,8 +4,8 @@
 
 - Personal, AI-assisted React/Vite, Node.js/Express, Vercel Serverless, and MySQL/Sequelize digital gaming marketplace project, placed first among personal projects. All existing projects and school-project ordering are preserved.
 - Public preview: https://gamevault-alpha-ten.vercel.app/. Public REST API: https://gamevault-alpha-ten.vercel.app/api/health. Public source repository: https://github.com/TeddyQyuon/gamevault.
-- Curated catalogue with 23 verified products across 15 game/software subscriptions and 8 digital gift cards, with deduplicated edition variants, sliding cart drawer with GAMER10 promo code math, and instant brand tile routing. Regional restrictions, 1-hour manual email delivery terms and staff order queue verified.
-- 75 automated tests passed (56 backend integration/security/pricing/live-guards + 19 frontend UI/cart/catalogue/deduplication tests); Vite production build passes cleanly.
+- Curated catalogue with 37 verified products across 15 game/software subscriptions, 8 digital gift cards, and 14 PC/console games, with deduplicated edition variants, sliding cart drawer with GAMER10 promo code math, and instant brand tile routing. Regional restrictions, 1-hour manual email delivery terms and staff order queue verified.
+- 76 automated tests passed (56 backend integration/security/pricing/live-guards + 20 frontend UI/cart/catalogue/deduplication tests); Vite production build passes cleanly.
 - Three real screenshots captured from the live application document the marketplace home, dedicated product purchase view (NordVPN), and subscriptions collection.
 - Stripe checkout sessions, Vercel serverless functions, and signature-verified webhook ledgers implemented; live processing ready with Vercel serverless functions and Express/MySQL runbook.
 

@@ -31,7 +31,7 @@ export default function ProjectCard({ project, number }) {
           {project.demoUrl && <Button component="a" href={project.demoUrl} target="_blank" rel="noopener noreferrer" variant="outlined" size="small" startIcon={<LaunchIcon sx={{ fontSize: 16 }} />} aria-label={`Live demo — ${project.name}`}>Live demo</Button>}
           {project.reportUrl && <Button component="a" href={project.reportUrl} target="_blank" rel="noopener noreferrer" variant="outlined" size="small" startIcon={<DescriptionOutlinedIcon sx={{ fontSize: 16 }} />} aria-label={`Project report — ${project.name}`}>Report</Button>}
           {project.repositoryUrl && <a className="quiet-link" href={project.repositoryUrl} target="_blank" rel="noopener noreferrer" aria-label={`GitHub repository — ${project.name}`}><GitHubIcon sx={{ fontSize: 17 }} />GitHub</a>}
-          {project.apiUrl && <a className="quiet-link" href={project.apiUrl} target="_blank" rel="noopener noreferrer" aria-label={`REST API — ${project.name}`}>API</a>}
+          {project.apiUrl && <a className="quiet-link" href={project.apiUrl} target="_blank" rel="noopener noreferrer" aria-label={`REST API — ${project.name}`}><LaunchIcon sx={{ fontSize: 16 }} />REST API</a>}
         </div>
         {project.cardNote && <Typography className="project-note">{project.cardNote}</Typography>}
       </div>
