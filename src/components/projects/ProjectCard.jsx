@@ -4,6 +4,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
 import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined';
 import CodeIcon from '@mui/icons-material/Code';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import TechnologyLogo, { hasTechnologyLogo } from '../common/TechnologyLogo';
 
 export default function ProjectCard({ project, number }) {
@@ -26,7 +27,7 @@ export default function ProjectCard({ project, number }) {
           {technologies.map((tech) => <span className="project-tech-item" key={tech}>{hasTechnologyLogo(tech) && <TechnologyLogo name={tech} size={16} />}{tech}</span>)}
         </div>
         <div className="project-actions">
-          <Button component={Link} to={route} variant="contained" size="small" aria-label={`Case study — ${project.name}`}>Case study</Button>
+          <Button component={Link} to={route} variant="contained" size="small" endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />} aria-label={`Case study — ${project.name}`}>Case study</Button>
           {project.demoUrl && <Button component="a" href={project.demoUrl} target="_blank" rel="noopener noreferrer" variant="outlined" size="small" startIcon={<LaunchIcon sx={{ fontSize: 16 }} />} aria-label={`Live demo — ${project.name}`}>Live demo</Button>}
           {project.reportUrl && <Button component="a" href={project.reportUrl} target="_blank" rel="noopener noreferrer" variant="outlined" size="small" startIcon={<DescriptionOutlinedIcon sx={{ fontSize: 16 }} />} aria-label={`Project report — ${project.name}`}>Report</Button>}
           {project.repositoryUrl && <a className="quiet-link" href={project.repositoryUrl} target="_blank" rel="noopener noreferrer" aria-label={`GitHub repository — ${project.name}`}><GitHubIcon sx={{ fontSize: 17 }} />GitHub</a>}

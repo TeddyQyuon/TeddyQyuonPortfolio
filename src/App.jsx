@@ -14,6 +14,9 @@ const ProjectDetailPage = lazy(async () => {
 import NotFoundPage from './pages/NotFoundPage';
 import useScrollToHash from './hooks/useScrollToHash';
 
+import ScrollProgressBar from './components/layout/ScrollProgressBar';
+import MobileQuickActions from './components/layout/MobileQuickActions';
+
 export default function App() {
   // Applies to every route: deep links such as /#projects or
   // /projects/gym-calories-predictive-analysis#results scroll to the target
@@ -30,6 +33,7 @@ export default function App() {
       <a className="skip-link" href="#main-content">
         Skip to content
       </a>
+      <ScrollProgressBar />
       <Navbar />
       <main id="main-content">
         <Suspense fallback={<p role="status" style={{ padding: '4rem 1.5rem' }}>Opening project…</p>}>
@@ -42,6 +46,7 @@ export default function App() {
       </main>
       <Footer />
       <BackToTop />
+      <MobileQuickActions />
     </>
   );
 }

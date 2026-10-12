@@ -25,6 +25,7 @@ import CategoryIcon from '@mui/icons-material/Category';
 import ProjectGallery from '../components/projects/ProjectGallery';
 import ModelComparison from '../components/projects/ModelComparison';
 import TechnologyChip from '../components/common/TechnologyChip';
+import ArchitectureFlow from '../components/projects/ArchitectureFlow';
 import { projects } from '../data/projects';
 
 // Case-study page for a single project, found by slug.
@@ -100,9 +101,51 @@ export default function ProjectDetailPage() {
 
   return (
     <Container maxWidth="lg" sx={{ py: { xs: 4, md: 6 } }}>
-      <Button component={RouterLink} to="/" startIcon={<ArrowBackIcon />} sx={{ mb: 3 }}>
-        Back to Home
-      </Button>
+      {/* Sticky Quick-Return Bar */}
+      <Box
+        sx={{
+          position: 'sticky',
+          top: { xs: 58, md: 68 },
+          zIndex: 100,
+          py: 1.25,
+          px: { xs: 1.5, sm: 2 },
+          mb: 3,
+          bgcolor: 'rgba(247, 248, 250, 0.94)',
+          backdropFilter: 'blur(10px)',
+          border: 1,
+          borderColor: 'divider',
+          borderRadius: 2,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          gap: 1.5,
+          boxShadow: '0 2px 10px rgba(0, 0, 0, 0.03)',
+        }}
+      >
+        <Button
+          component={RouterLink}
+          to="/#projects"
+          startIcon={<ArrowBackIcon />}
+          size="small"
+          sx={{ fontWeight: 600 }}
+        >
+          Back to Projects
+        </Button>
+        <Typography
+          variant="caption"
+          color="text.secondary"
+          sx={{
+            display: { xs: 'none', sm: 'block' },
+            fontWeight: 500,
+            maxWidth: 380,
+            overflow: 'hidden',
+            textOverflow: 'ellipsis',
+            whiteSpace: 'nowrap',
+          }}
+        >
+          {project.displayName || project.name}
+        </Typography>
+      </Box>
 
       <Typography variant="h2" component="h1" gutterBottom sx={{ fontSize: { xs: '2rem', md: '2.75rem' } }}>
         {project.name}
@@ -143,19 +186,43 @@ export default function ProjectDetailPage() {
           <ProjectGallery screenshots={project.screenshots} />
 
           <Box sx={{ mt: project.screenshots?.length ? 4 : 0 }}>
-            <Typography variant="h5" component="h2" id="problem" gutterBottom>
-              Problem
-            </Typography>
-            <Typography paragraph color="text.secondary">
-              {project.problem}
-            </Typography>
+            <Paper
+              variant="outlined"
+              id="problem"
+              sx={{
+                p: 3,
+                mb: 3,
+                borderLeft: 4,
+                borderLeftColor: 'warning.main',
+                borderRadius: 2,
+              }}
+            >
+              <Typography variant="h6" component="h2" sx={{ fontWeight: 700, mb: 1, color: 'text.primary' }}>
+                The Challenge
+              </Typography>
+              <Typography paragraph color="text.secondary" sx={{ mb: 0, lineHeight: 1.7 }}>
+                {project.problem}
+              </Typography>
+            </Paper>
 
-            <Typography variant="h5" component="h2" id="solution" gutterBottom>
-              Solution
-            </Typography>
-            <Typography paragraph color="text.secondary">
-              {project.solution}
-            </Typography>
+            <Paper
+              variant="outlined"
+              id="solution"
+              sx={{
+                p: 3,
+                mb: 4,
+                borderLeft: 4,
+                borderLeftColor: 'primary.main',
+                borderRadius: 2,
+              }}
+            >
+              <Typography variant="h6" component="h2" sx={{ fontWeight: 700, mb: 1, color: 'text.primary' }}>
+                The Solution
+              </Typography>
+              <Typography paragraph color="text.secondary" sx={{ mb: 0, lineHeight: 1.7 }}>
+                {project.solution}
+              </Typography>
+            </Paper>
 
             {(project.dataset || project.dataPreparation) && (
               <>
@@ -197,20 +264,30 @@ export default function ProjectDetailPage() {
             )}
 
             {project.results && (
-              <>
-                <Typography variant="h5" component="h2" id="results" gutterBottom>
-                  Results
+              <Paper
+                variant="outlined"
+                id="results"
+                sx={{
+                  p: 3,
+                  mb: 4,
+                  borderLeft: 4,
+                  borderLeftColor: 'success.main',
+                  borderRadius: 2,
+                }}
+              >
+                <Typography variant="h6" component="h2" sx={{ fontWeight: 700, mb: 1, color: 'text.primary' }}>
+                  The Outcome &amp; Impact
                 </Typography>
                 {/* A structured comparison renders as a table; otherwise fall
                     back to the prose summary. */}
                 {project.modelComparison ? (
                   <ModelComparison comparison={project.modelComparison} />
                 ) : (
-                  <Typography paragraph color="text.secondary">
+                  <Typography paragraph color="text.secondary" sx={{ mb: 0, lineHeight: 1.7 }}>
                     {project.results}
                   </Typography>
                 )}
-              </>
+              </Paper>
             )}
 
             <Typography variant="h5" component="h2" id="technologies" gutterBottom>
@@ -259,35 +336,7 @@ export default function ProjectDetailPage() {
                 <Typography variant="h5" component="h2" id="architecture" gutterBottom>
                   Architecture
                 </Typography>
-                <Paper
-                  variant="outlined"
-                  sx={(theme) => ({
-                    p: 2.5,
-                    mb: 4,
-                    bgcolor: theme.custom.surfaces.navy,
-                    color: theme.custom.onDark.body,
-                  })}
-                >
-                  {project.architecture.map((layer, layerIndex) => (
-                    <Box key={layer}>
-                      <Typography variant="body1" sx={{ fontFamily: 'monospace' }}>
-                        {layer}
-                      </Typography>
-                      {layerIndex < project.architecture.length - 1 && (
-                        <Typography
-                          variant="body2"
-                          sx={(theme) => ({
-                            fontFamily: 'monospace',
-                            pl: 2,
-                            color: theme.custom.onDark.subtle,
-                          })}
-                        >
-                          ↓
-                        </Typography>
-                      )}
-                    </Box>
-                  ))}
-                </Paper>
+                <ArchitectureFlow architecture={project.architecture} />
               </>
             )}
 

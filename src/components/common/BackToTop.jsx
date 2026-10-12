@@ -34,7 +34,7 @@ export default function BackToTop() {
           sx={{
             position: 'fixed',
             right: { xs: 16, md: 32 },
-            bottom: { xs: 16, md: 32 },
+            bottom: { xs: 78, md: 32 },
             zIndex: (theme) => theme.zIndex.speedDial,
           }}
         >

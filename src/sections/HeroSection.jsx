@@ -1,4 +1,5 @@
-import { Typography, Container, Button, Box } from '@mui/material';
+import { Typography, Container, Button, Box, Stack } from '@mui/material';
+import { Link as RouterLink } from 'react-router-dom';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
@@ -15,7 +16,32 @@ export default function HeroSection() {
         <div className="hero-content">
           <div>
             <p className="hero-kicker">Software &amp; data · Singapore</p>
-            <div className="availability"><span aria-hidden="true" />Open to a 1-year technology internship · 2027</div>
+            <Stack direction="row" spacing={1} sx={{ flexWrap: 'wrap', gap: 1, mb: 2, alignItems: 'center' }}>
+              <div className="availability"><span aria-hidden="true" />Open to a 1-year technology internship · 2027</div>
+              <Button
+                component={RouterLink}
+                to="/projects/gamevault-marketplace"
+                size="small"
+                variant="text"
+                sx={{
+                  textTransform: 'none',
+                  fontSize: '0.75rem',
+                  fontWeight: 600,
+                  color: 'primary.main',
+                  bgcolor: 'action.hover',
+                  border: 1,
+                  borderColor: 'divider',
+                  borderRadius: '999px',
+                  px: 1.5,
+                  py: 0.5,
+                  lineHeight: 1.5,
+                  minHeight: 30,
+                  '&:hover': { bgcolor: 'primary.light' },
+                }}
+              >
+                ⭐ Featured: GameVault Marketplace →
+              </Button>
+            </Stack>
             <Typography component="h1" variant="h1" className="hero-name"><span>Wai Yan</span>{' '}<span>Hpone Lat</span></Typography>
             <Typography className="hero-lead">Full-stack development. Applied AI &amp; analytics.</Typography>
             <Typography className="hero-intro">{personalInfo.intro}</Typography>

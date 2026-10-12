@@ -14,7 +14,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--blue); outline-
 .section-eyebrow { display: block; margin-bottom: 14px; font-size: .75rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--blue); }
 .section-title { font-size: clamp(1.9rem, 4vw, 2.9rem) !important; }
 .section-description { max-width: 600px; margin-top: 14px !important; color: var(--muted); }
-.hero { background: linear-gradient(115deg, #ffffff 55%, #eff4fc); border-bottom: 1px solid var(--line); }
+.hero { background: radial-gradient(circle at 85% 15%, rgba(36, 91, 225, 0.06) 0%, transparent 45%), linear-gradient(115deg, #ffffff 55%, #eff4fc); border-bottom: 1px solid var(--line); position: relative; }
 .hero-content { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 294px; gap: 72px; align-items: center; padding: 54px 0 44px; }
 .hero-kicker { font-size: .75rem; letter-spacing: .13em; color: var(--blue); text-transform: uppercase; font-weight: 600; margin: 0 0 22px; }
 .hero-name { font-size: clamp(3.3rem, 6vw, 5.3rem) !important; margin: 0 0 18px !important; }
@@ -36,12 +36,12 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--blue); outline-
 .project-group-heading h3 { font-size: 1.15rem; font-weight: 600; letter-spacing: -.02em; margin: 0; }
 .project-group-count { color: var(--muted); font-size: .8125rem; }
 .personal-projects { display: grid; gap: 28px; margin-bottom: 60px; }
-.project-card { border: 1px solid var(--line); border-radius: 16px; background: white; overflow: hidden; min-width: 0; box-shadow: 0 4px 22px #27354d05; transition: border-color .2s, box-shadow .2s; }
-.project-card:hover { border-color: #bfcce0; box-shadow: 0 12px 30px #27354d0a; }
+.project-card { border: 1px solid var(--line); border-radius: 16px; background: white; overflow: hidden; min-width: 0; box-shadow: 0 4px 22px #27354d05; transition: transform .25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow .25s cubic-bezier(0.16, 1, 0.3, 1), border-color .2s ease; }
+.project-card:hover { transform: translateY(-5px); border-color: #b8c8e2; box-shadow: 0 16px 36px rgba(27, 43, 77, 0.08); }
 .project-card-personal { display: grid; grid-template-columns: minmax(0, 1.06fr) minmax(0, 1fr); }
 .project-cover-link { display: flex; min-width: 0; text-decoration: none; align-items: center; padding: 30px; background: #e9edf4; border-right: 1px solid var(--line); }
-.project-cover { width: 100%; height: auto; display: block; border: 1px solid rgba(32,39,51,.12); border-radius: 7px; box-shadow: 0 10px 28px rgba(21,31,52,.10); transition: transform .22s ease; }
-.project-cover-link:hover .project-cover { transform: translateY(-3px); }
+.project-cover { width: 100%; height: auto; display: block; border: 1px solid rgba(32,39,51,.12); border-radius: 7px; box-shadow: 0 10px 28px rgba(21,31,52,.10); transition: transform .28s cubic-bezier(0.16, 1, 0.3, 1); }
+.project-card:hover .project-cover { transform: scale(1.025) translateY(-2px); }
 .project-card[data-project="playlist-port-spotify-mover"] .project-cover-link { background: #eae8f3; }
 .project-card[data-project="sole-district"] .project-cover-link { background: #eceee6; }
 .project-card[data-project="scenthaus-intelligence"] .project-cover-link { background: #efebe5; }
@@ -62,6 +62,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--blue); outline-
 .project-tech { display: flex; flex-wrap: wrap; gap: 10px 16px; padding-top: 18px; border-top: 1px solid var(--line); margin-bottom: 24px; }
 .project-tech-item { display: inline-flex; align-items: center; gap: 7px; font-size: .8125rem; font-weight: 500; color: var(--ink); padding: 6px 9px; background: #f6f8fb; border: 1px solid #e7ebf1; border-radius: 7px; }
 .project-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin-top: auto; }
+.project-actions .MuiButton-root .MuiButton-endIcon { transition: transform .2s ease; }
+.project-actions .MuiButton-root:hover .MuiButton-endIcon { transform: translateX(4px); }
 .project-note { font-size: .75rem !important; line-height: 1.6 !important; color: var(--muted); margin: 14px 0 0 !important; }
 .school-projects { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; }
 .project-card-school .project-body { padding: 28px; }
@@ -91,6 +93,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--blue); outline-
 .hero-toolkit > span { display: inline-flex; align-items: center; gap: 7px; color: var(--muted); font-size: .8125rem; }
 .project-number { font-variant-numeric: tabular-nums; border: 1px solid var(--line); border-radius: 6px; padding: 4px 7px; }
 @media (max-width: 899px) {
+  body { padding-bottom: 74px; }
   .section-shell { padding-top: 64px !important; padding-bottom: 64px !important; }
   .hero-content { grid-template-columns: minmax(0, 1fr) 230px; gap: 36px; padding-top: 54px; }
   .hero-name { font-size: 3.1rem !important; }

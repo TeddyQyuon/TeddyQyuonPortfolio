@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link as RouterLink } from 'react-router-dom';
 import {
   Typography,
   Container,
@@ -12,7 +13,10 @@ import {
 } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
+import LightbulbOutlinedIcon from '@mui/icons-material/LightbulbOutlined';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import SectionHeading from '../components/common/SectionHeading';
+import GpaTrendSparkline from '../components/common/GpaTrendSparkline';
 import { semesterResults, currentGpa, recentHighlights } from '../data/academicResults';
 
 // Compact academic progress: semester cards keep GPA less dominant than projects.
@@ -63,12 +67,32 @@ export default function AcademicProgressSection() {
                   {sem.modules.map((m) => (
                     <Box
                       key={m.name}
-                      sx={{ display: 'flex', justifyContent: 'space-between', gap: 1 }}
+                      sx={{
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        alignItems: 'center',
+                        gap: 1.5,
+                      }}
                     >
-                      <Typography variant="body2" color="text.secondary">
+                      <Typography variant="body2" color="text.secondary" sx={{ flex: 1, minWidth: 0 }}>
                         {m.name} ({m.credits} credits)
                       </Typography>
-                      <Chip label={m.grade} size="small" variant="outlined" />
+                      <Chip
+                        label={m.grade}
+                        size="small"
+                        variant="outlined"
+                        sx={{
+                          flexShrink: 0,
+                          minWidth: 38,
+                          height: 24,
+                          fontWeight: 600,
+                          fontSize: '0.75rem',
+                          '& .MuiChip-label': {
+                            px: 1,
+                            whiteSpace: 'nowrap',
+                          },
+                        }}
+                      />
                     </Box>
                   ))}
                 </Box>
@@ -94,17 +118,12 @@ export default function AcademicProgressSection() {
             <Typography variant="caption" sx={(theme) => ({ color: theme.custom.onPrimary.soft })}>
               Official figure shown on NYP result statement
             </Typography>
-            <Typography
-              variant="body2"
-              sx={(theme) => ({ mt: 1.5, color: theme.custom.onPrimary.soft })}
-            >
-              3.00 → 2.80 → 3.70
-            </Typography>
+            <GpaTrendSparkline />
           </Paper>
         </Grid>
       </Grid>
 
-      <Paper variant="outlined" sx={{ p: { xs: 2.5, md: 3 }, maxWidth: 820 }}>
+      <Paper variant="outlined" sx={{ p: { xs: 2.5, md: 3 }, maxWidth: 860 }}>
         <Box sx={{ display: 'flex', gap: 1, alignItems: 'center', mb: 1.5 }}>
           <EmojiEventsIcon color="primary" />
           <Typography variant="subtitle1">Recent academic highlights</Typography>
@@ -112,15 +131,15 @@ export default function AcademicProgressSection() {
         <Grid container spacing={1.5}>
           {recentHighlights.map((h) => (
             <Grid item xs={12} sm={4} key={h.module}>
-              <Box sx={{ border: 1, borderColor: 'divider', borderRadius: 2, p: 1.5 }}>
-                <Chip label={h.grade} size="small" color="primary" sx={{ mb: 1 }} />
-                <Typography variant="subtitle2">{h.module}</Typography>
+              <Box sx={{ border: 1, borderColor: 'divider', borderRadius: 2, p: 1.5, height: '100%', display: 'flex', flexDirection: 'column' }}>
+                <Chip label={h.grade} size="small" color="primary" sx={{ mb: 1, alignSelf: 'flex-start' }} />
+                <Typography variant="subtitle2" sx={{ mb: 0.5 }}>{h.module}</Typography>
                 {h.href ? (
-                  <Link href={h.href} variant="body2">
-                    {h.evidence}
+                  <Link component={RouterLink} to={h.href} variant="body2" sx={{ mt: 'auto', fontWeight: 500 }}>
+                    {h.evidence} →
                   </Link>
                 ) : (
-                  <Typography variant="body2" color="text.secondary">
+                  <Typography variant="body2" color="text.secondary" sx={{ mt: 'auto' }}>
                     {h.evidence}
                   </Typography>
                 )}
@@ -128,6 +147,45 @@ export default function AcademicProgressSection() {
             </Grid>
           ))}
         </Grid>
+
+        {/* Contextual CTA connecting predictive analytics coursework to real project */}
+        <Box
+          sx={{
+            mt: 2.5,
+            p: 2,
+            borderRadius: 2,
+            bgcolor: 'action.hover',
+            border: 1,
+            borderColor: 'divider',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: 1.5,
+          }}
+        >
+          <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.25 }}>
+            <LightbulbOutlinedIcon color="primary" sx={{ fontSize: 22 }} />
+            <Box>
+              <Typography variant="subtitle2" sx={{ fontWeight: 600 }}>
+                Applying Predictive Analytics to Business
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                See how predictive models and revenue forecasting are implemented in production.
+              </Typography>
+            </Box>
+          </Box>
+          <Button
+            component={RouterLink}
+            to="/projects/scenthaus-intelligence"
+            size="small"
+            variant="outlined"
+            endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
+            sx={{ fontWeight: 600 }}
+          >
+            Check out SCENTHAUS ML
+          </Button>
+        </Box>
       </Paper>
     </Container>
   );
