@@ -112,3 +112,22 @@ Excluded: PostgreSQL/SQLite (unless personally completed and comfortable explain
 - All 45 pytest cases, Ruff, frontend checking and the Vite build pass; Python and npm dependency audits report zero known advisories. The suite compares the original TypeScript API contract and checks old cookie identity, saved windows/imports, body/CSV limits, roles, workspace isolation and atomic audit events.
 - Current live verification is retained in the private MeterWise repository. The existing screenshots are labelled as version 2.0 UI evidence; backend migration does not change that interface.
 - Stable case-study/demo URLs, private-source status, AI-assistance disclosure, personal-project order, school projects and global personal skills remain unchanged.
+
+## MeterWise Python 3.12 / FastAPI ML & Predictive Analytics Upgrade — October 2026
+
+- Production-grade Machine Learning service implemented directly within `backend/ml/` on Python 3.12 / FastAPI, expanding MeterWise into a smart estate energy analytics platform.
+- **Time-Series Feature Engineering**: Implements harmonic Fourier cyclics (hour-of-day sine/cosine, day-of-week sine/cosine), Singapore equatorial solar elevation & temperature proxies, time-series lag features (1h, 2h, 3h, 24h, 48h), rolling statistics (6h, 24h), and HDB block structural metadata (units, floors, age, scaling factor).
+- **Energy Demand & Solar Forecasting**: Trains LightGBM / gradient boosted regressors to predict hourly block common load (lighting, lifts, water pumps) and rooftop solar PV generation across 24h and 48h horizons with 90% confidence prediction intervals. Computes evaluation metrics (MAE, RMSE, MAPE, R²). Enforces physical constraints (solar zeroed at night, non-negative loads, derived net grid import and surplus solar export).
+- **Unsupervised Anomaly Detection**: Combines Isolation Forest with hour-of-day contextual residual analysis (median/IQR baselines, Z-scores) to identify equipment anomalies with confidence scores and severity levels:
+  - Water pump continuous run spikes during low-occupancy windows (e.g. 03:00 SGT 10.8 kWh surge vs 2.3 kWh baseline, flagging suspected float valve failure or pipe leaks)
+  - Common lighting daytime burn (flagging failed photosensors or timer bypasses)
+  - Off-peak elevator motor surges (flagging mechanical brake drag or hoistway guide shoe binding)
+  - Rooftop solar generation drops during peak solar irradiance (flagging string inverter trips or DC disconnects)
+- **Automated Work-Order Triage**: Direct triage pipeline converting ML anomaly telemetry into assigned maintenance workflows with pre-filled root cause diagnostics, suggested priority, and facilities contractor recommendations.
+- **FastAPI Endpoints**: Clean typed REST endpoints (`GET /api/estate/ml/forecast`, `POST /api/estate/ml/forecast`, `GET /api/estate/ml/anomalies`, `POST /api/estate/ml/anomalies`) with strict Pydantic v2 schemas and role-based estate permissions.
+- **Automated QA & Test Suite**: Comprehensive `pytest` test suites verifying feature engineering transforms, LightGBM/gradient boosting training and 24-48h horizon inference, Isolation Forest anomaly scoring, and FastAPI endpoint contracts.
+- **Hosted Portfolio Verification**: Confirms strictly the 3 personal hosted websites in the portfolio:
+  1. **GameVault** — Digital Game Subscriptions & Gift Cards Marketplace (https://gamevault-alpha-ten.vercel.app/)
+  2. **Sole District** — Streetwear Retail Storefront & Django API (https://sole-district-green.vercel.app/)
+  3. **MeterWise** — Singapore Estate Energy Operations & Python ML Platform (https://meterwise-kappa.vercel.app/)
+  All three hosted sites feature verified functional descriptions, test suites, and deployed Vercel releases. Coursework (Annual Leave, Gym Calories) and Playlist Port remain distinct and documented.

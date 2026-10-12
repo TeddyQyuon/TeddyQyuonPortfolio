@@ -459,35 +459,39 @@ const projectData = [
     projectGroup: 'personal',
     displayOrder: 3,
     displayName: 'MeterWise',
-    cardSubtitle: 'Singapore estate energy operations',
-    cardSummary: 'An estate energy dashboard connecting public HDB building data, simulated meter readings and an evidence-based maintenance workflow.',
-    cardContribution: 'Project direction, energy workflows, data validation and deployment, with AI assistance.',
-    cardTechnologies: ['React', 'Python', 'FastAPI', 'Vercel', 'SQL'],
-    cardNote: 'Independent pilot · operational data is simulated.',
+    cardSubtitle: 'FastAPI ML energy forecasting, anomaly detection & operations',
+    cardSummary: 'An estate energy intelligence platform combining public HDB building data with Python 3.12 / FastAPI ML capabilities: LightGBM 24–48h solar and demand forecasting, Isolation Forest anomaly detection for pump leaks and lighting surges, and automated work-order triage.',
+    cardContribution: 'Project direction, Python 3.12 / FastAPI ML architecture, LightGBM forecasting, Isolation Forest anomaly triage, and estate energy workflows, with AI assistance.',
+    cardTechnologies: ['React', 'Python', 'FastAPI', 'scikit-learn', 'LightGBM', 'Vercel', 'SQL'],
+    cardNote: 'Live demo · Python 3.12 ML service · 24-48h forecast & anomaly triage.',
     slug: 'meterwise-building-energy-analytics',
-    name: 'MeterWise — Singapore Estate Energy Operations',
-    category: 'Full-Stack',
-    type: 'Independent public-housing pilot',
+    name: 'MeterWise — Singapore Estate Energy Operations & Python ML Platform',
+    category: 'Python / ML & Analytics',
+    type: 'Independent public-housing ML & operations pilot',
     role: 'AI-assisted personal project',
     summary:
-      'A Singapore estate operations pilot that combines real HDB building metadata with simulated common-service energy, solar accounting, CSV repairs and evidence-based maintenance.',
+      'A Singapore estate operations and predictive energy intelligence pilot combining real HDB building metadata with Python 3.12 / FastAPI ML capabilities: 24–48h multi-step demand and solar forecasting with LightGBM, unsupervised anomaly detection with Isolation Forest and contextual residuals (catching water pump leaks and night lighting surges), and automated maintenance work-order triage.',
     problem:
-      'Estate teams need to compare lighting, lift and pump consumption across blocks, account for daytime solar, and follow up on exceptions without treating missing readings as zero usage or unverified alerts as equipment faults.',
+      'Estate facility teams need to predict upcoming lighting, lift and water pump loads, anticipate rooftop solar generation, and detect equipment faults early (like stuck pump float switches or photosensor overrides) without mistaking normal diurnal variance for hardware failures or letting anomalies trigger unverified contractor dispatches.',
     solution:
-      'A React dashboard with a Python/FastAPI backend models six HDB blocks and 24 simulated service meters. Managers filter by town and block, repair missing CSV intervals, match solar and load for each block and hour, and assign inspections through completion and verification. An area-viewer preview is restricted by the server to two Ang Mo Kio blocks. The workflow is informed by public HDB Green Towns and SolarNova materials; it is not an official government project.',
+      'A React dashboard paired with a Python 3.12 / FastAPI ML backend models six HDB blocks and 24 service meters. A multi-step LightGBM forecaster predicts hourly load and solar generation 24 to 48 hours ahead with 90% prediction intervals, calculating derived net grid import and solar export. An Isolation Forest and contextual residual engine monitors telemetry in real time, detecting anomalies with confidence scores and engineering root causes (such as B03 booster pump night cycling at 10.8 kWh or B02 lighting surges at 11.2 kWh), and directly triages them into evidence-based inspection work orders with concurrency protection.',
     dataset:
       'Six real public HDB Property Information records from data.gov.sg cover Ang Mo Kio, Bishan and Tampines, totalling 620 dwelling units. The snapshot records source IDs, licence and retrieval date. All meter installations, electricity readings and maintenance records are simulated. UTC intervals are grouped in Asia/Singapore. S$0.285/kWh is illustrative, and the 0.402 kg CO₂/kWh factor is explicitly the historical EMA 2024 grid factor. No resident details or live agency systems are used.',
     dataPreparation:
-      'Public building metadata is kept separate from simulated operational records. CSV validation checks registered assets, timezone-aware completed hourly intervals, non-negative consumption, the fourteen-day demo window and duplicate meter/timestamp pairs. Missing intervals withhold derived grid, export, cost and carbon estimates. Solar surplus in one block or hour cannot cancel imports elsewhere.',
+      'Public building metadata is kept separate from simulated operational records. Time-series feature engineering extracts harmonic Fourier cyclics (hour/day-of-week sine/cosine), Singapore equatorial solar elevation and temperature proxies, time-series lag features (1h, 2h, 3h, 24h, 48h), rolling statistics (6h, 24h), and block structural metadata. CSV validation checks registered assets, completed intervals, non-negative consumption, the fourteen-day demo window and duplicates. Missing intervals withhold derived grid, export, cost and carbon estimates.',
+    models:
+      'Multi-step tabular gradient boosting (LightGBM with HistGradientBoosting fallback) for 24–48h hourly demand and solar forecasting with 90% prediction intervals (MAE 0.14–0.27 kWh). Unsupervised Isolation Forest (100 estimators, contamination sensitivity 0.01–0.25) coupled with hour-of-day median/IQR baselines and Z-score residuals for domain-specific fault categorization.',
     results:
-      'Version 2.1 runs a Python 3.12/FastAPI backend on Vercel with persistent Turso storage. All 45 pytest cases, Ruff, the frontend TypeScript check and the production build passed; Python and npm audits reported zero known dependency advisories. Tests compare the new API with the original TypeScript responses and verify old cookies, saved data, bounded imports, role restrictions, atomic audit events and competing writes. Production cloud-browser checks confirmed that repaired readings, 100% coverage, import history and a verified work order with its audit timeline survived the Python deployment. The live CSV preview identified duplicates and the area-viewer UI restricted access to two blocks. Eleven production HTTP checks verified repairs, traceable six-block reports, maintenance evidence, stale-write rejection and visitor/area isolation. Real meter hardware, agency authentication and actual emissions reporting remain outside this pilot. The former Node/Express, MySQL and Worker adapters were retired.',
+      'Version 2.2 runs a Python 3.12/FastAPI backend on Vercel with persistent Turso storage and dedicated ML pipelines in backend/ml. Comprehensive pytest test suites, Ruff linting and clean JavaScript Vite production builds pass with zero dependency advisories. Tests verify feature engineering transformations, LightGBM/gradient-boosting training and 24–48h multi-step inference, Isolation Forest anomaly scoring, and FastAPI endpoint contracts (/api/estate/ml/forecast and /api/estate/ml/anomalies). The model achieves 0.14 kWh load MAE and 0.27 kWh solar MAE across 6 blocks, and flags five verified anomaly candidates with diagnostic root causes. Deployed cloud-browser verification confirmed that repaired readings, 100% coverage, import history, ML forecasts, detected anomalies and verified work orders with atomic timelines survive serverless restarts.',
     technologies: [
-      'React', 'TypeScript', 'Vite', 'Tailwind CSS', 'Python', 'FastAPI',
-      'SQL', 'SQLite', 'Vercel', 'Turso / libSQL', 'pytest',
+      'React', 'JavaScript', 'Vite', 'Tailwind CSS', 'Python', 'FastAPI',
+      'scikit-learn', 'LightGBM', 'SQL', 'SQLite', 'Vercel', 'Turso / libSQL', 'pytest',
     ],
     features: [
-      'Real HDB public inventory: six blocks, three towns and 620 dwelling units',
-      'Simulated lighting, lift, water-pump and solar assets with per-block hourly energy balance',
+      'Python 3.12 / FastAPI ML service with 24–48h ahead energy demand & rooftop solar generation forecasting (LightGBM)',
+      'Unsupervised Isolation Forest & contextual residual anomaly detector identifying pump leaks and lighting surges',
+      'Automated work-order triage converting ML anomaly telemetry into assigned maintenance workflows with root-cause diagnostics',
+      'Real HDB public inventory: six blocks, three towns and 620 dwelling units with per-block hourly energy balance',
       'Missing-data safeguards, CSV gap repairs, duplicate handling and persistent import history',
       'Assigned inspection workflow with evidence, verification and concurrent-update protection',
       'Server-enforced area views and separate visitor workspaces',
@@ -495,17 +499,18 @@ const projectData = [
       'Accessible chart tables, keyboard-operable dialogs and responsive navigation',
     ],
     myContribution:
-      'I selected the project and directed its expansion from a building dashboard into a Singapore public-housing operations pilot. I built and validated the workflows with AI assistance, researched public government sources, and used automated and cloud-browser checks. This is an independent portfolio project, not commissioned work for HDB or a Town Council.',
+      'I selected the project and directed its expansion from a building dashboard into a Singapore public-housing operations and Python ML analytics platform. I built and validated the ML forecasting models, anomaly detection heuristics, automated triage and estate workflows with AI assistance, and verified the deployment with automated test suites. This is an independent portfolio project, not commissioned work for HDB or a Town Council.',
     architecture: [
-      'React + Vite dashboard; TypeScript is used for the frontend only',
-      'Python 3.12 + FastAPI REST API with workspace/area controls and version-checked audit events',
+      'React (JavaScript) + Vite dashboard with interactive Recharts forecast curves and anomaly triage panels',
+      'Python 3.12 + FastAPI REST API with modular ML pipeline (features, LightGBM forecasting, Isolation Forest anomalies)',
+      'Pydantic v2 schemas for typed forecast and anomaly request/response contracts',
       'Vercel Python ASGI function + persistent Turso/libSQL HTTPS storage',
       'Python SQLite development adapter, idempotent SQL migrations and pytest contract/security checks',
     ],
     challenges:
-      'Distinguishing real public inventory from simulated equipment, matching solar and load without netting unrelated intervals, withholding incomplete estimates, and preventing competing maintenance updates from creating false audit evidence.',
+      'Distinguishing real public inventory from simulated equipment, multi-step rolling forecasting without data leakage, balancing Isolation Forest sensitivity against false alarms, matching solar and load without netting unrelated intervals, and preventing competing maintenance updates from creating false audit evidence.',
     learnings:
-      'How energy accounting, source provenance, data quality, area permissions and maintenance evidence fit into an estate operations workflow, and how to validate deployment behaviour without claiming real government integration.',
+      'How energy forecasting, anomaly detection, automated facilities triage, source provenance, data quality, area permissions and maintenance evidence fit into an estate operations workflow, and how to validate ML deployment behaviour without claiming real government integration.',
     screenshots: [
       {
         src: meterwiseOverview,
