@@ -1,13 +1,13 @@
 # Portfolio Content Inventory
 
-## GAMEVAULT release — 11 October 2026 UTC
+## GAMEVAULT release — October 2026 UTC
 
-- Personal, AI-assisted React/Vite, Node.js/Express and MySQL/Sequelize digital gaming marketplace project, placed first among personal projects. All existing projects and school-project ordering are preserved.
-- Public preview: https://gamevault-alpha-ten.vercel.app/. Public source repository: https://github.com/TeddyQyuon/gamevault.
-- Curated catalogue with 23 verified products across 15 game/software subscriptions and 8 digital gift cards. Regional restrictions, 1-hour manual email delivery terms and staff order queue verified.
-- 68 automated tests passed (56 backend integration/security/pricing/live-guards + 12 frontend UI/cart tests); Vite production build passes.
+- Personal, AI-assisted React/Vite, Node.js/Express, Vercel Serverless, and MySQL/Sequelize digital gaming marketplace project, placed first among personal projects. All existing projects and school-project ordering are preserved.
+- Public preview: https://gamevault-alpha-ten.vercel.app/. Public REST API: https://gamevault-alpha-ten.vercel.app/api/health. Public source repository: https://github.com/TeddyQyuon/gamevault.
+- Curated catalogue with 23 verified products across 15 game/software subscriptions and 8 digital gift cards, with deduplicated edition variants, sliding cart drawer with GAMER10 promo code math, and instant brand tile routing. Regional restrictions, 1-hour manual email delivery terms and staff order queue verified.
+- 75 automated tests passed (56 backend integration/security/pricing/live-guards + 19 frontend UI/cart/catalogue/deduplication tests); Vite production build passes cleanly.
 - Three real screenshots captured from the live application document the marketplace home, dedicated product purchase view (NordVPN), and subscriptions collection.
-- Stripe checkout sessions and signature-verified webhook ledgers implemented; live processing requires production MySQL hosting and live Stripe keys.
+- Stripe checkout sessions, Vercel serverless functions, and signature-verified webhook ledgers implemented; live processing ready with Vercel serverless functions and Express/MySQL runbook.
 
 ## SOLE DISTRICT release — 11 October 2026 UTC
 
