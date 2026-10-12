@@ -34,6 +34,9 @@ import sklearnLogo from '../../assets/images/technology/scikitlearn.svg';
 import pytestLogo from '../../assets/images/technology/pytest.svg';
 import mlflowLogo from '../../assets/images/technology/mlflow.svg';
 import sasLogo from '../../assets/images/technology/sas.png';
+import lightgbmLogo from '../../assets/images/technology/lightgbm.svg';
+import dockerLogo from '../../assets/images/technology/docker.svg';
+import tursoLogo from '../../assets/images/technology/turso.svg';
 
 const logos = {
   Django: djangoLogo, FastAPI: fastapiLogo, PostgreSQL: postgresLogo,
@@ -43,6 +46,7 @@ const logos = {
   Stripe: stripeLogo, KNIME: knimeLogo, 'Spotify Web API': spotifyLogo,
   SQLAlchemy: sqlalchemyLogo, 'scikit-learn': sklearnLogo, pytest: pytestLogo,
   MLflow: mlflowLogo, 'SAS Viya': sasLogo, SAS: sasLogo,
+  LightGBM: lightgbmLogo, Docker: dockerLogo, Turso: tursoLogo, 'Turso / libSQL': tursoLogo,
   Axios: axiosLogo,
   'Express.js': expressLogo,
   Express: expressLogo,
