@@ -64,7 +64,7 @@ export default function EducationSection() {
                   <Box sx={{ mt: 2 }}>
                     <Grid container spacing={1}>
                       {stage.marks.map((m) => (
-                        <Grid item xs={6} sm={4} key={m.subject}>
+                        <Grid item xs={12} sm={6} md={4} key={m.subject}>
                           <Box
                             sx={(theme) => ({
                               border: 1,
