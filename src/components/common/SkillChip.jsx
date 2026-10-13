@@ -11,7 +11,7 @@ export default function SkillChip({ label }) {
       sx={(theme) => ({
         bgcolor: theme.custom.chip.bg,
         borderColor: theme.custom.chip.border,
-        color: theme.palette.primary.dark,
+        color: theme.palette.mode === 'dark' ? theme.palette.text.primary : theme.palette.primary.dark,
         fontWeight: 600,
         borderRadius: 999,
         transition: 'transform 0.15s ease, box-shadow 0.15s ease',
