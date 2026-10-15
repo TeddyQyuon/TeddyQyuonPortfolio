@@ -1,7 +1,7 @@
 # Agent Handoff Checkpoint — Multi-Workspace Ecosystem
 
-**Timestamp:** 2026-10-13 22:00 (Local)  
-**Status:** Antigravity Mobile Coder live crash resolved and deployed to production; Personal IDE 2-step security gate verified; Teddy Qyuon Portfolio updated, tested, pushed to GitHub, and deployed to Vercel production.
+**Timestamp:** 2026-10-16 00:15 (Local)  
+**Status:** Teddy Qyuon Portfolio rolled back to clean original responsive light theme before night mode and boost mode; 8/8 automated tests passing, clean Vite production build, deployed to Vercel production.
 
 ---
 
@@ -10,7 +10,7 @@
 | Repository / Workstream | Path / Scope | Status | Verification & Gates | Live URL |
 | :--- | :--- | :--- | :--- | :--- |
 | **Antigravity Mobile Coder** | `c:\Users\waiya\Downloads\AntigravityMobileCoder` | Live crash resolved, 2-step Auth Gate, Multi-Account Pool & Live Timers | 7/7 tests passing, Vite build clean (3.05s) | [https://antigravity-mobile-coder.vercel.app](https://antigravity-mobile-coder.vercel.app) |
-| **Teddy Qyuon Portfolio** | `c:\Users\waiya\Downloads\TeddyQyuonPortfolio` | Antigravity Mobile Coder project updated, clean UX, test script added | 5/5 security tests passing, Vite build clean (9.48s), pushed to `main` | [https://teddy-qyuon-portfolio.vercel.app](https://teddy-qyuon-portfolio.vercel.app) |
+| **Teddy Qyuon Portfolio** | `c:\Users\waiya\Downloads\TeddyQyuonPortfolio` | Original clean responsive light portfolio restored (night mode & boost mode rolled back) | 8/8 tests passing, Vite build clean (2.22s), pushed to `main` | [https://teddy-qyuon-portfolio.vercel.app](https://teddy-qyuon-portfolio.vercel.app) |
 | **GameVault Marketplace** | `c:\Users\waiya\Downloads\GameValut` | Official Brand SVGs, SW Cache v5, Auto-Busting | 33/33 client tests, 64/64 server tests passing, Vite production clean | [https://gamevault-alpha-ten.vercel.app](https://gamevault-alpha-ten.vercel.app) |
 
 ---
@@ -36,16 +36,18 @@
    - Successfully deployed to Vercel production under scope `qyuon1`: [https://antigravity-mobile-coder.vercel.app](https://antigravity-mobile-coder.vercel.app) (HTTP 200 OK).
 
 ### B. Teddy Qyuon Portfolio (`c:\Users\waiya\Downloads\TeddyQyuonPortfolio`)
-1. **Project Data Alignment (`src/data/projects.js`)**:
-   - Updated `Antigravity Mobile Coder` project entry to highlight the multi-account pool, 1% token burn tracking, live countdown timers, model effort selectors, and two-step owner authentication gate.
+1. **Rollback to Original Website**:
+   - Reverted night mode / dark mode modifications: removed `public/theme-init.js`, `src/context/ThemeModeContext.jsx`, `src/theme/themeTokens.js`, `.dark` CSS tokens from `src/index.css`, and dark mode toggle switch from `Navbar.jsx`.
+   - Restored original static theme configuration in `src/theme/theme.js` with restrained navy/slate accents and light background `#f7f8fa`.
+   - Rolled back "Boost Mode" entries in `src/data/projects.js` to preserve the clean original project catalogue.
+   - Codebase state perfectly matches `c0e0a02` prior to the introduction of night mode and boost mode.
 2. **Automated Testing & Build**:
-   - Added `npm test` script to `package.json` for running the security test suite.
-   - Verified all 5/5 security tests passing.
-   - Built production bundle with Vite in 9.48s.
+   - Ran `npm test`: **8 / 8 tests passing** (Vite file disclosure security audits + mobile responsive meta/styles/grid tests).
+   - Ran `npm run build`: Clean production build with Vite in 2.22s.
 3. **Git & Production Deployment**:
-   - Committed changes: commit `70d79a3`.
+   - Committed changes: commit `f715e4c` (`revert: rollback portfolio website before adding night mode and boost mode`).
    - Pushed directly to GitHub `main` branch (`https://github.com/TeddyQyuon/TeddyQyuonPortfolio.git`).
-   - Deployed to Vercel production under scope `qyuon1`: [https://teddy-qyuon-portfolio.vercel.app](https://teddy-qyuon-portfolio.vercel.app) (HTTP 200 OK).
+   - Verified live Vercel production deployment at [https://teddy-qyuon-portfolio.vercel.app](https://teddy-qyuon-portfolio.vercel.app) (HTTP 200 OK).
 
 ---
 
@@ -56,8 +58,8 @@
   - `npm run build`: **Built in 19.57s** (bundle: `index-DrIA7KCy.js`, 234.01 kB).
   - Vercel: Aliased and live at `https://antigravity-mobile-coder.vercel.app` (HTTP 200).
 - **Teddy Qyuon Portfolio:**
-  - `npm test`: **5 / 5 tests passing** (Vite file disclosure security audits).
-  - `npm run build`: **Built in 9.48s**.
+  - `npm test`: **8 / 8 tests passing** (security audits and mobile responsive tests).
+  - `npm run build`: Clean Vite build in 2.22s.
   - Vercel: Aliased and live at `https://teddy-qyuon-portfolio.vercel.app` (HTTP 200).
 - **GameVault:**
   - `npm test`: **33 / 33 tests passing**.
