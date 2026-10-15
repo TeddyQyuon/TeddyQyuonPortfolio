@@ -24,15 +24,11 @@ export default function MobileQuickActions() {
         right: 0,
         p: 1.5,
         pb: 'calc(env(safe-area-inset-bottom, 0px) + 12px)',
-        bgcolor: (theme) =>
-          theme.palette.mode === 'dark' ? 'rgba(9, 13, 22, 0.94)' : 'rgba(255, 255, 255, 0.94)',
+        bgcolor: 'rgba(255, 255, 255, 0.94)',
         backdropFilter: 'blur(12px)',
         borderTop: 1,
         borderColor: 'divider',
-        boxShadow: (theme) =>
-          theme.palette.mode === 'dark'
-            ? '0 -4px 20px rgba(0, 0, 0, 0.5)'
-            : '0 -4px 20px rgba(19, 25, 35, 0.06)',
+        boxShadow: '0 -4px 20px rgba(19, 25, 35, 0.06)',
         zIndex: 1200,
         gap: 1.5,
       }}

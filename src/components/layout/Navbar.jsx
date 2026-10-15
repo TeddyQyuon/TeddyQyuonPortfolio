@@ -14,24 +14,19 @@ import {
   Box,
   Container,
   Stack,
-  Tooltip,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
-import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
-import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 import { personalInfo } from '../../data/personalInfo';
 import { sectionLinks, sectionIds, NAV_OFFSET } from '../../data/navigation';
 import useScrollSpy from '../../hooks/useScrollSpy';
 import useSectionLink from '../../hooks/useSectionLink';
-import { useThemeMode } from '../../context/ThemeModeContext';
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const { mode, toggleTheme, isDark } = useThemeMode();
   // Highlights the section currently in view. Empty on routes without sections.
   const activeId = useScrollSpy(sectionIds, NAV_OFFSET + 24);
   const handleSectionLink = useSectionLink();
@@ -130,51 +125,10 @@ export default function Navbar() {
             >
               Résumé
             </Button>
-            <Tooltip title={isDark ? 'Switch to light mode' : 'Switch to dark mode'}>
-              <IconButton
-                onClick={toggleTheme}
-                color="inherit"
-                aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
-                size="medium"
-                sx={{
-                  ml: 0.5,
-                  p: 1,
-                  borderRadius: 2,
-                  border: 1,
-                  borderColor: 'divider',
-                  bgcolor: 'action.hover',
-                  color: isDark ? 'secondary.main' : 'text.secondary',
-                  '&:hover': {
-                    color: 'text.primary',
-                    bgcolor: 'action.selected',
-                  },
-                }}
-              >
-                {isDark ? <LightModeOutlinedIcon sx={{ fontSize: 20 }} /> : <DarkModeOutlinedIcon sx={{ fontSize: 20 }} />}
-              </IconButton>
-            </Tooltip>
           </Box>
 
           {/* Mobile navigation */}
           <Box sx={{ display: { xs: 'flex', md: 'none' }, alignItems: 'center', gap: 1 }}>
-            <Tooltip title={isDark ? 'Switch to light mode' : 'Switch to dark mode'}>
-              <IconButton
-                onClick={toggleTheme}
-                color="inherit"
-                aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
-                size="medium"
-                sx={{
-                  p: 0.75,
-                  borderRadius: 2,
-                  border: 1,
-                  borderColor: 'divider',
-                  bgcolor: 'action.hover',
-                  color: isDark ? 'secondary.main' : 'text.secondary',
-                }}
-              >
-                {isDark ? <LightModeOutlinedIcon sx={{ fontSize: 20 }} /> : <DarkModeOutlinedIcon sx={{ fontSize: 20 }} />}
-              </IconButton>
-            </Tooltip>
             <Button
               component="a"
               href={personalInfo.resumePath}
