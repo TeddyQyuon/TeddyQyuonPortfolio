@@ -19,7 +19,7 @@ export default function SkillsSection() {
   return (
     <Box sx={{ bgcolor: 'background.paper', borderTop: 1, borderBottom: 1, borderColor: 'divider' }}>
       <Container maxWidth="lg" className="section-shell" id="skills" component="section">
-        <SectionHeading eyebrow="Toolkit" title="The tools behind the work." subtitle="Applied across deployed projects and coursework. Every technology links back to work I can explain." />
+        <SectionHeading index="03" eyebrow="Toolkit" title="The tools behind the work." subtitle="Applied across deployed projects and coursework. Every technology links back to work I can explain." />
         <div className="core-tools" aria-label="Core technologies">{coreTools.map((tool) => <span key={tool} className="core-tool"><TechnologyLogo name={tool} size={26} />{tool}</span>)}</div>
         <div className="skills-grid">
           {skillCategories.map((category) => {

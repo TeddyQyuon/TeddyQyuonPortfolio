@@ -1,9 +1,20 @@
 import { lazy, Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
+
+import ScrollProgressBar from './components/layout/ScrollProgressBar';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
+import MobileQuickActions from './components/layout/MobileQuickActions';
 import BackToTop from './components/common/BackToTop';
+
 import HomePage from './pages/HomePage';
+import NotFoundPage from './pages/NotFoundPage';
+import useScrollToHash from './hooks/useScrollToHash';
+
+// The case-study route is the heaviest page, so it is code-split into its own
+// chunk. Its wrapper re-runs the hash-scroll effect because a lazily mounted
+// route resolves after the effect in App has already run, so a deep link such
+// as /projects/:slug#results would otherwise not scroll.
 const ProjectDetailPage = lazy(async () => {
   const { default: Page } = await import('./pages/ProjectDetailPage');
   return { default: function LoadedProjectPage() {
@@ -11,11 +22,6 @@ const ProjectDetailPage = lazy(async () => {
     return <Page />;
   } };
 });
-import NotFoundPage from './pages/NotFoundPage';
-import useScrollToHash from './hooks/useScrollToHash';
-
-import ScrollProgressBar from './components/layout/ScrollProgressBar';
-import MobileQuickActions from './components/layout/MobileQuickActions';
 
 export default function App() {
   // Applies to every route: deep links such as /#projects or

@@ -45,9 +45,14 @@ export default function ProjectDetailPage() {
         <Typography color="text.secondary" paragraph>
           The project you are looking for does not exist.
         </Typography>
-        <Button component={RouterLink} to="/" variant="contained">
-          Back to Home
-        </Button>
+        <Box sx={{ display: 'flex', gap: 1.5, justifyContent: 'center', flexWrap: 'wrap' }}>
+          <Button component={RouterLink} to="/" variant="contained">
+            Back to Home
+          </Button>
+          <Button component={RouterLink} to="/#projects" variant="outlined">
+            Browse all projects
+          </Button>
+        </Box>
       </Container>
     );
   }
@@ -107,19 +112,24 @@ export default function ProjectDetailPage() {
           position: 'sticky',
           top: { xs: 58, md: 68 },
           zIndex: 100,
-          py: 1.25,
+          py: 1,
           px: { xs: 1.5, sm: 2 },
-          mb: 3,
-          bgcolor: 'rgba(247, 248, 250, 0.94)',
-          backdropFilter: 'blur(10px)',
+          mb: 3.5,
+          bgcolor: (theme) =>
+            theme.palette.mode === 'dark' ? 'rgba(9, 13, 22, 0.88)' : 'rgba(247, 248, 250, 0.88)',
+          backdropFilter: 'blur(14px)',
+          WebkitBackdropFilter: 'blur(14px)',
           border: 1,
           borderColor: 'divider',
-          borderRadius: 2,
+          borderRadius: 2.5,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
           gap: 1.5,
-          boxShadow: '0 2px 10px rgba(0, 0, 0, 0.03)',
+          boxShadow: (theme) =>
+            theme.palette.mode === 'dark'
+              ? '0 4px 16px rgba(0, 0, 0, 0.35)'
+              : '0 4px 14px rgba(15, 23, 42, 0.05)',
         }}
       >
         <Button
@@ -136,7 +146,7 @@ export default function ProjectDetailPage() {
           color="text.secondary"
           sx={{
             display: { xs: 'none', sm: 'block' },
-            fontWeight: 500,
+            fontWeight: 600,
             maxWidth: 380,
             overflow: 'hidden',
             textOverflow: 'ellipsis',
@@ -147,38 +157,50 @@ export default function ProjectDetailPage() {
         </Typography>
       </Box>
 
-      <Typography variant="h2" component="h1" gutterBottom sx={{ fontSize: { xs: '2rem', md: '2.75rem' } }}>
-        {project.name}
-      </Typography>
-      <Typography
-        variant="h6"
-        color="text.secondary"
-        paragraph
-        sx={{ maxWidth: 760, fontWeight: 400 }}
-      >
-        {project.summary}
-      </Typography>
-
-      <Stack direction="row" spacing={1.5} useFlexGap sx={{ mb: 4, flexWrap: 'wrap' }}>
-        {externalLinks.map((link) => (
-          <Button
-            key={link.key}
-            component="a"
-            href={link.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            variant={link.key === 'repo' ? 'contained' : 'outlined'}
-            startIcon={link.icon}
-          >
-            {link.label}
-          </Button>
-        ))}
-      </Stack>
-      {project.demoAccessNote && (
-        <Typography variant="body2" color="text.secondary" sx={{ mt: -2, mb: 4, maxWidth: 760 }}>
-          {project.demoAccessNote}
+      {/* Case-study header */}
+      <Box sx={{ mb: 4 }}>
+        <Stack direction="row" spacing={1} alignItems="center" useFlexGap sx={{ mb: 1.5, flexWrap: 'wrap' }}>
+          <Chip label={project.category} size="small" color="primary" />
+          <Chip label={project.type} size="small" variant="outlined" />
+        </Stack>
+        <Typography
+          variant="h2"
+          component="h1"
+          gutterBottom
+          sx={{ fontSize: { xs: '1.95rem', sm: '2.35rem', md: '2.75rem' }, letterSpacing: '-0.03em' }}
+        >
+          {project.name}
         </Typography>
-      )}
+        <Typography
+          variant="h6"
+          color="text.secondary"
+          paragraph
+          sx={{ maxWidth: 780, fontWeight: 400, lineHeight: 1.65, mb: 3 }}
+        >
+          {project.summary}
+        </Typography>
+
+        <Stack direction="row" spacing={1.5} useFlexGap sx={{ flexWrap: 'wrap' }}>
+          {externalLinks.map((link) => (
+            <Button
+              key={link.key}
+              component="a"
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              variant={link.key === 'repo' ? 'contained' : 'outlined'}
+              startIcon={link.icon}
+            >
+              {link.label}
+            </Button>
+          ))}
+        </Stack>
+        {project.demoAccessNote && (
+          <Typography variant="body2" color="text.secondary" sx={{ mt: 2, maxWidth: 760 }}>
+            {project.demoAccessNote}
+          </Typography>
+        )}
+      </Box>
 
       <Grid container spacing={{ xs: 3, md: 4 }}>
         {/* Main case-study content */}
@@ -190,11 +212,12 @@ export default function ProjectDetailPage() {
               variant="outlined"
               id="problem"
               sx={{
-                p: 3,
+                p: { xs: 2.5, sm: 3 },
                 mb: 3,
                 borderLeft: 4,
                 borderLeftColor: 'warning.main',
-                borderRadius: 2,
+                borderRadius: 2.5,
+                scrollMarginTop: '140px',
               }}
             >
               <Typography variant="h6" component="h2" sx={{ fontWeight: 700, mb: 1, color: 'text.primary' }}>
@@ -209,11 +232,12 @@ export default function ProjectDetailPage() {
               variant="outlined"
               id="solution"
               sx={{
-                p: 3,
+                p: { xs: 2.5, sm: 3 },
                 mb: 4,
                 borderLeft: 4,
                 borderLeftColor: 'primary.main',
-                borderRadius: 2,
+                borderRadius: 2.5,
+                scrollMarginTop: '140px',
               }}
             >
               <Typography variant="h6" component="h2" sx={{ fontWeight: 700, mb: 1, color: 'text.primary' }}>
@@ -225,13 +249,13 @@ export default function ProjectDetailPage() {
             </Paper>
 
             {(project.dataset || project.dataPreparation) && (
-              <>
-                <Typography variant="h5" component="h2" id="data" gutterBottom>
+              <Box sx={{ mb: 3, scrollMarginTop: '140px' }} id="data">
+                <Typography variant="h5" component="h2" gutterBottom>
                   Data
                 </Typography>
                 {project.dataset && (
                   <>
-                    <Typography variant="subtitle2" sx={{ mb: 0.5 }}>
+                    <Typography variant="subtitle2" sx={{ mb: 0.5, fontWeight: 700 }}>
                       Dataset
                     </Typography>
                     <Typography paragraph color="text.secondary">
@@ -241,7 +265,7 @@ export default function ProjectDetailPage() {
                 )}
                 {project.dataPreparation && (
                   <>
-                    <Typography variant="subtitle2" sx={{ mb: 0.5 }}>
+                    <Typography variant="subtitle2" sx={{ mb: 0.5, fontWeight: 700 }}>
                       Preparation
                     </Typography>
                     <Typography paragraph color="text.secondary">
@@ -249,18 +273,18 @@ export default function ProjectDetailPage() {
                     </Typography>
                   </>
                 )}
-              </>
+              </Box>
             )}
 
             {project.models && (
-              <>
-                <Typography variant="h5" component="h2" id="models" gutterBottom>
+              <Box sx={{ mb: 3, scrollMarginTop: '140px' }} id="models">
+                <Typography variant="h5" component="h2" gutterBottom>
                   Models
                 </Typography>
                 <Typography paragraph color="text.secondary">
                   {project.models}
                 </Typography>
-              </>
+              </Box>
             )}
 
             {project.results && (
@@ -268,14 +292,15 @@ export default function ProjectDetailPage() {
                 variant="outlined"
                 id="results"
                 sx={{
-                  p: 3,
+                  p: { xs: 2.5, sm: 3 },
                   mb: 4,
                   borderLeft: 4,
                   borderLeftColor: 'success.main',
-                  borderRadius: 2,
+                  borderRadius: 2.5,
+                  scrollMarginTop: '140px',
                 }}
               >
-                <Typography variant="h6" component="h2" sx={{ fontWeight: 700, mb: 1, color: 'text.primary' }}>
+                <Typography variant="h6" component="h2" sx={{ fontWeight: 700, mb: 1.5, color: 'text.primary' }}>
                   The Outcome &amp; Impact
                 </Typography>
                 {/* A structured comparison renders as a table; otherwise fall
@@ -290,35 +315,48 @@ export default function ProjectDetailPage() {
               </Paper>
             )}
 
-            <Typography variant="h5" component="h2" id="technologies" gutterBottom>
-              Technologies
-            </Typography>
-            <Stack
-              direction="row"
-              spacing={0.5}
-              useFlexGap
-              sx={{ mb: 4, flexWrap: 'wrap', rowGap: 1 }}
-            >
-              {project.technologies.map((tech) => (
-                <TechnologyChip key={tech} label={tech} variant="outlined" />
-              ))}
-            </Stack>
+            <Box id="technologies" sx={{ scrollMarginTop: '140px' }}>
+              <Typography variant="h5" component="h2" gutterBottom>
+                Technologies
+              </Typography>
+              <Stack
+                direction="row"
+                spacing={0.75}
+                useFlexGap
+                sx={{ mb: 4, flexWrap: 'wrap', rowGap: 1 }}
+              >
+                {project.technologies.map((tech) => (
+                  <TechnologyChip key={tech} label={tech} variant="outlined" />
+                ))}
+              </Stack>
+            </Box>
 
-            <Typography variant="h5" component="h2" id="features" gutterBottom>
-              Key features
-            </Typography>
-            <Box component="ul" sx={{ pl: 3, mb: 4, color: 'text.secondary' }}>
-              {project.features.map((feature) => (
-                <Typography component="li" key={feature} paragraph sx={{ mb: 1 }}>
-                  {feature}
-                </Typography>
-              ))}
+            <Box id="features" sx={{ scrollMarginTop: '140px' }}>
+              <Typography variant="h5" component="h2" gutterBottom>
+                Key features
+              </Typography>
+              <Box component="ul" sx={{ pl: 2.5, mb: 4, color: 'text.secondary' }}>
+                {project.features.map((feature) => (
+                  <Typography component="li" key={feature} paragraph sx={{ mb: 1.25, lineHeight: 1.7 }}>
+                    {feature}
+                  </Typography>
+                ))}
+              </Box>
             </Box>
 
             <Paper
               variant="outlined"
               id="contribution"
-              sx={{ p: 3, mb: 4, bgcolor: 'primary.light', borderColor: 'primary.main' }}
+              sx={{
+                p: { xs: 2.5, sm: 3 },
+                mb: 4,
+                bgcolor: 'primary.light',
+                borderColor: 'primary.main',
+                borderLeft: 4,
+                borderLeftColor: 'primary.main',
+                borderRadius: 2.5,
+                scrollMarginTop: '140px',
+              }}
             >
               <Stack direction="row" spacing={1} alignItems="center" sx={{ mb: 1 }}>
                 {isTeam ? <GroupsIcon color="primary" /> : <PersonIcon color="primary" />}
@@ -326,35 +364,39 @@ export default function ProjectDetailPage() {
                   My contribution
                 </Typography>
               </Stack>
-              <Typography paragraph sx={{ mb: 0 }}>
+              <Typography paragraph sx={{ mb: 0, lineHeight: 1.7 }}>
                 {project.myContribution}
               </Typography>
             </Paper>
 
             {project.architecture && project.architecture.length > 0 && (
-              <>
-                <Typography variant="h5" component="h2" id="architecture" gutterBottom>
+              <Box id="architecture" sx={{ scrollMarginTop: '140px' }}>
+                <Typography variant="h5" component="h2" gutterBottom>
                   Architecture
                 </Typography>
                 <ArchitectureFlow architecture={project.architecture} />
-              </>
+              </Box>
             )}
 
             <Divider sx={{ my: 4 }} />
 
-            <Typography variant="h5" component="h2" id="challenges" gutterBottom>
-              Challenges
-            </Typography>
-            <Typography paragraph color="text.secondary">
-              {project.challenges}
-            </Typography>
+            <Box id="challenges" sx={{ mb: 3.5, scrollMarginTop: '140px' }}>
+              <Typography variant="h5" component="h2" gutterBottom>
+                Challenges
+              </Typography>
+              <Typography paragraph color="text.secondary" sx={{ lineHeight: 1.7 }}>
+                {project.challenges}
+              </Typography>
+            </Box>
 
-            <Typography variant="h5" component="h2" id="learnings" gutterBottom>
-              What I learned
-            </Typography>
-            <Typography paragraph color="text.secondary">
-              {project.learnings}
-            </Typography>
+            <Box id="learnings" sx={{ scrollMarginTop: '140px' }}>
+              <Typography variant="h5" component="h2" gutterBottom>
+                What I learned
+              </Typography>
+              <Typography paragraph color="text.secondary" sx={{ lineHeight: 1.7 }}>
+                {project.learnings}
+              </Typography>
+            </Box>
           </Box>
 
           {/* Prev / next project navigation */}
@@ -365,24 +407,31 @@ export default function ProjectDetailPage() {
                 <Grid item xs={12} sm={6}>
                   {prevProject && (
                     <Paper
+                      component={RouterLink}
+                      to={`/projects/${prevProject.slug}`}
                       variant="outlined"
                       sx={{
-                        p: 2,
+                        display: 'block',
+                        textDecoration: 'none',
+                        color: 'inherit',
+                        p: 2.5,
                         height: '100%',
-                        transition: 'box-shadow 0.2s ease',
-                        '&:hover': { boxShadow: 4 },
+                        borderRadius: 2.5,
+                        transition: 'transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease',
+                        '&:hover': {
+                          transform: 'translateY(-2px)',
+                          boxShadow: 4,
+                          borderColor: 'primary.main',
+                        },
                       }}
                     >
-                      <Button
-                        component={RouterLink}
-                        to={`/projects/${prevProject.slug}`}
-                        startIcon={<ArrowBackIcon />}
-                        size="small"
-                        sx={{ mb: 0.5 }}
-                      >
-                        Previous project
-                      </Button>
-                      <Typography variant="subtitle2" sx={{ fontWeight: 700 }}>
+                      <Stack direction="row" spacing={0.75} alignItems="center" sx={{ mb: 0.75, color: 'primary.main' }}>
+                        <ArrowBackIcon fontSize="small" />
+                        <Typography variant="caption" sx={{ fontWeight: 700 }}>
+                          Previous project
+                        </Typography>
+                      </Stack>
+                      <Typography variant="subtitle1" sx={{ fontWeight: 700, lineHeight: 1.35, mb: 0.25 }}>
                         {prevProject.name}
                       </Typography>
                       <Typography variant="caption" color="text.secondary">
@@ -394,25 +443,38 @@ export default function ProjectDetailPage() {
                 <Grid item xs={12} sm={6}>
                   {nextProject && (
                     <Paper
+                      component={RouterLink}
+                      to={`/projects/${nextProject.slug}`}
                       variant="outlined"
                       sx={{
-                        p: 2,
+                        display: 'block',
+                        textDecoration: 'none',
+                        color: 'inherit',
+                        p: 2.5,
                         height: '100%',
-                        textAlign: 'right',
-                        transition: 'box-shadow 0.2s ease',
-                        '&:hover': { boxShadow: 4 },
+                        textAlign: { xs: 'left', sm: 'right' },
+                        borderRadius: 2.5,
+                        transition: 'transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease',
+                        '&:hover': {
+                          transform: 'translateY(-2px)',
+                          boxShadow: 4,
+                          borderColor: 'primary.main',
+                        },
                       }}
                     >
-                      <Button
-                        component={RouterLink}
-                        to={`/projects/${nextProject.slug}`}
-                        endIcon={<ArrowForwardIcon />}
-                        size="small"
-                        sx={{ mb: 0.5 }}
+                      <Stack
+                        direction="row"
+                        spacing={0.75}
+                        alignItems="center"
+                        justifyContent={{ xs: 'flex-start', sm: 'flex-end' }}
+                        sx={{ mb: 0.75, color: 'primary.main' }}
                       >
-                        Next project
-                      </Button>
-                      <Typography variant="subtitle2" sx={{ fontWeight: 700 }}>
+                        <Typography variant="caption" sx={{ fontWeight: 700 }}>
+                          Next project
+                        </Typography>
+                        <ArrowForwardIcon fontSize="small" />
+                      </Stack>
+                      <Typography variant="subtitle1" sx={{ fontWeight: 700, lineHeight: 1.35, mb: 0.25 }}>
                         {nextProject.name}
                       </Typography>
                       <Typography variant="caption" color="text.secondary">
@@ -428,22 +490,26 @@ export default function ProjectDetailPage() {
 
         {/* At-a-glance sidebar */}
         <Grid item xs={12} md={4} sx={{ order: { xs: 1, md: 2 } }}>
-          <Box sx={{ position: { md: 'sticky' }, top: { md: 96 } }}>
-            <Paper variant="outlined" sx={{ p: 2.5, mb: 2 }}>
-              <Typography variant="subtitle2" sx={{ mb: 2, fontWeight: 700 }}>
+          <Box sx={{ position: { md: 'sticky' }, top: { md: 132 } }}>
+            <Paper variant="outlined" sx={{ p: 2.5, mb: 2.5, borderRadius: 2.5 }}>
+              <Typography
+                variant="overline"
+                color="primary"
+                sx={{ display: 'block', mb: 1.5, fontWeight: 700, letterSpacing: '0.08em' }}
+              >
                 At a glance
               </Typography>
 
-              <Stack spacing={1.5}>
+              <Stack spacing={1.75} divider={<Divider flexItem />}>
                 <Box>
-                  <Typography variant="caption" color="text.secondary">
+                  <Typography variant="caption" color="text.secondary" sx={{ display: 'block', mb: 0.25 }}>
                     My role
                   </Typography>
                   <Stack direction="row" spacing={0.75} alignItems="center">
                     {isTeam ? (
-                      <GroupsIcon fontSize="small" color="action" />
+                      <GroupsIcon fontSize="small" color="primary" />
                     ) : (
-                      <PersonIcon fontSize="small" color="action" />
+                      <PersonIcon fontSize="small" color="primary" />
                     )}
                     <Typography variant="body2" sx={{ fontWeight: 600 }}>
                       {project.role || project.type}
@@ -452,11 +518,11 @@ export default function ProjectDetailPage() {
                 </Box>
 
                 <Box>
-                  <Typography variant="caption" color="text.secondary">
+                  <Typography variant="caption" color="text.secondary" sx={{ display: 'block', mb: 0.25 }}>
                     Category
                   </Typography>
                   <Stack direction="row" spacing={0.75} alignItems="center">
-                    <CategoryIcon fontSize="small" color="action" />
+                    <CategoryIcon fontSize="small" color="primary" />
                     <Typography variant="body2" sx={{ fontWeight: 600 }}>
                       {project.category}
                     </Typography>
@@ -464,7 +530,7 @@ export default function ProjectDetailPage() {
                 </Box>
 
                 <Box>
-                  <Typography variant="caption" color="text.secondary">
+                  <Typography variant="caption" color="text.secondary" sx={{ display: 'block', mb: 0.25 }}>
                     Project type
                   </Typography>
                   <Typography variant="body2" sx={{ fontWeight: 600 }}>
@@ -473,7 +539,7 @@ export default function ProjectDetailPage() {
                 </Box>
 
                 <Box>
-                  <Typography variant="caption" color="text.secondary">
+                  <Typography variant="caption" color="text.secondary" sx={{ display: 'block', mb: 0.25 }}>
                     Technologies
                   </Typography>
                   <Typography variant="body2" sx={{ fontWeight: 600 }}>
@@ -508,9 +574,13 @@ export default function ProjectDetailPage() {
 
             <Paper
               variant="outlined"
-              sx={{ p: 1.5, display: { xs: 'none', md: 'block' } }}
+              sx={{ p: 1.75, borderRadius: 2.5, display: { xs: 'none', md: 'block' } }}
             >
-              <Typography variant="subtitle2" sx={{ px: 1, pt: 1, fontWeight: 700 }}>
+              <Typography
+                variant="overline"
+                color="text.secondary"
+                sx={{ display: 'block', px: 1, pt: 0.5, pb: 0.5, fontWeight: 700, letterSpacing: '0.08em' }}
+              >
                 On this page
               </Typography>
               <List dense disablePadding>
@@ -519,11 +589,16 @@ export default function ProjectDetailPage() {
                     <ListItemButton
                       component="a"
                       href={`#${item.id}`}
-                      sx={{ borderRadius: 1.5, py: 0.5 }}
+                      sx={{
+                        borderRadius: 1.5,
+                        py: 0.6,
+                        px: 1.25,
+                        '&:hover': { color: 'primary.main' },
+                      }}
                     >
                       <ListItemText
                         primary={item.label}
-                        primaryTypographyProps={{ variant: 'body2' }}
+                        primaryTypographyProps={{ variant: 'body2', sx: { fontWeight: 500 } }}
                       />
                     </ListItemButton>
                   </ListItem>

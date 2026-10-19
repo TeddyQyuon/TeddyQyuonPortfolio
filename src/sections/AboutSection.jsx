@@ -15,7 +15,7 @@ export default function AboutSection() {
     <Box sx={{ bgcolor: 'background.paper', borderTop: 1, borderColor: 'divider' }}>
       <Container maxWidth="lg" className="section-shell" id="about" component="section">
         <div className="about-grid">
-          <SectionHeading eyebrow="About me" title="Curious about how things work." />
+          <SectionHeading index="02" eyebrow="About me" title="Curious about how things work." />
           <div>
             <Typography paragraph color="text.secondary">I am a Year 2 student in the Diploma in Applied AI &amp; Analytics at Nanyang Polytechnic. I enjoy building practical software systems and understanding the whole application, from the user interface to the database.</Typography>
             <Typography paragraph color="text.secondary">My coursework covers React, Node.js, Express, REST APIs, MySQL and Sequelize, including JWT authentication and Formik/Yup validation. I have applied these skills in team projects with approvals, audit trails and notifications, and in independent projects such as Playlist Port and MeterWise.</Typography>
