@@ -20,7 +20,7 @@ export default function Footer() {
             <Stack direction="row" spacing={1} sx={{ mt: 2 }}>
               <IconButton component="a" href={personalInfo.githubUrl} target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" sx={{ color: onDark.muted }}><GitHubIcon /></IconButton>
               <IconButton component="a" href={personalInfo.linkedinUrl} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" sx={{ color: onDark.muted }}><LinkedInIcon /></IconButton>
-              <IconButton component="a" href={`mailto:${personalInfo.email}`} aria-label="Send an email" sx={{ color: onDark.muted }}><EmailOutlinedIcon /></IconButton>
+              <IconButton component="a" href={`mailto:${personalInfo.email}?subject=${encodeURIComponent(`Internship opportunity — ${personalInfo.name}`)}`} aria-label="Send an email" sx={{ color: onDark.muted }}><EmailOutlinedIcon /></IconButton>
             </Stack>
           </Grid>
           <Grid item xs={5} md={2}>

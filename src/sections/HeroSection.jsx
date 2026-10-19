@@ -1,8 +1,9 @@
-import { Typography, Container, Button, Box, Stack } from '@mui/material';
+import { Typography, Container, Button, Box, Stack, Chip } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import StarIcon from '@mui/icons-material/Star';
 import { personalInfo } from '../data/personalInfo';
 import useSectionLink from '../hooks/useSectionLink';
 import profilePhoto from '../assets/images/profile/profile.jpg';
@@ -18,36 +19,32 @@ export default function HeroSection() {
             <p className="hero-kicker">Software &amp; data · Singapore</p>
             <Stack direction="row" spacing={1} sx={{ flexWrap: 'wrap', gap: 1, mb: 2, alignItems: 'center' }}>
               <div className="availability"><span aria-hidden="true" />Open to a 1-year technology internship · 2027</div>
-              <Button
+              <Chip
                 component={RouterLink}
                 to="/projects/gamevault-marketplace"
+                icon={<StarIcon sx={{ fontSize: 16 }} />}
+                label="Featured: GameVault Marketplace"
                 size="small"
-                variant="text"
+                clickable
                 sx={{
-                  textTransform: 'none',
-                  fontSize: '0.75rem',
                   fontWeight: 600,
+                  fontSize: '0.75rem',
+                  height: 30,
+                  borderRadius: '999px',
                   color: 'primary.main',
                   bgcolor: 'action.hover',
                   border: 1,
                   borderColor: 'divider',
-                  borderRadius: '999px',
-                  px: 1.5,
-                  py: 0.5,
-                  lineHeight: 1.5,
-                  minHeight: 30,
                   '&:hover': { bgcolor: 'primary.light' },
                 }}
-              >
-                ⭐ Featured: GameVault Marketplace →
-              </Button>
+              />
             </Stack>
             <Typography component="h1" variant="h1" className="hero-name"><span>Wai Yan</span>{' '}<span>Hpone Lat</span></Typography>
             <Typography className="hero-lead">Full-stack development. Applied AI &amp; analytics.</Typography>
             <Typography className="hero-intro">{personalInfo.intro}</Typography>
             <div className="hero-actions">
-              <Button href="#projects" onClick={(event) => handleSectionLink(event, 'projects')} variant="contained">Explore my work</Button>
-              <Button href={personalInfo.resumePath} target="_blank" rel="noopener noreferrer" variant="outlined">View résumé</Button>
+              <Button href="#projects" onClick={(event) => handleSectionLink(event, 'projects')} variant="contained" size="large" sx={{ minWidth: 168 }}>Explore my work</Button>
+              <Button href={personalInfo.resumePath} target="_blank" rel="noopener noreferrer" variant="outlined" size="large" sx={{ minWidth: 148 }}>View résumé</Button>
             </div>
             <div className="hero-socials">
               <a className="quiet-link" href={personalInfo.githubUrl} target="_blank" rel="noopener noreferrer"><GitHubIcon sx={{ fontSize: 17 }} />GitHub</a>
@@ -57,7 +54,7 @@ export default function HeroSection() {
             <div className="hero-toolkit" aria-label="Featured technologies">{['React', 'Python', 'Node.js', 'PostgreSQL'].map((name) => <span key={name}><TechnologyLogo name={name} size={20} />{name}</span>)}</div>
           </div>
           <figure className="hero-photo">
-            <img src={profilePhoto} alt="Portrait of Wai Yan Hpone Lat" width="270" height="318" fetchPriority="high" />
+            <img src={profilePhoto} alt="Portrait of Wai Yan Hpone Lat" width="270" height="318" fetchPriority="high" decoding="async" />
             <figcaption><strong>Wai Yan Hpone Lat · Teddy</strong>Applied AI &amp; Analytics student</figcaption>
           </figure>
         </div>

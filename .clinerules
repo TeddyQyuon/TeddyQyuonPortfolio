@@ -1,0 +1,64 @@
+# Project Rules — Teddy Qyuon Portfolio
+
+Rules below were proven in real sessions on this repo. Follow them; if one blocks
+a legitimate task, say so in your response instead of silently bypassing it.
+
+## What this repo is
+
+- React 18 + Vite 7 + Material UI v5 + React Router v7, plain JavaScript (no TypeScript).
+- No backend and no database. All site content lives in `src/data/*.js`; the résumé is a static PDF in `public/resume/`.
+- Live at `https://teddy-qyuon-portfolio.vercel.app`, Vercel scope `qyuon1`, project `teddy-qyuon-portfolio`.
+- The GitHub repo is NOT connected to the Vercel project. **Pushing does not deploy.** See "Deploy workflow".
+
+## Hard gates before shipping anything
+
+1. `npm test` must report 10 pass / 0 fail (`tests/security.test.mjs` + `tests/responsive.test.mjs`).
+2. `npm run build` must finish with **zero warnings**. The >500 kB chunk warning and any "Circular chunk" warning count as failures.
+3. Never add a runtime dependency without explicit user approval. Animation stays CSS-only — `framer-motion` was deliberately removed; do not reintroduce it or any JS animation library.
+4. Never edit a test to make it pass unless the asserted contract is intentionally changing; if so, update the test in the same commit and explain why.
+
+## Contracts the tests enforce — do not break
+
+- `src/index.css`: `overflow-x: hidden` + `max-width: 100vw`; `@media (max-width: 899px)` including `safe-area-inset-bottom`; `@media (max-width: 599px)`; `min-height: 44px`; a `[data-theme="dark"]` block defining `--bg-page: #090d16` and `--bg-card: #111726`; `[data-theme="dark"] .technology-github` with `filter: brightness(0) invert(1)`.
+- `index.html`: `viewport-fit=cover`; the external `/theme-init.js` and `/hash-guard.js` script tags (the CSP's `script-src 'self'` forbids inline scripts — never inline one).
+- `src/theme/themeTokens.js`: dark `background.default #090d16`, `paper #111726`, text `#f8fafc`/`#94a3b8`; light `#f7f8fa`/`#ffffff`.
+- `SkillChip.jsx` keeps its `theme.palette.mode === 'dark' ? theme.palette.text.primary` ternary; `Navbar.jsx` keeps `useThemeMode` + `toggleTheme`; `EducationSection.jsx` keeps `Grid item xs={12} sm={6} md={4}`.
+
+## Security rules (absolute)
+
+- Never commit or log secrets: no tokens, passwords, 2FA codes, or API keys in files, commit messages, or command output. `.vercel/` and `.env*` are gitignored — keep them that way.
+- Never echo credential values. Verify auth with `npx vercel whoami`, not by printing tokens.
+- `vercel.json` defines the production CSP and `vite.config.js` mirrors it into `npm run preview`. Do not weaken it (no inline scripts, no `unsafe-eval`). After any header change, re-check homepage, a project page, and mobile nav in preview.
+- `vite.config.js` must stay crash-safe: the `vercel.json` header lookup is preview-only and throws actionable errors. Do not reintroduce module-scope file reads.
+- A persistent agent-controlled browser profile holding live logins is forbidden in this repo; use the Vercel CLI (OS credential manager) instead.
+
+## Code conventions
+
+- Layering is one-way: `pages → sections → components → data`. Sections never import other sections. New content goes in `src/data/*.js`, never hardcoded in components.
+- The section list lives only in `src/data/navigation.js` (navbar, drawer and footer read it). `NAV_OFFSET` must stay in sync with `scroll-margin-top` in `src/index.css`.
+- Theming: use MUI `sx` with theme tokens / `theme.custom.*`, or CSS variables from `index.css` (`:root` + `[data-theme="dark"]`). Never hardcode a surface colour for one mode only — every light-only CSS surface needs a `[data-theme="dark"]` override.
+- All motion must degrade under `@media (prefers-reduced-motion: reduce)`.
+- Accessibility: 44px minimum touch targets on mobile; visible `:focus-visible` outlines; `aria-label` on icon-only buttons; `alt` on every image; `loading="lazy" decoding="async"` on non-hero images.
+- Defensive rendering: hide action buttons when `repositoryUrl` / `demoUrl` / `reportUrl` are null.
+- Content integrity (see header of `src/data/projects.js`): no fabricated metrics, demos, repos or screenshots; team work labelled as such; `myContribution` contains only the owner's own work.
+
+## Deploy workflow (proven)
+
+1. `npm test` and `npm run build` green.
+2. `git add -A && git commit -m "<summary>" -m "<bullets>" && git push origin main`. Direct pushes to `main` are normal here; the branch is **not** protected.
+3. Deploy from the repo root: `set CI=1 && npx vercel deploy --prod --scope qyuon1` (folder is linked via `.vercel/project.json`). `CI=1` keeps the CLI non-interactive.
+4. Verify by checking that the served HTML references the new `dist` bundle hashes. The project has Vercel Authentication on, so use `npx vercel curl <url> --scope qyuon1` (it mints a bypass token) rather than a plain fetch.
+5. Playlist-Port is a separate repo/project at `C:\Users\waiya\Downloads\Playlist-Port-Full-Project\playlist-port` (pre-linked); deploy from that folder with the same command.
+
+## Terminal quirks on this Windows box
+
+- The shell sometimes prefixes commands with garbage or loses inline output. Redirect to a `%TEMP%` log and read the file instead of trusting captured output.
+- cmd expands `%ERRORLEVEL%` at parse time; never trust `& echo %ERRORLEVEL%`. Read logs or use `&&` chains.
+- LF/CRLF git warnings are expected; do not rewrite line endings to silence them (files mix LF with CRLF-appended blocks).
+- Never leave a foreground dev/preview server running in a tool call — the next command kills it.
+
+## Known outstanding items
+
+- Rotate the password and 2FA passcode that appeared in `docs/agent_handoff.md` git history; purge history only with explicit user approval (it rewrites public history).
+- `docs/performance-2026-10-09/bundle-*.json` baselines predate the vendor-chunk split; re-record before citing them.
+- `.gitignore` contains duplicate ignore lines with mixed line endings; cosmetic — leave unless the file is being touched for another reason.

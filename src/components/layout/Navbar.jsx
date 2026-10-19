@@ -14,19 +14,24 @@ import {
   Box,
   Container,
   Stack,
+  Tooltip,
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
+import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
+import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 import { personalInfo } from '../../data/personalInfo';
 import { sectionLinks, sectionIds, NAV_OFFSET } from '../../data/navigation';
 import useScrollSpy from '../../hooks/useScrollSpy';
 import useSectionLink from '../../hooks/useSectionLink';
+import { useThemeMode } from '../../context/ThemeModeContext';
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const { mode, toggleTheme, isDark } = useThemeMode();
   // Highlights the section currently in view. Empty on routes without sections.
   const activeId = useScrollSpy(sectionIds, NAV_OFFSET + 24);
   const handleSectionLink = useSectionLink();
@@ -49,11 +54,12 @@ export default function Navbar() {
         top: 0,
         borderBottom: 1,
         borderColor: 'divider',
-        backdropFilter: 'blur(12px)',
+        backdropFilter: 'blur(16px) saturate(160%)',
+        WebkitBackdropFilter: 'blur(16px) saturate(160%)',
       }}
     >
       <Container maxWidth="lg">
-        <Toolbar disableGutters sx={{ justifyContent: 'space-between', py: 0.5 }}>
+        <Toolbar disableGutters sx={{ justifyContent: 'space-between', minHeight: { xs: 60, md: 68 }, py: 0.75 }}>
           <Box
             component={Link}
             to="/"
@@ -61,19 +67,28 @@ export default function Navbar() {
             sx={{
               display: 'flex',
               alignItems: 'center',
-              gap: 1.25,
+              gap: 1.5,
               textDecoration: 'none',
               color: 'inherit',
             }}
           >
-            <Box sx={{ lineHeight: 1.2 }}>
-              <Typography variant="subtitle1" sx={{ fontWeight: 700, fontSize: '1.25rem', letterSpacing: '-0.04em' }}>
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 1.25 }}>
+              <Typography variant="subtitle1" sx={{ fontWeight: 800, fontSize: '1.3rem', letterSpacing: '-0.045em', lineHeight: 1 }}>
                 teddy<Box component="span" sx={{ color: 'secondary.main' }}>.</Box>
               </Typography>
+              <Box
+                aria-hidden="true"
+                sx={{
+                  display: { xs: 'none', sm: 'block' },
+                  width: '1px',
+                  height: 16,
+                  bgcolor: 'divider',
+                }}
+              />
               <Typography
                 variant="caption"
                 color="text.secondary"
-                sx={{ display: { xs: 'none', sm: 'block' } }}
+                sx={{ display: { xs: 'none', sm: 'block' }, fontWeight: 500, letterSpacing: '-0.01em' }}
               >
                 Software &amp; data
               </Typography>
@@ -83,18 +98,25 @@ export default function Navbar() {
           {/* Desktop navigation */}
           <Box component="nav" aria-label="Main navigation" sx={{ display: { xs: 'none', md: 'flex' }, gap: 0.5, alignItems: 'center' }}>
             {sectionLinks.filter((link) => link.id !== 'resume').map((link) => {
-              const active = activeId === link.id;
+              const active = activeId === link.id || (link.id === 'education' && activeId === 'resume');
               return (
                 <Button
                   key={link.id}
                   href={`#${link.id}`}
                   onClick={(event) => handleSectionClick(event, link.id)}
                   color="inherit"
+                  size="small"
                   aria-current={active ? 'true' : undefined}
                   sx={{
                     position: 'relative',
-                    color: active ? 'primary.main' : 'text.secondary',
-                    '&:hover': { color: 'text.primary' },
+                    px: 1.5,
+                    py: 0.75,
+                    minHeight: 38,
+                    borderRadius: 2,
+                    fontWeight: active ? 650 : 500,
+                    color: active ? 'text.primary' : 'text.secondary',
+                    bgcolor: active ? 'action.hover' : 'transparent',
+                    '&:hover': { color: 'text.primary', bgcolor: 'action.hover' },
                     // Underline indicator that animates in for the active section.
                     '&::after': {
                       content: '""',
@@ -104,7 +126,7 @@ export default function Navbar() {
                       bottom: 4,
                       height: 2,
                       borderRadius: 1,
-                      bgcolor: 'primary.main',
+                      bgcolor: 'secondary.main',
                       transform: active ? 'scaleX(1)' : 'scaleX(0)',
                       transition: 'transform 0.2s ease',
                     },
@@ -121,14 +143,55 @@ export default function Navbar() {
               rel="noopener noreferrer"
               variant="contained"
               size="small"
-              sx={{ ml: 1 }}
+              sx={{ ml: 1, px: 2 }}
             >
               Résumé
             </Button>
+            <Tooltip title={isDark ? 'Switch to light mode' : 'Switch to dark mode'}>
+              <IconButton
+                onClick={toggleTheme}
+                color="inherit"
+                aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+                size="medium"
+                sx={{
+                  ml: 0.5,
+                  p: 1,
+                  borderRadius: 2.5,
+                  border: 1,
+                  borderColor: 'divider',
+                  bgcolor: 'action.hover',
+                  color: isDark ? 'secondary.main' : 'text.secondary',
+                  '&:hover': {
+                    color: 'text.primary',
+                    bgcolor: 'action.selected',
+                  },
+                }}
+              >
+                {isDark ? <LightModeOutlinedIcon sx={{ fontSize: 20 }} /> : <DarkModeOutlinedIcon sx={{ fontSize: 20 }} />}
+              </IconButton>
+            </Tooltip>
           </Box>
 
           {/* Mobile navigation */}
           <Box sx={{ display: { xs: 'flex', md: 'none' }, alignItems: 'center', gap: 1 }}>
+            <Tooltip title={isDark ? 'Switch to light mode' : 'Switch to dark mode'}>
+              <IconButton
+                onClick={toggleTheme}
+                color="inherit"
+                aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+                size="medium"
+                sx={{
+                  p: 0.75,
+                  borderRadius: 2,
+                  border: 1,
+                  borderColor: 'divider',
+                  bgcolor: 'action.hover',
+                  color: isDark ? 'secondary.main' : 'text.secondary',
+                }}
+              >
+                {isDark ? <LightModeOutlinedIcon sx={{ fontSize: 20 }} /> : <DarkModeOutlinedIcon sx={{ fontSize: 20 }} />}
+              </IconButton>
+            </Tooltip>
             <Button
               component="a"
               href={personalInfo.resumePath}
