@@ -17,7 +17,7 @@ export default function HeroSection() {
         <div className="hero-content">
           <div>
             <p className="hero-kicker">Software &amp; data · Singapore</p>
-            <Stack direction="row" spacing={1} sx={{ flexWrap: 'wrap', gap: 1, mb: 2, alignItems: 'center' }}>
+            <Stack direction="row" spacing={1} sx={{ flexWrap: 'wrap', gap: 1, mb: 2, alignItems: 'center', '& > *': { minHeight: 32 } }}>
               <div className="availability"><span aria-hidden="true" />Open to a 1-year technology internship · 2027</div>
               <Chip
                 component={RouterLink}
@@ -29,7 +29,7 @@ export default function HeroSection() {
                 sx={{
                   fontWeight: 600,
                   fontSize: '0.75rem',
-                  height: 30,
+                  height: 32,
                   borderRadius: '999px',
                   color: 'primary.main',
                   bgcolor: 'action.hover',
@@ -44,7 +44,7 @@ export default function HeroSection() {
             <Typography className="hero-intro">{personalInfo.intro}</Typography>
             <div className="hero-actions">
               <Button href="#projects" onClick={(event) => handleSectionLink(event, 'projects')} variant="contained" size="large" sx={{ minWidth: 168 }}>Explore my work</Button>
-              <Button href={personalInfo.resumePath} target="_blank" rel="noopener noreferrer" variant="outlined" size="large" sx={{ minWidth: 148 }}>View résumé</Button>
+              <Button href={personalInfo.resumePath} target="_blank" rel="noopener noreferrer" variant="outlined" size="large" sx={{ minWidth: 148, display: { xs: 'none', sm: 'inline-flex' } }}>View résumé</Button>
             </div>
             <div className="hero-socials">
               <a className="quiet-link" href={personalInfo.githubUrl} target="_blank" rel="noopener noreferrer"><GitHubIcon sx={{ fontSize: 17 }} />GitHub</a>
