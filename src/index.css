@@ -1066,27 +1066,31 @@ button:focus-visible {
     gap: 24px;
   }
   .hero-photo {
+    order: -1;
     display: flex;
     align-items: center;
     gap: 14px;
-    width: 100%;
-    margin: 0;
-    padding: 12px 14px;
-    border-radius: var(--radius-md);
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 0 6px;
+    padding: 10px 16px 10px 10px;
+    border-radius: var(--radius-pill);
     box-shadow: var(--shadow-sm);
   }
   .hero-photo img {
-    width: 64px;
-    height: 64px;
+    width: 68px;
+    height: 68px;
     aspect-ratio: 1;
     border-radius: 50%;
+    object-fit: cover;
     object-position: center 25%;
     flex-shrink: 0;
-    border: 2px solid var(--line);
+    border: 2px solid var(--blue);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--blue) 16%, transparent);
   }
   .hero-photo figcaption {
     display: block;
-    padding: 0;
+    padding: 0 4px 0 0;
     font-size: 0.8125rem;
     line-height: 1.45;
   }
@@ -1214,6 +1218,14 @@ button:focus-visible {
 }
 
 @media (max-width: 380px) {
+  .hero-photo {
+    padding: 8px 12px 8px 8px;
+    gap: 10px;
+  }
+  .hero-photo img {
+    width: 56px;
+    height: 56px;
+  }
   .hero-actions .MuiButton-root {
     flex: 1 1 100%;
   }
