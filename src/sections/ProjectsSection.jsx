@@ -34,7 +34,9 @@ export default function ProjectsSection() {
       </SectionHeader>
       <p className="section-lede">
         Personal projects are AI-assisted and built end to end by me. Coursework is labelled, and team
-        projects list only my own contribution.
+        projects list only my own contribution. Every <strong>Live demo</strong> link opens a real,
+        deployed website you can click through in a new tab; <strong>Source code</strong> opens the
+        GitHub repository.
       </p>
       <p className="sr-only" aria-live="polite">{`Showing ${visible.length} projects`}</p>
       <div className="project-grid">

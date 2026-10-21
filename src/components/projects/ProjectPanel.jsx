@@ -63,14 +63,26 @@ export default function ProjectPanel({ project, index }) {
           <Icon name="arrowRight" size={16} />
         </Link>
         {project.demoUrl && (
-          <a href={project.demoUrl} target="_blank" rel="noopener noreferrer" className="link-muted">
-            Demo<span className="sr-only"> of {title} (opens in new tab)</span>
+          <a
+            href={project.demoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link-muted"
+            title="Opens the deployed live website in a new tab"
+          >
+            Live demo<span className="sr-only"> of {title}: opens the deployed live website in a new tab</span>
             <Icon name="external" size={14} />
           </a>
         )}
         {project.repositoryUrl && (
-          <a href={project.repositoryUrl} target="_blank" rel="noopener noreferrer" className="link-muted">
-            Code<span className="sr-only"> for {title} (opens in new tab)</span>
+          <a
+            href={project.repositoryUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link-muted"
+            title="Opens the source code on GitHub in a new tab"
+          >
+            Source code<span className="sr-only"> for {title}: opens the GitHub repository in a new tab</span>
             <Icon name="github" size={14} />
           </a>
         )}
