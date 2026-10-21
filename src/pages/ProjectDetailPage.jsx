@@ -27,6 +27,14 @@ import ModelComparison from '../components/projects/ModelComparison';
 import TechnologyChip from '../components/common/TechnologyChip';
 import ArchitectureFlow from '../components/projects/ArchitectureFlow';
 import { projects } from '../data/projects';
+import usePageMetadata from '../hooks/usePageMetadata';
+import {
+  OG_IMAGE_ALT,
+  OG_IMAGE_URL,
+  SITE_NAME,
+  projectDescription,
+  projectPageTitle,
+} from '../utils/seo';
 
 // Case-study page for a single project, found by slug.
 // Invalid slug renders a Not Found state.
@@ -35,6 +43,20 @@ export default function ProjectDetailPage() {
   const { slug } = useParams();
   const index = projects.findIndex((p) => p.slug === slug);
   const project = projects[index];
+
+  usePageMetadata({
+    title: project ? projectPageTitle(project) : `Project Not Found | ${SITE_NAME}`,
+    description: project
+      ? projectDescription(project)
+      : 'The requested project case study could not be found. Browse the portfolio projects instead.',
+    path: project ? `/projects/${project.slug}` : `/projects/${slug ?? ''}`,
+    image: OG_IMAGE_URL,
+    imageAlt: project
+      ? `${project.displayName || project.name} — ${project.category} case study`
+      : OG_IMAGE_ALT,
+    type: project ? 'article' : 'website',
+    noindex: !project,
+  });
 
   if (!project) {
     return (

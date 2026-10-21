@@ -1,8 +1,19 @@
 import { Container, Typography, Button, Stack } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import usePageMetadata from '../hooks/usePageMetadata';
+import { OG_IMAGE_ALT, OG_IMAGE_URL, SITE_NAME } from '../utils/seo';
 
 export default function NotFoundPage() {
+  usePageMetadata({
+    title: `Page Not Found | ${SITE_NAME}`,
+    description: 'The page you are looking for does not exist or has moved. Browse the portfolio homepage or project case studies instead.',
+    path: '/404',
+    image: OG_IMAGE_URL,
+    imageAlt: OG_IMAGE_ALT,
+    noindex: true,
+  });
+
   return (
     <Container maxWidth="md" sx={{ py: 12, textAlign: 'center' }}>
       <Typography

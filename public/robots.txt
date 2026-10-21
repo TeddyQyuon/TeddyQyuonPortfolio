@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://teddy-qyuon-portfolio.vercel.app/sitemap.xml
