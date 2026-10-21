@@ -1,0 +1,70 @@
+/* ---------- Bar list ---------- */
+.bar-list { display: grid; gap: 0.55rem; list-style: none; margin-top: var(--space-4); }
+.bar-list li {
+  display: grid;
+  grid-template-columns: minmax(96px, 9rem) 1fr 3.5rem;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: 0.85rem;
+}
+.bar-label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--text-muted); }
+.bar-track { height: 10px; border-radius: 999px; background: var(--surface-3); overflow: hidden; }
+.bar-fill {
+  display: block; height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--accent) 55%, transparent), var(--accent));
+  transform-origin: left;
+  animation: grow 0.8s var(--ease) both;
+}
+.bar-value { text-align: right; color: var(--text); }
+.bar-list li.is-highlight .bar-label { color: var(--text); font-weight: 600; }
+.bar-list li.is-highlight .bar-fill { background: var(--live); }
+@keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+/* ---------- GPA chart ---------- */
+.gpa-chart { width: 100%; height: auto; margin-block: var(--space-4); overflow: visible; }
+.gpa-chart .grid { stroke: var(--border); stroke-dasharray: 3 4; }
+.gpa-chart .axis { fill: var(--text-faint); font-family: var(--font-mono); font-size: 10px; }
+.gpa-chart .value { fill: var(--text); font-family: var(--font-mono); font-size: 11px; font-weight: 600; }
+.gpa-chart .line { fill: none; stroke: var(--accent); stroke-width: 2.5; stroke-linejoin: round; }
+.gpa-chart .area { fill: var(--accent-soft); }
+.gpa-chart .dot { fill: var(--surface); stroke: var(--accent); stroke-width: 2.5; }
+
+/* ---------- Data table ---------- */
+.table-wrap { overflow-x: auto; }
+.data-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+.data-table th, .data-table td { padding: 0.65rem 0.75rem; border-bottom: 1px solid var(--border); text-align: left; }
+.data-table thead th {
+  font-family: var(--font-mono); font-size: 0.75rem; font-weight: 500;
+  letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-faint);
+}
+.data-table tbody th { font-weight: 500; }
+.data-table tbody tr:hover { background: var(--surface-2); }
+.data-table tfoot th, .data-table tfoot td { border-bottom: 0; color: var(--text-muted); font-weight: 500; }
+.data-table .num { text-align: right; }
+.data-table tfoot .strong { color: var(--text); font-size: 1rem; }
+
+.model-comparison { margin: var(--space-4) 0 0; }
+.model-comparison figcaption { margin-block: var(--space-3); font-size: 0.85rem; color: var(--text-muted); }
+
+/* ---------- Section header ---------- */
+.section { padding-block: var(--space-8) 0; }
+.section-header { margin-bottom: var(--space-5); }
+.eyebrow {
+  margin-bottom: var(--space-2);
+  font-family: var(--font-mono); font-size: 0.78rem;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--accent);
+}
+.eyebrow .mono { color: var(--text-faint); }
+.section-header-row { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: var(--space-4); }
+.section-header h2 { font-size: clamp(1.6rem, 3.2vw, 2.2rem); font-weight: 800; }
+.section-lede { max-width: 70ch; margin: calc(var(--space-2) * -1) 0 var(--space-5); color: var(--text-muted); }
+
+/* ---------- Footer ---------- */
+.footer { margin-top: var(--space-8); border-top: 1px solid var(--border); background: var(--surface); }
+.footer-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-4); padding-block: var(--space-5); }
+.footer-meta { font-size: 0.8rem; color: var(--text-faint); }
+.footer-links { display: flex; flex-wrap: wrap; gap: var(--space-1) var(--space-4); list-style: none; }
+.footer-links a { display: inline-flex; align-items: center; gap: 0.35rem; min-height: 44px; color: var(--text-muted); font-size: 0.875rem; text-decoration: none; }
+.footer-links a:hover { color: var(--text); text-decoration: underline; }

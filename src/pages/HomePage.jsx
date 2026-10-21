@@ -1,23 +1,20 @@
+import Reveal from '../components/common/Reveal';
+import useDocumentMeta from '../hooks/useDocumentMeta';
 import HeroSection from '../sections/HeroSection';
-import AboutSection from '../sections/AboutSection';
-import SkillsSection from '../sections/SkillsSection';
 import ProjectsSection from '../sections/ProjectsSection';
-import EducationSection from '../sections/EducationSection';
-import AcademicProgressSection from '../sections/AcademicProgressSection';
-import ResumeSection from '../sections/ResumeSection';
+import StackSection from '../sections/StackSection';
+import AcademicsSection from '../sections/AcademicsSection';
 import ContactSection from '../sections/ContactSection';
 
 export default function HomePage() {
+  useDocumentMeta({ path: '/' });
   return (
-    <>
+    <div className="container">
       <HeroSection />
-      <ProjectsSection />
-      <AboutSection />
-      <SkillsSection />
-      <EducationSection />
-      <AcademicProgressSection />
-      <ResumeSection />
-      <ContactSection />
-    </>
+      <Reveal><ProjectsSection /></Reveal>
+      <Reveal><StackSection /></Reveal>
+      <Reveal><AcademicsSection /></Reveal>
+      <Reveal><ContactSection /></Reveal>
+    </div>
   );
 }

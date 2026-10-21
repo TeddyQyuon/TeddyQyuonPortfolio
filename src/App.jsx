@@ -1,58 +1,30 @@
 import { lazy, Suspense } from 'react';
-import { Routes, Route } from 'react-router-dom';
-
-import ScrollProgressBar from './components/layout/ScrollProgressBar';
-import Navbar from './components/layout/Navbar';
+import { Route, Routes } from 'react-router-dom';
+import TopBar from './components/layout/TopBar';
 import Footer from './components/layout/Footer';
-import MobileQuickActions from './components/layout/MobileQuickActions';
-import BackToTop from './components/common/BackToTop';
-
 import HomePage from './pages/HomePage';
 import NotFoundPage from './pages/NotFoundPage';
 import useScrollToHash from './hooks/useScrollToHash';
 
-// The case-study route is the heaviest page, so it is code-split into its own
-// chunk. Its wrapper re-runs the hash-scroll effect because a lazily mounted
-// route resolves after the effect in App has already run, so a deep link such
-// as /projects/:slug#results would otherwise not scroll.
-const ProjectDetailPage = lazy(async () => {
-  const { default: Page } = await import('./pages/ProjectDetailPage');
-  return { default: function LoadedProjectPage() {
-    useScrollToHash();
-    return <Page />;
-  } };
-});
+// Case studies are the heaviest route, so they load as a separate chunk.
+const ProjectPage = lazy(() => import('./pages/ProjectPage'));
 
 export default function App() {
-  // Applies to every route: deep links such as /#projects or
-  // /projects/gym-calories-predictive-analysis#results scroll to the target
-  // section, and ordinary route changes reset to the top.
-  //
-  // This is handled in React rather than relying on native anchor jumps,
-  // because the router re-renders on a hash change and that re-render cancels
-  // the browser's own smooth scroll.
   useScrollToHash();
-
   return (
     <>
-      {/* Keyboard users can jump past the navbar straight to the content. */}
-      <a className="skip-link" href="#main-content">
-        Skip to content
-      </a>
-      <ScrollProgressBar />
-      <Navbar />
-      <main id="main-content">
-        <Suspense fallback={<p role="status" style={{ padding: '4rem 1.5rem' }}>Opening project…</p>}>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/projects/:slug" element={<ProjectDetailPage />} />
-          <Route path="*" element={<NotFoundPage />} />
-        </Routes>
+      <a className="skip-link" href="#main-content">Skip to content</a>
+      <TopBar />
+      <main id="main-content" tabIndex={-1}>
+        <Suspense fallback={<p role="status" className="container loading">Loading project…</p>}>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/projects/:slug" element={<ProjectPage />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
         </Suspense>
       </main>
       <Footer />
-      <BackToTop />
-      <MobileQuickActions />
     </>
   );
 }

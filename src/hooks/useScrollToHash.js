@@ -1,26 +1,29 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { scrollToSection } from '../data/navigation';
 
-// Keeps scroll position in sync with the route:
-// - a URL hash scrolls to the matching section (in-page links and cross-page
-//   navigation such as clicking "About" from a project case study)
-// - an ordinary route change resets to the top, so a new page never opens
-//   part-way down
-//
-// The homepage's incoming hash is stripped before the app mounts (see
-// main.jsx), so a shared or reloaded link always opens on the hero.
+// Scrolls to #hash targets after navigation (retrying briefly for lazily
+// rendered pages) and resets to the top on plain route changes.
 export default function useScrollToHash() {
-  const { pathname, hash } = useLocation();
+  const { pathname, hash, key } = useLocation();
 
   useEffect(() => {
-    if (hash) {
-      // One frame of slack so the target section is mounted before scrolling.
-      const frame = requestAnimationFrame(() => scrollToSection(hash.slice(1)));
-      return () => cancelAnimationFrame(frame);
+    if (!hash) {
+      window.scrollTo(0, 0);
+      return undefined;
     }
-
-    window.scrollTo({ top: 0, behavior: 'instant' });
-    return undefined;
-  }, [pathname, hash]);
+    const id = decodeURIComponent(hash.slice(1));
+    let frame = 0;
+    let tries = 0;
+    const attempt = () => {
+      const el = document.getElementById(id);
+      if (el) {
+        const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        el.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+        return;
+      }
+      if (tries++ < 30) frame = requestAnimationFrame(attempt);
+    };
+    attempt();
+    return () => cancelAnimationFrame(frame);
+  }, [pathname, hash, key]);
 }

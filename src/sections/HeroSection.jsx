@@ -1,69 +1,66 @@
-import { Typography, Container, Button, Box, Stack, Chip } from '@mui/material';
-import { Link as RouterLink } from 'react-router-dom';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import StarIcon from '@mui/icons-material/Star';
+import { Link } from 'react-router-dom';
+import Icon from '../components/common/Icon';
+import { Badge, KpiCard } from '../components/common/Dashboard';
 import { personalInfo } from '../data/personalInfo';
-import useSectionLink from '../hooks/useSectionLink';
+import { currentGpa } from '../data/academicResults';
+import { liveDemoCount, projectCount, publicRepoCount } from '../lib/projectStats';
 import profilePhoto from '../assets/images/profile/profile.jpg';
-import TechnologyLogo from '../components/common/TechnologyLogo';
 
 export default function HeroSection() {
-  const handleSectionLink = useSectionLink();
+  const [start, end] = personalInfo.internshipWindow.split(' – ');
+  const study = personalInfo.currentStudy.split(' — ')[0];
+
   return (
-    <Box component="section" className="hero" aria-label="Introduction">
-      <Container maxWidth="lg">
-        <div className="hero-content">
+    <section className="hero section" aria-labelledby="hero-title" id="overview">
+      <div className="hero-main">
+        <p className="eyebrow"><span className="mono">01</span> Overview</p>
+        <p className="status-pill">
+          <span className="status-dot" aria-hidden="true" />
+          Open to a 1-year internship · {start.replace(/^\d+ /, '')} start
+        </p>
+        <h1 id="hero-title">{personalInfo.name}</h1>
+        <p className="hero-role">{personalInfo.role}</p>
+        <p className="hero-intro">{personalInfo.intro}</p>
+        <p className="muted">{personalInfo.internshipObjective}</p>
+
+        <div className="hero-actions">
+          <Link className="btn btn-primary" to={{ hash: '#projects' }}>
+            View projects
+            <Icon name="arrowRight" size={16} />
+          </Link>
+          <a className="btn" href={personalInfo.resumePath} target="_blank" rel="noopener">
+            <Icon name="file" size={16} />
+            Résumé (PDF)
+          </a>
+          <Link className="btn btn-ghost" to={{ hash: '#contact' }}>
+            <Icon name="mail" size={16} />
+            Contact
+          </Link>
+        </div>
+
+        <ul className="hero-meta">
+          <li><Icon name="pin" size={16} /> {personalInfo.location}</li>
+          <li><Icon name="cap" size={16} /> {study}</li>
+          <li><Icon name="calendar" size={16} /> {personalInfo.currentStudy.split(' — ')[1]}</li>
+        </ul>
+      </div>
+
+      <aside className="hero-side" aria-label="At a glance">
+        <div className="panel profile-panel">
+          <img className="profile-photo" src={profilePhoto} alt={`Portrait of ${personalInfo.name}`} width="128" height="128" />
           <div>
-            <p className="hero-kicker">Software &amp; data · Singapore</p>
-            <Stack direction="row" spacing={1} sx={{ flexWrap: 'wrap', gap: 1, mb: 2, alignItems: 'center', '& > *': { minHeight: 32 } }}>
-              <div className="availability"><span aria-hidden="true" />Open to a 1-year technology internship · 2027</div>
-              <Chip
-                component={RouterLink}
-                to="/projects/gamevault-marketplace"
-                icon={<StarIcon sx={{ fontSize: 16 }} />}
-                label="Featured: GameVault Marketplace"
-                size="small"
-                clickable
-                sx={{
-                  fontWeight: 600,
-                  fontSize: '0.75rem',
-                  height: 32,
-                  borderRadius: '999px',
-                  color: 'primary.main',
-                  bgcolor: 'action.hover',
-                  border: 1,
-                  borderColor: 'divider',
-                  '&:hover': { bgcolor: 'primary.light' },
-                }}
-              />
-            </Stack>
-            <Typography component="h1" variant="h1" className="hero-name"><span>Wai Yan</span>{' '}<span>Hpone Lat</span></Typography>
-            <Typography className="hero-lead">Full-stack development. Applied AI &amp; analytics.</Typography>
-            <Typography className="hero-intro">{personalInfo.intro}</Typography>
-            <div className="hero-actions">
-              <Button href="#projects" onClick={(event) => handleSectionLink(event, 'projects')} variant="contained" size="large" sx={{ minWidth: 168 }}>Explore my work</Button>
-              <Button href={personalInfo.resumePath} target="_blank" rel="noopener noreferrer" variant="outlined" size="large" sx={{ minWidth: 148, display: { xs: 'none', sm: 'inline-flex' } }}>View résumé</Button>
-            </div>
-            <div className="hero-socials">
-              <a className="quiet-link" href={personalInfo.githubUrl} target="_blank" rel="noopener noreferrer"><GitHubIcon sx={{ fontSize: 17 }} />GitHub</a>
-              <a className="quiet-link" href={personalInfo.linkedinUrl} target="_blank" rel="noopener noreferrer"><LinkedInIcon sx={{ fontSize: 17 }} />LinkedIn</a>
-              <a className="quiet-link" href="#contact" onClick={(event) => handleSectionLink(event, 'contact')}><EmailOutlinedIcon sx={{ fontSize: 18 }} />Contact</a>
-            </div>
-            <div className="hero-toolkit" aria-label="Featured technologies">{['React', 'Python', 'Node.js', 'PostgreSQL'].map((name) => <span key={name}><TechnologyLogo name={name} size={20} />{name}</span>)}</div>
+            <p className="panel-label">Internship window</p>
+            <p className="mono profile-window">{start} → {end}</p>
+            <Badge label={personalInfo.internshipDuration} tone="info" />
           </div>
-          <figure className="hero-photo">
-            <img src={profilePhoto} alt="Portrait of Wai Yan Hpone Lat" width="270" height="318" fetchPriority="high" decoding="async" />
-            <figcaption><strong>Wai Yan Hpone Lat · Teddy</strong>Applied AI &amp; Analytics student</figcaption>
-          </figure>
         </div>
-        <div className="hero-facts">
-          <div className="hero-fact"><span className="hero-fact-label">Focus</span><p className="hero-fact-value">Web applications &amp; data analytics</p></div>
-          <div className="hero-fact"><span className="hero-fact-label">Education</span><p className="hero-fact-value">Nanyang Polytechnic · Year 2<br />Diploma in Applied AI &amp; Analytics</p></div>
-          <div className="hero-fact"><span className="hero-fact-label">Next step</span><p className="hero-fact-value">{personalInfo.internshipWindow}<br />{personalInfo.internshipDuration} · Expected graduation May 2028</p></div>
+        <div className="kpi-grid">
+          <KpiCard label="Projects" value={String(projectCount)} hint="Personal + coursework" />
+          <KpiCard label="Live demos" value={String(liveDemoCount)} hint="Deployed on Vercel" tone="live" />
+          <KpiCard label="Current GPA" value={currentGpa} unit="/4" hint="Nanyang Polytechnic" />
+          <KpiCard label="Public repos" value={String(publicRepoCount)} hint="Linked from case studies" />
         </div>
-      </Container>
-    </Box>
+      </aside>
+    </section>
   );
 }

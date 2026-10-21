@@ -1,48 +1,56 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#0b1120" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <title>Wai Yan Hpone Lat | Applied AI &amp; Analytics Portfolio</title>
     <meta
       name="description"
-      content="Portfolio of Wai Yan Hpone Lat — Applied AI & Analytics student at Nanyang Polytechnic seeking a 1-year technology internship. Full-Stack: React, Node.js, Express, MySQL. Data: KNIME, SAS Viya, Python."
+      content="Wai Yan Hpone Lat (Teddy), Year 2 Applied AI & Analytics student at Nanyang Polytechnic, seeking a 1-year technology internship from March 2027. Full-stack React, Python/FastAPI, Node.js and data analytics projects."
     />
+    <link rel="canonical" href="https://teddy-qyuon-portfolio.vercel.app/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Wai Yan Hpone Lat" />
+    <meta property="og:url" content="https://teddy-qyuon-portfolio.vercel.app/" />
     <meta property="og:title" content="Wai Yan Hpone Lat | Applied AI & Analytics Portfolio" />
     <meta
       property="og:description"
-      content="Year 2 Applied AI & Analytics student seeking a 1-year technology internship in Software Engineering, Full-Stack Development and Data/Analytics roles."
+      content="Year 2 Applied AI & Analytics student seeking a 1-year internship in software engineering, full-stack development or data/analytics."
     />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="/og-image.svg" />
+    <meta property="og:image" content="https://teddy-qyuon-portfolio.vercel.app/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta
-      property="og:image:alt"
-      content="Wai Yan Hpone Lat — Applied AI & Analytics student at Nanyang Polytechnic"
-    />
+    <meta property="og:image:alt" content="Wai Yan Hpone Lat, Applied AI & Analytics portfolio" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Wai Yan Hpone Lat | Applied AI & Analytics Portfolio" />
     <meta
       name="twitter:description"
-      content="Year 2 Applied AI & Analytics student seeking a 1-year technology internship in Software Engineering, Full-Stack Development and Data/Analytics roles."
+      content="Year 2 Applied AI & Analytics student seeking a 1-year internship in software engineering, full-stack development or data/analytics."
     />
-    <meta name="twitter:image" content="/og-image.svg" />
+    <meta name="twitter:image" content="https://teddy-qyuon-portfolio.vercel.app/og-image.png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
     />
-    <!-- Strip a homepage section hash before the body is parsed, so a shared
-         or reloaded link always opens on the hero. External file to satisfy
-         the `script-src 'self'` CSP. -->
-    <script src="/hash-guard.js"></script>
+    <!-- External file so it satisfies the script-src 'self' CSP. Applies the
+         saved theme before first paint to avoid a light/dark flash. -->
     <script src="/theme-init.js"></script>
-    <title>Wai Yan Hpone Lat | Applied AI & Analytics Portfolio</title>
   </head>
   <body>
+    <noscript>
+      <p class="noscript">
+        This portfolio needs JavaScript. Résumé:
+        <a href="/resume/Wai_Yan_Hpone_Lat_Resume.pdf">Wai_Yan_Hpone_Lat_Resume.pdf</a>
+      </p>
+    </noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

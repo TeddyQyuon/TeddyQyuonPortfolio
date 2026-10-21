@@ -3,7 +3,6 @@
 // - Team projects clearly identified; "myContribution" contains ONLY my work.
 // - repositoryUrl / demoUrl / reportUrl are nullable; UI hides buttons when absent.
 // - No fabricated metrics, demos, repositories or screenshots.
-// - Restaurant Ordering / Feedback System is excluded (sister's work).
 //
 // Screenshots are actual deployed app captures or figures from submitted reports.
 // Projects without screenshots use a category or project-specific icon cover.
@@ -37,7 +36,7 @@ const projectData = [
     displayName: 'GameVault',
     cardSubtitle: 'Digital gaming marketplace, Stripe checkout & Vercel serverless API',
     cardSummary: 'A full-stack digital marketplace for game keys, subscriptions, and gift cards featuring 37 verified products, sliding cart drawer with GAMER10 promo discounts, instant brand-tile routing, live search autocomplete, server-authoritative Stripe Checkout, and Vercel serverless functions.',
-    cardContribution: 'Full-stack architecture, high-conversion UI/UX overhaul, sliding cart drawer, Vercel serverless API, Express REST backend, Sequelize MySQL schema, Stripe Checkout integration, and release verification with AI assistance.',
+    cardContribution: 'Full-stack architecture, storefront UI/UX redesign, sliding cart drawer, Vercel serverless API, Express REST backend, Sequelize MySQL schema, Stripe Checkout integration, and release verification with AI assistance.',
     cardTechnologies: ['React', 'Node.js', 'Vercel', 'Stripe', 'Express.js', 'MySQL', 'Sequelize ORM'],
     cardNote: 'Storefront & Vercel API deployed · 37 live products · Stripe Checkout ready.',
     slug: 'gamevault-marketplace',
@@ -58,7 +57,7 @@ const projectData = [
       'Direct service tile routing linking brand badges (NordVPN, Game Pass, PS Plus) straight to dedicated purchase pages',
       'Live autocomplete search dropdown with instant pricing, badge indicators, and product thumbnails',
       'Interactive sliding cart drawer with real-time subtotal math, quantity clamps (1..5), and GAMER10 promo code validation',
-      'High-conversion product detail page with immediate Buy Now CTA, Add to Cart drawer, and delivery guarantees',
+      'Product detail page with immediate Buy Now CTA, Add to Cart drawer, and delivery guarantees',
       'Stripe-hosted Checkout with payment method trust badges (Visa, Mastercard, Apple Pay, Google Pay, Stripe)',
       'Vercel Serverless Functions (/api/checkout/sessions, /api/health, /api/orders/[id], /api/products, /api/promos/validate) powering live edge checkout',
       'Server-owned price validation and anti-tampering guards ensuring client prices cannot be manipulated',
@@ -79,7 +78,7 @@ const projectData = [
       'Vercel production hosting with vercel.json SPA rewrites, static caching, and edge serverless deployment',
     ],
     challenges: 'Ensuring bulletproof separation between live and test checkout modes, guarding against demo listings being purchased with real money, guaranteeing webhook idempotency against duplicate delivery, fixing navigation paths so brand badges take shoppers directly to buying pages, and deduplicating subscription tier variants across catalogue and detail selectors.',
-    learnings: 'How serverless edge APIs, server-authoritative pricing, payment gateway webhooks, digital fulfillment lifecycles, and high-conversion e-commerce UX connect end-to-end in a production-ready application.',
+    learnings: 'How serverless edge APIs, server-authoritative pricing, payment gateway webhooks, digital fulfillment lifecycles, and e-commerce UX connect end-to-end in a deployed application.',
     screenshots: [
       {
         src: gamevaultHome,

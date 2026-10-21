@@ -1,0 +1,240 @@
+/* ---------- Top bar ---------- */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  height: var(--topbar-h);
+  background: color-mix(in srgb, var(--bg) 82%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+.topbar-inner { display: flex; align-items: center; gap: var(--space-5); height: 100%; }
+.brand { display: flex; align-items: center; gap: var(--space-3); color: var(--text); text-decoration: none; }
+.brand:hover { color: var(--text); }
+.brand-mark {
+  display: grid; place-items: center;
+  width: 34px; height: 34px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-weight: 800; font-size: 0.8rem;
+}
+.brand-text { display: flex; flex-direction: column; line-height: 1.15; }
+.brand-name { font-weight: 700; font-size: 0.95rem; }
+.brand-path { font-size: 0.75rem; color: var(--text-faint); }
+
+.nav { margin-left: auto; }
+.nav ul { display: flex; gap: var(--space-1); list-style: none; }
+.nav a {
+  display: block;
+  padding: 0.45rem 0.75rem;
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+  font-size: 0.9rem; font-weight: 500;
+  text-decoration: none;
+}
+.nav a:hover { color: var(--text); background: var(--surface-2); }
+.topbar-actions { display: flex; align-items: center; gap: var(--space-2); }
+/* Higher specificity than .icon-button, which is declared later. */
+.icon-button.menu-toggle { display: none; }
+
+@media (max-width: 860px) {
+  .icon-button.menu-toggle { display: inline-grid; }
+  .topbar-actions { margin-left: auto; }
+  .nav {
+    display: none;
+    position: absolute;
+    top: var(--topbar-h); left: 0; right: 0;
+    padding: var(--space-3) clamp(1rem, 4vw, 2rem) var(--space-4);
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav.is-open { display: block; }
+  .nav ul { flex-direction: column; }
+  .nav a { padding: 0.75rem; font-size: 1rem; }
+}
+@media (max-width: 520px) {
+  .btn.hide-sm { display: none; }
+  .brand-path { display: none; }
+  .brand-name { white-space: nowrap; }
+}
+@media (max-width: 400px) {
+  /* Keep the bar on one line; the WY mark and aria-label still identify the link. */
+  .brand-text { display: none; }
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex; align-items: center; gap: var(--space-2);
+  min-height: 42px;
+  padding: 0.55rem 1rem;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.92rem; font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s, transform 0.15s;
+}
+.btn:hover { color: var(--text); border-color: var(--accent); background: var(--surface-2); }
+.btn:active { transform: translateY(1px); }
+.btn-primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.btn-primary:hover { background: var(--accent-strong); border-color: var(--accent-strong); color: var(--on-accent); }
+.btn-ghost { background: transparent; }
+.btn-small { min-height: 36px; padding: 0.4rem 0.8rem; font-size: 0.85rem; }
+
+.icon-button {
+  display: inline-grid; place-items: center;
+  width: 40px; height: 40px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+}
+.icon-button:hover { border-color: var(--accent); }
+
+/* Two-position theme switch: the thumb sits behind the active sun or moon. */
+.theme-switch {
+  position: relative;
+  display: inline-flex;
+  width: 66px;
+  height: 34px;
+  padding: 0;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--text-faint);
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+.theme-switch:hover { border-color: var(--accent); background: var(--surface-3); }
+.theme-switch-thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.28);
+  transition: transform 0.24s var(--ease);
+}
+.theme-switch[aria-checked='true'] .theme-switch-thumb { transform: translateX(32px); }
+.theme-switch-icon {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.theme-switch-sun { left: 3px; }
+.theme-switch-moon { right: 3px; }
+.theme-switch[aria-checked='false'] .theme-switch-sun,
+.theme-switch[aria-checked='true'] .theme-switch-moon { color: var(--on-accent); }
+
+.link-strong, .link-muted {
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  min-height: 44px;
+  font-weight: 600; font-size: 0.9rem; text-decoration: none;
+}
+.link-muted { color: var(--text-muted); font-weight: 500; }
+.link-muted:hover { color: var(--text); }
+
+
+/* ---------- Panels, badges, KPIs ---------- */
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  box-shadow: var(--shadow);
+}
+.panel-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-3); margin-bottom: var(--space-4); }
+.panel-title { font-size: 1.05rem; font-weight: 700; margin-bottom: var(--space-2); }
+.panel-head .panel-title { margin: 0; }
+.panel-label {
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem; font-weight: 500;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--text-faint);
+}
+.panel-index { font-size: 0.8rem; color: var(--text-faint); }
+
+.badges { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.badge {
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  padding: 0.15rem 0.55rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-size: 0.75rem; font-weight: 600; line-height: 1.5;
+  white-space: nowrap;
+}
+.badge-live { color: var(--live); background: var(--live-soft); border-color: color-mix(in srgb, var(--live) 30%, transparent); }
+.badge-live::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+.badge-info { color: var(--info); background: var(--info-soft); border-color: color-mix(in srgb, var(--info) 30%, transparent); }
+.badge-warn { color: var(--warn); background: var(--warn-soft); border-color: color-mix(in srgb, var(--warn) 30%, transparent); }
+.badge-neutral { color: var(--text-muted); background: var(--surface-2); border-color: var(--border); }
+td .badge-live::before, .highlight-list .badge-live::before { display: none; }
+
+.kpi {
+  display: flex; flex-direction: column; gap: 0.2rem;
+  padding: var(--space-4);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.kpi-label { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-faint); }
+.kpi-value { font-family: var(--font-mono); font-size: clamp(1.6rem, 3vw, 2rem); font-weight: 600; letter-spacing: -0.03em; line-height: 1.15; }
+.kpi-unit { margin-left: 0.15rem; font-size: max(0.55em, 0.75rem); font-weight: 500; color: var(--text-muted); }
+.kpi-hint { font-size: 0.8rem; color: var(--text-muted); }
+.kpi-live .kpi-value { color: var(--live); }
+.kpi-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-3); }
+.kpi-grid-wide { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); margin-block: var(--space-4); }
+
+/* ---------- Tech tags ---------- */
+.tech-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; list-style: none; }
+.tech-tag {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  padding: 0.2rem 0.55rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  font-size: 0.8rem; color: var(--text-muted);
+}
+/* Many brand marks are dark; a light chip keeps them visible on dark panels. */
+.tech-tag .technology-logo {
+  width: 18px; height: 18px;
+  padding: 2px;
+  border-radius: 4px;
+  background: var(--logo-chip);
+  object-fit: contain;
+}
+
+/* ---------- Segmented control ---------- */
+.segmented {
+  display: inline-flex; flex-wrap: wrap; gap: 2px;
+  padding: 3px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface-2);
+}
+.segmented button {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  min-height: 34px;
+  padding: 0.3rem 0.8rem;
+  border: 0; border-radius: 7px;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.85rem; font-weight: 600;
+  cursor: pointer;
+}
+.segmented button:hover { color: var(--text); }
+.segmented button[aria-pressed='true'] { background: var(--surface); color: var(--text); box-shadow: 0 0 0 1px var(--border-strong); }
+.segmented .count { font-size: 0.75rem; color: var(--text-faint); }

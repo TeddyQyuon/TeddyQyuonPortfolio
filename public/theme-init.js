@@ -1,20 +1,13 @@
-// Immediately executes before body paint to prevent Flash of Unstyled Content (FOUC).
+// Runs before first paint. Dark is the default; a saved choice wins.
 (function () {
+  var theme = 'dark';
   try {
-    var stored = localStorage.getItem('portfolio_theme_mode');
-    var theme = stored;
-    if (!theme) {
-      theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    }
-    document.documentElement.setAttribute('data-theme', theme);
-    var meta = document.querySelector('meta[name="theme-color"]');
-    if (!meta) {
-      meta = document.createElement('meta');
-      meta.name = 'theme-color';
-      document.head.appendChild(meta);
-    }
-    meta.setAttribute('content', theme === 'dark' ? '#090d16' : '#ffffff');
+    var saved = localStorage.getItem('tq-theme');
+    if (saved === 'light' || saved === 'dark') theme = saved;
   } catch (e) {
-    // Fail-safe in restrictive sandboxes
+    // Storage can be blocked (private mode, sandboxed frames). Keep default.
   }
+  document.documentElement.setAttribute('data-theme', theme);
+  var meta = document.querySelector('meta[name="theme-color"]');
+  if (meta) meta.setAttribute('content', theme === 'dark' ? '#0b1120' : '#f5f7fb');
 })();

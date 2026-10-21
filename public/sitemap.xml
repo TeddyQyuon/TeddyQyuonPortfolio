@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Keep in sync with project slugs in src/data/projects.js (checked by npm test). -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://teddy-qyuon-portfolio.vercel.app/</loc></url>
+  <url><loc>https://teddy-qyuon-portfolio.vercel.app/projects/gamevault-marketplace</loc></url>
+  <url><loc>https://teddy-qyuon-portfolio.vercel.app/projects/sole-district</loc></url>
+  <url><loc>https://teddy-qyuon-portfolio.vercel.app/projects/scenthaus-intelligence</loc></url>
+  <url><loc>https://teddy-qyuon-portfolio.vercel.app/projects/meterwise-building-energy-analytics</loc></url>
+  <url><loc>https://teddy-qyuon-portfolio.vercel.app/projects/playlist-port-spotify-mover</loc></url>
+  <url><loc>https://teddy-qyuon-portfolio.vercel.app/projects/annual-leave-management</loc></url>
+  <url><loc>https://teddy-qyuon-portfolio.vercel.app/projects/gym-calories-predictive-analysis</loc></url>
+</urlset>
