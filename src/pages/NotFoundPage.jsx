@@ -1,41 +1,23 @@
-import { Container, Typography, Button, Stack } from '@mui/material';
-import { Link as RouterLink } from 'react-router-dom';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { Link } from 'react-router-dom';
+import Icon from '../components/common/Icon';
+import useDocumentMeta from '../hooks/useDocumentMeta';
 
 export default function NotFoundPage() {
+  useDocumentMeta({ title: 'Page not found', description: 'This page does not exist.' });
   return (
-    <Container maxWidth="md" sx={{ py: 12, textAlign: 'center' }}>
-      <Typography
-        variant="overline"
-        sx={{ display: 'block', color: 'secondary.main', fontWeight: 700, letterSpacing: '0.14em' }}
-      >
-        Error 404
-      </Typography>
-      <Typography variant="h2" component="h1" gutterBottom sx={{ mt: 1 }}>
-        This page took a wrong turn.
-      </Typography>
-      <Typography variant="body1" color="text.secondary" paragraph sx={{ maxWidth: 460, mx: 'auto' }}>
-        The page you are looking for does not exist or has moved. Everything you
-        came for is still one click away.
-      </Typography>
-      <Stack
-        direction="row"
-        spacing={1.5}
-        justifyContent="center"
-        sx={{ flexWrap: 'wrap', rowGap: 1.5 }}
-      >
-        <Button component={RouterLink} to="/" variant="contained">
-          Back to Home
-        </Button>
-        <Button
-          component={RouterLink}
-          to="/#projects"
-          variant="outlined"
-          endIcon={<ArrowForwardIcon sx={{ fontSize: 16 }} />}
-        >
-          Browse projects
-        </Button>
-      </Stack>
-    </Container>
+    <section className="container section not-found" aria-labelledby="nf-title">
+      <div className="panel">
+        <p className="mono panel-label">status: 404</p>
+        <h1 id="nf-title">Page not found</h1>
+        <p className="muted">The link may be outdated or mistyped.</p>
+        <div className="hero-actions">
+          <Link className="btn btn-primary" to="/">
+            <Icon name="arrowLeft" size={16} />
+            Back to overview
+          </Link>
+          <Link className="btn" to={{ pathname: '/', hash: '#projects' }}>All projects</Link>
+        </div>
+      </div>
+    </section>
   );
 }
