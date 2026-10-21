@@ -46,6 +46,7 @@ const projectData = [
     type: 'Personal commerce portfolio project',
     role: 'AI-assisted personal project',
     summary: 'A responsive full-stack digital marketplace built with React/Vite, Vercel Serverless Functions, Node.js/Express, and MySQL/Sequelize. Features 37 verified products across 15 game subscriptions, 8 gift cards, and 14 digital games with deduplicated editions, authentic vector platform branding, instant service tile routing, live autocomplete search, sliding interactive cart drawer with GAMER10 promo code math, server-priced Stripe Checkout, webhook signature verification, and a staff-managed 1-hour manual email delivery operations queue.',
+    seoDescription: 'Full-stack gaming marketplace built with React, Vercel serverless functions, Express and MySQL. 37 verified products, Stripe Checkout and a 76-test suite.',
     problem: 'Gamers and digital subscription buyers need transparent regional eligibility, instant access to pricing, and reliable delivery without confusing redirects or unverified third-party keys.',
     solution: 'GameVault provides a verified catalogue where each product displays exact supported regions, terms, and delivery assurances. Direct purchase buttons route instantly from brand tiles to product pages with sliding cart drawers. Serverless Vercel endpoints and the Express backend enforce server-owned pricing, prevent live sales of unverified demo listings, verify signed Stripe webhook events idempotently, and route paid orders into a staff fulfillment queue for manual email delivery.',
     dataset: '37 verified digital products: 15 popular subscriptions (Xbox Game Pass, PlayStation Plus, Nintendo Switch Online, EA Play, Discord Nitro, Spotify, Netflix, NordVPN), 8 digital gift cards (Steam, PlayStation, Xbox, Nintendo, Apple, Google Play, Roblox, Razer Gold), and 14 digital game titles. Product variants are fully deduplicated across catalogue and detail views; activation terms, prices, and regional restrictions are documented; demo listings are guarded from live transactions.',
@@ -120,6 +121,7 @@ const projectData = [
     type: 'Personal commerce portfolio project',
     role: 'AI-assisted personal project',
     summary: "A React/Vite storefront and Python/Django commerce system for one curated streetwear retailer, deployed together on Vercel with a dedicated Neon PostgreSQL database in Singapore. The public preview supports browsing, size selection, wishlist, a browser-persistent bag and account/recovery screens. Source includes scoped guest-order links, supplier evidence reviews, product editing, stock reservations, tracking, returns, operational reports, Gemini 3.8 Flash style advice, and server-priced Stripe Checkout with signature-verified webhooks.",
+    seoDescription: 'Streetwear commerce platform with a React storefront, Django API and PostgreSQL. SKU inventory, Stripe Checkout, AI styling and merchant operations.',
     problem: 'A streetwear retailer needs a coherent customer journey together with size-level stock control, fulfilment and reporting in one system.',
     solution: "The storefront connects to server-owned SKU prices, stock reservations, historic order snapshots and role-protected merchant workflows. Single-use email tokens and a durable outbox support accounts and order access. Stripe events match the order, amount, currency and mode; pending payments keep stock reserved and pending refunds do not restock items. Gemini 3.8 Flash powers AI styling assistance, and approved store policies govern launch readiness.",
     dataset: 'Six illustrative products across sneakers, clothing and accessories, with generated product imagery and preview stock. Supplier authenticity, brand authorisation and real stock availability have not been verified. No real customer history or commercial performance is claimed.',
@@ -188,6 +190,7 @@ const projectData = [
     type: 'Personal ML portfolio project',
     role: 'AI-assisted personal project',
     summary: 'A React/Vite and Python FastAPI fragrance shop backed by PostgreSQL. The public catalogue renders independently of account initialization, with a mobile-friendly storefront, searchable 35-house directory, ml-and-quantity Quick add, persistent wishlist and bag, server-priced Stripe checkout supporting test and commercial live keys, signed payment confirmations, account security, recommendations, forecasts and a protected admin dashboard.',
+    seoDescription: 'Fragrance shop and ML pipeline built with React, FastAPI and PostgreSQL. Recommendations, demand forecasts, secure accounts and Stripe checkout.',
     problem: 'A new fragrance shop needs a way to help customers discover suitable scents and plan inventory before it has real order history.',
     solution: 'An ML pipeline built on simulated historical behaviour compares content, collaborative, basket and quiz-based recommendations with seasonal-naive, LightGBM, LSTM and N-BEATS SKU forecasts. Secure checkout extends the existing FastAPI architecture: database prices in SGD cents, atomic inventory reservations, stable payment idempotency and signature-verified Stripe webhooks. Vercel Services hosts the React/Vite storefront and API with separate Neon PostgreSQL databases.',
     dataset: '2,000 simulated users, 78 weeks of history, 150 fragrance product references across 35 brands and 297 size variants. Historical orders, browsing activity and demand are simulated; new checkout orders use Stripe test payments; product authenticity and availability are not verified. No real customer history or commercial uplift is claimed.',
@@ -272,6 +275,7 @@ const projectData = [
     role: 'Team member (Member 3)',
     summary:
       'A web application for managing staff annual leave requests, with a Supervisor → Manager approval workflow, acting/delegated approvers, leave balance deduction and audit history.',
+    seoDescription: 'Team-built leave management system with React, Express and MySQL. Two-stage approvals, delegated approvers, notifications and audit history.',
     problem:
       'Leave requests were handled manually, making it hard to track approvals, delegate approvers during absences, keep an audit trail and keep leave balances accurate.',
     solution:
@@ -338,6 +342,7 @@ const projectData = [
     role: 'Individual project',
     summary:
       'Predictive analysis of gym exercise data to model Calories_Burned, using KNIME for data preparation and SAS Viya for modelling and comparison.',
+    seoDescription: 'Predictive analytics project comparing four regression models in SAS Viya. KNIME preparation, 950 cleaned records and a 70/30 validation split.',
     problem:
       'Given fitness / gym member exercise data, build and compare regression models that predict calories burned from workout and member attributes.',
     solution:
@@ -430,6 +435,7 @@ const projectData = [
     role: 'Personal project (AI-assisted MVP)',
     summary:
       'A React and Express app that copies an owned or collaborative Spotify playlist to a new playlist in the same account or a second account. Copies stay off the destination\'s public profile. Spotify sign-in is available to accounts on the app\'s Development Mode allowlist.',
+    seoDescription: 'React and Express app that copies Spotify playlists between accounts with OAuth, preserved track order and transfer verification.',
     problem:
       'Moving playlists between Spotify accounts takes manual re-creation, and large playlists are easy to copy incompletely or out of order.',
     solution:
@@ -476,6 +482,7 @@ const projectData = [
     role: 'AI-assisted personal project',
     summary:
       'A Singapore estate operations and predictive energy intelligence pilot combining real HDB building metadata with Python 3.12 / FastAPI ML capabilities: 24–48h multi-step demand and solar forecasting with LightGBM, unsupervised anomaly detection with Isolation Forest and contextual residuals (catching water pump leaks and night lighting surges), and automated maintenance work-order triage.',
+    seoDescription: 'Singapore estate energy pilot with a React dashboard and Python/FastAPI ML. LightGBM forecasts, anomaly detection and work-order triage.',
     problem:
       'Estate facility teams need to predict upcoming lighting, lift and water pump loads, anticipate rooftop solar generation, and detect equipment faults early (like stuck pump float switches or photosensor overrides) without mistaking normal diurnal variance for hardware failures or letting anomalies trigger unverified contractor dispatches.',
     solution:
