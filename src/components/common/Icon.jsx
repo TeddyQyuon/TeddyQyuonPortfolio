@@ -1,3 +1,4 @@
+import gmail from '../../assets/images/social/gmail.png';
 import whatsapp from '../../assets/images/social/whatsapp.svg';
 import githubBlack from '../../assets/images/social/github-black.svg';
 import githubWhite from '../../assets/images/social/github-white.svg';
@@ -21,6 +22,9 @@ const strokeIcons = {
 };
 
 export default function Icon({ name, size = 18, className = '' }) {
+  if (name === 'mail') {
+    return <img className={`icon social-brand-icon ${className}`.trim()} src={gmail} alt="" width={size} height={size} aria-hidden="true" />;
+  }
   if (name === 'github') {
     return <span className={`icon brand-icon-pair ${className}`.trim()} style={{ width: size, height: size }} aria-hidden="true">
       <img className="brand-on-light" src={githubBlack} alt="" width={size} height={size} />

@@ -9,7 +9,7 @@ export default function StackSection() {
 
   return (
     <section className="section" aria-labelledby="stack-title" id="stack">
-      <SectionHeader index="03" eyebrow="Stack" title="Tools & skills" id="stack-title" />
+      <SectionHeader index="03" eyebrow="Skills" title="Tools & skills" id="stack-title" />
       <div className="stack-grid">
         <div className="panel">
           <h3 className="panel-title">Technology usage</h3>
