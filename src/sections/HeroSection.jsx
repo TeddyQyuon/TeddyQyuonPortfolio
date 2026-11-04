@@ -4,7 +4,7 @@ import { Badge, KpiCard } from '../components/common/Dashboard';
 import { personalInfo } from '../data/personalInfo';
 import { currentGpa } from '../data/academicResults';
 import { liveDemoCount, projectCount, publicRepoCount } from '../lib/projectStats';
-import profilePhoto from '../assets/images/profile/profile.jpg';
+import profilePhoto from '../assets/images/profile/profile-hd.webp';
 
 export default function HeroSection() {
   const [start, end] = personalInfo.internshipWindow.split(' – ');

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Icon from '../common/Icon';
-import profilePhoto from '../../assets/images/profile/profile.jpg';
+import profilePhoto from '../../assets/images/profile/profile-hd.webp';
 import ThemeToggle from '../common/ThemeToggle';
 import { sectionLinks } from '../../config/site';
 import { personalInfo } from '../../data/personalInfo';
