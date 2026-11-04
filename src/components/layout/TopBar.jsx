@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Icon from '../common/Icon';
-import profilePhoto from '../../assets/images/profile/profile-hd.webp';
+import profilePhoto from '../../assets/images/profile/header-portrait.webp';
 import ThemeToggle from '../common/ThemeToggle';
 import { sectionLinks } from '../../config/site';
 import { personalInfo } from '../../data/personalInfo';
@@ -24,7 +24,7 @@ export default function TopBar() {
     <header className="topbar">
       <div className="topbar-inner container">
         <Link to="/" className="brand" aria-label="Wai Yan Hpone Lat, home">
-          <img className="brand-mark" src={profilePhoto} alt="" width="34" height="34" />
+          <img className="brand-mark" src={profilePhoto} alt="" width="48" height="48" />
           <span className="brand-text">
             <span className="brand-name">Wai Yan Hpone Lat</span>
             <span className="brand-path mono">~/portfolio</span>
