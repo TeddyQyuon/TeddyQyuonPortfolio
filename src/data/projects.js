@@ -1,3 +1,8 @@
+import gameCurrent from '../assets/images/projects/current/gamevault.webp';
+import soleCurrent from '../assets/images/projects/current/sole-district.webp';
+import scentCurrent from '../assets/images/projects/current/scenthaus.webp';
+import meterCurrent from '../assets/images/projects/current/meterwise.webp';
+import playlistCurrent from '../assets/images/projects/current/playlist-port.webp';
 // Project data — verified claims only.
 // Rules enforced here:
 // - Team projects clearly identified; "myContribution" contains ONLY my work.
@@ -12,19 +17,14 @@ import trainValidation from '../assets/images/projects/gym-calories-predictive-a
 import caloriesByWorkout from '../assets/images/projects/gym-calories-predictive-analysis/calories-by-workout-type.png';
 import modelComparisonChart from '../assets/images/projects/gym-calories-predictive-analysis/model-comparison.png';
 import leaveSignIn from '../assets/images/projects/annual-leave/sign-in-rbac.png';
-import meterwiseOverview from '../assets/images/projects/uiux-meterwise-overview.jpg';
 import meterwiseWorkOrders from '../assets/images/projects/meterwise/work-order-audit.jpg';
-import playlistPortHome from '../assets/images/projects/playlist-port-live-home.jpg';
 import scenthausOverview from '../assets/images/projects/scenthaus/admin-overview.png';
 import scenthausStorefront from '../assets/images/projects/scenthaus/storefront-verified.jpg';
-import scenthausFilters from '../assets/images/projects/uiux-scenthaus-filters.jpg';
 import scenthausQuickAdd from '../assets/images/projects/scenthaus/quick-add-verified.jpg';
 import scenthausCheckout from '../assets/images/projects/scenthaus/checkout-verified.jpg';
 import scenthausPayment from '../assets/images/projects/scenthaus/payment-confirmed.jpg';
-import soleDistrictStorefront from '../assets/images/projects/uiux-sole-storefront.jpg';
 import soleDistrictProduct from '../assets/images/projects/sole-district/product-20261008.jpg';
 import soleDistrictCheckout from '../assets/images/projects/sole-district/checkout-20261008.jpg';
-import gamevaultHome from '../assets/images/projects/gamevault/gamevault-home.jpg';
 import gamevaultProduct from '../assets/images/projects/gamevault/gamevault-product.jpg';
 import gamevaultSubscriptions from '../assets/images/projects/gamevault/gamevault-subscriptions.jpg';
 
@@ -34,8 +34,8 @@ const projectData = [
     projectGroup: 'personal',
     displayOrder: 0,
     displayName: 'GameVault',
-    cardSubtitle: 'Digital gaming marketplace, Stripe checkout & Vercel serverless API',
-    cardSummary: 'A full-stack digital marketplace for game keys, subscriptions, and gift cards featuring 37 verified products, sliding cart drawer with GAMER10 promo discounts, instant brand-tile routing, live search autocomplete, server-authoritative Stripe Checkout, and Vercel serverless functions.',
+    cardSubtitle: "Responsive digital marketplace, product rails & Stripe checkout",
+    cardSummary: "A redesigned digital marketplace with 37 published products, prominent autocomplete search, category menus and compact product rails. Responsive filters, a sliding cart and clear region and delivery details connect browsing to server-priced Stripe Checkout.",
     cardContribution: 'Full-stack architecture, storefront UI/UX redesign, sliding cart drawer, Vercel serverless API, Express REST backend, Sequelize MySQL schema, Stripe Checkout integration, and release verification with AI assistance.',
     cardTechnologies: ['React', 'Node.js', 'Vercel', 'Stripe', 'Express.js', 'MySQL', 'Sequelize ORM'],
     cardNote: 'Storefront & Vercel API deployed · 37 live products · Stripe Checkout ready.',
@@ -48,10 +48,14 @@ const projectData = [
     problem: 'Gamers and digital subscription buyers need transparent regional eligibility, instant access to pricing, and reliable delivery without confusing redirects or unverified third-party keys.',
     solution: 'GameVault provides a verified catalogue where each product displays exact supported regions, terms, and delivery assurances. Direct purchase buttons route instantly from brand tiles to product pages with sliding cart drawers. Serverless Vercel endpoints and the Express backend enforce server-owned pricing, prevent live sales of unverified demo listings, verify signed Stripe webhook events idempotently, and route paid orders into a staff fulfillment queue for manual email delivery.',
     dataset: '37 verified digital products: 15 popular subscriptions (Xbox Game Pass, PlayStation Plus, Nintendo Switch Online, EA Play, Discord Nitro, Spotify, Netflix, NordVPN), 8 digital gift cards (Steam, PlayStation, Xbox, Nintendo, Apple, Google Play, Roblox, Razer Gold), and 14 digital game titles. Product variants are fully deduplicated across catalogue and detail views; activation terms, prices, and regional restrictions are documented; demo listings are guarded from live transactions.',
-    results: 'All 76 automated tests passed (56 backend integration, security, pricing, and live-guard tests + 20 frontend cart, catalogue resolution, promo code, and variant deduplication tests). The production Vite build completed cleanly. Hosted Vercel deployment serves the responsive storefront with client-side SPA routing rewrites and live serverless API functions (/api/health, /api/checkout/sessions). Release verification confirmed direct service routing, live search autocomplete, cart drawer interactions, product detail CTAs, payment trust badges, and public API health reporting checkoutReady.',
+    results: "The 31 October production release refreshed the marketplace with a light storefront, prominent search, product rails, responsive categories, self-hosted fonts, local artwork and split route bundles. A fresh 4 November API check returned 37 published products, and the public storefront was captured for this case study. The earlier implementation passed 76 automated tests; that historical count is not a claim that every redesign check passed. The source README records unresolved legacy path, manifest and artwork assertions. No live payment was made during this portfolio update.",
     technologies: ['React', 'Vite', 'JavaScript', 'Node.js', 'Vercel', 'Stripe', 'Express.js', 'Sequelize ORM', 'MySQL', 'Tailwind CSS'],
     features: [
-      'Responsive gaming marketplace storefront with dark/light visual identity and authentic vector brand assets',
+      "Light storefront redesign with dense product rails and prominent search",
+      "Responsive category navigation, browsing filters and clear region/delivery guidance",
+      "Self-hosted fonts, local product artwork, lazy route bundles and PWA update handling",
+
+      'Responsive light marketplace storefront with local platform artwork and product rails',
       'Curated catalogue with 37 verified products across 15 popular subscriptions, 8 digital gift cards, and 14 PC/console games',
       'Deduplicated product variants and editions across catalogue grid, search autocomplete, and detail views',
       'Direct service tile routing linking brand badges (NordVPN, Game Pass, PS Plus) straight to dedicated purchase pages',
@@ -81,9 +85,9 @@ const projectData = [
     learnings: 'How serverless edge APIs, server-authoritative pricing, payment gateway webhooks, digital fulfillment lifecycles, and e-commerce UX connect end-to-end in a deployed application.',
     screenshots: [
       {
-        src: gamevaultHome,
-        alt: 'GameVault live marketplace storefront featuring popular subscriptions, platform categories, and curated game deals.',
-        caption: 'Actual Vercel storefront captured during live verification. Curated subscriptions, gift cards, and game keys with authentic brand assets and direct purchase actions.',
+        src: gameCurrent,
+        alt: "GameVault redesigned light marketplace with prominent search, category menus and product rails.",
+        caption: "Live marketplace captured on 4 November 2026. The October redesign adds a light storefront, product rails and clearer discovery and delivery guidance.",
       },
       {
         src: gamevaultProduct,
@@ -100,7 +104,7 @@ const projectData = [
     demoUrl: 'https://gamevault-alpha-ten.vercel.app/',
     apiUrl: 'https://gamevault-alpha-ten.vercel.app/api/health',
     demoLabel: 'Live storefront',
-    demoAccessNote: 'Public storefront deployed on Vercel with verified catalogue of 37 products, live Vercel serverless API (/api/*), interactive cart drawer, and Stripe Checkout. Express and MySQL backend runs with Docker/cloud runbook for persistent database workloads.',
+    demoAccessNote: "Public storefront and Vercel API with 37 published products, autocomplete search, product rails and cart drawer. Stripe session creation uses server-owned prices; paid status depends on signed webhooks. Listings and delivery terms should be reviewed before any purchase. This portfolio update did not submit a payment.",
     reportUrl: null,
   },
   {
@@ -108,8 +112,8 @@ const projectData = [
     projectGroup: 'personal',
     displayOrder: 1,
     displayName: 'SOLE DISTRICT',
-    cardSubtitle: 'Streetwear storefront, Stripe checkout and Django workspace',
-    cardSummary: "An editorial streetwear storefront with a deployed Django API, dedicated PostgreSQL database, SKU inventory, customer recovery and a merchant workspace. Configured with Stripe Checkout, signature-verified webhooks, Gemini 3.8 Flash styling assistant, and operational store policy controls.",
+    cardSubtitle: "175-piece streetwear catalogue, editorial motion & Django commerce",
+    cardSummary: "An editorial sneakers and streetwear storefront with 175 catalogue pieces, brand navigation, quick size selection, persistent bag and wishlist. The latest release adds clothing and accessories, reduced-motion support and Singapore address validation over a Django/PostgreSQL commerce backend.",
     cardContribution: 'Product direction, storefront, Django commerce workflows, AI assistant integration and release verification with AI assistance.',
     cardTechnologies: ['React', 'Python', 'Django', 'Stripe', 'PostgreSQL'],
     cardNote: 'Storefront and API deployed · Illustrative catalogue · Stripe checkout configured.',
@@ -118,13 +122,19 @@ const projectData = [
     category: 'Full-Stack',
     type: 'Personal commerce portfolio project',
     role: 'AI-assisted personal project',
-    summary: "A React/Vite storefront and Python/Django commerce system for one curated streetwear retailer, deployed together on Vercel with a dedicated Neon PostgreSQL database in Singapore. The public preview supports browsing, size selection, wishlist, a browser-persistent bag and account/recovery screens. Source includes scoped guest-order links, supplier evidence reviews, product editing, stock reservations, tracking, returns, operational reports, Gemini 3.8 Flash style advice, and server-priced Stripe Checkout with signature-verified webhooks.",
+    summary: "A React/Vite storefront and Python/Django commerce system for one curated streetwear retailer, deployed together on Vercel with a dedicated Neon PostgreSQL database in Singapore. The public preview now presents 175 catalogue pieces with brand and category navigation, editorial motion, quick size selection, wishlist, a browser-persistent bag and account/recovery screens. Source includes scoped guest-order links, supplier evidence reviews, product editing, stock reservations, tracking, returns, operational reports, Gemini 3.8 Flash style advice, and server-priced Stripe Checkout with signature-verified webhooks.",
     problem: 'A streetwear retailer needs a coherent customer journey together with size-level stock control, fulfilment and reporting in one system.',
     solution: "The storefront connects to server-owned SKU prices, stock reservations, historic order snapshots and role-protected merchant workflows. Single-use email tokens and a durable outbox support accounts and order access. Stripe events match the order, amount, currency and mode; pending payments keep stock reserved and pending refunds do not restock items. Gemini 3.8 Flash powers AI styling assistance, and approved store policies govern launch readiness.",
-    dataset: 'Six illustrative products across sneakers, clothing and accessories, with generated product imagery and preview stock. Supplier authenticity, brand authorisation and real stock availability have not been verified. No real customer history or commercial performance is claimed.',
-    results: "All 42 backend checks passed on PostgreSQL 16 in GitHub Actions, including two buyers racing for the last unit, concurrent paid events consuming stock once and first-owner bootstrap safeguards. The production frontend build, four Sites packaging checks and migration consistency checks passed. Hosted verification confirms PostgreSQL health, the catalogue API, secure HttpOnly session cookies, CSRF rejection, protected merchant endpoints, admin assets and account/recovery screens. Redeployment preserved the database schema. Storefront checks cover size selection, sold-out states, wishlist, bag quantities, SGD totals, reload persistence and checkout flow. Live Stripe credentials, webhook verification and email transport are configured in production hosting.",
+    dataset: "The November catalogue contains 175 pieces across sneakers, clothing and accessories, with 21 labels represented in the storefront. Catalogue records, prices and stock are portfolio data; supplier authenticity and physical inventory have not been independently verified. No commercial performance is claimed.",
+    results: "The November release expanded the preview to 175 pieces and added editorial motion, Singapore address validation and batched catalogue seeding. Earlier verification: all 42 backend checks passed on PostgreSQL 16 in GitHub Actions, including two buyers racing for the last unit, concurrent paid events consuming stock once and first-owner bootstrap safeguards. The production frontend build, four Sites packaging checks and migration consistency checks passed. Hosted verification confirms PostgreSQL health, the catalogue API, secure HttpOnly session cookies, CSRF rejection, protected merchant endpoints, admin assets and account/recovery screens. Redeployment preserved the database schema. Storefront checks cover size selection, sold-out states, wishlist, bag quantities, SGD totals, reload persistence and checkout flow. Live Stripe credentials, webhook verification and email transport are configured in production hosting.",
     technologies: ['React', 'Vite', 'JavaScript', 'CSS', 'Python', 'Django', 'PostgreSQL', 'SQLite', 'Stripe', 'Vercel'],
     features: [
+      "Expanded 175-piece catalogue across sneakers, heavyweight clothing and accessories",
+      "Brand mega menus, predictive search, quick size selection and category browsing",
+      "Editorial motion and scroll progress with reduced-motion support",
+      "Singapore postal, unit and phone validation with address lookup guidance",
+      "Batched catalogue seeding reduces database round trips during deployment",
+
       'Editorial storefront, category and brand browsing, product search and product detail pages',
       'SKU-specific size and colour selection, sold-out states and product image enlargement',
       'Browser-persistent wishlist and bag with quantity controls and SGD totals',
@@ -153,22 +163,22 @@ const projectData = [
     challenges: "Protecting stock across delayed or uncertain payments, avoiding duplicate refunds and restocking, preserving customer access across session changes, keeping supplier evidence private and separating Stripe test orders from live sales reports.",
     learnings: "How PostgreSQL row locks, idempotent payment events, single-use account links, queued notifications, staff permissions and reviewed merchant records fit into a retail application, while separating implementation and test evidence from commercial readiness.",
     screenshots: [{
-      src: soleDistrictStorefront,
-      alt: 'SOLE DISTRICT live storefront with its editorial streetwear hero and illustrative preview banner.',
-      caption: 'Actual Vercel storefront captured during desktop verification. The imagery and catalogue are illustrative, and purchases are disabled.',
+      src: soleCurrent,
+      alt: "SOLE DISTRICT updated streetwear storefront with brand navigation, 175 catalogue pieces and editorial hero.",
+      caption: "Live storefront captured on 4 November 2026 after the expanded catalogue release. Catalogue and inventory are portfolio data; purchases remain disabled.",
     }, {
       src: soleDistrictProduct,
       alt: 'SOLE DISTRICT New Balance 2002R product page with UK size eight and wishlist selected.',
-      caption: 'Live product flow with explicit size selection, disabled sold-out sizes and a wishlist control. Product imagery and stock are preview data.',
+      caption: 'Historical 8 October product capture with explicit size selection, disabled sold-out sizes and a wishlist control. Product imagery and stock are preview data.',
     }, {
       src: soleDistrictCheckout,
       alt: 'SOLE DISTRICT preview checkout with two UK size eight items, a 458 Singapore dollar total and payment disabled.',
-      caption: 'Live bag and preview checkout: two items total S$458, with the payment action disabled. No payment or order was created.',
+      caption: 'Historical 8 October bag and preview checkout: two items total S$458, with the payment action disabled. No payment or order was created.',
     }],
-    repositoryUrl: null,
+    repositoryUrl: 'https://github.com/TeddyQyuon/sole-district',
     demoUrl: 'https://sole-district-green.vercel.app/',
     demoLabel: 'Live storefront',
-    demoAccessNote: "Public storefront and Django API with a dedicated PostgreSQL database. Imagery and stock are illustrative; the bag and wishlist persist in the browser. Account/recovery screens are available. Stripe checkout and webhook ledgers are configured with Singapore SGD delivery policies and stock reservation safeguards. Real commercial sales require supplier authenticity verification and merchant launch review.",
+    demoAccessNote: "Public React storefront and Django API with PostgreSQL. The expanded preview catalogue contains 175 pieces. Browse brands, clothing and sneakers, try size selection and save items to the bag or wishlist. The live footer identifies a preview catalogue with purchases disabled. No real purchase or fulfilment is claimed.",
     reportUrl: null,
   },
   {
@@ -177,7 +187,7 @@ const projectData = [
     displayOrder: 2,
     displayName: 'SCENTHAUS Intelligence',
     cardSubtitle: 'Fragrance discovery, secure Stripe checkout and ML',
-    cardSummary: 'A responsive fragrance storefront with 35 houses, 150 product references, size-and-quantity Quick add, secure accounts, Stripe checkout, explainable recommendations and demand forecasts. Production-ready Stripe checkout pipeline with dual test and commercial live-mode readiness.',
+    cardSummary: "An editorial fragrance storefront with 35 houses and 150 product references. Search names, houses and notes; browse scent families; choose sizes with Quick add. Responsive WebP images, local fonts and on-demand search and checkout bundles reduce loading work.",
     cardContribution: 'Project scope, full-stack integration, ML pipelines and validation with AI assistance.',
     cardTechnologies: ['React', 'Python', 'FastAPI', 'PostgreSQL', 'Stripe'],
     cardNote: 'Deployed · Stripe checkout configured · 35 fragrance houses.',
@@ -192,9 +202,15 @@ const projectData = [
     dataset: '2,000 simulated users, 78 weeks of history, 150 fragrance product references across 35 brands and 297 size variants. Historical orders, browsing activity and demand are simulated; new checkout orders use Stripe test payments; product authenticity and availability are not verified. No real customer history or commercial uplift is claimed.',
     dataPreparation: 'Training gates check nulls, duplicate order lines, invalid prices/quantities and outliers. Evaluation uses temporal cutoffs, excludes previously bought scents, and keeps an untouched forecasting holdout.',
     models: 'Popularity, item-item CF, hybrid and two-tower recommender variants; BM25/dense/hybrid search on 60 unreviewed draft labels; seasonal-naive, LightGBM, LSTM and N-BEATS forecasts evaluated across three origins.',
-    results: 'Historical simulated-data evaluation reports item-item CF NDCG@10 of 0.13731, full two-tower 0.13405 and popularity 0.10609; the BPR variant scores 0.14087. LSTM SKU WAPE averages 86.70% and MASE 0.795 across three seeds and three test origins. Hybrid search MRR@10 is 0.95278 on 60 rule-generated labels with none human-reviewed. Scores vary with each trained deployment. The checkout release passed 119 backend tests, 15 frontend unit tests and 12 browser journeys, including desktop and mobile checkout. A real Stripe sandbox payment on the deployed site confirmed a single numbered order for S$193.01; refreshing and three genuine-event webhook replays preserved it. Tests cover client price manipulation, duplicate requests, concurrent signed confirmations, declined/async payments, cancellation, stock recovery, refunds, ownership and CSRF. The storefront preserves authenticator 2FA, recovery codes, session revocation and data exports without authentication secrets. Results measure pipelines on simulated data, not real-market performance.',
+    results: 'The 4 November storefront refresh passed 22 unit tests and a production build. Hosted checks covered search, scent-family filtering, Quick add, bag totals, Stripe test-mode checkout and collection expansion from 24 to 48 of 150 products. The first 24 product images total 409,916 bytes at 640px WebP versus 3,871,537 bytes in original formats (89.4% smaller); this is an asset measurement, not field Core Web Vitals. Earlier pipeline verification: Historical simulated-data evaluation reports item-item CF NDCG@10 of 0.13731, full two-tower 0.13405 and popularity 0.10609; the BPR variant scores 0.14087. LSTM SKU WAPE averages 86.70% and MASE 0.795 across three seeds and three test origins. Hybrid search MRR@10 is 0.95278 on 60 rule-generated labels with none human-reviewed. Scores vary with each trained deployment. The checkout release passed 119 backend tests, 15 frontend unit tests and 12 browser journeys, including desktop and mobile checkout. A real Stripe sandbox payment on the deployed site confirmed a single numbered order for S$193.01; refreshing and three genuine-event webhook replays preserved it. Tests cover client price manipulation, duplicate requests, concurrent signed confirmations, declined/async payments, cancellation, stock recovery, refunds, ownership and CSRF. The storefront preserves authenticator 2FA, recovery codes, session revocation and data exports without authentication secrets. Results measure pipelines on simulated data, not real-market performance.',
     technologies: ['React', 'Vite', 'JavaScript', 'Tailwind CSS', 'Python', 'FastAPI', 'PostgreSQL', 'SQLAlchemy', 'scikit-learn', 'LightGBM', 'MLflow', 'Vercel', 'pytest', 'Stripe'],
     features: [
+      "Ivory and forest-green storefront with four scent-family discovery paths",
+      "Accessible search dialog for fragrance names, houses and notes, with URL-preserved filters",
+      "Collection starts with 24 of 150 products and loads 24 more per request",
+      "Responsive WebP product images, self-hosted fonts and on-demand search/checkout bundles",
+      "Transform/opacity motion with reduced-motion support and accessible mobile filters",
+
       'Public home and catalogue render without waiting for account, bag or optional recommendation requests',
       'Mobile-friendly navigation, searchable directory of 35 fragrance houses and direct brand filters',
       'Quick add with explicit ml selection, quantity controls, exact totals and current stock limits',
@@ -226,9 +242,9 @@ const projectData = [
     challenges: 'Avoiding temporal leakage, handling sparse/new SKUs, preserving stock and checkout consistency, separating heavy training from the serving runtime, and removing account initialization from the public rendering path while retaining consented event tracking.',
     learnings: 'How recommendation evaluation, forecast uncertainty, inventory planning, accessible shopping flows, secure payment boundaries and account security fit into a complete application, while reporting simulation limits honestly.',
     screenshots: [{
-      src: scenthausFilters,
-      alt: 'SCENTHAUS live collection with the Dior filter chip, Clear all action and six matching scents.',
-      caption: 'October 2026 UI refresh captured from the deployed collection. Active filters can be removed individually or cleared together; prices and stock are seeded portfolio data.',
+      src: scentCurrent,
+      alt: "SCENTHAUS refreshed editorial homepage with ivory navigation, forest-green accents and fragrance hero photography.",
+      caption: "Live homepage captured on 4 November 2026. The refresh adds scent-family discovery, accessible search, responsive product imagery and reduced-motion support; prices and stock remain simulated.",
     }, {
       src: scenthausStorefront,
       alt: 'SCENTHAUS updated fragrance storefront with compact navigation and a searchable product catalogue.',
@@ -417,24 +433,30 @@ const projectData = [
     projectGroup: 'personal',
     displayOrder: 4,
     displayName: 'Playlist Port',
-    cardSubtitle: 'Spotify playlist transfer',
-    cardSummary: 'Copy Spotify playlists between accounts with OAuth sign-in, preserved track order and transfer verification.',
+    cardSubtitle: "Spotify transfers, album imports & compact queue",
+    cardSummary: "Copy Spotify playlists and album links into private playlists with preserved track order. A searchable, paginated transfer queue keeps progress and Cancel within reach; empty playlists are skipped so the queue keeps moving.",
     cardContribution: 'Project scope, transfer flow and full-stack development with AI assistance.',
     cardTechnologies: ['React', 'Vite', 'Node.js', 'Express.js', 'Spotify Web API'],
     cardNote: 'Free & Premium accounts · Spotify developer allowlist required.',
     slug: 'playlist-port-spotify-mover',
+    results: "The 4 November release passed 55 automated tests and a production build. Regression coverage includes empty-playlist completion, large queue navigation and album-link validation. The deployed homepage exposes playlist and album inputs; authenticated transfers require approved Spotify accounts.",
+    demoAccessNote: "Spotify-to-Spotify transfers support Free and Premium accounts on the Development Mode allowlist. Albums become new private playlists. Local and unavailable items are skipped; other music services are planned.",
     name: 'Playlist Port — Spotify Playlist Mover',
     category: 'Full-Stack',
     type: 'Personal MVP',
     role: 'Personal project (AI-assisted MVP)',
-    summary:
-      'A React and Express app that copies an owned or collaborative Spotify playlist to a new playlist in the same account or a second account. Copies stay off the destination\'s public profile. Spotify sign-in is available to accounts on the app\'s Development Mode allowlist.',
+    summary: "A React and Express app for copying Spotify playlists between the same or two accounts, and importing album share links into new private playlists. The November update adds a compact, collapsible queue, search and status filters, 6 items per page, sticky progress controls and reliable empty-playlist handling. Spotify sign-in requires the app’s Development Mode allowlist; Free and Premium accounts are supported.",
     problem:
       'Moving playlists between Spotify accounts takes manual re-creation, and large playlists are easy to copy incompletely or out of order.',
-    solution:
-      'Connect a source account through Spotify OAuth, select a playlist, choose the same or a second destination account, and create a new copy. The app reads every playlist page, keeps item order, writes in Spotify-sized batches, and reports items that cannot be copied. Restrict link access by choosing Make private in Spotify.',
+    solution: "Connect Spotify through OAuth, choose playlists or paste a supported playlist or album URL, then select a destination account. Paginated reads and batched writes preserve item order. Empty sources are marked Skipped, unsupported links show clear guidance, and verified results distinguish completed, partial and skipped transfers.",
     technologies: ['React', 'Vite', 'JavaScript', 'Node.js', 'Express.js', 'Spotify Web API', 'REST APIs'],
     features: [
+      "Spotify album share links load metadata and copy tracks in order into a new private playlist",
+      "Collapsible transfer queue with search, status filters and 6 items per page",
+      "Sticky progress and Cancel controls with confirmed transfer counts",
+      "Empty playlists are marked Skipped and the remaining queue continues",
+      "Responsive pasted-link validation and guidance for unsupported Spotify URLs",
+
       'Spotify OAuth connection for source and optional destination account',
       'Owned and collaborative playlist selection with pagination',
       'Playlist copies hidden from the public profile, with ordered tracks and episodes',
@@ -445,14 +467,12 @@ const projectData = [
     myContribution:
       'I chose the first-release scope and shaped the Spotify-to-Spotify transfer flow from my React and JavaScript learning. I developed this MVP with AI assistance and am validating it against Spotify developer-account limits.',
     architecture: ['React + Vite frontend', 'Express REST API', 'Spotify OAuth + Web API'],
-    challenges:
-      'Handling two account connections, Spotify playlist pagination and write limits, and preserving sign-in state across serverless requests.',
-    learnings:
-      'How an OAuth flow, protected API routes and paginated third-party data fit together in a full-stack app.',
+    challenges: "Keeping long transfer queues manageable, cancelling safely, skipping empty sources without hanging, and handling paginated album tracks while preserving order and Spotify session state.",
+    learnings: "How OAuth, paginated third-party APIs, cancellation and explicit transfer states support a reliable music-library workflow.",
     screenshots: [{
-      src: playlistPortHome,
-      alt: 'Live Playlist Port interface with Spotify service selection and playlist transfer introduction.',
-      caption: 'October 2026 UI refresh captured from the deployed Vercel app, with authentic service logos and a Start with Spotify action. Spotify is available; other services are marked as coming later.',
+      src: playlistCurrent,
+      alt: "Playlist Port homepage with playlist and album link input, Free and Premium account support and private-copy preview.",
+      caption: "Live homepage captured on 4 November 2026. Album import is available after Spotify sign-in; other music services remain on the roadmap.",
     }],
     repositoryUrl: 'https://github.com/TeddyQyuon/playlist-port',
     demoUrl: 'https://playlist-port-nine.vercel.app/',
@@ -463,38 +483,38 @@ const projectData = [
     projectGroup: 'personal',
     displayOrder: 3,
     displayName: 'MeterWise',
-    cardSubtitle: 'FastAPI ML energy forecasting, anomaly detection & operations',
-    cardSummary: 'An estate energy intelligence platform combining public HDB building data with Python 3.12 / FastAPI ML capabilities: LightGBM 24–48h solar and demand forecasting, Isolation Forest anomaly detection for pump leaks and lighting surges, and automated work-order triage.',
+    cardSubtitle: "Estate energy operations, guided workflows & Python analytics",
+    cardSummary: "A responsive Singapore estate dashboard with town and block filters, data-quality repair, maintenance workflows and expandable insights. Combined startup requests and lazy panels reduce initial JavaScript by 16.6%; live ML is currently unavailable and demonstration insights are labelled.",
     cardContribution: 'Project direction, Python 3.12 / FastAPI ML architecture, LightGBM forecasting, Isolation Forest anomaly triage, and estate energy workflows, with AI assistance.',
     cardTechnologies: ['React', 'Python', 'FastAPI', 'scikit-learn', 'LightGBM', 'Vercel', 'SQL'],
-    cardNote: 'Live demo · Python 3.12 ML service · 24-48h forecast & anomaly triage.',
+    cardNote: "Live operations demo · Simulated meter data · Demonstration insights labelled.",
     slug: 'meterwise-building-energy-analytics',
     name: 'MeterWise — Singapore Estate Energy Operations & Python ML Platform',
     category: 'Python / ML & Analytics',
     type: 'Independent public-housing ML & operations pilot',
     role: 'AI-assisted personal project',
-    summary:
-      'A Singapore estate operations and predictive energy intelligence pilot combining real HDB building metadata with Python 3.12 / FastAPI ML capabilities: 24–48h multi-step demand and solar forecasting with LightGBM, unsupervised anomaly detection with Isolation Forest and contextual residuals (catching water pump leaks and night lighting surges), and automated maintenance work-order triage.',
+    summary: "An independent estate energy operations pilot combining public HDB building metadata with simulated meter readings and maintenance records. The November refresh improves responsive navigation, reporting filters, expandable insights and a quick guide. Combined estate startup data and deferred secondary panels reduce initial JavaScript. Python forecasting and anomaly-detection pipelines remain in the source; the hosted demo currently labels demonstration insights because live ML is unavailable.",
     problem:
       'Estate facility teams need to predict upcoming lighting, lift and water pump loads, anticipate rooftop solar generation, and detect equipment faults early (like stuck pump float switches or photosensor overrides) without mistaking normal diurnal variance for hardware failures or letting anomalies trigger unverified contractor dispatches.',
-    solution:
-      'A React dashboard paired with a Python 3.12 / FastAPI ML backend models six HDB blocks and 24 service meters. A multi-step LightGBM forecaster predicts hourly load and solar generation 24 to 48 hours ahead with 90% prediction intervals, calculating derived net grid import and solar export. An Isolation Forest and contextual residual engine monitors telemetry in real time, detecting anomalies with confidence scores and engineering root causes (such as B03 booster pump night cycling at 10.8 kWh or B02 lighting surges at 11.2 kWh), and directly triages them into evidence-based inspection work orders with concurrency protection.',
+    solution: "A React dashboard and Python/FastAPI API bring together six blocks, 24 service meters, data-quality checks and evidence-based maintenance. Missing readings withhold derived grid, cost and carbon estimates. Town, block and reporting-period filters keep the workflow focused, while combined startup data and lazy panels reduce loading work. Forecasting and anomaly insights clearly disclose their current demonstration status.",
     dataset:
       'Six real public HDB Property Information records from data.gov.sg cover Ang Mo Kio, Bishan and Tampines, totalling 620 dwelling units. The snapshot records source IDs, licence and retrieval date. All meter installations, electricity readings and maintenance records are simulated. UTC intervals are grouped in Asia/Singapore. S$0.285/kWh is illustrative, and the 0.402 kg CO₂/kWh factor is explicitly the historical EMA 2024 grid factor. No resident details or live agency systems are used.',
     dataPreparation:
       'Public building metadata is kept separate from simulated operational records. Time-series feature engineering extracts harmonic Fourier cyclics (hour/day-of-week sine/cosine), Singapore equatorial solar elevation and temperature proxies, time-series lag features (1h, 2h, 3h, 24h, 48h), rolling statistics (6h, 24h), and block structural metadata. CSV validation checks registered assets, completed intervals, non-negative consumption, the fourteen-day demo window and duplicates. Missing intervals withhold derived grid, export, cost and carbon estimates.',
-    models:
-      'Multi-step tabular gradient boosting (LightGBM with HistGradientBoosting fallback) for 24–48h hourly demand and solar forecasting with 90% prediction intervals (MAE 0.14–0.27 kWh). Unsupervised Isolation Forest (100 estimators, contamination sensitivity 0.01–0.25) coupled with hour-of-day median/IQR baselines and Z-score residuals for domain-specific fault categorization.',
-    results:
-      'Version 2.2 runs a Python 3.12/FastAPI backend on Vercel with persistent Turso storage and dedicated ML pipelines in backend/ml. Comprehensive pytest test suites, Ruff linting and clean JavaScript Vite production builds pass with zero dependency advisories. Tests verify feature engineering transformations, LightGBM/gradient-boosting training and 24–48h multi-step inference, Isolation Forest anomaly scoring, and FastAPI endpoint contracts (/api/estate/ml/forecast and /api/estate/ml/anomalies). The model achieves 0.14 kWh load MAE and 0.27 kWh solar MAE across 6 blocks, and flags five verified anomaly candidates with diagnostic root causes. Deployed cloud-browser verification confirmed that repaired readings, 100% coverage, import history, ML forecasts, detected anomalies and verified work orders with atomic timelines survive serverless restarts.',
+    models: "The source includes LightGBM with HistGradientBoosting fallback for 24–48h demand and solar forecasts, plus Isolation Forest and contextual residual anomaly detection. Historical local evaluation reported 0.14 kWh load MAE and 0.27 kWh solar MAE on simulated data. These are local model results; the current hosted ML service is unavailable and its example insights are explicitly labelled.",
+    results: "The 4 November workspace release passed 86 tests and a production build. Initial JavaScript was reduced by 16.6% through combined authenticated startup data and lazy secondary panels. Hosted verification confirms responsive estate navigation, reporting filters, data-quality guidance and expandable insights across 6 blocks. The live ML service remains unavailable; demonstration cases are labelled and are not presented as live model output.",
     technologies: [
       'React', 'JavaScript', 'Vite', 'Tailwind CSS', 'Python', 'FastAPI',
       'scikit-learn', 'LightGBM', 'SQL', 'SQLite', 'Vercel', 'Turso / libSQL', 'pytest',
     ],
     features: [
-      'Python 3.12 / FastAPI ML service with 24–48h ahead energy demand & rooftop solar generation forecasting (LightGBM)',
-      'Unsupervised Isolation Forest & contextual residual anomaly detector identifying pump leaks and lighting surges',
-      'Automated work-order triage converting ML anomaly telemetry into assigned maintenance workflows with root-cause diagnostics',
+      "Responsive estate navigation, reporting-period/town/block filters and an in-app quick guide",
+      "Combined authenticated estate startup response and lazy secondary panels",
+      "Expandable demonstration insights with explicit live-ML availability labels",
+
+      'Python/FastAPI source pipelines for 24–48h demand and solar forecasting; live ML currently unavailable',
+      'Isolation Forest and contextual anomaly pipelines in source; hosted examples labelled as demonstrations',
+      'Inspection work orders with assignment, evidence and verification; demonstration anomaly cases remain labelled',
       'Real HDB public inventory: six blocks, three towns and 620 dwelling units with per-block hourly energy balance',
       'Missing-data safeguards, CSV gap repairs, duplicate handling and persistent import history',
       'Assigned inspection workflow with evidence, verification and concurrent-update protection',
@@ -517,9 +537,9 @@ const projectData = [
       'How energy forecasting, anomaly detection, automated facilities triage, source provenance, data quality, area permissions and maintenance evidence fit into an estate operations workflow, and how to validate ML deployment behaviour without claiming real government integration.',
     screenshots: [
       {
-        src: meterwiseOverview,
-        alt: 'MeterWise Singapore estate dashboard showing common-service load, rooftop solar, derived grid import and meter coverage.',
-        caption: 'October 2026 UI refresh on Vercel: larger filters, readable metrics and keyboard-accessible data tables. Building metadata is real; estate energy is clearly labelled as simulated.',
+        src: meterCurrent,
+        alt: "MeterWise refreshed estate overview with reporting filters, energy metrics, data-quality warning and sidebar navigation.",
+        caption: "Live dashboard captured on 4 November 2026. Public building metadata is real; meter readings and maintenance are simulated. Missing intervals withhold derived totals.",
       },
       {
         src: meterwiseWorkOrders,
@@ -530,7 +550,7 @@ const projectData = [
     repositoryUrl: 'https://github.com/TeddyQyuon/meterwise',
     demoUrl: 'https://meterwise-kappa.vercel.app/',
     demoLabel: 'Live demo',
-    demoAccessNote: 'Independent pilot; not affiliated with HDB, any Town Council or the Singapore Government. Public building metadata is real; meters, readings and maintenance are simulated. Each browser has a separate demo workspace. The role switch previews area permissions, not real agency authentication. Use sample data only.',
+    demoAccessNote: "Independent pilot; not affiliated with HDB, a Town Council or the Singapore Government. Public building metadata is real; meter readings and maintenance are simulated. Each browser has a separate demo workspace. Live ML is currently unavailable; demonstration forecasts and insights are labelled. Use sample data only.",
     reportUrl: null,
   },
 ];
