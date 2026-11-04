@@ -9,7 +9,7 @@ export const DEFAULT_DESCRIPTION =
 export const sectionLinks = [
   { label: 'Overview', id: 'overview' },
   { label: 'Projects', id: 'projects' },
-  { label: 'Stack', id: 'stack' },
+  { label: 'Skills', id: 'stack' },
   { label: 'Academics', id: 'academics' },
   { label: 'Contact', id: 'contact' },
 ];
