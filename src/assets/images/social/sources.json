@@ -1,0 +1,37 @@
+{
+  "reviewed": "2026-11-04",
+  "files": [
+    {
+      "file": "src/assets/images/technology/stripe.svg",
+      "source": "https://stripe.com/newsroom/information",
+      "sha256": "4448c4b4f954285d2b2aeb6d92391c85fdc290e008c2679d2c006d6d72ae1ae9"
+    },
+    {
+      "file": "src/assets/images/technology/github.svg",
+      "source": "https://brand.github.com/GitHub_Logos.zip",
+      "sha256": "693d7abe6f899646cc2e96856723b45e95f71885a54910b2749f6decdf7e1ee1"
+    },
+    {
+      "file": "src/assets/images/social/github-black.svg",
+      "source": "https://brand.github.com/GitHub_Logos.zip",
+      "sha256": "693d7abe6f899646cc2e96856723b45e95f71885a54910b2749f6decdf7e1ee1"
+    },
+    {
+      "file": "src/assets/images/social/github-white.svg",
+      "source": "https://brand.github.com/GitHub_Logos.zip",
+      "sha256": "ccd84c89b1056345608fc3489357f8acc7397e49a3cdc2d418b6c8016911d47b"
+    },
+    {
+      "file": "src/assets/images/social/linkedin.png",
+      "source": "https://content.linkedin.com/content/dam/me/business/en-us/amp/xbu/linkedin-revised-brand-guidelines/logos/in-logo.zip",
+      "sha256": "3c0149f26168b5fe0f43e68664abe40341a6443b3cd435d18a73e12f64f8b600"
+    },
+    {
+      "file": "src/assets/images/social/whatsapp.svg",
+      "source": "https://www.meta.com/brand/resources/whatsapp/whatsapp-brand/",
+      "archive": "WhatsApp-Brand-Resource-Center.zip",
+      "member": "Brand Resource Center Page Downloads/01_Glyph/01_Digital RGB/03_SVG/Digital_Glyph_Green_RGB_2026.svg",
+      "sha256": "f7b1311db718533e671645f57cd94b92f0e006e61d7e6581a80675fc5a478fc4"
+    }
+  ]
+}

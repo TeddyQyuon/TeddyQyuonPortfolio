@@ -238,3 +238,11 @@ td .badge-live::before, .highlight-list .badge-live::before { display: none; }
 .segmented button:hover { color: var(--text); }
 .segmented button[aria-pressed='true'] { background: var(--surface); color: var(--text); box-shadow: 0 0 0 1px var(--border-strong); }
 .segmented .count { font-size: 0.75rem; color: var(--text-faint); }
+
+/* Exact vendor artwork: use the supplied colourways rather than tinting marks. */
+.brand-icon-pair { display: inline-flex; flex: none; }
+.brand-icon-pair img, .social-brand-icon { object-fit: contain; }
+.brand-icon-pair .brand-on-light { display: none; }
+.brand-icon-pair .brand-on-dark { display: block; }
+[data-theme="light"] .brand-icon-pair .brand-on-light { display: block; }
+[data-theme="light"] .brand-icon-pair .brand-on-dark { display: none; }
