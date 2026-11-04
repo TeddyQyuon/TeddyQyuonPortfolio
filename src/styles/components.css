@@ -13,7 +13,7 @@
 .brand:hover { color: var(--text); }
 .brand-mark {
   display: grid; place-items: center;
-  width: 34px; height: 34px;
+  width: 48px; height: 48px;
   object-fit: cover;
   object-position: center;
   flex-shrink: 0;
