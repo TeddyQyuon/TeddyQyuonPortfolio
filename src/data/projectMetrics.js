@@ -3,7 +3,7 @@
 // projects.js. Do not add a number here that is not stated there.
 export const projectMetrics = {
   'gamevault-marketplace': [
-    { label: 'Earlier test suite', value: '76' },
+    { label: 'Release tests', value: '110' },
     { label: 'Catalogue products', value: '37' },
     { label: 'Subscriptions', value: '15' },
   ],
@@ -13,12 +13,12 @@ export const projectMetrics = {
     { label: 'Catalogue pieces', value: '175' },
   ],
   'scenthaus-intelligence': [
-    { label: 'Backend tests', value: '119' },
-    { label: 'Browser journeys', value: '12' },
+    { label: 'Earlier backend tests', value: '119' },
+    { label: 'Earlier browser journeys', value: '12' },
     { label: 'Fragrance houses', value: '35' },
   ],
   'meterwise-building-energy-analytics': [
-    { label: 'Release tests', value: '86' },
+    { label: 'Release tests', value: '91' },
     { label: 'Less initial JS', value: '16.6', unit: '%' },
     { label: 'HDB blocks', value: '6' },
   ],
