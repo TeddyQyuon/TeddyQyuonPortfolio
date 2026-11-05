@@ -48,9 +48,10 @@ const projectData = [
     problem: 'Gamers and digital subscription buyers need transparent regional eligibility, instant access to pricing, and reliable delivery without confusing redirects or unverified third-party keys.',
     solution: 'GameVault provides a verified catalogue where each product displays exact supported regions, terms, and delivery assurances. Direct purchase buttons route instantly from brand tiles to product pages with sliding cart drawers. Serverless Vercel endpoints and the Express backend enforce server-owned pricing, prevent live sales of unverified demo listings, verify signed Stripe webhook events idempotently, and route paid orders into a staff fulfillment queue for manual email delivery.',
     dataset: '37 verified digital products: 15 popular subscriptions (Xbox Game Pass, PlayStation Plus, Nintendo Switch Online, EA Play, Discord Nitro, Spotify, Netflix, NordVPN), 8 digital gift cards (Steam, PlayStation, Xbox, Nintendo, Apple, Google Play, Roblox, Razer Gold), and 14 digital game titles. Product variants are fully deduplicated across catalogue and detail views; activation terms, prices, and regional restrictions are documented; demo listings are guarded from live transactions.',
-    results: "The 31 October production release refreshed the marketplace with a light storefront, prominent search, product rails, responsive categories, self-hosted fonts, local artwork and split route bundles. A fresh 4 November API check returned 37 published products, and the public storefront was captured for this case study. The earlier implementation passed 76 automated tests; that historical count is not a claim that every redesign check passed. The source README records unresolved legacy path, manifest and artwork assertions. No live payment was made during this portfolio update.",
+    results: "The October production release introduced the light marketplace, search, product rails and responsive categories. Security source verification on 5 November 2026 passed 45 storefront and 65 backend tests, the production build and both dependency audits. Payment sessions are bound to their orders, checkout redirects use a trusted origin, discounts are calculated on the server, and public coder routes are disabled. Live MySQL integration and the new hosted release remain unverified. No payment was submitted.",
     technologies: ['React', 'Vite', 'JavaScript', 'Node.js', 'Vercel', 'Stripe', 'Express.js', 'Sequelize ORM', 'MySQL', 'Tailwind CSS'],
     features: [
+      "Security: public coder routes disabled, payment sessions bound to orders, trusted checkout redirects and server-calculated discounts",
       "Light storefront redesign with dense product rails and prominent search",
       "Responsive category navigation, browsing filters and clear region/delivery guidance",
       "Self-hosted fonts, local product artwork, lazy route bundles and PWA update handling",
@@ -129,6 +130,7 @@ const projectData = [
     results: "The November release expanded the preview to 175 pieces and added editorial motion, Singapore address validation and batched catalogue seeding. Earlier verification: all 42 backend checks passed on PostgreSQL 16 in GitHub Actions, including two buyers racing for the last unit, concurrent paid events consuming stock once and first-owner bootstrap safeguards. The production frontend build, four Sites packaging checks and migration consistency checks passed. Hosted verification confirms PostgreSQL health, the catalogue API, secure HttpOnly session cookies, CSRF rejection, protected merchant endpoints, admin assets and account/recovery screens. Redeployment preserved the database schema. Storefront checks cover size selection, sold-out states, wishlist, bag quantities, SGD totals, reload persistence and checkout flow. Live Stripe credentials, webhook verification and email transport are configured in production hosting.",
     technologies: ['React', 'Vite', 'JavaScript', 'CSS', 'Python', 'Django', 'PostgreSQL', 'SQLite', 'Stripe', 'Vercel'],
     features: [
+      "Security maintenance updates vulnerable frontend dependencies and the Python CA trust bundle",
       "Expanded 175-piece catalogue across sneakers, heavyweight clothing and accessories",
       "Brand mega menus, predictive search, quick size selection and category browsing",
       "Editorial motion and scroll progress with reduced-motion support",
@@ -205,6 +207,7 @@ const projectData = [
     results: 'The 4 November storefront refresh passed 22 unit tests and a production build. Hosted checks covered search, scent-family filtering, Quick add, bag totals, Stripe test-mode checkout and collection expansion from 24 to 48 of 150 products. The first 24 product images total 409,916 bytes at 640px WebP versus 3,871,537 bytes in original formats (89.4% smaller); this is an asset measurement, not field Core Web Vitals. Earlier pipeline verification: Historical simulated-data evaluation reports item-item CF NDCG@10 of 0.13731, full two-tower 0.13405 and popularity 0.10609; the BPR variant scores 0.14087. LSTM SKU WAPE averages 86.70% and MASE 0.795 across three seeds and three test origins. Hybrid search MRR@10 is 0.95278 on 60 rule-generated labels with none human-reviewed. Scores vary with each trained deployment. The checkout release passed 119 backend tests, 15 frontend unit tests and 12 browser journeys, including desktop and mobile checkout. A real Stripe sandbox payment on the deployed site confirmed a single numbered order for S$193.01; refreshing and three genuine-event webhook replays preserved it. Tests cover client price manipulation, duplicate requests, concurrent signed confirmations, declined/async payments, cancellation, stock recovery, refunds, ownership and CSRF. The storefront preserves authenticator 2FA, recovery codes, session revocation and data exports without authentication secrets. Results measure pipelines on simulated data, not real-market performance.',
     technologies: ['React', 'Vite', 'JavaScript', 'Tailwind CSS', 'Python', 'FastAPI', 'PostgreSQL', 'SQLAlchemy', 'scikit-learn', 'LightGBM', 'MLflow', 'Vercel', 'pytest', 'Stripe'],
     features: [
+      "Tenant-scoped queries and writes, expiring DNS ownership challenges for custom domains and private tenant-response caching",
       "Ivory and forest-green storefront with four scent-family discovery paths",
       "Accessible search dialog for fragrance names, houses and notes, with URL-preserved filters",
       "Collection starts with 24 of 150 products and loads 24 more per request",
@@ -302,6 +305,7 @@ const projectData = [
       'REST APIs',
     ],
     features: [
+      "Tenant-scoped queries and writes, expiring DNS ownership challenges for custom domains and private tenant-response caching",
       'Leave request submission with validation',
       'Supervisor → Manager two-stage approval workflow',
       'Approval comments and rejection reasons',
@@ -381,6 +385,7 @@ const projectData = [
     },
     technologies: ['KNIME', 'SAS Viya'],
     features: [
+      "Tenant-scoped queries and writes, expiring DNS ownership challenges for custom domains and private tenant-response caching",
       'Duplicate detection and removal (3,892 rows)',
       'Heart-rate consistency validation (23 records removed)',
       'BMI recalculation and validation',
@@ -451,6 +456,7 @@ const projectData = [
     solution: "Connect Spotify through OAuth, choose playlists or paste a supported playlist or album URL, then select a destination account. Paginated reads and batched writes preserve item order. Empty sources are marked Skipped, unsupported links show clear guidance, and verified results distinguish completed, partial and skipped transfers.",
     technologies: ['React', 'Vite', 'JavaScript', 'Node.js', 'Express.js', 'Spotify Web API', 'REST APIs'],
     features: [
+      "Security maintenance updates vulnerable frontend and Express transitive dependencies",
       "Spotify album share links load metadata and copy tracks in order into a new private playlist",
       "Collapsible transfer queue with search, status filters and 6 items per page",
       "Sticky progress and Cancel controls with confirmed transfer counts",
@@ -508,6 +514,7 @@ const projectData = [
       'scikit-learn', 'LightGBM', 'SQL', 'SQLite', 'Vercel', 'Turso / libSQL', 'pytest',
     ],
     features: [
+      "Durable authentication throttling with database-backed rate limits and updated dependencies",
       "Responsive estate navigation, reporting-period/town/block filters and an in-app quick guide",
       "Combined authenticated estate startup response and lazy secondary panels",
       "Expandable demonstration insights with explicit live-ML availability labels",
