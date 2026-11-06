@@ -11,6 +11,7 @@ const filters = [
 
 export default function ProjectsSection() {
   const [filter, setFilter] = useState('all');
+  const [filtered, setFiltered] = useState(false);
   const visible = projects.filter((p) => filter === 'all' || p.projectGroup === filter);
 
   return (
@@ -22,7 +23,7 @@ export default function ProjectsSection() {
               key={f.id}
               type="button"
               aria-pressed={filter === f.id}
-              onClick={() => setFilter(f.id)}
+              onClick={() => { setFilter(f.id); setFiltered(true); }}
             >
               {f.label}
               <span className="mono count">
@@ -39,9 +40,9 @@ export default function ProjectsSection() {
         GitHub repository.
       </p>
       <p className="sr-only" aria-live="polite">{`Showing ${visible.length} projects`}</p>
-      <div className="project-grid">
-        {visible.map((p) => (
-          <ProjectPanel key={p.slug} project={p} index={projects.indexOf(p)} />
+      <div className="project-grid" key={filter} data-motion={filtered ? 'swap' : undefined}>
+        {visible.map((p, i) => (
+          <ProjectPanel key={p.slug} project={p} index={projects.indexOf(p)} motionIndex={i} />
         ))}
       </div>
     </section>

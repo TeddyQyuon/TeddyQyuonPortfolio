@@ -1,5 +1,6 @@
 /* Time-based motion is opt-in; the static styles describe the final state. */
 @keyframes grow { from { transform: scaleX(0); } }
+@keyframes fade-in { from { opacity: 0; } }
 @keyframes rise-in { from { opacity: 0; transform: translateY(var(--rise)); } }
 @keyframes scan { 0% { opacity: 0; transform: translateY(-100%); } 15%, 85% { opacity: 1; } 100% { opacity: 0; transform: translateY(290%); } }
 @keyframes icon-in { from { opacity: 0; transform: rotate(-90deg); } }
@@ -10,6 +11,7 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
+  .project-grid[data-motion='swap'] > .project-panel { animation: fade-in var(--dur-base) var(--ease-out) backwards; animation-delay: calc(min(var(--i, 0), 5) * var(--stagger-tight)); }
   .menu-toggle[data-touched] .icon { animation: icon-in var(--dur-fast) var(--ease-out) backwards; }
   .hero-side[data-motion='pending'] :is(.profile-panel, .kpi) { opacity: 0; transform: translateY(var(--rise)); }
   .hero-side[data-motion='run'] :is(.profile-panel, .kpi) { animation: rise-in var(--dur-slow) var(--ease-out) backwards; }
