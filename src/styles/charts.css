@@ -14,12 +14,10 @@
   border-radius: inherit;
   background: linear-gradient(90deg, color-mix(in srgb, var(--accent) 55%, transparent), var(--accent));
   transform-origin: left;
-  animation: grow 0.8s var(--ease) both;
 }
 .bar-value { text-align: right; color: var(--text); }
 .bar-list li.is-highlight .bar-label { color: var(--text); font-weight: 600; }
 .bar-list li.is-highlight .bar-fill { background: var(--live); }
-@keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
 
 /* ---------- GPA chart ---------- */
 .gpa-chart { width: 100%; height: auto; margin-block: var(--space-4); overflow: visible; }

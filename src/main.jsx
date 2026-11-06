@@ -9,6 +9,7 @@ import './styles/charts.css';
 import './styles/sections.css';
 import './styles/pages.css';
 import './styles/case.css';
+import './styles/motion.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

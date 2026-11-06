@@ -5,6 +5,7 @@
 }
 
 html {
+  scrollbar-gutter: stable;
   scroll-padding-top: calc(var(--topbar-h) + 16px);
   -webkit-text-size-adjust: 100%;
 }
