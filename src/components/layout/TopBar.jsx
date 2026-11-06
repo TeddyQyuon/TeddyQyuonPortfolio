@@ -1,21 +1,32 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Icon from '../common/Icon';
 import profilePhoto from '../../assets/images/profile/header-portrait.webp';
 import ThemeToggle from '../common/ThemeToggle';
 import { sectionLinks } from '../../config/site';
 import { personalInfo } from '../../data/personalInfo';
+import useActiveSection from '../../hooks/useActiveSection';
+
+const menuMotion = typeof CSSStartingStyleRule !== 'undefined' && CSS.supports('transition-behavior', 'allow-discrete');
 
 export default function TopBar() {
   const [open, setOpen] = useState(false);
+  const [touched, setTouched] = useState(false);
+  const toggleRef = useRef(null);
   const location = useLocation();
+  const active = useActiveSection(sectionLinks.map((section) => section.id), { enabled: location.pathname === '/' });
 
   // Close the mobile menu after any navigation.
   useEffect(() => setOpen(false), [location.pathname, location.hash]);
 
   useEffect(() => {
     if (!open) return undefined;
-    const onKey = (e) => e.key === 'Escape' && setOpen(false);
+    const onKey = (e) => {
+      if (e.key === 'Escape') {
+        setOpen(false);
+        toggleRef.current?.focus();
+      }
+    };
     document.addEventListener('keydown', onKey);
     return () => document.removeEventListener('keydown', onKey);
   }, [open]);
@@ -31,11 +42,11 @@ export default function TopBar() {
           </span>
         </Link>
 
-        <nav id="primary-nav" className={`nav ${open ? 'is-open' : ''}`} aria-label="Primary">
+        <nav id="primary-nav" className={`nav ${open ? 'is-open' : ''}`} data-motion={menuMotion ? 'menu' : undefined} aria-label="Primary">
           <ul>
             {sectionLinks.map((s) => (
               <li key={s.id}>
-                <Link to={{ pathname: '/', hash: `#${s.id}` }}>{s.label}</Link>
+                <Link to={{ pathname: '/', hash: `#${s.id}` }} aria-current={active === s.id ? 'true' : undefined}>{s.label}</Link>
               </li>
             ))}
           </ul>
@@ -50,12 +61,14 @@ export default function TopBar() {
           <button
             type="button"
             className="icon-button menu-toggle"
+            ref={toggleRef}
+            data-touched={touched || undefined}
             aria-expanded={open}
             aria-controls="primary-nav"
             aria-label={open ? 'Close menu' : 'Open menu'}
-            onClick={() => setOpen((v) => !v)}
+            onClick={() => { setTouched(true); setOpen((v) => !v); }}
           >
-            <Icon name={open ? 'close' : 'menu'} />
+            <Icon key={open ? 'close' : 'menu'} name={open ? 'close' : 'menu'} />
           </button>
         </div>
       </div>
