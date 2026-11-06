@@ -1,0 +1,23 @@
+{
+  "assets": [
+    {
+      "file": "index-BqOpHy0M.js",
+      "bytes": 330234,
+      "gzipBytes": 112772
+    },
+    {
+      "file": "index-G2Ogi1IL.css",
+      "bytes": 30627,
+      "gzipBytes": 6844
+    },
+    {
+      "file": "ProjectPage-BRzT_b1i.js",
+      "bytes": 7485,
+      "gzipBytes": 2359
+    }
+  ],
+  "deltaGzipBytes": {
+    "js": 1037,
+    "css": 994
+  }
+}

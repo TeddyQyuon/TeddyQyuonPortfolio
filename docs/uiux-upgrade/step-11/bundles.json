@@ -1,0 +1,23 @@
+{
+  "assets": [
+    {
+      "file": "index-DamWI17-.css",
+      "bytes": 32478,
+      "gzipBytes": 7172
+    },
+    {
+      "file": "index-T36HvWmR.js",
+      "bytes": 331339,
+      "gzipBytes": 113457
+    },
+    {
+      "file": "ProjectPage-CI7FR4YH.js",
+      "bytes": 7569,
+      "gzipBytes": 2405
+    }
+  ],
+  "deltaGzipBytes": {
+    "js": 1768,
+    "css": 1322
+  }
+}

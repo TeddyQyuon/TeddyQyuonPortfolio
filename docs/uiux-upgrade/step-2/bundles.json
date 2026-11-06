@@ -1,0 +1,23 @@
+{
+  "files": [
+    {
+      "file": "index-4O9Ys2Yr.js",
+      "bytes": 328496,
+      "gzipBytes": 111856
+    },
+    {
+      "file": "index-Y5U-Zs2H.css",
+      "bytes": 26693,
+      "gzipBytes": 6141
+    },
+    {
+      "file": "ProjectPage-Cc1r24Oj.js",
+      "bytes": 7485,
+      "gzipBytes": 2359
+    }
+  ],
+  "deltaGzipBytes": {
+    "js": 121,
+    "css": 291
+  }
+}

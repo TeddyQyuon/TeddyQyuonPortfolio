@@ -1,5 +1,7 @@
 # UIUX_UPGRADE.md: motion and presentation upgrade
 
+> Completed 2026-11-07: implementation steps 0–13 and automated QA. See the [completion report](docs/uiux-upgrade/README.md) for results, screenshots, rerun commands and native-browser verification limits.
+
 Repo: `github.com/TeddyQyuon/TeddyQyuonPortfolio`, audited at `main` @ `d6c4f74` (2026-11-05). All paths are relative to the repo root. Put this file at the repo root. Implement section 8 one step at a time.
 
 ## 0. Hard rule: content lock

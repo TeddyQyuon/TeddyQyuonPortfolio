@@ -1,0 +1,1759 @@
+{
+  "browser": "156.0.8078.80",
+  "results": [
+    {
+      "name": "home",
+      "requestedTheme": "dark",
+      "viewport": {
+        "width": 360,
+        "height": 740
+      },
+      "theme": "dark",
+      "width": 360,
+      "scrollWidth": 360,
+      "vitals": {
+        "lcp": [
+          {
+            "time": 372,
+            "tag": "P",
+            "class": "hero-intro",
+            "text": "I’m Teddy, a Year 2 Applied AI & Analytics student at Nanyang Polytechnic. I build React applications, Python and Node.js APIs, and data workflows — f",
+            "url": ""
+          }
+        ],
+        "shifts": [
+          {
+            "time": 367.59999999962747,
+            "value": 0.021756496783946106
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "name": "home",
+      "requestedTheme": "dark",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "theme": "dark",
+      "width": 390,
+      "scrollWidth": 390,
+      "vitals": {
+        "lcp": [
+          {
+            "time": 236,
+            "tag": "P",
+            "class": "hero-intro",
+            "text": "I’m Teddy, a Year 2 Applied AI & Analytics student at Nanyang Polytechnic. I build React applications, Python and Node.js APIs, and data workflows — f",
+            "url": ""
+          }
+        ],
+        "shifts": [
+          {
+            "time": 300.09999999962747,
+            "value": 0.02692027758328107
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "name": "home",
+      "requestedTheme": "dark",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "theme": "dark",
+      "width": 768,
+      "scrollWidth": 768,
+      "vitals": {
+        "lcp": [
+          {
+            "time": 252,
+            "tag": "P",
+            "class": "hero-intro",
+            "text": "I’m Teddy, a Year 2 Applied AI & Analytics student at Nanyang Polytechnic. I build React applications, Python and Node.js APIs, and data workflows — f",
+            "url": ""
+          }
+        ],
+        "shifts": [
+          {
+            "time": 243.80000000074506,
+            "value": 0.0002655601128935814
+          },
+          {
+            "time": 272,
+            "value": 0.000020181178115308285
+          },
+          {
+            "time": 320.5,
+            "value": 0.018517086961461853
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "name": "home",
+      "requestedTheme": "dark",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "theme": "dark",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "vitals": {
+        "lcp": [
+          {
+            "time": 268,
+            "tag": "P",
+            "class": "hero-intro",
+            "text": "I’m Teddy, a Year 2 Applied AI & Analytics student at Nanyang Polytechnic. I build React applications, Python and Node.js APIs, and data workflows — f",
+            "url": ""
+          }
+        ],
+        "shifts": [
+          {
+            "time": 290.19999999925494,
+            "value": 0.0017356545209884645
+          },
+          {
+            "time": 340.40000000037253,
+            "value": 0.004448048818111419
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "name": "home",
+      "requestedTheme": "dark",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "theme": "dark",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "vitals": {
+        "lcp": [
+          {
+            "time": 296,
+            "tag": "P",
+            "class": "hero-intro",
+            "text": "I’m Teddy, a Year 2 Applied AI & Analytics student at Nanyang Polytechnic. I build React applications, Python and Node.js APIs, and data workflows — f",
+            "url": ""
+          }
+        ],
+        "shifts": [
+          {
+            "time": 295.90000000037253,
+            "value": 0.00011154112011316873
+          },
+          {
+            "time": 361.30000000074506,
+            "value": 0.003745765323926719
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "name": "home",
+      "requestedTheme": "light",
+      "viewport": {
+        "width": 360,
+        "height": 740
+      },
+      "theme": "light",
+      "width": 360,
+      "scrollWidth": 360,
+      "vitals": {
+        "lcp": [
+          {
+            "time": 244,
+            "tag": "P",
+            "class": "hero-intro",
+            "text": "I’m Teddy, a Year 2 Applied AI & Analytics student at Nanyang Polytechnic. I build React applications, Python and Node.js APIs, and data workflows — f",
+            "url": ""
+          }
+        ],
+        "shifts": [
+          {
+            "time": 316.09999999962747,
+            "value": 0.021754689655872086
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "name": "home",
+      "requestedTheme": "light",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "theme": "light",
+      "width": 390,
+      "scrollWidth": 390,
+      "vitals": {
+        "lcp": [
+          {
+            "time": 248,
+            "tag": "P",
+            "class": "hero-intro",
+            "text": "I’m Teddy, a Year 2 Applied AI & Analytics student at Nanyang Polytechnic. I build React applications, Python and Node.js APIs, and data workflows — f",
+            "url": ""
+          }
+        ],
+        "shifts": [
+          {
+            "time": 301.7999999988824,
+            "value": 0.026889330289033873
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "name": "home",
+      "requestedTheme": "light",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "theme": "light",
+      "width": 768,
+      "scrollWidth": 768,
+      "vitals": {
+        "lcp": [
+          {
+            "time": 236,
+            "tag": "P",
+            "class": "hero-intro",
+            "text": "I’m Teddy, a Year 2 Applied AI & Analytics student at Nanyang Polytechnic. I build React applications, Python and Node.js APIs, and data workflows — f",
+            "url": ""
+          }
+        ],
+        "shifts": [
+          {
+            "time": 252.2999999988824,
+            "value": 0.0002655601128935814
+          },
+          {
+            "time": 323,
+            "value": 0.018920774629805237
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "name": "home",
+      "requestedTheme": "light",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "theme": "light",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "vitals": {
+        "lcp": [
+          {
+            "time": 244,
+            "tag": "P",
+            "class": "hero-intro",
+            "text": "I’m Teddy, a Year 2 Applied AI & Analytics student at Nanyang Polytechnic. I build React applications, Python and Node.js APIs, and data workflows — f",
+            "url": ""
+          }
+        ],
+        "shifts": [
+          {
+            "time": 241.59999999962747,
+            "value": 0.00015881538391113281
+          },
+          {
+            "time": 294.80000000074506,
+            "value": 0.005333326017856598
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "name": "home",
+      "requestedTheme": "light",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "theme": "light",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "vitals": {
+        "lcp": [
+          {
+            "time": 232,
+            "tag": "P",
+            "class": "hero-intro",
+            "text": "I’m Teddy, a Year 2 Applied AI & Analytics student at Nanyang Polytechnic. I build React applications, Python and Node.js APIs, and data workflows — f",
+            "url": ""
+          }
+        ],
+        "shifts": [
+          {
+            "time": 229,
+            "value": 0.00011154112011316873
+          },
+          {
+            "time": 260.2999999988824,
+            "value": 0.0000673197679558899
+          },
+          {
+            "time": 301,
+            "value": 0.013600257293743034
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "name": "gamevault",
+      "requestedTheme": "dark",
+      "viewport": {
+        "width": 360,
+        "height": 740
+      },
+      "theme": "dark",
+      "width": 360,
+      "scrollWidth": 360,
+      "vitals": {
+        "lcp": [
+          {
+            "time": 112,
+            "tag": "P",
+            "class": "mono footer-meta",
+            "text": "© 2026 Wai Yan Hpone Lat · Singapore",
+            "url": ""
+          },
+          {
+            "time": 172,
+            "tag": "P",
+            "class": "hero-role",
+            "text": "Responsive digital marketplace, product rails & Stripe checkout",
+            "url": ""
+          }
+        ],
+        "shifts": [
+          {
+            "time": 154.40000000037253,
+            "value": 0.2391891891891892
+          },
+          {
+            "time": 188.80000000074506,
+            "value": 0.03256705840130671
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "name": "gamevault",
+      "requestedTheme": "dark",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "theme": "dark",
+      "width": 390,
+      "scrollWidth": 390,
+      "vitals": {
+        "lcp": [
+          {
+            "time": 96,
+            "tag": "P",
+            "class": "mono footer-meta",
+            "text": "© 2026 Wai Yan Hpone Lat · Singapore",
+            "url": ""
+          },
+          {
+            "time": 168,
+            "tag": "P",
+            "class": "hero-role",
+            "text": "Responsive digital marketplace, product rails & Stripe checkout",
+            "url": ""
+          }
+        ],
+        "shifts": [
+          {
+            "time": 154.90000000037253,
+            "value": 0.20971563981042654
+          },
+          {
+            "time": 186,
+            "value": 0.12222696214214525
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "name": "gamevault",
+      "requestedTheme": "dark",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "theme": "dark",
+      "width": 768,
+      "scrollWidth": 768,
+      "vitals": {
+        "lcp": [
+          {
+            "time": 128,
+            "tag": "P",
+            "class": "mono footer-meta",
+            "text": "© 2026 Wai Yan Hpone Lat · Singapore",
+            "url": ""
+          },
+          {
+            "time": 196,
+            "tag": "P",
+            "class": "lead",
+            "text": "A responsive full-stack digital marketplace built with React/Vite, Vercel Serverless Functions, Node.js/Express, and MySQL/Sequelize. Features 37 veri",
+            "url": ""
+          }
+        ],
+        "shifts": [
+          {
+            "time": 177.80000000074506,
+            "value": 0.1259765625
+          },
+          {
+            "time": 210.40000000037253,
+            "value": 0.003005367626125614
+          },
+          {
+            "time": 221.90000000037253,
+            "value": 0.00001458683982491493
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "name": "gamevault",
+      "requestedTheme": "dark",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "theme": "dark",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "vitals": {
+        "lcp": [
+          {
+            "time": 108,
+            "tag": "P",
+            "class": "mono footer-meta",
+            "text": "© 2026 Wai Yan Hpone Lat · Singapore",
+            "url": ""
+          },
+          {
+            "time": 164,
+            "tag": "P",
+            "class": "",
+            "text": "Public storefront and Vercel API with 37 published products, autocomplete search, product rails and cart drawer. Stripe session creation uses server-o",
+            "url": ""
+          }
+        ],
+        "shifts": [
+          {
+            "time": 151.90000000037253,
+            "value": 0.11625
+          },
+          {
+            "time": 187.40000000037253,
+            "value": 0.005853567147254944
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "name": "gamevault",
+      "requestedTheme": "dark",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "theme": "dark",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "vitals": {
+        "lcp": [
+          {
+            "time": 140,
+            "tag": "P",
+            "class": "mono footer-meta",
+            "text": "© 2026 Wai Yan Hpone Lat · Singapore",
+            "url": ""
+          },
+          {
+            "time": 196,
+            "tag": "P",
+            "class": "lead",
+            "text": "A responsive full-stack digital marketplace built with React/Vite, Vercel Serverless Functions, Node.js/Express, and MySQL/Sequelize. Features 37 veri",
+            "url": ""
+          }
+        ],
+        "shifts": [
+          {
+            "time": 181.80000000074506,
+            "value": 0.10333333333333333
+          },
+          {
+            "time": 216.90000000037253,
+            "value": 0.005769385418676054
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "name": "gamevault",
+      "requestedTheme": "light",
+      "viewport": {
+        "width": 360,
+        "height": 740
+      },
+      "theme": "light",
+      "width": 360,
+      "scrollWidth": 360,
+      "vitals": {
+        "lcp": [
+          {
+            "time": 96,
+            "tag": "P",
+            "class": "mono footer-meta",
+            "text": "© 2026 Wai Yan Hpone Lat · Singapore",
+            "url": ""
+          },
+          {
+            "time": 164,
+            "tag": "P",
+            "class": "hero-role",
+            "text": "Responsive digital marketplace, product rails & Stripe checkout",
+            "url": ""
+          }
+        ],
+        "shifts": [
+          {
+            "time": 151.59999999962747,
+            "value": 0.2391891891891892
+          },
+          {
+            "time": 183,
+            "value": 0.03256705840130671
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "name": "gamevault",
+      "requestedTheme": "light",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "theme": "light",
+      "width": 390,
+      "scrollWidth": 390,
+      "vitals": {
+        "lcp": [
+          {
+            "time": 168,
+            "tag": "P",
+            "class": "hero-role",
+            "text": "Responsive digital marketplace, product rails & Stripe checkout",
+            "url": ""
+          }
+        ],
+        "shifts": [
+          {
+            "time": 199.5,
+            "value": 0.12222696214214525
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "name": "gamevault",
+      "requestedTheme": "light",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "theme": "light",
+      "width": 768,
+      "scrollWidth": 768,
+      "vitals": {
+        "lcp": [
+          {
+            "time": 132,
+            "tag": "P",
+            "class": "mono footer-meta",
+            "text": "© 2026 Wai Yan Hpone Lat · Singapore",
+            "url": ""
+          },
+          {
+            "time": 180,
+            "tag": "P",
+            "class": "lead",
+            "text": "A responsive full-stack digital marketplace built with React/Vite, Vercel Serverless Functions, Node.js/Express, and MySQL/Sequelize. Features 37 veri",
+            "url": ""
+          }
+        ],
+        "shifts": [
+          {
+            "time": 163.2999999988824,
+            "value": 0.1259765625
+          },
+          {
+            "time": 178.09999999962747,
+            "value": 0.00001458683982491493
+          },
+          {
+            "time": 200.40000000037253,
+            "value": 0.003005367626125614
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "name": "gamevault",
+      "requestedTheme": "light",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "theme": "light",
+      "width": 1280,
+      "scrollWidth": 1280,
+      "vitals": {
+        "lcp": [
+          {
+            "time": 108,
+            "tag": "P",
+            "class": "mono footer-meta",
+            "text": "© 2026 Wai Yan Hpone Lat · Singapore",
+            "url": ""
+          },
+          {
+            "time": 172,
+            "tag": "P",
+            "class": "",
+            "text": "Public storefront and Vercel API with 37 published products, autocomplete search, product rails and cart drawer. Stripe session creation uses server-o",
+            "url": ""
+          }
+        ],
+        "shifts": [
+          {
+            "time": 156.40000000037253,
+            "value": 0.11625
+          },
+          {
+            "time": 187.59999999962747,
+            "value": 0.005721161794662476
+          }
+        ]
+      },
+      "errors": []
+    },
+    {
+      "name": "gamevault",
+      "requestedTheme": "light",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "theme": "light",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "vitals": {
+        "lcp": [
+          {
+            "time": 104,
+            "tag": "P",
+            "class": "mono footer-meta",
+            "text": "© 2026 Wai Yan Hpone Lat · Singapore",
+            "url": ""
+          },
+          {
+            "time": 184,
+            "tag": "P",
+            "class": "lead",
+            "text": "A responsive full-stack digital marketplace built with React/Vite, Vercel Serverless Functions, Node.js/Express, and MySQL/Sequelize. Features 37 veri",
+            "url": ""
+          }
+        ],
+        "shifts": [
+          {
+            "time": 150.5,
+            "value": 0.10333333333333333
+          },
+          {
+            "time": 165.7999999988824,
+            "value": 0.00008794588316615227
+          },
+          {
+            "time": 191.40000000037253,
+            "value": 0.00495321287722908
+          }
+        ]
+      },
+      "errors": []
+    }
+  ],
+  "accessibility": [
+    {
+      "route": "/",
+      "reduced": {
+        "matches": true,
+        "animations": [
+          {
+            "state": "finished",
+            "target": "bar-fill"
+          },
+          {
+            "state": "finished",
+            "target": "bar-fill"
+          },
+          {
+            "state": "finished",
+            "target": "bar-fill"
+          },
+          {
+            "state": "finished",
+            "target": "bar-fill"
+          },
+          {
+            "state": "finished",
+            "target": "bar-fill"
+          },
+          {
+            "state": "finished",
+            "target": "bar-fill"
+          },
+          {
+            "state": "finished",
+            "target": "bar-fill"
+          },
+          {
+            "state": "finished",
+            "target": "bar-fill"
+          },
+          {
+            "state": "finished",
+            "target": "bar-fill"
+          },
+          {
+            "state": "finished",
+            "target": "bar-fill"
+          },
+          {
+            "state": "finished",
+            "target": "bar-fill"
+          },
+          {
+            "state": "finished",
+            "target": "bar-fill"
+          }
+        ],
+        "kpis": [
+          "77",
+          "66",
+          "3.183.18/4",
+          "55"
+        ],
+        "bars": [
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)",
+          "matrix(1, 0, 0, 1, 0, 0)"
+        ]
+      },
+      "focus": [
+        {
+          "tag": "A",
+          "text": "Skip to content",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "12px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Wai Yan Hpone Lat~/portfolio",
+          "label": "Wai Yan Hpone Lat, home",
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Overview",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Projects",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Skills",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Academics",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Contact",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Résumé",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "label": "Dark theme",
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "0px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "View projects",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Résumé (PDF)",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Contact",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "All7",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Personal5",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Coursework2",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "GameVault",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Case study: GameVault",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Live demo of GameVault: opens the deployed live website in a new tab",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Source code for GameVault: opens the GitHub repository in a new tab",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "SOLE DISTRICT",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Case study: SOLE DISTRICT",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Live demo of SOLE DISTRICT: opens the deployed live website in a new t",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Source code for SOLE DISTRICT: opens the GitHub repository in a new ta",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "SCENTHAUS Intelligence",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Case study: SCENTHAUS Intelligence",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Live demo of SCENTHAUS Intelligence: opens the deployed live website i",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Source code for SCENTHAUS Intelligence: opens the GitHub repository in",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "MeterWise",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Case study: MeterWise",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Live demo of MeterWise: opens the deployed live website in a new tab",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Source code for MeterWise: opens the GitHub repository in a new tab",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Playlist Port",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Case study: Playlist Port",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Live demo of Playlist Port: opens the deployed live website in a new t",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Source code for Playlist Port: opens the GitHub repository in a new ta",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Annual Leave Management System",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Case study: Annual Leave Management System",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Live demo of Annual Leave Management System: opens the deployed live w",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Gym Calories Predictive Analysis",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Case study: Gym Calories Predictive Analysis",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Full Stack Application Development",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Predictive Analytics & Forecasting",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Y1S1",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Y1S2",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Y2S1",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Open PDF",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Download",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Emailwaiyanhponelat.eduvalor.2024g@gmail.com",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "LinkedInin/waiyanhponelat(opens in new tab)",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "GitHubTeddyQyuon(opens in new tab)",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "WhatsAppMessage on WhatsApp(opens in new tab)",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Overview",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Projects",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Skills",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Academics",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Contact",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "GitHub (opens in new tab)",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "LinkedIn (opens in new tab)",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "BODY",
+          "text": "\n    \n      <p class=\"noscript\">\n        This portfolio needs JavaScri",
+          "label": null,
+          "outline": "rgb(230, 236, 245) none 3px",
+          "offset": "0px",
+          "top": "auto",
+          "visible": false
+        },
+        {
+          "tag": "A",
+          "text": "Skip to content",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "12px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Wai Yan Hpone Lat~/portfolio",
+          "label": "Wai Yan Hpone Lat, home",
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Overview",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Projects",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Skills",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Academics",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Contact",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Résumé",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "label": "Dark theme",
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "0px",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "route": "/projects/gamevault-marketplace",
+      "reduced": {
+        "matches": true,
+        "animations": [],
+        "kpis": [
+          "110110",
+          "3737",
+          "1515"
+        ],
+        "bars": []
+      },
+      "focus": [
+        {
+          "tag": "A",
+          "text": "Skip to content",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "12px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Wai Yan Hpone Lat~/portfolio",
+          "label": "Wai Yan Hpone Lat, home",
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Overview",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Projects",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Skills",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Academics",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Contact",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Résumé",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "label": "Dark theme",
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "0px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "overview",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "projects",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Live storefront (opens in new tab)",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "API (opens in new tab)",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Source code (opens in new tab)",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Overview",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "My contribution",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Data",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Results",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Features",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Architecture",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Screenshots",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Challenges & learnings",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": " (open full size in new tab)",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": " (open full size in new tab)",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": " (open full size in new tab)",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Next SOLE DISTRICT",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Overview",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Projects",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Skills",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Academics",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Contact",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "GitHub (opens in new tab)",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "LinkedIn (opens in new tab)",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        },
+        {
+          "tag": "BODY",
+          "text": "\n    \n      <p class=\"noscript\">\n        This portfolio needs JavaScri",
+          "label": null,
+          "outline": "rgb(230, 236, 245) none 3px",
+          "offset": "0px",
+          "top": "auto",
+          "visible": false
+        },
+        {
+          "tag": "A",
+          "text": "Skip to content",
+          "label": null,
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "12px",
+          "visible": true
+        },
+        {
+          "tag": "A",
+          "text": "Wai Yan Hpone Lat~/portfolio",
+          "label": "Wai Yan Hpone Lat, home",
+          "outline": "rgb(34, 211, 238) solid 2px",
+          "offset": "3px",
+          "top": "auto",
+          "visible": true
+        }
+      ]
+    }
+  ]
+}

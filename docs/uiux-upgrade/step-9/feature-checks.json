@@ -1,0 +1,27 @@
+{
+  "errors": [],
+  "directStatic": true,
+  "preload": {
+    "requests": [
+      "http://127.0.0.1:4174/assets/ProjectPage-BwV-QEIK.js"
+    ],
+    "enter": [
+      {
+        "delay": 0,
+        "direction": "normal",
+        "duration": 220,
+        "easing": "linear",
+        "endDelay": 0,
+        "fill": "backwards",
+        "iterationStart": 0,
+        "iterations": 1
+      }
+    ]
+  },
+  "hashStatic": true,
+  "loadingDelay": {
+    "early": "0",
+    "late": "0.964825"
+  },
+  "reduced": true
+}

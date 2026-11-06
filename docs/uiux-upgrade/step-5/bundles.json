@@ -1,0 +1,23 @@
+{
+  "assets": [
+    {
+      "file": "index-CDTS7JJ5.js",
+      "bytes": 330234,
+      "gzipBytes": 112771
+    },
+    {
+      "file": "index-usbAhkT1.css",
+      "bytes": 29312,
+      "gzipBytes": 6701
+    },
+    {
+      "file": "ProjectPage-Bg4O8uht.js",
+      "bytes": 7485,
+      "gzipBytes": 2360
+    }
+  ],
+  "deltaGzipBytes": {
+    "js": 1037,
+    "css": 851
+  }
+}

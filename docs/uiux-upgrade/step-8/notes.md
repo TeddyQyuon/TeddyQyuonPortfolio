@@ -1,0 +1,4 @@
+﻿Trigger bar fills and the GPA plot sweep once on entering view. Keep values and axis labels readable, use the shared 640ms data duration, cap bar stagger at 280ms, and fade keyed semester rows in 150ms without moving focus or changing captions.
+
+Reduced-motion and missing-observer contexts show fully drawn charts immediately. The shared observer hook now settles a running effect when reduced motion is enabled so preference changes cannot replay completed hero/data sequences. Browser checks cover Skills, the gym model comparison, GPA, semester focus/caption, no replay on re-entry, and both static fallbacks.
+Home desktop was rechecked with five fresh runs after an initial one-point variance; its five-run median meets the baseline. The initial measurements remain under before-five-run-check/.

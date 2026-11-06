@@ -1,0 +1,142 @@
+[
+  {
+    "page": "home",
+    "device": "mobile",
+    "medians": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 50,
+      "lcp": 1409.2483000000002,
+      "tbt": 2,
+      "cls": 0.0002034246602807513
+    },
+    "deltas": {
+      "performance": 0,
+      "accessibility": 0,
+      "best-practices": 0,
+      "seo": 0,
+      "lcp": 34.57285000000047,
+      "tbt": -3.5,
+      "cls": 0
+    },
+    "checks": {
+      "scores": true,
+      "lcp": true,
+      "tbt": true,
+      "cls": true,
+      "sameLcp": true,
+      "noWarnings": true,
+      "noNewNonComposited": true
+    },
+    "lcpSelectors": [
+      "div.container > section#overview > div.hero-main > p.hero-intro"
+    ]
+  },
+  {
+    "page": "home",
+    "device": "desktop",
+    "medians": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 50,
+      "lcp": 388.1966,
+      "tbt": 0,
+      "cls": 0.006489691514133511
+    },
+    "deltas": {
+      "performance": 0,
+      "accessibility": 0,
+      "best-practices": 0,
+      "seo": 0,
+      "lcp": 1.4860499999999206,
+      "tbt": 0,
+      "cls": -0.0016893095824666929
+    },
+    "checks": {
+      "scores": true,
+      "lcp": true,
+      "tbt": true,
+      "cls": true,
+      "sameLcp": true,
+      "noWarnings": true,
+      "noNewNonComposited": true
+    },
+    "lcpSelectors": [
+      "div.container > section#overview > div.hero-main > p.hero-intro"
+    ]
+  },
+  {
+    "page": "gamevault",
+    "device": "mobile",
+    "medians": {
+      "performance": 80,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 40,
+      "lcp": 3459.3606,
+      "tbt": 0,
+      "cls": 0.21566636704453493
+    },
+    "deltas": {
+      "performance": 0,
+      "accessibility": 0,
+      "best-practices": 0,
+      "seo": 0,
+      "lcp": 0.7575000000001637,
+      "tbt": 0,
+      "cls": 0
+    },
+    "checks": {
+      "scores": true,
+      "lcp": true,
+      "tbt": true,
+      "cls": true,
+      "sameLcp": true,
+      "noWarnings": true,
+      "noNewNonComposited": true
+    },
+    "lcpSelectors": [
+      "div.route-view > div.container > header.panel > p.hero-role"
+    ]
+  },
+  {
+    "page": "gamevault",
+    "device": "desktop",
+    "medians": {
+      "performance": 96,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 47,
+      "lcp": 807.52465,
+      "tbt": 0,
+      "cls": 0.11105944450562782
+    },
+    "deltas": {
+      "performance": 4,
+      "accessibility": 0,
+      "best-practices": 0,
+      "seo": 0,
+      "lcp": -20.84175000000016,
+      "tbt": 0,
+      "cls": -0.061782837195795526
+    },
+    "checks": {
+      "scores": true,
+      "lcp": true,
+      "tbt": true,
+      "cls": true,
+      "sameLcp": true,
+      "noWarnings": true,
+      "noNewNonComposited": true
+    },
+    "lcpSelectors": [
+      "div.case-layout > div.case-content > section#overview > p.lead"
+    ]
+  }
+]

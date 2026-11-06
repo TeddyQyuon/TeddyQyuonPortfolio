@@ -1,0 +1,678 @@
+{
+  "errors": [],
+  "deepLinks": [
+    {
+      "theme": "dark",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "reducedMotion": "no-preference",
+      "first": [
+        {
+          "id": "overview",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "projects",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "stack",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "academics",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "contact",
+          "opacity": "1",
+          "transform": "none"
+        }
+      ],
+      "sections": [
+        {
+          "id": "overview",
+          "opacity": "1",
+          "transform": "none",
+          "top": -11297
+        },
+        {
+          "id": "projects",
+          "opacity": "1",
+          "transform": "none",
+          "top": -10020.359375
+        },
+        {
+          "id": "stack",
+          "opacity": "1",
+          "transform": "none",
+          "top": -4390.71875
+        },
+        {
+          "id": "academics",
+          "opacity": "1",
+          "transform": "none",
+          "top": -1944.734375
+        },
+        {
+          "id": "contact",
+          "opacity": "1",
+          "transform": "none",
+          "top": 500.078125
+        }
+      ],
+      "contact": {
+        "x": 16,
+        "y": 600.046875,
+        "width": 219.921875,
+        "height": 30.703125,
+        "top": 600.046875,
+        "right": 235.921875,
+        "bottom": 630.75,
+        "left": 16
+      },
+      "revealNodes": 0,
+      "width": 375,
+      "scrollWidth": 375,
+      "animations": []
+    },
+    {
+      "theme": "dark",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "reducedMotion": "reduce",
+      "first": [
+        {
+          "id": "overview",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "projects",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "stack",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "academics",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "contact",
+          "opacity": "1",
+          "transform": "none"
+        }
+      ],
+      "sections": [
+        {
+          "id": "overview",
+          "opacity": "1",
+          "transform": "none",
+          "top": -11717
+        },
+        {
+          "id": "projects",
+          "opacity": "1",
+          "transform": "none",
+          "top": -10440.359375
+        },
+        {
+          "id": "stack",
+          "opacity": "1",
+          "transform": "none",
+          "top": -4810.71875
+        },
+        {
+          "id": "academics",
+          "opacity": "1",
+          "transform": "none",
+          "top": -2364.734375
+        },
+        {
+          "id": "contact",
+          "opacity": "1",
+          "transform": "none",
+          "top": 80.078125
+        }
+      ],
+      "contact": {
+        "x": 16,
+        "y": 180.046875,
+        "width": 219.921875,
+        "height": 30.703125,
+        "top": 180.046875,
+        "right": 235.921875,
+        "bottom": 210.75,
+        "left": 16
+      },
+      "revealNodes": 0,
+      "width": 375,
+      "scrollWidth": 375,
+      "animations": []
+    },
+    {
+      "theme": "dark",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "reducedMotion": "no-preference",
+      "first": [
+        {
+          "id": "overview",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "projects",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "stack",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "academics",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "contact",
+          "opacity": "1",
+          "transform": "none"
+        }
+      ],
+      "sections": [
+        {
+          "id": "overview",
+          "opacity": "1",
+          "transform": "none",
+          "top": -5475
+        },
+        {
+          "id": "projects",
+          "opacity": "1",
+          "transform": "none",
+          "top": -4911.28125
+        },
+        {
+          "id": "stack",
+          "opacity": "1",
+          "transform": "none",
+          "top": -2483.703125
+        },
+        {
+          "id": "academics",
+          "opacity": "1",
+          "transform": "none",
+          "top": -1073.625
+        },
+        {
+          "id": "contact",
+          "opacity": "1",
+          "transform": "none",
+          "top": 233.015625
+        }
+      ],
+      "contact": {
+        "x": 144.5,
+        "y": 332.984375,
+        "width": 302.390625,
+        "height": 42.234375,
+        "top": 332.984375,
+        "right": 446.890625,
+        "bottom": 375.21875,
+        "left": 144.5
+      },
+      "revealNodes": 0,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "animations": []
+    },
+    {
+      "theme": "dark",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "reducedMotion": "reduce",
+      "first": [
+        {
+          "id": "overview",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "projects",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "stack",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "academics",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "contact",
+          "opacity": "1",
+          "transform": "none"
+        }
+      ],
+      "sections": [
+        {
+          "id": "overview",
+          "opacity": "1",
+          "transform": "none",
+          "top": -5591
+        },
+        {
+          "id": "projects",
+          "opacity": "1",
+          "transform": "none",
+          "top": -5027.28125
+        },
+        {
+          "id": "stack",
+          "opacity": "1",
+          "transform": "none",
+          "top": -2599.703125
+        },
+        {
+          "id": "academics",
+          "opacity": "1",
+          "transform": "none",
+          "top": -1189.625
+        },
+        {
+          "id": "contact",
+          "opacity": "1",
+          "transform": "none",
+          "top": 117.015625
+        }
+      ],
+      "contact": {
+        "x": 144.5,
+        "y": 216.984375,
+        "width": 302.40625,
+        "height": 42.234375,
+        "top": 216.984375,
+        "right": 446.90625,
+        "bottom": 259.21875,
+        "left": 144.5
+      },
+      "revealNodes": 0,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "animations": []
+    },
+    {
+      "theme": "light",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "reducedMotion": "no-preference",
+      "first": [
+        {
+          "id": "overview",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "projects",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "stack",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "academics",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "contact",
+          "opacity": "1",
+          "transform": "none"
+        }
+      ],
+      "sections": [
+        {
+          "id": "overview",
+          "opacity": "1",
+          "transform": "none",
+          "top": -11297
+        },
+        {
+          "id": "projects",
+          "opacity": "1",
+          "transform": "none",
+          "top": -10020.359375
+        },
+        {
+          "id": "stack",
+          "opacity": "1",
+          "transform": "none",
+          "top": -4390.71875
+        },
+        {
+          "id": "academics",
+          "opacity": "1",
+          "transform": "none",
+          "top": -1944.734375
+        },
+        {
+          "id": "contact",
+          "opacity": "1",
+          "transform": "none",
+          "top": 500.078125
+        }
+      ],
+      "contact": {
+        "x": 16,
+        "y": 600.046875,
+        "width": 219.921875,
+        "height": 30.703125,
+        "top": 600.046875,
+        "right": 235.921875,
+        "bottom": 630.75,
+        "left": 16
+      },
+      "revealNodes": 0,
+      "width": 375,
+      "scrollWidth": 375,
+      "animations": []
+    },
+    {
+      "theme": "light",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "reducedMotion": "reduce",
+      "first": [
+        {
+          "id": "overview",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "projects",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "stack",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "academics",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "contact",
+          "opacity": "1",
+          "transform": "none"
+        }
+      ],
+      "sections": [
+        {
+          "id": "overview",
+          "opacity": "1",
+          "transform": "none",
+          "top": -11717
+        },
+        {
+          "id": "projects",
+          "opacity": "1",
+          "transform": "none",
+          "top": -10440.359375
+        },
+        {
+          "id": "stack",
+          "opacity": "1",
+          "transform": "none",
+          "top": -4810.71875
+        },
+        {
+          "id": "academics",
+          "opacity": "1",
+          "transform": "none",
+          "top": -2364.734375
+        },
+        {
+          "id": "contact",
+          "opacity": "1",
+          "transform": "none",
+          "top": 80.078125
+        }
+      ],
+      "contact": {
+        "x": 16,
+        "y": 180.046875,
+        "width": 219.921875,
+        "height": 30.703125,
+        "top": 180.046875,
+        "right": 235.921875,
+        "bottom": 210.75,
+        "left": 16
+      },
+      "revealNodes": 0,
+      "width": 375,
+      "scrollWidth": 375,
+      "animations": []
+    },
+    {
+      "theme": "light",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "reducedMotion": "no-preference",
+      "first": [
+        {
+          "id": "overview",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "projects",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "stack",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "academics",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "contact",
+          "opacity": "1",
+          "transform": "none"
+        }
+      ],
+      "sections": [
+        {
+          "id": "overview",
+          "opacity": "1",
+          "transform": "none",
+          "top": -5475
+        },
+        {
+          "id": "projects",
+          "opacity": "1",
+          "transform": "none",
+          "top": -4911.28125
+        },
+        {
+          "id": "stack",
+          "opacity": "1",
+          "transform": "none",
+          "top": -2483.703125
+        },
+        {
+          "id": "academics",
+          "opacity": "1",
+          "transform": "none",
+          "top": -1073.625
+        },
+        {
+          "id": "contact",
+          "opacity": "1",
+          "transform": "none",
+          "top": 233.015625
+        }
+      ],
+      "contact": {
+        "x": 144.5,
+        "y": 332.984375,
+        "width": 302.390625,
+        "height": 42.234375,
+        "top": 332.984375,
+        "right": 446.890625,
+        "bottom": 375.21875,
+        "left": 144.5
+      },
+      "revealNodes": 0,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "animations": []
+    },
+    {
+      "theme": "light",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "reducedMotion": "reduce",
+      "first": [
+        {
+          "id": "overview",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "projects",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "stack",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "academics",
+          "opacity": "1",
+          "transform": "none"
+        },
+        {
+          "id": "contact",
+          "opacity": "1",
+          "transform": "none"
+        }
+      ],
+      "sections": [
+        {
+          "id": "overview",
+          "opacity": "1",
+          "transform": "none",
+          "top": -5591
+        },
+        {
+          "id": "projects",
+          "opacity": "1",
+          "transform": "none",
+          "top": -5027.28125
+        },
+        {
+          "id": "stack",
+          "opacity": "1",
+          "transform": "none",
+          "top": -2599.703125
+        },
+        {
+          "id": "academics",
+          "opacity": "1",
+          "transform": "none",
+          "top": -1189.625
+        },
+        {
+          "id": "contact",
+          "opacity": "1",
+          "transform": "none",
+          "top": 117.015625
+        }
+      ],
+      "contact": {
+        "x": 144.5,
+        "y": 216.984375,
+        "width": 302.390625,
+        "height": 42.234375,
+        "top": 216.984375,
+        "right": 446.890625,
+        "bottom": 259.21875,
+        "left": 144.5
+      },
+      "revealNodes": 0,
+      "width": 1425,
+      "scrollWidth": 1425,
+      "animations": []
+    }
+  ],
+  "hook": {
+    "defaultOptions": true,
+    "thresholdBoundary": true,
+    "onceAndDisconnect": true,
+    "overrides": true,
+    "liveSkipAndLateCallback": true,
+    "initialSkip": true,
+    "liveReducedMotion": true,
+    "unmountCleanup": true,
+    "reduce": true,
+    "missing-observer": true,
+    "nativeThresholdBoundary": true,
+    "nativeIntersection": true
+  },
+  "missingObserverContact": {
+    "opacity": "1",
+    "top": 600.046875,
+    "sections": [
+      "overview",
+      "projects",
+      "stack",
+      "academics",
+      "contact"
+    ]
+  }
+}
