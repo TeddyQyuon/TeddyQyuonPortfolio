@@ -5,6 +5,7 @@ import profilePhoto from '../../assets/images/profile/header-portrait.webp';
 import ThemeToggle from '../common/ThemeToggle';
 import { sectionLinks } from '../../config/site';
 import { personalInfo } from '../../data/personalInfo';
+import { projects } from '../../data/projects';
 import useActiveSection from '../../hooks/useActiveSection';
 
 const menuMotion = typeof CSSStartingStyleRule !== 'undefined' && CSS.supports('transition-behavior', 'allow-discrete');
@@ -14,6 +15,8 @@ export default function TopBar() {
   const [touched, setTouched] = useState(false);
   const toggleRef = useRef(null);
   const location = useLocation();
+  const caseMatch = /^\/projects\/([^/]+)$/.exec(location.pathname);
+  const isCaseStudy = caseMatch && projects.some((project) => project.slug === caseMatch[1]);
   const active = useActiveSection(sectionLinks.map((section) => section.id), { enabled: location.pathname === '/' });
 
   // Close the mobile menu after any navigation.
@@ -72,6 +75,7 @@ export default function TopBar() {
           </button>
         </div>
       </div>
+      {isCaseStudy && <span className="read-progress" aria-hidden="true" />}
     </header>
   );
 }

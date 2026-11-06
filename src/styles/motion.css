@@ -7,6 +7,7 @@
 @keyframes scan { 0% { opacity: 0; transform: translateY(-100%); } 15%, 85% { opacity: 1; } 100% { opacity: 0; transform: translateY(290%); } }
 @keyframes icon-in { from { opacity: 0; transform: rotate(-90deg); } }
 @keyframes elevate { from { opacity: 0; } to { opacity: 1; } }
+@keyframes progress { from { transform: scaleX(0); } to { transform: scaleX(1); } }
 @keyframes ping {
   0% { opacity: 0.55; transform: scale(1); }
   80%, 100% { opacity: 0; transform: scale(2.6); }
@@ -41,6 +42,7 @@
 
 @supports (animation-timeline: scroll()) {
   @media (prefers-reduced-motion: no-preference) {
+    .read-progress { display: block; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background: var(--accent); transform-origin: 0 50%; transform: scaleX(0); z-index: 1; animation: progress linear both; animation-timeline: scroll(root block); }
     .topbar::after { animation: elevate linear both; animation-timeline: scroll(root block); animation-range: 0 96px; }
   }
 }
