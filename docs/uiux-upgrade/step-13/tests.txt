@@ -1,0 +1,32 @@
+
+> teddy-portfolio-v2@2.0.0 test
+> node --test "tests/*.test.mjs"
+
+✔ every project has a unique slug and the fields the UI needs (1.308ms)
+✔ every screenshot file exists and has alt text (1.5106ms)
+✔ external links use https and local reports exist (0.424ms)
+✔ dashboard metrics only reference real projects and appear in that project text (0.2591ms)
+✔ removed wording stays removed (0.8567ms)
+✔ personal info has no placeholders and the résumé exists (0.7789ms)
+✔ sitemap lists the homepage and every case study (1.0546ms)
+✔ malformed fragments are ignored without throwing (0.5392ms)
+✔ valid fragments retain their intended IDs (0.1171ms)
+✔ keyframes live in motion.css and animate only transform and opacity (0.9623ms)
+✔ transitions name only permitted properties, with discrete display changes (1.2674ms)
+✔ styles do not retain will-change (0.2436ms)
+✔ the reduced-motion override remains available (0.3075ms)
+✔ CSS duration tokens match the JavaScript motion durations (1.5816ms)
+✔ source files do not inject style elements or style attributes (32.3838ms)
+✔ social preview image is an absolute 1200x630 PNG (1.4535ms)
+✔ index.html has canonical URL, description and no inline scripts or styles (0.3758ms)
+✔ vercel.json keeps strict security headers (0.7075ms)
+✔ built output ships no source maps (1.0824ms)
+✔ dependencies are pinned to exact versions (0.3368ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 122.9963

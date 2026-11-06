@@ -1,0 +1,3 @@
+﻿Add a shared observer-based scrollspy, desktop active indicators, progressive mobile menu transitions, keyed icon swaps, and scroll-linked top-bar elevation. Escape restores focus to the toggle. Reduced motion and missing starting-style support retain instant menu behavior.
+
+The final short section gets priority within the activation band when it cannot physically reach the reading line at document end; this keeps Contact active without adding scroll listeners. One observer and the specified root margin are retained. Browser assertions cover all five active states, no case-page nav indicator, 220ms open/150ms close, 150ms icon swap, focus restoration, elevation at 96px, and both fallback paths.

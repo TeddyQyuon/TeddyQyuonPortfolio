@@ -1,0 +1,5 @@
+Map stylesheet sizes to the specified type tokens while preserving SVG viewBox sizes and the KPI unit exception. Balance headings and use pretty wrapping on prose. Keep existing colors, breakpoints and content intact.
+
+Computed-style checks verify the mapped sizes and wrapping at 360px and 1440px. Every stylesheet font-size now uses a type token or one of the documented exceptions; color tokens match step 0 exactly.
+The first mapped-type batch exposed font-swap wrapping shifts. Reserve the hero's wrapped intro/objective, the narrow status pill and the desktop project introduction, and keep case-study facts in one column through the existing 420px breakpoint. These static reservations retain visible text and final typography while avoiding the newly exposed shifts. Initial measurements are retained in before-layout-reservation/.
+Also reserve the primary hero CTA width using spacing tokens. This prevents its font-loading expansion from moving the adjacent resume button. The intermediate reports remain in before-cta-width-reservation/.

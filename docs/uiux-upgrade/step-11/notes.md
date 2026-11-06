@@ -1,0 +1,4 @@
+Use a 220ms native View Transition for theme changes, retaining the existing theme attribute, localStorage key and theme-color meta behavior. Apply changes synchronously inside the transition callback; reduced motion and unsupported browsers switch directly.
+
+Browser checks exercise the real API, a reduced-motion context and a missing-API context. The stored choice survives a new page, and no console/CSP errors occur.
+Both homepage devices were rechecked with five fresh runs after the initial batch's simulated-LCP variance. The five-run medians meet the baseline gates. Initial reports remain in before-five-run-check/. In those reports, observed LCP stayed near 330ms mobile/360ms desktop even when simulated LCP jumped to roughly 3200ms/830ms; no source or measurement settings were changed for the recheck.

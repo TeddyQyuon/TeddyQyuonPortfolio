@@ -1,0 +1,1410 @@
+[
+  {
+    "page": "home",
+    "device": "mobile",
+    "medians": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 50,
+      "lcp": 1385.7284499999998,
+      "tbt": 2.5,
+      "cls": 0.0002034246602807513
+    },
+    "runs": [
+      {
+        "run": 1,
+        "lighthouseVersion": "13.6.0",
+        "fetchTime": "2026-11-06T22:13:23.807Z",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "settings": {
+          "output": [
+            "json"
+          ],
+          "maxWaitForFcp": 30000,
+          "maxWaitForLoad": 45000,
+          "pauseAfterFcpMs": 1000,
+          "pauseAfterLoadMs": 1000,
+          "networkQuietThresholdMs": 1000,
+          "cpuQuietThresholdMs": 1000,
+          "formFactor": "mobile",
+          "throttling": {
+            "rttMs": 150,
+            "throughputKbps": 1638.4,
+            "requestLatencyMs": 562.5,
+            "downloadThroughputKbps": 1474.5600000000002,
+            "uploadThroughputKbps": 675,
+            "cpuSlowdownMultiplier": 4
+          },
+          "throttlingMethod": "simulate",
+          "screenEmulation": {
+            "mobile": true,
+            "width": 412,
+            "height": 823,
+            "deviceScaleFactor": 1.75,
+            "disabled": false
+          },
+          "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+          "auditMode": false,
+          "gatherMode": false,
+          "clearStorageTypes": [
+            "file_systems",
+            "shader_cache",
+            "service_workers",
+            "cache_storage"
+          ],
+          "disableStorageReset": false,
+          "debugNavigation": false,
+          "channel": "cli",
+          "usePassiveGathering": false,
+          "disableFullPageScreenshot": false,
+          "skipAboutBlank": false,
+          "blankPage": "about:blank",
+          "ignoreStatusCode": false,
+          "locale": "en-US",
+          "blockedUrlPatterns": null,
+          "additionalTraceCategories": null,
+          "extraHeaders": null,
+          "precomputedLanternData": null,
+          "onlyAudits": null,
+          "onlyCategories": null,
+          "skipAudits": null
+        },
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100,
+          "agentic-browsing": 50
+        },
+        "lcp": 1385.7284499999998,
+        "tbt": 3.5,
+        "cls": 0.0002034246602807513,
+        "lcpElement": {
+          "type": "node",
+          "lhId": "page-0-P",
+          "path": "1,HTML,1,BODY,1,DIV,2,MAIN,0,DIV,0,SECTION,0,DIV,4,P",
+          "selector": "div.container > section#overview > div.hero-main > p.hero-intro",
+          "boundingRect": {
+            "top": 306,
+            "bottom": 447,
+            "left": 16,
+            "right": 396,
+            "width": 379,
+            "height": 141
+          },
+          "snippet": "<p class=\"hero-intro\">",
+          "nodeLabel": "I’m Teddy, a Year 2 Applied AI & Analytics student at Nanyang Polytechnic. I bu…"
+        },
+        "nonComposited": {
+          "id": "non-composited-animations",
+          "title": "Avoid non-composited animations",
+          "description": "Animations which are not composited can be janky and increase CLS. [Learn how to avoid non-composited animations](https://developer.chrome.com/docs/lighthouse/performance/non-composited-animations/)",
+          "score": null,
+          "scoreDisplayMode": "notApplicable",
+          "metricSavings": {
+            "CLS": 0
+          },
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "failureReason",
+                  "valueType": "text"
+                },
+                "label": "Element"
+              }
+            ],
+            "items": []
+          },
+          "guidanceLevel": 2
+        },
+        "warnings": []
+      },
+      {
+        "run": 2,
+        "lighthouseVersion": "13.6.0",
+        "fetchTime": "2026-11-06T22:13:35.652Z",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "settings": {
+          "output": [
+            "json"
+          ],
+          "maxWaitForFcp": 30000,
+          "maxWaitForLoad": 45000,
+          "pauseAfterFcpMs": 1000,
+          "pauseAfterLoadMs": 1000,
+          "networkQuietThresholdMs": 1000,
+          "cpuQuietThresholdMs": 1000,
+          "formFactor": "mobile",
+          "throttling": {
+            "rttMs": 150,
+            "throughputKbps": 1638.4,
+            "requestLatencyMs": 562.5,
+            "downloadThroughputKbps": 1474.5600000000002,
+            "uploadThroughputKbps": 675,
+            "cpuSlowdownMultiplier": 4
+          },
+          "throttlingMethod": "simulate",
+          "screenEmulation": {
+            "mobile": true,
+            "width": 412,
+            "height": 823,
+            "deviceScaleFactor": 1.75,
+            "disabled": false
+          },
+          "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+          "auditMode": false,
+          "gatherMode": false,
+          "clearStorageTypes": [
+            "file_systems",
+            "shader_cache",
+            "service_workers",
+            "cache_storage"
+          ],
+          "disableStorageReset": false,
+          "debugNavigation": false,
+          "channel": "cli",
+          "usePassiveGathering": false,
+          "disableFullPageScreenshot": false,
+          "skipAboutBlank": false,
+          "blankPage": "about:blank",
+          "ignoreStatusCode": false,
+          "locale": "en-US",
+          "blockedUrlPatterns": null,
+          "additionalTraceCategories": null,
+          "extraHeaders": null,
+          "precomputedLanternData": null,
+          "onlyAudits": null,
+          "onlyCategories": null,
+          "skipAudits": null
+        },
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100,
+          "agentic-browsing": 50
+        },
+        "lcp": 1373.8662999999997,
+        "tbt": 2.5,
+        "cls": 0.0002034246602807513,
+        "lcpElement": {
+          "type": "node",
+          "lhId": "page-0-P",
+          "path": "1,HTML,1,BODY,1,DIV,2,MAIN,0,DIV,0,SECTION,0,DIV,4,P",
+          "selector": "div.container > section#overview > div.hero-main > p.hero-intro",
+          "boundingRect": {
+            "top": 306,
+            "bottom": 447,
+            "left": 16,
+            "right": 396,
+            "width": 379,
+            "height": 141
+          },
+          "snippet": "<p class=\"hero-intro\">",
+          "nodeLabel": "I’m Teddy, a Year 2 Applied AI & Analytics student at Nanyang Polytechnic. I bu…"
+        },
+        "nonComposited": {
+          "id": "non-composited-animations",
+          "title": "Avoid non-composited animations",
+          "description": "Animations which are not composited can be janky and increase CLS. [Learn how to avoid non-composited animations](https://developer.chrome.com/docs/lighthouse/performance/non-composited-animations/)",
+          "score": null,
+          "scoreDisplayMode": "notApplicable",
+          "metricSavings": {
+            "CLS": 0
+          },
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "failureReason",
+                  "valueType": "text"
+                },
+                "label": "Element"
+              }
+            ],
+            "items": []
+          },
+          "guidanceLevel": 2
+        },
+        "warnings": []
+      },
+      {
+        "run": 3,
+        "lighthouseVersion": "13.6.0",
+        "fetchTime": "2026-11-06T22:13:47.536Z",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "settings": {
+          "output": [
+            "json"
+          ],
+          "maxWaitForFcp": 30000,
+          "maxWaitForLoad": 45000,
+          "pauseAfterFcpMs": 1000,
+          "pauseAfterLoadMs": 1000,
+          "networkQuietThresholdMs": 1000,
+          "cpuQuietThresholdMs": 1000,
+          "formFactor": "mobile",
+          "throttling": {
+            "rttMs": 150,
+            "throughputKbps": 1638.4,
+            "requestLatencyMs": 562.5,
+            "downloadThroughputKbps": 1474.5600000000002,
+            "uploadThroughputKbps": 675,
+            "cpuSlowdownMultiplier": 4
+          },
+          "throttlingMethod": "simulate",
+          "screenEmulation": {
+            "mobile": true,
+            "width": 412,
+            "height": 823,
+            "deviceScaleFactor": 1.75,
+            "disabled": false
+          },
+          "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+          "auditMode": false,
+          "gatherMode": false,
+          "clearStorageTypes": [
+            "file_systems",
+            "shader_cache",
+            "service_workers",
+            "cache_storage"
+          ],
+          "disableStorageReset": false,
+          "debugNavigation": false,
+          "channel": "cli",
+          "usePassiveGathering": false,
+          "disableFullPageScreenshot": false,
+          "skipAboutBlank": false,
+          "blankPage": "about:blank",
+          "ignoreStatusCode": false,
+          "locale": "en-US",
+          "blockedUrlPatterns": null,
+          "additionalTraceCategories": null,
+          "extraHeaders": null,
+          "precomputedLanternData": null,
+          "onlyAudits": null,
+          "onlyCategories": null,
+          "skipAudits": null
+        },
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100,
+          "agentic-browsing": 50
+        },
+        "lcp": 1410.8952,
+        "tbt": 1,
+        "cls": 0.0002034246602807513,
+        "lcpElement": {
+          "type": "node",
+          "lhId": "page-0-P",
+          "path": "1,HTML,1,BODY,1,DIV,2,MAIN,0,DIV,0,SECTION,0,DIV,4,P",
+          "selector": "div.container > section#overview > div.hero-main > p.hero-intro",
+          "boundingRect": {
+            "top": 306,
+            "bottom": 447,
+            "left": 16,
+            "right": 396,
+            "width": 379,
+            "height": 141
+          },
+          "snippet": "<p class=\"hero-intro\">",
+          "nodeLabel": "I’m Teddy, a Year 2 Applied AI & Analytics student at Nanyang Polytechnic. I bu…"
+        },
+        "nonComposited": {
+          "id": "non-composited-animations",
+          "title": "Avoid non-composited animations",
+          "description": "Animations which are not composited can be janky and increase CLS. [Learn how to avoid non-composited animations](https://developer.chrome.com/docs/lighthouse/performance/non-composited-animations/)",
+          "score": null,
+          "scoreDisplayMode": "notApplicable",
+          "metricSavings": {
+            "CLS": 0
+          },
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "failureReason",
+                  "valueType": "text"
+                },
+                "label": "Element"
+              }
+            ],
+            "items": []
+          },
+          "guidanceLevel": 2
+        },
+        "warnings": []
+      }
+    ]
+  },
+  {
+    "page": "home",
+    "device": "desktop",
+    "medians": {
+      "performance": 100,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 50,
+      "lcp": 386.0724,
+      "tbt": 0,
+      "cls": 0.006489691514133511
+    },
+    "runs": [
+      {
+        "run": 1,
+        "lighthouseVersion": "13.6.0",
+        "fetchTime": "2026-11-06T22:16:45.728Z",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "settings": {
+          "output": [
+            "json"
+          ],
+          "maxWaitForFcp": 30000,
+          "maxWaitForLoad": 45000,
+          "pauseAfterFcpMs": 1000,
+          "pauseAfterLoadMs": 1000,
+          "networkQuietThresholdMs": 1000,
+          "cpuQuietThresholdMs": 1000,
+          "formFactor": "desktop",
+          "throttling": {
+            "rttMs": 40,
+            "throughputKbps": 10240,
+            "requestLatencyMs": 0,
+            "downloadThroughputKbps": 0,
+            "uploadThroughputKbps": 0,
+            "cpuSlowdownMultiplier": 1
+          },
+          "throttlingMethod": "simulate",
+          "screenEmulation": {
+            "mobile": false,
+            "width": 1350,
+            "height": 940,
+            "deviceScaleFactor": 1,
+            "disabled": false
+          },
+          "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+          "auditMode": false,
+          "gatherMode": false,
+          "clearStorageTypes": [
+            "file_systems",
+            "shader_cache",
+            "service_workers",
+            "cache_storage"
+          ],
+          "disableStorageReset": false,
+          "debugNavigation": false,
+          "channel": "cli",
+          "usePassiveGathering": false,
+          "disableFullPageScreenshot": false,
+          "skipAboutBlank": false,
+          "blankPage": "about:blank",
+          "ignoreStatusCode": false,
+          "locale": "en-US",
+          "blockedUrlPatterns": null,
+          "additionalTraceCategories": null,
+          "extraHeaders": null,
+          "precomputedLanternData": null,
+          "onlyAudits": null,
+          "onlyCategories": null,
+          "skipAudits": null
+        },
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100,
+          "agentic-browsing": 50
+        },
+        "lcp": 392.5587,
+        "tbt": 0,
+        "cls": 0.006489691514133511,
+        "lcpElement": {
+          "type": "node",
+          "lhId": "page-0-P",
+          "path": "1,HTML,1,BODY,1,DIV,2,MAIN,0,DIV,0,SECTION,0,DIV,4,P",
+          "selector": "div.container > section#overview > div.hero-main > p.hero-intro",
+          "boundingRect": {
+            "top": 307,
+            "bottom": 419,
+            "left": 100,
+            "right": 734,
+            "width": 634,
+            "height": 113
+          },
+          "snippet": "<p class=\"hero-intro\">",
+          "nodeLabel": "I’m Teddy, a Year 2 Applied AI & Analytics student at Nanyang Polytechnic. I bu…"
+        },
+        "nonComposited": {
+          "id": "non-composited-animations",
+          "title": "Avoid non-composited animations",
+          "description": "Animations which are not composited can be janky and increase CLS. [Learn how to avoid non-composited animations](https://developer.chrome.com/docs/lighthouse/performance/non-composited-animations/)",
+          "score": null,
+          "scoreDisplayMode": "notApplicable",
+          "metricSavings": {
+            "CLS": 0
+          },
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "failureReason",
+                  "valueType": "text"
+                },
+                "label": "Element"
+              }
+            ],
+            "items": []
+          },
+          "guidanceLevel": 2
+        },
+        "warnings": []
+      },
+      {
+        "run": 2,
+        "lighthouseVersion": "13.6.0",
+        "fetchTime": "2026-11-06T22:16:58.269Z",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "settings": {
+          "output": [
+            "json"
+          ],
+          "maxWaitForFcp": 30000,
+          "maxWaitForLoad": 45000,
+          "pauseAfterFcpMs": 1000,
+          "pauseAfterLoadMs": 1000,
+          "networkQuietThresholdMs": 1000,
+          "cpuQuietThresholdMs": 1000,
+          "formFactor": "desktop",
+          "throttling": {
+            "rttMs": 40,
+            "throughputKbps": 10240,
+            "requestLatencyMs": 0,
+            "downloadThroughputKbps": 0,
+            "uploadThroughputKbps": 0,
+            "cpuSlowdownMultiplier": 1
+          },
+          "throttlingMethod": "simulate",
+          "screenEmulation": {
+            "mobile": false,
+            "width": 1350,
+            "height": 940,
+            "deviceScaleFactor": 1,
+            "disabled": false
+          },
+          "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+          "auditMode": false,
+          "gatherMode": false,
+          "clearStorageTypes": [
+            "file_systems",
+            "shader_cache",
+            "service_workers",
+            "cache_storage"
+          ],
+          "disableStorageReset": false,
+          "debugNavigation": false,
+          "channel": "cli",
+          "usePassiveGathering": false,
+          "disableFullPageScreenshot": false,
+          "skipAboutBlank": false,
+          "blankPage": "about:blank",
+          "ignoreStatusCode": false,
+          "locale": "en-US",
+          "blockedUrlPatterns": null,
+          "additionalTraceCategories": null,
+          "extraHeaders": null,
+          "precomputedLanternData": null,
+          "onlyAudits": null,
+          "onlyCategories": null,
+          "skipAudits": null
+        },
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100,
+          "agentic-browsing": 50
+        },
+        "lcp": 381.98464999999993,
+        "tbt": 0,
+        "cls": 0.006489691514133511,
+        "lcpElement": {
+          "type": "node",
+          "lhId": "page-0-P",
+          "path": "1,HTML,1,BODY,1,DIV,2,MAIN,0,DIV,0,SECTION,0,DIV,4,P",
+          "selector": "div.container > section#overview > div.hero-main > p.hero-intro",
+          "boundingRect": {
+            "top": 307,
+            "bottom": 419,
+            "left": 100,
+            "right": 734,
+            "width": 634,
+            "height": 113
+          },
+          "snippet": "<p class=\"hero-intro\">",
+          "nodeLabel": "I’m Teddy, a Year 2 Applied AI & Analytics student at Nanyang Polytechnic. I bu…"
+        },
+        "nonComposited": {
+          "id": "non-composited-animations",
+          "title": "Avoid non-composited animations",
+          "description": "Animations which are not composited can be janky and increase CLS. [Learn how to avoid non-composited animations](https://developer.chrome.com/docs/lighthouse/performance/non-composited-animations/)",
+          "score": null,
+          "scoreDisplayMode": "notApplicable",
+          "metricSavings": {
+            "CLS": 0
+          },
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "failureReason",
+                  "valueType": "text"
+                },
+                "label": "Element"
+              }
+            ],
+            "items": []
+          },
+          "guidanceLevel": 2
+        },
+        "warnings": []
+      },
+      {
+        "run": 3,
+        "lighthouseVersion": "13.6.0",
+        "fetchTime": "2026-11-06T22:17:10.685Z",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "settings": {
+          "output": [
+            "json"
+          ],
+          "maxWaitForFcp": 30000,
+          "maxWaitForLoad": 45000,
+          "pauseAfterFcpMs": 1000,
+          "pauseAfterLoadMs": 1000,
+          "networkQuietThresholdMs": 1000,
+          "cpuQuietThresholdMs": 1000,
+          "formFactor": "desktop",
+          "throttling": {
+            "rttMs": 40,
+            "throughputKbps": 10240,
+            "requestLatencyMs": 0,
+            "downloadThroughputKbps": 0,
+            "uploadThroughputKbps": 0,
+            "cpuSlowdownMultiplier": 1
+          },
+          "throttlingMethod": "simulate",
+          "screenEmulation": {
+            "mobile": false,
+            "width": 1350,
+            "height": 940,
+            "deviceScaleFactor": 1,
+            "disabled": false
+          },
+          "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+          "auditMode": false,
+          "gatherMode": false,
+          "clearStorageTypes": [
+            "file_systems",
+            "shader_cache",
+            "service_workers",
+            "cache_storage"
+          ],
+          "disableStorageReset": false,
+          "debugNavigation": false,
+          "channel": "cli",
+          "usePassiveGathering": false,
+          "disableFullPageScreenshot": false,
+          "skipAboutBlank": false,
+          "blankPage": "about:blank",
+          "ignoreStatusCode": false,
+          "locale": "en-US",
+          "blockedUrlPatterns": null,
+          "additionalTraceCategories": null,
+          "extraHeaders": null,
+          "precomputedLanternData": null,
+          "onlyAudits": null,
+          "onlyCategories": null,
+          "skipAudits": null
+        },
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100,
+          "agentic-browsing": 50
+        },
+        "lcp": 386.0724,
+        "tbt": 0,
+        "cls": 0.006489691514133511,
+        "lcpElement": {
+          "type": "node",
+          "lhId": "page-0-P",
+          "path": "1,HTML,1,BODY,1,DIV,2,MAIN,0,DIV,0,SECTION,0,DIV,4,P",
+          "selector": "div.container > section#overview > div.hero-main > p.hero-intro",
+          "boundingRect": {
+            "top": 307,
+            "bottom": 419,
+            "left": 100,
+            "right": 734,
+            "width": 634,
+            "height": 113
+          },
+          "snippet": "<p class=\"hero-intro\">",
+          "nodeLabel": "I’m Teddy, a Year 2 Applied AI & Analytics student at Nanyang Polytechnic. I bu…"
+        },
+        "nonComposited": {
+          "id": "non-composited-animations",
+          "title": "Avoid non-composited animations",
+          "description": "Animations which are not composited can be janky and increase CLS. [Learn how to avoid non-composited animations](https://developer.chrome.com/docs/lighthouse/performance/non-composited-animations/)",
+          "score": null,
+          "scoreDisplayMode": "notApplicable",
+          "metricSavings": {
+            "CLS": 0
+          },
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "failureReason",
+                  "valueType": "text"
+                },
+                "label": "Element"
+              }
+            ],
+            "items": []
+          },
+          "guidanceLevel": 2
+        },
+        "warnings": []
+      }
+    ]
+  },
+  {
+    "page": "gamevault",
+    "device": "mobile",
+    "medians": {
+      "performance": 80,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 40,
+      "lcp": 3458.3292,
+      "tbt": 0,
+      "cls": 0.21566636704453493
+    },
+    "runs": [
+      {
+        "run": 1,
+        "lighthouseVersion": "13.6.0",
+        "fetchTime": "2026-11-06T22:14:36.714Z",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "settings": {
+          "output": [
+            "json"
+          ],
+          "maxWaitForFcp": 30000,
+          "maxWaitForLoad": 45000,
+          "pauseAfterFcpMs": 1000,
+          "pauseAfterLoadMs": 1000,
+          "networkQuietThresholdMs": 1000,
+          "cpuQuietThresholdMs": 1000,
+          "formFactor": "mobile",
+          "throttling": {
+            "rttMs": 150,
+            "throughputKbps": 1638.4,
+            "requestLatencyMs": 562.5,
+            "downloadThroughputKbps": 1474.5600000000002,
+            "uploadThroughputKbps": 675,
+            "cpuSlowdownMultiplier": 4
+          },
+          "throttlingMethod": "simulate",
+          "screenEmulation": {
+            "mobile": true,
+            "width": 412,
+            "height": 823,
+            "deviceScaleFactor": 1.75,
+            "disabled": false
+          },
+          "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+          "auditMode": false,
+          "gatherMode": false,
+          "clearStorageTypes": [
+            "file_systems",
+            "shader_cache",
+            "service_workers",
+            "cache_storage"
+          ],
+          "disableStorageReset": false,
+          "debugNavigation": false,
+          "channel": "cli",
+          "usePassiveGathering": false,
+          "disableFullPageScreenshot": false,
+          "skipAboutBlank": false,
+          "blankPage": "about:blank",
+          "ignoreStatusCode": false,
+          "locale": "en-US",
+          "blockedUrlPatterns": null,
+          "additionalTraceCategories": null,
+          "extraHeaders": null,
+          "precomputedLanternData": null,
+          "onlyAudits": null,
+          "onlyCategories": null,
+          "skipAudits": null
+        },
+        "scores": {
+          "performance": 80,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100,
+          "agentic-browsing": 40
+        },
+        "lcp": 3458.3292,
+        "tbt": 0,
+        "cls": 0.21566636704453493,
+        "lcpElement": {
+          "type": "node",
+          "lhId": "page-2-P",
+          "path": "1,HTML,1,BODY,1,DIV,2,MAIN,0,DIV,1,HEADER,2,P",
+          "selector": "main#main-content > div.container > header.panel > p.hero-role",
+          "boundingRect": {
+            "top": 237,
+            "bottom": 285,
+            "left": 41,
+            "right": 371,
+            "width": 329,
+            "height": 49
+          },
+          "snippet": "<p class=\"hero-role\">",
+          "nodeLabel": "Responsive digital marketplace, product rails & Stripe checkout"
+        },
+        "nonComposited": {
+          "id": "non-composited-animations",
+          "title": "Avoid non-composited animations",
+          "description": "Animations which are not composited can be janky and increase CLS. [Learn how to avoid non-composited animations](https://developer.chrome.com/docs/lighthouse/performance/non-composited-animations/)",
+          "score": null,
+          "scoreDisplayMode": "notApplicable",
+          "metricSavings": {
+            "CLS": 0
+          },
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "failureReason",
+                  "valueType": "text"
+                },
+                "label": "Element"
+              }
+            ],
+            "items": []
+          },
+          "guidanceLevel": 2
+        },
+        "warnings": []
+      },
+      {
+        "run": 2,
+        "lighthouseVersion": "13.6.0",
+        "fetchTime": "2026-11-06T22:14:48.257Z",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "settings": {
+          "output": [
+            "json"
+          ],
+          "maxWaitForFcp": 30000,
+          "maxWaitForLoad": 45000,
+          "pauseAfterFcpMs": 1000,
+          "pauseAfterLoadMs": 1000,
+          "networkQuietThresholdMs": 1000,
+          "cpuQuietThresholdMs": 1000,
+          "formFactor": "mobile",
+          "throttling": {
+            "rttMs": 150,
+            "throughputKbps": 1638.4,
+            "requestLatencyMs": 562.5,
+            "downloadThroughputKbps": 1474.5600000000002,
+            "uploadThroughputKbps": 675,
+            "cpuSlowdownMultiplier": 4
+          },
+          "throttlingMethod": "simulate",
+          "screenEmulation": {
+            "mobile": true,
+            "width": 412,
+            "height": 823,
+            "deviceScaleFactor": 1.75,
+            "disabled": false
+          },
+          "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+          "auditMode": false,
+          "gatherMode": false,
+          "clearStorageTypes": [
+            "file_systems",
+            "shader_cache",
+            "service_workers",
+            "cache_storage"
+          ],
+          "disableStorageReset": false,
+          "debugNavigation": false,
+          "channel": "cli",
+          "usePassiveGathering": false,
+          "disableFullPageScreenshot": false,
+          "skipAboutBlank": false,
+          "blankPage": "about:blank",
+          "ignoreStatusCode": false,
+          "locale": "en-US",
+          "blockedUrlPatterns": null,
+          "additionalTraceCategories": null,
+          "extraHeaders": null,
+          "precomputedLanternData": null,
+          "onlyAudits": null,
+          "onlyCategories": null,
+          "skipAudits": null
+        },
+        "scores": {
+          "performance": 80,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100,
+          "agentic-browsing": 40
+        },
+        "lcp": 3457.9067999999997,
+        "tbt": 0,
+        "cls": 0.21566636704453493,
+        "lcpElement": {
+          "type": "node",
+          "lhId": "page-2-P",
+          "path": "1,HTML,1,BODY,1,DIV,2,MAIN,0,DIV,1,HEADER,2,P",
+          "selector": "main#main-content > div.container > header.panel > p.hero-role",
+          "boundingRect": {
+            "top": 237,
+            "bottom": 285,
+            "left": 41,
+            "right": 371,
+            "width": 329,
+            "height": 49
+          },
+          "snippet": "<p class=\"hero-role\">",
+          "nodeLabel": "Responsive digital marketplace, product rails & Stripe checkout"
+        },
+        "nonComposited": {
+          "id": "non-composited-animations",
+          "title": "Avoid non-composited animations",
+          "description": "Animations which are not composited can be janky and increase CLS. [Learn how to avoid non-composited animations](https://developer.chrome.com/docs/lighthouse/performance/non-composited-animations/)",
+          "score": null,
+          "scoreDisplayMode": "notApplicable",
+          "metricSavings": {
+            "CLS": 0
+          },
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "failureReason",
+                  "valueType": "text"
+                },
+                "label": "Element"
+              }
+            ],
+            "items": []
+          },
+          "guidanceLevel": 2
+        },
+        "warnings": []
+      },
+      {
+        "run": 3,
+        "lighthouseVersion": "13.6.0",
+        "fetchTime": "2026-11-06T22:14:59.707Z",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "settings": {
+          "output": [
+            "json"
+          ],
+          "maxWaitForFcp": 30000,
+          "maxWaitForLoad": 45000,
+          "pauseAfterFcpMs": 1000,
+          "pauseAfterLoadMs": 1000,
+          "networkQuietThresholdMs": 1000,
+          "cpuQuietThresholdMs": 1000,
+          "formFactor": "mobile",
+          "throttling": {
+            "rttMs": 150,
+            "throughputKbps": 1638.4,
+            "requestLatencyMs": 562.5,
+            "downloadThroughputKbps": 1474.5600000000002,
+            "uploadThroughputKbps": 675,
+            "cpuSlowdownMultiplier": 4
+          },
+          "throttlingMethod": "simulate",
+          "screenEmulation": {
+            "mobile": true,
+            "width": 412,
+            "height": 823,
+            "deviceScaleFactor": 1.75,
+            "disabled": false
+          },
+          "emulatedUserAgent": "Mozilla/5.0 (Linux; Android 11; moto g power (2022)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Mobile Safari/537.36",
+          "auditMode": false,
+          "gatherMode": false,
+          "clearStorageTypes": [
+            "file_systems",
+            "shader_cache",
+            "service_workers",
+            "cache_storage"
+          ],
+          "disableStorageReset": false,
+          "debugNavigation": false,
+          "channel": "cli",
+          "usePassiveGathering": false,
+          "disableFullPageScreenshot": false,
+          "skipAboutBlank": false,
+          "blankPage": "about:blank",
+          "ignoreStatusCode": false,
+          "locale": "en-US",
+          "blockedUrlPatterns": null,
+          "additionalTraceCategories": null,
+          "extraHeaders": null,
+          "precomputedLanternData": null,
+          "onlyAudits": null,
+          "onlyCategories": null,
+          "skipAudits": null
+        },
+        "scores": {
+          "performance": 80,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100,
+          "agentic-browsing": 40
+        },
+        "lcp": 3458.5386,
+        "tbt": 0,
+        "cls": 0.21566636704453493,
+        "lcpElement": {
+          "type": "node",
+          "lhId": "page-2-P",
+          "path": "1,HTML,1,BODY,1,DIV,2,MAIN,0,DIV,1,HEADER,2,P",
+          "selector": "main#main-content > div.container > header.panel > p.hero-role",
+          "boundingRect": {
+            "top": 237,
+            "bottom": 285,
+            "left": 41,
+            "right": 371,
+            "width": 329,
+            "height": 49
+          },
+          "snippet": "<p class=\"hero-role\">",
+          "nodeLabel": "Responsive digital marketplace, product rails & Stripe checkout"
+        },
+        "nonComposited": {
+          "id": "non-composited-animations",
+          "title": "Avoid non-composited animations",
+          "description": "Animations which are not composited can be janky and increase CLS. [Learn how to avoid non-composited animations](https://developer.chrome.com/docs/lighthouse/performance/non-composited-animations/)",
+          "score": null,
+          "scoreDisplayMode": "notApplicable",
+          "metricSavings": {
+            "CLS": 0
+          },
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "failureReason",
+                  "valueType": "text"
+                },
+                "label": "Element"
+              }
+            ],
+            "items": []
+          },
+          "guidanceLevel": 2
+        },
+        "warnings": []
+      }
+    ]
+  },
+  {
+    "page": "gamevault",
+    "device": "desktop",
+    "medians": {
+      "performance": 96,
+      "accessibility": 100,
+      "best-practices": 100,
+      "seo": 100,
+      "agentic-browsing": 47,
+      "lcp": 824.2864750000001,
+      "tbt": 0,
+      "cls": 0.11105944450562782
+    },
+    "runs": [
+      {
+        "run": 1,
+        "lighthouseVersion": "13.6.0",
+        "fetchTime": "2026-11-06T22:15:11.220Z",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "settings": {
+          "output": [
+            "json"
+          ],
+          "maxWaitForFcp": 30000,
+          "maxWaitForLoad": 45000,
+          "pauseAfterFcpMs": 1000,
+          "pauseAfterLoadMs": 1000,
+          "networkQuietThresholdMs": 1000,
+          "cpuQuietThresholdMs": 1000,
+          "formFactor": "desktop",
+          "throttling": {
+            "rttMs": 40,
+            "throughputKbps": 10240,
+            "requestLatencyMs": 0,
+            "downloadThroughputKbps": 0,
+            "uploadThroughputKbps": 0,
+            "cpuSlowdownMultiplier": 1
+          },
+          "throttlingMethod": "simulate",
+          "screenEmulation": {
+            "mobile": false,
+            "width": 1350,
+            "height": 940,
+            "deviceScaleFactor": 1,
+            "disabled": false
+          },
+          "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+          "auditMode": false,
+          "gatherMode": false,
+          "clearStorageTypes": [
+            "file_systems",
+            "shader_cache",
+            "service_workers",
+            "cache_storage"
+          ],
+          "disableStorageReset": false,
+          "debugNavigation": false,
+          "channel": "cli",
+          "usePassiveGathering": false,
+          "disableFullPageScreenshot": false,
+          "skipAboutBlank": false,
+          "blankPage": "about:blank",
+          "ignoreStatusCode": false,
+          "locale": "en-US",
+          "blockedUrlPatterns": null,
+          "additionalTraceCategories": null,
+          "extraHeaders": null,
+          "precomputedLanternData": null,
+          "onlyAudits": null,
+          "onlyCategories": null,
+          "skipAudits": null
+        },
+        "scores": {
+          "performance": 96,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100,
+          "agentic-browsing": 47
+        },
+        "lcp": 824.2864750000001,
+        "tbt": 0,
+        "cls": 0.11105944450562782,
+        "lcpElement": {
+          "type": "node",
+          "lhId": "page-0-P",
+          "path": "1,HTML,1,BODY,1,DIV,2,MAIN,0,DIV,4,DIV,1,DIV,0,SECTION,1,P",
+          "selector": "div.case-layout > div.case-content > section#overview > p.lead",
+          "boundingRect": {
+            "top": 787,
+            "bottom": 948,
+            "left": 369,
+            "right": 1211,
+            "width": 842,
+            "height": 161
+          },
+          "snippet": "<p class=\"lead\">",
+          "nodeLabel": "A responsive full-stack digital marketplace built with React/Vite, Vercel Serve…"
+        },
+        "nonComposited": {
+          "id": "non-composited-animations",
+          "title": "Avoid non-composited animations",
+          "description": "Animations which are not composited can be janky and increase CLS. [Learn how to avoid non-composited animations](https://developer.chrome.com/docs/lighthouse/performance/non-composited-animations/)",
+          "score": null,
+          "scoreDisplayMode": "notApplicable",
+          "metricSavings": {
+            "CLS": 0
+          },
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "failureReason",
+                  "valueType": "text"
+                },
+                "label": "Element"
+              }
+            ],
+            "items": []
+          },
+          "guidanceLevel": 2
+        },
+        "warnings": []
+      },
+      {
+        "run": 2,
+        "lighthouseVersion": "13.6.0",
+        "fetchTime": "2026-11-06T22:15:22.879Z",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "settings": {
+          "output": [
+            "json"
+          ],
+          "maxWaitForFcp": 30000,
+          "maxWaitForLoad": 45000,
+          "pauseAfterFcpMs": 1000,
+          "pauseAfterLoadMs": 1000,
+          "networkQuietThresholdMs": 1000,
+          "cpuQuietThresholdMs": 1000,
+          "formFactor": "desktop",
+          "throttling": {
+            "rttMs": 40,
+            "throughputKbps": 10240,
+            "requestLatencyMs": 0,
+            "downloadThroughputKbps": 0,
+            "uploadThroughputKbps": 0,
+            "cpuSlowdownMultiplier": 1
+          },
+          "throttlingMethod": "simulate",
+          "screenEmulation": {
+            "mobile": false,
+            "width": 1350,
+            "height": 940,
+            "deviceScaleFactor": 1,
+            "disabled": false
+          },
+          "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+          "auditMode": false,
+          "gatherMode": false,
+          "clearStorageTypes": [
+            "file_systems",
+            "shader_cache",
+            "service_workers",
+            "cache_storage"
+          ],
+          "disableStorageReset": false,
+          "debugNavigation": false,
+          "channel": "cli",
+          "usePassiveGathering": false,
+          "disableFullPageScreenshot": false,
+          "skipAboutBlank": false,
+          "blankPage": "about:blank",
+          "ignoreStatusCode": false,
+          "locale": "en-US",
+          "blockedUrlPatterns": null,
+          "additionalTraceCategories": null,
+          "extraHeaders": null,
+          "precomputedLanternData": null,
+          "onlyAudits": null,
+          "onlyCategories": null,
+          "skipAudits": null
+        },
+        "scores": {
+          "performance": 96,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100,
+          "agentic-browsing": 47
+        },
+        "lcp": 820.576575,
+        "tbt": 0,
+        "cls": 0.11105944450562782,
+        "lcpElement": {
+          "type": "node",
+          "lhId": "page-0-P",
+          "path": "1,HTML,1,BODY,1,DIV,2,MAIN,0,DIV,4,DIV,1,DIV,0,SECTION,1,P",
+          "selector": "div.case-layout > div.case-content > section#overview > p.lead",
+          "boundingRect": {
+            "top": 787,
+            "bottom": 948,
+            "left": 369,
+            "right": 1211,
+            "width": 842,
+            "height": 161
+          },
+          "snippet": "<p class=\"lead\">",
+          "nodeLabel": "A responsive full-stack digital marketplace built with React/Vite, Vercel Serve…"
+        },
+        "nonComposited": {
+          "id": "non-composited-animations",
+          "title": "Avoid non-composited animations",
+          "description": "Animations which are not composited can be janky and increase CLS. [Learn how to avoid non-composited animations](https://developer.chrome.com/docs/lighthouse/performance/non-composited-animations/)",
+          "score": null,
+          "scoreDisplayMode": "notApplicable",
+          "metricSavings": {
+            "CLS": 0
+          },
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "failureReason",
+                  "valueType": "text"
+                },
+                "label": "Element"
+              }
+            ],
+            "items": []
+          },
+          "guidanceLevel": 2
+        },
+        "warnings": []
+      },
+      {
+        "run": 3,
+        "lighthouseVersion": "13.6.0",
+        "fetchTime": "2026-11-06T22:15:34.548Z",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+        "settings": {
+          "output": [
+            "json"
+          ],
+          "maxWaitForFcp": 30000,
+          "maxWaitForLoad": 45000,
+          "pauseAfterFcpMs": 1000,
+          "pauseAfterLoadMs": 1000,
+          "networkQuietThresholdMs": 1000,
+          "cpuQuietThresholdMs": 1000,
+          "formFactor": "desktop",
+          "throttling": {
+            "rttMs": 40,
+            "throughputKbps": 10240,
+            "requestLatencyMs": 0,
+            "downloadThroughputKbps": 0,
+            "uploadThroughputKbps": 0,
+            "cpuSlowdownMultiplier": 1
+          },
+          "throttlingMethod": "simulate",
+          "screenEmulation": {
+            "mobile": false,
+            "width": 1350,
+            "height": 940,
+            "deviceScaleFactor": 1,
+            "disabled": false
+          },
+          "emulatedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+          "auditMode": false,
+          "gatherMode": false,
+          "clearStorageTypes": [
+            "file_systems",
+            "shader_cache",
+            "service_workers",
+            "cache_storage"
+          ],
+          "disableStorageReset": false,
+          "debugNavigation": false,
+          "channel": "cli",
+          "usePassiveGathering": false,
+          "disableFullPageScreenshot": false,
+          "skipAboutBlank": false,
+          "blankPage": "about:blank",
+          "ignoreStatusCode": false,
+          "locale": "en-US",
+          "blockedUrlPatterns": null,
+          "additionalTraceCategories": null,
+          "extraHeaders": null,
+          "precomputedLanternData": null,
+          "onlyAudits": null,
+          "onlyCategories": null,
+          "skipAudits": null
+        },
+        "scores": {
+          "performance": 96,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 100,
+          "agentic-browsing": 47
+        },
+        "lcp": 826.5149250000001,
+        "tbt": 0,
+        "cls": 0.11105944450562782,
+        "lcpElement": {
+          "type": "node",
+          "lhId": "page-0-P",
+          "path": "1,HTML,1,BODY,1,DIV,2,MAIN,0,DIV,4,DIV,1,DIV,0,SECTION,1,P",
+          "selector": "div.case-layout > div.case-content > section#overview > p.lead",
+          "boundingRect": {
+            "top": 787,
+            "bottom": 948,
+            "left": 369,
+            "right": 1211,
+            "width": 842,
+            "height": 161
+          },
+          "snippet": "<p class=\"lead\">",
+          "nodeLabel": "A responsive full-stack digital marketplace built with React/Vite, Vercel Serve…"
+        },
+        "nonComposited": {
+          "id": "non-composited-animations",
+          "title": "Avoid non-composited animations",
+          "description": "Animations which are not composited can be janky and increase CLS. [Learn how to avoid non-composited animations](https://developer.chrome.com/docs/lighthouse/performance/non-composited-animations/)",
+          "score": null,
+          "scoreDisplayMode": "notApplicable",
+          "metricSavings": {
+            "CLS": 0
+          },
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "subItemsHeading": {
+                  "key": "failureReason",
+                  "valueType": "text"
+                },
+                "label": "Element"
+              }
+            ],
+            "items": []
+          },
+          "guidanceLevel": 2
+        },
+        "warnings": []
+      }
+    ]
+  }
+]

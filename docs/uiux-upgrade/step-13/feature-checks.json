@@ -1,0 +1,523 @@
+{
+  "errors": [],
+  "routes": [
+    {
+      "channel": "chrome",
+      "slug": "gamevault-marketplace",
+      "blocks": [
+        "overview",
+        "contribution",
+        "data",
+        "results",
+        "features",
+        "architecture",
+        "screenshots",
+        "reflection"
+      ]
+    },
+    {
+      "channel": "chrome",
+      "slug": "sole-district",
+      "blocks": [
+        "overview",
+        "contribution",
+        "data",
+        "results",
+        "features",
+        "architecture",
+        "screenshots",
+        "reflection"
+      ]
+    },
+    {
+      "channel": "chrome",
+      "slug": "scenthaus-intelligence",
+      "blocks": [
+        "overview",
+        "contribution",
+        "data",
+        "models",
+        "results",
+        "features",
+        "architecture",
+        "screenshots",
+        "reflection"
+      ]
+    },
+    {
+      "channel": "chrome",
+      "slug": "meterwise-building-energy-analytics",
+      "blocks": [
+        "overview",
+        "contribution",
+        "data",
+        "models",
+        "results",
+        "features",
+        "architecture",
+        "screenshots",
+        "reflection"
+      ]
+    },
+    {
+      "channel": "chrome",
+      "slug": "playlist-port-spotify-mover",
+      "blocks": [
+        "overview",
+        "contribution",
+        "results",
+        "features",
+        "architecture",
+        "screenshots",
+        "reflection"
+      ]
+    },
+    {
+      "channel": "chrome",
+      "slug": "annual-leave-management",
+      "blocks": [
+        "overview",
+        "contribution",
+        "features",
+        "architecture",
+        "screenshots",
+        "reflection"
+      ]
+    },
+    {
+      "channel": "chrome",
+      "slug": "gym-calories-predictive-analysis",
+      "blocks": [
+        "overview",
+        "contribution",
+        "data",
+        "models",
+        "results",
+        "features",
+        "architecture",
+        "screenshots",
+        "reflection"
+      ]
+    },
+    {
+      "channel": "msedge",
+      "slug": "gamevault-marketplace",
+      "blocks": [
+        "overview",
+        "contribution",
+        "data",
+        "results",
+        "features",
+        "architecture",
+        "screenshots",
+        "reflection"
+      ]
+    },
+    {
+      "channel": "msedge",
+      "slug": "sole-district",
+      "blocks": [
+        "overview",
+        "contribution",
+        "data",
+        "results",
+        "features",
+        "architecture",
+        "screenshots",
+        "reflection"
+      ]
+    },
+    {
+      "channel": "msedge",
+      "slug": "scenthaus-intelligence",
+      "blocks": [
+        "overview",
+        "contribution",
+        "data",
+        "models",
+        "results",
+        "features",
+        "architecture",
+        "screenshots",
+        "reflection"
+      ]
+    },
+    {
+      "channel": "msedge",
+      "slug": "meterwise-building-energy-analytics",
+      "blocks": [
+        "overview",
+        "contribution",
+        "data",
+        "models",
+        "results",
+        "features",
+        "architecture",
+        "screenshots",
+        "reflection"
+      ]
+    },
+    {
+      "channel": "msedge",
+      "slug": "playlist-port-spotify-mover",
+      "blocks": [
+        "overview",
+        "contribution",
+        "results",
+        "features",
+        "architecture",
+        "screenshots",
+        "reflection"
+      ]
+    },
+    {
+      "channel": "msedge",
+      "slug": "annual-leave-management",
+      "blocks": [
+        "overview",
+        "contribution",
+        "features",
+        "architecture",
+        "screenshots",
+        "reflection"
+      ]
+    },
+    {
+      "channel": "msedge",
+      "slug": "gym-calories-predictive-analysis",
+      "blocks": [
+        "overview",
+        "contribution",
+        "data",
+        "models",
+        "results",
+        "features",
+        "architecture",
+        "screenshots",
+        "reflection"
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "channel": "chrome",
+      "theme": "dark",
+      "width": 390,
+      "reducedMotion": "reduce",
+      "filter": true,
+      "semester": true,
+      "menu": true,
+      "themeSwitch": true,
+      "bootOnce": true
+    },
+    {
+      "channel": "chrome",
+      "theme": "dark",
+      "width": 390,
+      "reducedMotion": "no-preference",
+      "filter": true,
+      "semester": true,
+      "menu": true,
+      "themeSwitch": true,
+      "bootOnce": true
+    },
+    {
+      "channel": "chrome",
+      "theme": "dark",
+      "width": 1440,
+      "reducedMotion": "reduce",
+      "filter": true,
+      "semester": true,
+      "menu": false,
+      "themeSwitch": true,
+      "bootOnce": true
+    },
+    {
+      "channel": "chrome",
+      "theme": "dark",
+      "width": 1440,
+      "reducedMotion": "no-preference",
+      "filter": true,
+      "semester": true,
+      "menu": false,
+      "themeSwitch": true,
+      "bootOnce": true
+    },
+    {
+      "channel": "chrome",
+      "theme": "light",
+      "width": 390,
+      "reducedMotion": "reduce",
+      "filter": true,
+      "semester": true,
+      "menu": true,
+      "themeSwitch": true,
+      "bootOnce": true
+    },
+    {
+      "channel": "chrome",
+      "theme": "light",
+      "width": 390,
+      "reducedMotion": "no-preference",
+      "filter": true,
+      "semester": true,
+      "menu": true,
+      "themeSwitch": true,
+      "bootOnce": true
+    },
+    {
+      "channel": "chrome",
+      "theme": "light",
+      "width": 1440,
+      "reducedMotion": "reduce",
+      "filter": true,
+      "semester": true,
+      "menu": false,
+      "themeSwitch": true,
+      "bootOnce": true
+    },
+    {
+      "channel": "chrome",
+      "theme": "light",
+      "width": 1440,
+      "reducedMotion": "no-preference",
+      "filter": true,
+      "semester": true,
+      "menu": false,
+      "themeSwitch": true,
+      "bootOnce": true
+    },
+    {
+      "channel": "msedge",
+      "theme": "dark",
+      "width": 390,
+      "reducedMotion": "reduce",
+      "filter": true,
+      "semester": true,
+      "menu": true,
+      "themeSwitch": true,
+      "bootOnce": true
+    },
+    {
+      "channel": "msedge",
+      "theme": "dark",
+      "width": 390,
+      "reducedMotion": "no-preference",
+      "filter": true,
+      "semester": true,
+      "menu": true,
+      "themeSwitch": true,
+      "bootOnce": true
+    },
+    {
+      "channel": "msedge",
+      "theme": "dark",
+      "width": 1440,
+      "reducedMotion": "reduce",
+      "filter": true,
+      "semester": true,
+      "menu": false,
+      "themeSwitch": true,
+      "bootOnce": true
+    },
+    {
+      "channel": "msedge",
+      "theme": "dark",
+      "width": 1440,
+      "reducedMotion": "no-preference",
+      "filter": true,
+      "semester": true,
+      "menu": false,
+      "themeSwitch": true,
+      "bootOnce": true
+    },
+    {
+      "channel": "msedge",
+      "theme": "light",
+      "width": 390,
+      "reducedMotion": "reduce",
+      "filter": true,
+      "semester": true,
+      "menu": true,
+      "themeSwitch": true,
+      "bootOnce": true
+    },
+    {
+      "channel": "msedge",
+      "theme": "light",
+      "width": 390,
+      "reducedMotion": "no-preference",
+      "filter": true,
+      "semester": true,
+      "menu": true,
+      "themeSwitch": true,
+      "bootOnce": true
+    },
+    {
+      "channel": "msedge",
+      "theme": "light",
+      "width": 1440,
+      "reducedMotion": "reduce",
+      "filter": true,
+      "semester": true,
+      "menu": false,
+      "themeSwitch": true,
+      "bootOnce": true
+    },
+    {
+      "channel": "msedge",
+      "theme": "light",
+      "width": 1440,
+      "reducedMotion": "no-preference",
+      "filter": true,
+      "semester": true,
+      "menu": false,
+      "themeSwitch": true,
+      "bootOnce": true
+    }
+  ],
+  "contrast": [
+    {
+      "theme": "light",
+      "pairs": [
+        {
+          "foreground": "text",
+          "background": "bg",
+          "ratio": 16.64520043649994
+        },
+        {
+          "foreground": "text",
+          "background": "surface",
+          "ratio": 17.85253496299567
+        },
+        {
+          "foreground": "text",
+          "background": "surface-2",
+          "ratio": 16.19338710574757
+        },
+        {
+          "foreground": "text-muted",
+          "background": "bg",
+          "ratio": 7.065200298357945
+        },
+        {
+          "foreground": "text-muted",
+          "background": "surface",
+          "ratio": 7.577663953533317
+        },
+        {
+          "foreground": "text-muted",
+          "background": "surface-2",
+          "ratio": 6.873424195005415
+        },
+        {
+          "foreground": "text-faint",
+          "background": "bg",
+          "ratio": 5.059057118739203
+        },
+        {
+          "foreground": "text-faint",
+          "background": "surface",
+          "ratio": 5.426008201982041
+        },
+        {
+          "foreground": "text-faint",
+          "background": "surface-2",
+          "ratio": 4.92173528497673
+        },
+        {
+          "foreground": "accent",
+          "background": "bg",
+          "ratio": 4.995419675256689
+        },
+        {
+          "foreground": "accent",
+          "background": "surface",
+          "ratio": 5.3577549124490425
+        },
+        {
+          "foreground": "accent",
+          "background": "surface-2",
+          "ratio": 4.8598252010060525
+        }
+      ],
+      "button": 5.3577549124490425
+    },
+    {
+      "theme": "dark",
+      "pairs": [
+        {
+          "foreground": "text",
+          "background": "bg",
+          "ratio": 15.85388231407644
+        },
+        {
+          "foreground": "text",
+          "background": "surface",
+          "ratio": 14.600051568779802
+        },
+        {
+          "foreground": "text",
+          "background": "surface-2",
+          "ratio": 13.330888004102295
+        },
+        {
+          "foreground": "text-muted",
+          "background": "bg",
+          "ratio": 7.849308414441417
+        },
+        {
+          "foreground": "text-muted",
+          "background": "surface",
+          "ratio": 7.228532756821961
+        },
+        {
+          "foreground": "text-muted",
+          "background": "surface-2",
+          "ratio": 6.600165770731719
+        },
+        {
+          "foreground": "text-faint",
+          "background": "bg",
+          "ratio": 5.483604461312525
+        },
+        {
+          "foreground": "text-faint",
+          "background": "surface",
+          "ratio": 5.049924449538072
+        },
+        {
+          "foreground": "text-faint",
+          "background": "surface-2",
+          "ratio": 4.61094106064149
+        },
+        {
+          "foreground": "accent",
+          "background": "bg",
+          "ratio": 10.41933747117693
+        },
+        {
+          "foreground": "accent",
+          "background": "surface",
+          "ratio": 9.595306775844751
+        },
+        {
+          "foreground": "accent",
+          "background": "surface-2",
+          "ratio": 8.761199191057424
+        }
+      ],
+      "button": 9.332096313795775
+    }
+  ],
+  "browsers": [
+    {
+      "channel": "chrome",
+      "version": "156.0.8078.80"
+    },
+    {
+      "channel": "msedge",
+      "version": "156.0.4314.58"
+    }
+  ]
+}

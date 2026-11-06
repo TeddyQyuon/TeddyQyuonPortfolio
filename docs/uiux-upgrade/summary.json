@@ -1,0 +1,2223 @@
+{
+  "baseline": "f205a3e",
+  "validatedSource": "62cb77ff2edc0fe941f3f32498aa1065937809f7",
+  "steps": [
+    {
+      "step": 1,
+      "comparison": [
+        {
+          "page": "home",
+          "device": "mobile",
+          "medians": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 50,
+            "lcp": 1378.8276,
+            "tbt": 7,
+            "cls": 0.0002034246602807513
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": 4.152150000000347,
+            "tbt": 1.5,
+            "cls": 0
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.container > section#overview > div.hero-main > p.hero-intro"
+          ]
+        },
+        {
+          "page": "home",
+          "device": "desktop",
+          "medians": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 50,
+            "lcp": 384.67815,
+            "tbt": 0,
+            "cls": 0.0043182207488219205
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -2.0324000000000524,
+            "tbt": 0,
+            "cls": -0.003860780347778283
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.container > section#overview > div.hero-main > p.hero-intro"
+          ]
+        },
+        {
+          "page": "gamevault",
+          "device": "mobile",
+          "medians": {
+            "performance": 80,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 40,
+            "lcp": 3459.7092,
+            "tbt": 0,
+            "cls": 0.21566636704453493
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": 1.1060999999999694,
+            "tbt": 0,
+            "cls": 0
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "main#main-content > div.container > header.panel > p.hero-role"
+          ]
+        },
+        {
+          "page": "gamevault",
+          "device": "desktop",
+          "medians": {
+            "performance": 92,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 42,
+            "lcp": 823.441675,
+            "tbt": 0,
+            "cls": 0.17284228170142335
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -4.92472500000008,
+            "tbt": 0,
+            "cls": 0
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.case-layout > div.case-content > section#overview > p.lead"
+          ]
+        }
+      ],
+      "bundles": {
+        "files": [
+          {
+            "file": "index-Bo65ssKL.js",
+            "bytes": 328211,
+            "gzipBytes": 111737
+          },
+          {
+            "file": "index-CGZRTwHb.css",
+            "bytes": 26027,
+            "gzipBytes": 6011
+          },
+          {
+            "file": "ProjectPage-DoPD0uox.js",
+            "bytes": 7485,
+            "gzipBytes": 2358
+          }
+        ],
+        "deltaGzipBytes": {
+          "js": 1,
+          "css": 161
+        }
+      },
+      "rawEvidence": "C:\\Users\\waiya\\AppData\\Local\\Temp\\portfolio-uiux-step1-20261107"
+    },
+    {
+      "step": 2,
+      "comparison": [
+        {
+          "page": "home",
+          "device": "mobile",
+          "medians": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 50,
+            "lcp": 1374.3083000000001,
+            "tbt": 6,
+            "cls": 0.0002034246602807513
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -0.3671499999995831,
+            "tbt": 0.5,
+            "cls": 0
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.container > section#overview > div.hero-main > p.hero-intro"
+          ]
+        },
+        {
+          "page": "home",
+          "device": "desktop",
+          "medians": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 50,
+            "lcp": 389.01225,
+            "tbt": 0,
+            "cls": 0.003672476858877992
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": 2.3016999999999257,
+            "tbt": 0,
+            "cls": -0.004506524237722211
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.container > section#overview > div.hero-main > p.hero-intro"
+          ]
+        },
+        {
+          "page": "gamevault",
+          "device": "mobile",
+          "medians": {
+            "performance": 80,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 40,
+            "lcp": 3457.3130999999994,
+            "tbt": 0,
+            "cls": 0.21566636704453493
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -1.2900000000004184,
+            "tbt": 0,
+            "cls": 0
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "main#main-content > div.container > header.panel > p.hero-role"
+          ]
+        },
+        {
+          "page": "gamevault",
+          "device": "desktop",
+          "medians": {
+            "performance": 96,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 47,
+            "lcp": 826.15695,
+            "tbt": 0,
+            "cls": 0.11105944450562782
+          },
+          "deltas": {
+            "performance": 4,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -2.2094500000000608,
+            "tbt": 0,
+            "cls": -0.061782837195795526
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.case-layout > div.case-content > section#overview > p.lead"
+          ]
+        }
+      ],
+      "bundles": {
+        "files": [
+          {
+            "file": "index-4O9Ys2Yr.js",
+            "bytes": 328496,
+            "gzipBytes": 111856
+          },
+          {
+            "file": "index-Y5U-Zs2H.css",
+            "bytes": 26693,
+            "gzipBytes": 6141
+          },
+          {
+            "file": "ProjectPage-Cc1r24Oj.js",
+            "bytes": 7485,
+            "gzipBytes": 2359
+          }
+        ],
+        "deltaGzipBytes": {
+          "js": 121,
+          "css": 291
+        }
+      },
+      "rawEvidence": "C:\\Users\\waiya\\AppData\\Local\\Temp\\portfolio-uiux-step2-20261107"
+    },
+    {
+      "step": 3,
+      "comparison": [
+        {
+          "page": "home",
+          "device": "mobile",
+          "medians": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 50,
+            "lcp": 1372.92775,
+            "tbt": 1,
+            "cls": 0.0002034246602807513
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -1.7476999999996679,
+            "tbt": -4.5,
+            "cls": 0
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.container > section#overview > div.hero-main > p.hero-intro"
+          ]
+        },
+        {
+          "page": "home",
+          "device": "desktop",
+          "medians": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 50,
+            "lcp": 386.21524999999997,
+            "tbt": 0,
+            "cls": 0.006813705238013803
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -0.49530000000009977,
+            "tbt": 0,
+            "cls": -0.0013652958585864006
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.container > section#overview > div.hero-main > p.hero-intro"
+          ]
+        },
+        {
+          "page": "gamevault",
+          "device": "mobile",
+          "medians": {
+            "performance": 80,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 40,
+            "lcp": 3461.9166000000005,
+            "tbt": 0,
+            "cls": 0.21566636704453493
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": 3.3135000000006585,
+            "tbt": 0,
+            "cls": 0
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "main#main-content > div.container > header.panel > p.hero-role"
+          ]
+        },
+        {
+          "page": "gamevault",
+          "device": "desktop",
+          "medians": {
+            "performance": 96,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 47,
+            "lcp": 825.019075,
+            "tbt": 0,
+            "cls": 0.11105944450562782
+          },
+          "deltas": {
+            "performance": 4,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -3.347325000000069,
+            "tbt": 0,
+            "cls": -0.061782837195795526
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.case-layout > div.case-content > section#overview > p.lead"
+          ]
+        }
+      ],
+      "bundles": {
+        "files": [
+          {
+            "file": "index-Cupr5N5e.js",
+            "bytes": 327982,
+            "gzipBytes": 111703
+          },
+          {
+            "file": "index-DuLTdZFz.css",
+            "bytes": 26566,
+            "gzipBytes": 6126
+          },
+          {
+            "file": "ProjectPage-ZxRiIww0.js",
+            "bytes": 7485,
+            "gzipBytes": 2356
+          }
+        ],
+        "deltaGzipBytes": {
+          "js": -35,
+          "css": 276
+        }
+      },
+      "rawEvidence": "C:\\Users\\waiya\\AppData\\Local\\Temp\\portfolio-uiux-step3-20261107"
+    },
+    {
+      "step": 4,
+      "comparison": [
+        {
+          "page": "home",
+          "device": "mobile",
+          "medians": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 50,
+            "lcp": 1376.7466500000003,
+            "tbt": 0.5,
+            "cls": 0.0002034246602807513
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": 2.0712000000005446,
+            "tbt": -5,
+            "cls": 0
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.container > section#overview > div.hero-main > p.hero-intro"
+          ]
+        },
+        {
+          "page": "home",
+          "device": "desktop",
+          "medians": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 50,
+            "lcp": 388.88435000000004,
+            "tbt": 0,
+            "cls": 0.006489691514133511
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": 2.1737999999999715,
+            "tbt": 0,
+            "cls": -0.0016893095824666929
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.container > section#overview > div.hero-main > p.hero-intro"
+          ]
+        },
+        {
+          "page": "gamevault",
+          "device": "mobile",
+          "medians": {
+            "performance": 80,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 40,
+            "lcp": 3464.1557999999995,
+            "tbt": 0,
+            "cls": 0.21566636704453493
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": 5.5526999999997315,
+            "tbt": 0,
+            "cls": 0
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "main#main-content > div.container > header.panel > p.hero-role"
+          ]
+        },
+        {
+          "page": "gamevault",
+          "device": "desktop",
+          "medians": {
+            "performance": 96,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 47,
+            "lcp": 823.407025,
+            "tbt": 0,
+            "cls": 0.11105944450562782
+          },
+          "deltas": {
+            "performance": 4,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -4.959375000000136,
+            "tbt": 0,
+            "cls": -0.061782837195795526
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.case-layout > div.case-content > section#overview > p.lead"
+          ]
+        }
+      ],
+      "bundles": {
+        "assets": [
+          {
+            "file": "index-BaW8YYoz.js",
+            "bytes": 329108,
+            "gzipBytes": 112309
+          },
+          {
+            "file": "index-CPJPjMgk.css",
+            "bytes": 27492,
+            "gzipBytes": 6341
+          },
+          {
+            "file": "ProjectPage-6kYQ486j.js",
+            "bytes": 7485,
+            "gzipBytes": 2359
+          }
+        ],
+        "deltaGzipBytes": {
+          "js": 574,
+          "css": 491
+        }
+      },
+      "rawEvidence": "C:\\Users\\waiya\\AppData\\Local\\Temp\\portfolio-uiux-step4-20261107"
+    },
+    {
+      "step": 5,
+      "comparison": [
+        {
+          "page": "home",
+          "device": "mobile",
+          "medians": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 50,
+            "lcp": 1385.7284499999998,
+            "tbt": 2.5,
+            "cls": 0.0002034246602807513
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": 11.053000000000111,
+            "tbt": -3,
+            "cls": 0
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.container > section#overview > div.hero-main > p.hero-intro"
+          ]
+        },
+        {
+          "page": "home",
+          "device": "desktop",
+          "medians": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 50,
+            "lcp": 386.0724,
+            "tbt": 0,
+            "cls": 0.006489691514133511
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -0.6381500000000528,
+            "tbt": 0,
+            "cls": -0.0016893095824666929
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.container > section#overview > div.hero-main > p.hero-intro"
+          ]
+        },
+        {
+          "page": "gamevault",
+          "device": "mobile",
+          "medians": {
+            "performance": 80,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 40,
+            "lcp": 3458.3292,
+            "tbt": 0,
+            "cls": 0.21566636704453493
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -0.27389999999968495,
+            "tbt": 0,
+            "cls": 0
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "main#main-content > div.container > header.panel > p.hero-role"
+          ]
+        },
+        {
+          "page": "gamevault",
+          "device": "desktop",
+          "medians": {
+            "performance": 96,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 47,
+            "lcp": 824.2864750000001,
+            "tbt": 0,
+            "cls": 0.11105944450562782
+          },
+          "deltas": {
+            "performance": 4,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -4.079925000000003,
+            "tbt": 0,
+            "cls": -0.061782837195795526
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.case-layout > div.case-content > section#overview > p.lead"
+          ]
+        }
+      ],
+      "bundles": {
+        "assets": [
+          {
+            "file": "index-CDTS7JJ5.js",
+            "bytes": 330234,
+            "gzipBytes": 112771
+          },
+          {
+            "file": "index-usbAhkT1.css",
+            "bytes": 29312,
+            "gzipBytes": 6701
+          },
+          {
+            "file": "ProjectPage-Bg4O8uht.js",
+            "bytes": 7485,
+            "gzipBytes": 2360
+          }
+        ],
+        "deltaGzipBytes": {
+          "js": 1037,
+          "css": 851
+        }
+      },
+      "rawEvidence": "C:\\Users\\waiya\\AppData\\Local\\Temp\\portfolio-uiux-step5-20261107"
+    },
+    {
+      "step": 6,
+      "comparison": [
+        {
+          "page": "home",
+          "device": "mobile",
+          "medians": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 50,
+            "lcp": 1375.4287000000002,
+            "tbt": 1,
+            "cls": 0.0002034246602807513
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": 0.7532500000004347,
+            "tbt": -4.5,
+            "cls": 0
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.container > section#overview > div.hero-main > p.hero-intro"
+          ]
+        },
+        {
+          "page": "home",
+          "device": "desktop",
+          "medians": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 50,
+            "lcp": 386.3654,
+            "tbt": 0,
+            "cls": 0.006489691514133511
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -0.3451500000000465,
+            "tbt": 0,
+            "cls": -0.0016893095824666929
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.container > section#overview > div.hero-main > p.hero-intro"
+          ]
+        },
+        {
+          "page": "gamevault",
+          "device": "mobile",
+          "medians": {
+            "performance": 80,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 40,
+            "lcp": 3458.1045,
+            "tbt": 0,
+            "cls": 0.21566636704453493
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -0.4985999999998967,
+            "tbt": 0,
+            "cls": 0
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "main#main-content > div.container > header.panel > p.hero-role"
+          ]
+        },
+        {
+          "page": "gamevault",
+          "device": "desktop",
+          "medians": {
+            "performance": 96,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 47,
+            "lcp": 820.3307249999999,
+            "tbt": 0,
+            "cls": 0.11105944450562782
+          },
+          "deltas": {
+            "performance": 4,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -8.035675000000197,
+            "tbt": 0,
+            "cls": -0.061782837195795526
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.case-layout > div.case-content > section#overview > p.lead"
+          ]
+        }
+      ],
+      "bundles": {
+        "assets": [
+          {
+            "file": "index-BqOpHy0M.js",
+            "bytes": 330234,
+            "gzipBytes": 112772
+          },
+          {
+            "file": "index-G2Ogi1IL.css",
+            "bytes": 30627,
+            "gzipBytes": 6844
+          },
+          {
+            "file": "ProjectPage-BRzT_b1i.js",
+            "bytes": 7485,
+            "gzipBytes": 2359
+          }
+        ],
+        "deltaGzipBytes": {
+          "js": 1037,
+          "css": 994
+        }
+      },
+      "rawEvidence": "C:\\Users\\waiya\\AppData\\Local\\Temp\\portfolio-uiux-step6-20261107"
+    },
+    {
+      "step": 7,
+      "comparison": [
+        {
+          "page": "home",
+          "device": "mobile",
+          "medians": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 50,
+            "lcp": 1375.1455,
+            "tbt": 2,
+            "cls": 0.0002034246602807513
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": 0.4700500000003558,
+            "tbt": -3.5,
+            "cls": 0
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.container > section#overview > div.hero-main > p.hero-intro"
+          ]
+        },
+        {
+          "page": "home",
+          "device": "desktop",
+          "medians": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 50,
+            "lcp": 384.751,
+            "tbt": 0,
+            "cls": 0.006489691514133511
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -1.9595500000000925,
+            "tbt": 0,
+            "cls": -0.0016893095824666929
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.container > section#overview > div.hero-main > p.hero-intro"
+          ]
+        },
+        {
+          "page": "gamevault",
+          "device": "mobile",
+          "medians": {
+            "performance": 80,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 40,
+            "lcp": 3458.4153,
+            "tbt": 0,
+            "cls": 0.21566636704453493
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -0.18779999999969732,
+            "tbt": 0,
+            "cls": 0
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "main#main-content > div.container > header.panel > p.hero-role"
+          ]
+        },
+        {
+          "page": "gamevault",
+          "device": "desktop",
+          "medians": {
+            "performance": 96,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 47,
+            "lcp": 827.932675,
+            "tbt": 0,
+            "cls": 0.11105944450562782
+          },
+          "deltas": {
+            "performance": 4,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -0.43372500000009495,
+            "tbt": 0,
+            "cls": -0.061782837195795526
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.case-layout > div.case-content > section#overview > p.lead"
+          ]
+        }
+      ],
+      "bundles": {
+        "assets": [
+          {
+            "file": "index-Bt3TPRJD.js",
+            "bytes": 330343,
+            "gzipBytes": 112850
+          },
+          {
+            "file": "index-kbg8N5yW.css",
+            "bytes": 30831,
+            "gzipBytes": 6891
+          },
+          {
+            "file": "ProjectPage-b8eT_HCw.js",
+            "bytes": 7485,
+            "gzipBytes": 2358
+          }
+        ],
+        "deltaGzipBytes": {
+          "js": 1114,
+          "css": 1041
+        }
+      },
+      "rawEvidence": "C:\\Users\\waiya\\AppData\\Local\\Temp\\portfolio-uiux-step7-20261107"
+    },
+    {
+      "step": 8,
+      "comparison": [
+        {
+          "page": "home",
+          "device": "mobile",
+          "medians": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 50,
+            "lcp": 1372.0538999999999,
+            "tbt": 2.5,
+            "cls": 0.0002034246602807513
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -2.621549999999843,
+            "tbt": -3,
+            "cls": 0
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.container > section#overview > div.hero-main > p.hero-intro"
+          ]
+        },
+        {
+          "page": "home",
+          "device": "desktop",
+          "medians": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 50,
+            "lcp": 385.03505,
+            "tbt": 0,
+            "cls": 0.006489691514133511
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -1.6755000000000564,
+            "tbt": 0,
+            "cls": -0.0016893095824666929
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.container > section#overview > div.hero-main > p.hero-intro"
+          ]
+        },
+        {
+          "page": "gamevault",
+          "device": "mobile",
+          "medians": {
+            "performance": 80,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 40,
+            "lcp": 3458.1621,
+            "tbt": 0,
+            "cls": 0.21566636704453493
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -0.44099999999980355,
+            "tbt": 0,
+            "cls": 0
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "main#main-content > div.container > header.panel > p.hero-role"
+          ]
+        },
+        {
+          "page": "gamevault",
+          "device": "desktop",
+          "medians": {
+            "performance": 96,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 47,
+            "lcp": 827.7759500000001,
+            "tbt": 0,
+            "cls": 0.11105944450562782
+          },
+          "deltas": {
+            "performance": 4,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -0.5904500000000326,
+            "tbt": 0,
+            "cls": -0.061782837195795526
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.case-layout > div.case-content > section#overview > p.lead"
+          ]
+        }
+      ],
+      "bundles": {
+        "assets": [
+          {
+            "file": "index-B1nvAl0u.css",
+            "bytes": 31522,
+            "gzipBytes": 7016
+          },
+          {
+            "file": "index-C7V3TzyJ.js",
+            "bytes": 330706,
+            "gzipBytes": 112932
+          },
+          {
+            "file": "ProjectPage-NybVFOj-.js",
+            "bytes": 7485,
+            "gzipBytes": 2359
+          }
+        ],
+        "deltaGzipBytes": {
+          "js": 1197,
+          "css": 1166
+        }
+      },
+      "rawEvidence": "C:\\Users\\waiya\\AppData\\Local\\Temp\\portfolio-uiux-step8-20261107"
+    },
+    {
+      "step": 9,
+      "comparison": [
+        {
+          "page": "home",
+          "device": "mobile",
+          "medians": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 50,
+            "lcp": 1383.9498,
+            "tbt": 6,
+            "cls": 0.0002034246602807513
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": 9.274350000000368,
+            "tbt": 0.5,
+            "cls": 0
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.container > section#overview > div.hero-main > p.hero-intro"
+          ]
+        },
+        {
+          "page": "home",
+          "device": "desktop",
+          "medians": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 50,
+            "lcp": 386.67234999999994,
+            "tbt": 0,
+            "cls": 0.006489691514133511
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -0.03820000000013124,
+            "tbt": 0,
+            "cls": -0.0016893095824666929
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.container > section#overview > div.hero-main > p.hero-intro"
+          ]
+        },
+        {
+          "page": "gamevault",
+          "device": "mobile",
+          "medians": {
+            "performance": 80,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 40,
+            "lcp": 3458.939999999999,
+            "tbt": 0,
+            "cls": 0.21566636704453493
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": 0.33689999999933207,
+            "tbt": 0,
+            "cls": 0
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.route-view > div.container > header.panel > p.hero-role"
+          ]
+        },
+        {
+          "page": "gamevault",
+          "device": "desktop",
+          "medians": {
+            "performance": 96,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 47,
+            "lcp": 819.2139999999999,
+            "tbt": 0,
+            "cls": 0.11105944450562782
+          },
+          "deltas": {
+            "performance": 4,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -9.15240000000017,
+            "tbt": 0,
+            "cls": -0.061782837195795526
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.case-layout > div.case-content > section#overview > p.lead"
+          ]
+        }
+      ],
+      "bundles": {
+        "assets": [
+          {
+            "file": "index-CCdCIEc0.css",
+            "bytes": 31757,
+            "gzipBytes": 7048
+          },
+          {
+            "file": "index-VN9q22Fn.js",
+            "bytes": 330988,
+            "gzipBytes": 113174
+          },
+          {
+            "file": "ProjectPage-BwV-QEIK.js",
+            "bytes": 7485,
+            "gzipBytes": 2359
+          }
+        ],
+        "deltaGzipBytes": {
+          "js": 1439,
+          "css": 1198
+        }
+      },
+      "rawEvidence": "C:\\Users\\waiya\\AppData\\Local\\Temp\\portfolio-uiux-step9-20261107"
+    },
+    {
+      "step": 10,
+      "comparison": [
+        {
+          "page": "home",
+          "device": "mobile",
+          "medians": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 50,
+            "lcp": 1409.2483000000002,
+            "tbt": 2,
+            "cls": 0.0002034246602807513
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": 34.57285000000047,
+            "tbt": -3.5,
+            "cls": 0
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.container > section#overview > div.hero-main > p.hero-intro"
+          ]
+        },
+        {
+          "page": "home",
+          "device": "desktop",
+          "medians": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 50,
+            "lcp": 388.1966,
+            "tbt": 0,
+            "cls": 0.006489691514133511
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": 1.4860499999999206,
+            "tbt": 0,
+            "cls": -0.0016893095824666929
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.container > section#overview > div.hero-main > p.hero-intro"
+          ]
+        },
+        {
+          "page": "gamevault",
+          "device": "mobile",
+          "medians": {
+            "performance": 80,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 40,
+            "lcp": 3459.3606,
+            "tbt": 0,
+            "cls": 0.21566636704453493
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": 0.7575000000001637,
+            "tbt": 0,
+            "cls": 0
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.route-view > div.container > header.panel > p.hero-role"
+          ]
+        },
+        {
+          "page": "gamevault",
+          "device": "desktop",
+          "medians": {
+            "performance": 96,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 47,
+            "lcp": 807.52465,
+            "tbt": 0,
+            "cls": 0.11105944450562782
+          },
+          "deltas": {
+            "performance": 4,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -20.84175000000016,
+            "tbt": 0,
+            "cls": -0.061782837195795526
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.case-layout > div.case-content > section#overview > p.lead"
+          ]
+        }
+      ],
+      "bundles": {
+        "assets": [
+          {
+            "file": "index-BslwcYM7.css",
+            "bytes": 32342,
+            "gzipBytes": 7138
+          },
+          {
+            "file": "index-Co94uroR.js",
+            "bytes": 331139,
+            "gzipBytes": 113390
+          },
+          {
+            "file": "ProjectPage-SIKhVnxO.js",
+            "bytes": 7569,
+            "gzipBytes": 2404
+          }
+        ],
+        "deltaGzipBytes": {
+          "js": 1700,
+          "css": 1288
+        }
+      },
+      "rawEvidence": "C:\\Users\\waiya\\AppData\\Local\\Temp\\portfolio-uiux-step10-20261107"
+    },
+    {
+      "step": 11,
+      "comparison": [
+        {
+          "page": "home",
+          "device": "mobile",
+          "medians": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 50,
+            "lcp": 1374.0348999999999,
+            "tbt": 3,
+            "cls": 0.0002034246602807513
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -0.6405499999998483,
+            "tbt": -2.5,
+            "cls": 0
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.container > section#overview > div.hero-main > p.hero-intro"
+          ]
+        },
+        {
+          "page": "home",
+          "device": "desktop",
+          "medians": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 50,
+            "lcp": 399.1842,
+            "tbt": 0,
+            "cls": 0.006489691514133511
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": 12.473649999999907,
+            "tbt": 0,
+            "cls": -0.0016893095824666929
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.container > section#overview > div.hero-main > p.hero-intro"
+          ]
+        },
+        {
+          "page": "gamevault",
+          "device": "mobile",
+          "medians": {
+            "performance": 80,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 40,
+            "lcp": 3458.0904,
+            "tbt": 0,
+            "cls": 0.21566636704453493
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -0.5126999999997679,
+            "tbt": 0,
+            "cls": 0
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.route-view > div.container > header.panel > p.hero-role"
+          ]
+        },
+        {
+          "page": "gamevault",
+          "device": "desktop",
+          "medians": {
+            "performance": 96,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 47,
+            "lcp": 827.7948250000002,
+            "tbt": 0,
+            "cls": 0.11105944450562782
+          },
+          "deltas": {
+            "performance": 4,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -0.5715749999999389,
+            "tbt": 0,
+            "cls": -0.061782837195795526
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.case-layout > div.case-content > section#overview > p.lead"
+          ]
+        }
+      ],
+      "bundles": {
+        "assets": [
+          {
+            "file": "index-DamWI17-.css",
+            "bytes": 32478,
+            "gzipBytes": 7172
+          },
+          {
+            "file": "index-T36HvWmR.js",
+            "bytes": 331339,
+            "gzipBytes": 113457
+          },
+          {
+            "file": "ProjectPage-CI7FR4YH.js",
+            "bytes": 7569,
+            "gzipBytes": 2405
+          }
+        ],
+        "deltaGzipBytes": {
+          "js": 1768,
+          "css": 1322
+        }
+      },
+      "rawEvidence": "C:\\Users\\waiya\\AppData\\Local\\Temp\\portfolio-uiux-step11-20261107"
+    },
+    {
+      "step": 12,
+      "comparison": [
+        {
+          "page": "home",
+          "device": "mobile",
+          "medians": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 50,
+            "lcp": 1374.0892,
+            "tbt": 3.5,
+            "cls": 0.00001013762123631046
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -0.5862499999998363,
+            "tbt": -2,
+            "cls": -0.00019328703904444085
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.container > section#overview > div.hero-main > p.hero-intro"
+          ]
+        },
+        {
+          "page": "home",
+          "device": "desktop",
+          "medians": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 50,
+            "lcp": 388.76865,
+            "tbt": 0,
+            "cls": 0.006986193540795736
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": 2.058099999999911,
+            "tbt": 0,
+            "cls": -0.0011928075558044673
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.container > section#overview > div.hero-main > p.hero-intro"
+          ]
+        },
+        {
+          "page": "gamevault",
+          "device": "mobile",
+          "medians": {
+            "performance": 80,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 40,
+            "lcp": 3459.2421000000004,
+            "tbt": 0,
+            "cls": 0.2152606384525141
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": 0.6390000000005784,
+            "tbt": 0,
+            "cls": -0.00040572859202081535
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.route-view > div.container > header.panel > p.hero-role"
+          ]
+        },
+        {
+          "page": "gamevault",
+          "device": "desktop",
+          "medians": {
+            "performance": 96,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 47,
+            "lcp": 826.8328,
+            "tbt": 0,
+            "cls": 0.10569890887272454
+          },
+          "deltas": {
+            "performance": 4,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -1.5336000000000922,
+            "tbt": 0,
+            "cls": -0.06714337282869881
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.case-layout > div.case-content > section#overview > p.lead"
+          ]
+        }
+      ],
+      "bundles": {
+        "assets": [
+          {
+            "file": "index-CsZh1_gh.js",
+            "bytes": 331339,
+            "gzipBytes": 113456
+          },
+          {
+            "file": "index-D1gf22O7.css",
+            "bytes": 33645,
+            "gzipBytes": 7365
+          },
+          {
+            "file": "ProjectPage-hZ0s6Ji2.js",
+            "bytes": 7569,
+            "gzipBytes": 2405
+          }
+        ],
+        "deltaGzipBytes": {
+          "js": 1767,
+          "css": 1515
+        }
+      },
+      "rawEvidence": "C:\\Users\\waiya\\AppData\\Local\\Temp\\portfolio-uiux-step12-20261107"
+    },
+    {
+      "step": 13,
+      "comparison": [
+        {
+          "page": "home",
+          "device": "mobile",
+          "medians": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 50,
+            "lcp": 1374.2097,
+            "tbt": 2.5,
+            "cls": 0.00001013762123631046
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -0.4657499999996162,
+            "tbt": -3,
+            "cls": -0.00019328703904444085
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.container > section#overview > div.hero-main > p.hero-intro"
+          ]
+        },
+        {
+          "page": "home",
+          "device": "desktop",
+          "medians": {
+            "performance": 100,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 50,
+            "lcp": 384.8257,
+            "tbt": 0,
+            "cls": 0.006986193540795736
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -1.8848500000000854,
+            "tbt": 0,
+            "cls": -0.0011928075558044673
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.container > section#overview > div.hero-main > p.hero-intro"
+          ]
+        },
+        {
+          "page": "gamevault",
+          "device": "mobile",
+          "medians": {
+            "performance": 80,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 40,
+            "lcp": 3459.0573000000004,
+            "tbt": 0,
+            "cls": 0.2152606384525141
+          },
+          "deltas": {
+            "performance": 0,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": 0.4542000000005828,
+            "tbt": 0,
+            "cls": -0.00040572859202081535
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.route-view > div.container > header.panel > p.hero-role"
+          ]
+        },
+        {
+          "page": "gamevault",
+          "device": "desktop",
+          "medians": {
+            "performance": 96,
+            "accessibility": 100,
+            "best-practices": 100,
+            "seo": 100,
+            "agentic-browsing": 47,
+            "lcp": 828.0805750000001,
+            "tbt": 0,
+            "cls": 0.10569890887272454
+          },
+          "deltas": {
+            "performance": 4,
+            "accessibility": 0,
+            "best-practices": 0,
+            "seo": 0,
+            "lcp": -0.2858250000000453,
+            "tbt": 0,
+            "cls": -0.06714337282869881
+          },
+          "checks": {
+            "scores": true,
+            "lcp": true,
+            "tbt": true,
+            "cls": true,
+            "sameLcp": true,
+            "noWarnings": true,
+            "noNewNonComposited": true
+          },
+          "lcpSelectors": [
+            "div.case-layout > div.case-content > section#overview > p.lead"
+          ]
+        }
+      ],
+      "bundles": {
+        "assets": [
+          {
+            "file": "index-CsZh1_gh.js",
+            "bytes": 331339,
+            "gzipBytes": 113456
+          },
+          {
+            "file": "index-D1gf22O7.css",
+            "bytes": 33645,
+            "gzipBytes": 7365
+          },
+          {
+            "file": "ProjectPage-hZ0s6Ji2.js",
+            "bytes": 7569,
+            "gzipBytes": 2405
+          }
+        ],
+        "deltaGzipBytes": {
+          "js": 1767,
+          "css": 1515
+        }
+      },
+      "rawEvidence": "C:\\Users\\waiya\\AppData\\Local\\Temp\\portfolio-uiux-step13-20261107"
+    }
+  ],
+  "finalBrowser": {
+    "browsers": [
+      {
+        "channel": "chrome",
+        "version": "156.0.8078.80"
+      },
+      {
+        "channel": "msedge",
+        "version": "156.0.4314.58"
+      }
+    ],
+    "matrixLoads": 40,
+    "routeLoads": 14,
+    "interactionCases": 16
+  },
+  "limitations": [
+    "Native DevTools Lighthouse UI, paint flashing and Layout Shifts track were unavailable; the CLI/PerformanceObserver/browser evidence is supplemental.",
+    "Native Safari and Firefox were unavailable on this Windows machine. Chrome and Edge were tested.",
+    "Existing page-load CLS remains; final medians do not exceed the baseline."
+  ]
+}
