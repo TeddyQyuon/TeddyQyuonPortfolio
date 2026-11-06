@@ -20,7 +20,9 @@
 .bar-list li.is-highlight .bar-fill { background: var(--live); }
 
 /* ---------- GPA chart ---------- */
-.gpa-chart { width: 100%; height: auto; margin-block: var(--space-4); overflow: visible; }
+.gpa-chart { width: 100%; height: auto; overflow: visible; }
+.gpa-chart-wrap { position: relative; margin-block: var(--space-4); }
+.gpa-chart-sweep { position: absolute; top: 0; bottom: 19%; left: 8%; right: -2px; background: var(--surface); transform-origin: right center; transform: scaleX(0); pointer-events: none; }
 .gpa-chart .grid { stroke: var(--border); stroke-dasharray: 3 4; }
 .gpa-chart .axis { fill: var(--text-faint); font-family: var(--font-mono); font-size: 10px; }
 .gpa-chart .value { fill: var(--text); font-family: var(--font-mono); font-size: 11px; font-weight: 600; }

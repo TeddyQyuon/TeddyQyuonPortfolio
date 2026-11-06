@@ -1,6 +1,7 @@
 /* Time-based motion is opt-in; the static styles describe the final state. */
 @keyframes grow { from { transform: scaleX(0); } }
 @keyframes fade-in { from { opacity: 0; } }
+@keyframes sweep { from { transform: scaleX(1); } to { transform: scaleX(0); } }
 @keyframes rise-in { from { opacity: 0; transform: translateY(var(--rise)); } }
 @keyframes scan { 0% { opacity: 0; transform: translateY(-100%); } 15%, 85% { opacity: 1; } 100% { opacity: 0; transform: translateY(290%); } }
 @keyframes icon-in { from { opacity: 0; transform: rotate(-90deg); } }
@@ -18,7 +19,11 @@
   .hero-side[data-motion='run'] .kpi { animation-delay: calc(120ms + var(--i, 0) * var(--stagger)); }
   .hero-side[data-motion='run'] .kpi-grid::after { animation: scan var(--dur-scan) var(--ease-in-out) 360ms backwards; }
   .status-dot:not([data-motion='done'])::after { animation: ping 1600ms var(--ease-out) 3 backwards; }
-  .bar-fill { animation: grow var(--dur-slower) var(--ease-out) backwards; }
+  .bar-list[data-motion='pending'] .bar-fill { transform: scaleX(0); }
+  .bar-list[data-motion='run'] .bar-fill { animation: grow var(--dur-slower) var(--ease-out) backwards; animation-delay: calc(min(var(--i, 0), 8) * var(--stagger-tight)); }
+  .gpa-chart-wrap[data-motion='pending'] > .gpa-chart-sweep { transform: scaleX(1); }
+  .gpa-chart-wrap[data-motion='run'] > .gpa-chart-sweep { animation: sweep var(--dur-slower) var(--ease-in-out) backwards; }
+  .data-table :is(tbody, tfoot).is-swapped > tr { animation: fade-in var(--dur-fast) var(--ease-out) backwards; }
   .btn:active, .icon-button:active { transform: scale(var(--press-scale)); }
 }
 

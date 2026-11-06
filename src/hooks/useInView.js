@@ -15,6 +15,10 @@ export default function useInView({
   const [state, setState] = useState(() => disabled ? 'done' : 'pending');
 
   useEffect(() => {
+    if (reduced && state === 'run') {
+      setState('done');
+      return undefined;
+    }
     if (state !== 'pending') return undefined;
     if (disabled) {
       setState('done');
@@ -34,7 +38,7 @@ export default function useInView({
       active = false;
       observer.disconnect();
     };
-  }, [disabled, root, rootMargin, threshold, state]);
+  }, [disabled, reduced, root, rootMargin, threshold, state]);
 
   return [ref, state];
 }
