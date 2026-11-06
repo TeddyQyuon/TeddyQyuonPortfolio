@@ -1,0 +1,50 @@
+{
+  "origin": "https://teddy-qyuon-portfolio.vercel.app",
+  "errors": [],
+  "cases": [
+    {
+      "width": 390,
+      "reducedMotion": "reduce",
+      "home": true,
+      "filters": true,
+      "menu": true,
+      "theme": true,
+      "caseNavigation": true,
+      "directCase": true,
+      "notFound": true
+    },
+    {
+      "width": 390,
+      "reducedMotion": "no-preference",
+      "home": true,
+      "filters": true,
+      "menu": true,
+      "theme": true,
+      "caseNavigation": true,
+      "directCase": true,
+      "notFound": true
+    },
+    {
+      "width": 1440,
+      "reducedMotion": "reduce",
+      "home": true,
+      "filters": true,
+      "menu": false,
+      "theme": true,
+      "caseNavigation": true,
+      "directCase": true,
+      "notFound": true
+    },
+    {
+      "width": 1440,
+      "reducedMotion": "no-preference",
+      "home": true,
+      "filters": true,
+      "menu": false,
+      "theme": true,
+      "caseNavigation": true,
+      "directCase": true,
+      "notFound": true
+    }
+  ]
+}
