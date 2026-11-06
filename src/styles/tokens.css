@@ -16,7 +16,32 @@
   --space-8: 4.5rem;
   --container: 1200px;
   --topbar-h: 64px;
-  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  /* Motion */
+  --dur-instant: 80ms;   /* press feedback */
+  --dur-fast: 150ms;     /* hover/focus colour, icon nudges, row swap, exits */
+  --dur-base: 220ms;     /* menu, route enter, filter crossfade, theme crossfade, indicators */
+  --dur-slow: 420ms;     /* hero boot entrances */
+  --dur-slower: 640ms;   /* data reveals: bars, GPA sweep */
+  --dur-count: 800ms;    /* number roll-up */
+  --dur-scan: 700ms;     /* hero scan line (signature only) */
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);    /* entering, hover */
+  --ease-in: cubic-bezier(0.55, 0, 1, 0.45);     /* leaving */
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1); /* on-screen sweeps, crossfades */
+  --ease: var(--ease-out);                       /* legacy alias for existing rules */
+
+  --stagger: 60ms;        /* hero cards */
+  --stagger-tight: 35ms;  /* bars, filtered cards */
+
+  --nudge: 3px;           /* arrow icons on hover */
+  --nudge-diag: 2px;      /* external-link icon, x and y */
+  --rise-sm: 4px;         /* route enter */
+  --rise: 8px;            /* hero boot, mobile menu */
+  --press-scale: 0.97;
+  --zoom: 1.03;           /* project thumbnail */
+  --zoom-sm: 1.02;        /* case-study screenshot */
+
+  --delay-loading: 300ms; /* Suspense fallback shows only after this */
 
   color-scheme: dark;
   --bg: #0b1120;
