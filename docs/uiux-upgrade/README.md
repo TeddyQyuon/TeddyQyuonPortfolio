@@ -1,6 +1,6 @@
 # UI/UX upgrade completion report
 
-All implementation steps 0–13 in [UIUX_UPGRADE.md](../../UIUX_UPGRADE.md) are complete on the local `uiux-upgrade` branch. Each implementation step has a separate commit. Automated validation is complete; the native-tool/browser limitations below remain explicit. No push or deployment was performed.
+All implementation steps 0–13 in [UIUX_UPGRADE.md](../../UIUX_UPGRADE.md) are complete on the `uiux-upgrade` branch. Each implementation step has a separate commit. Automated validation is complete; the native-tool/browser limitations below remain explicit. The completed branch is pushed to GitHub and the upgrade is deployed to [production](https://teddy-qyuon-portfolio.vercel.app).
 
 ## Delivered behavior
 
@@ -15,6 +15,8 @@ All implementation steps 0–13 in [UIUX_UPGRADE.md](../../UIUX_UPGRADE.md) are 
 All 20 repository tests and the production build pass. The JSX content snapshot and protected-file comparison pass against step 0 (`f205a3e`). The final Chrome matrix contains 40 page loads: two pages, both themes, all five viewports, and both motion preferences. Every load has equal client/scroll widths and no console, page or CSP errors. Reduced-motion checks show final counter/chart values and no active motion. Keyboard checks preserve the 2px accent outline at a 3px offset. Contrast checks cover text and new accent indicators against the existing surfaces.
 
 All seven case studies and both not-found paths were tested in chrome 156.0.8078.80 and msedge 156.0.4314.58. Their section order matches the TOC. 16 interaction cases cover filters, semester controls, mobile Escape/focus return, theme switching and return navigation without replaying the hero boot. Step-specific reports record timing, touch/focus feedback, chart triggers, loading delay and unsupported-API fallbacks.
+
+Post-deployment smoke checks pass on the public production domain at 390px and 1440px, with both motion preferences. Home, filters, mobile Escape/focus return, theme switching, client navigation, direct case-study loads and the not-found page work without console, page or CSP errors. See [release-checks.json](release-checks.json).
 
 ### Lighthouse CLI medians
 
