@@ -4,12 +4,12 @@ export function Badge({ label, tone = 'neutral' }) {
   return <span className={`badge badge-${tone}`}>{label}</span>;
 }
 
-export function KpiCard({ label, value, unit, hint, tone }) {
+export function KpiCard({ label, value, unit, hint, tone, index, start, countDelay, countDuration }) {
   return (
-    <div className={`kpi ${tone ? `kpi-${tone}` : ''}`.trim()}>
+    <div className={`kpi ${tone ? `kpi-${tone}` : ''}`.trim()} style={{ '--i': index }}>
       <span className="kpi-label">{label}</span>
       <span className="kpi-value">
-        <CountUp value={value} />
+        <CountUp value={value} start={start} delay={countDelay} duration={countDuration} />
         {unit && <span className="kpi-unit">{unit}</span>}
       </span>
       {hint && <span className="kpi-hint">{hint}</span>}

@@ -5,8 +5,17 @@ import { personalInfo } from '../data/personalInfo';
 import { currentGpa } from '../data/academicResults';
 import { liveDemoCount, projectCount, publicRepoCount } from '../lib/projectStats';
 import profilePhoto from '../assets/images/profile/profile-hd.webp';
+import useBootSequence from '../hooks/useBootSequence';
+import { motion } from '../motion/tokens';
 
 export default function HeroSection() {
+  const [ref, state] = useBootSequence();
+  const count = (index) => ({
+    index,
+    start: state !== 'pending',
+    countDelay: motion.boot.cardsStart + index * motion.stagger.base + motion.boot.countLead,
+    countDuration: state === 'done' ? 0 : motion.duration.count,
+  });
   const [start, end] = personalInfo.internshipWindow.split(' – ');
   const study = personalInfo.currentStudy.split(' — ')[0];
 
@@ -15,7 +24,7 @@ export default function HeroSection() {
       <div className="hero-main">
         <p className="eyebrow"><span className="mono">01</span> Overview</p>
         <p className="status-pill">
-          <span className="status-dot" aria-hidden="true" />
+          <span className="status-dot" data-motion={state === 'done' ? 'done' : undefined} aria-hidden="true" />
           Open to a 1-year internship · {start.replace(/^\d+ /, '')} start
         </p>
         <h1 id="hero-title">{personalInfo.name}</h1>
@@ -45,7 +54,7 @@ export default function HeroSection() {
         </ul>
       </div>
 
-      <aside className="hero-side" aria-label="At a glance">
+      <aside className="hero-side" ref={ref} data-motion={state} aria-label="At a glance">
         <div className="panel profile-panel">
           <img className="profile-photo" src={profilePhoto} alt={`Portrait of ${personalInfo.name}`} width="128" height="128" />
           <div>
@@ -55,10 +64,10 @@ export default function HeroSection() {
           </div>
         </div>
         <div className="kpi-grid">
-          <KpiCard label="Projects" value={String(projectCount)} hint="Personal + coursework" />
-          <KpiCard label="Live demos" value={String(liveDemoCount)} hint="Deployed on Vercel" tone="live" />
-          <KpiCard label="Current GPA" value={currentGpa} unit="/4" hint="Nanyang Polytechnic" />
-          <KpiCard label="Public repos" value={String(publicRepoCount)} hint="Linked from case studies" />
+          <KpiCard label="Projects" value={String(projectCount)} hint="Personal + coursework" {...count(0)} />
+          <KpiCard label="Live demos" value={String(liveDemoCount)} hint="Deployed on Vercel" tone="live" {...count(1)} />
+          <KpiCard label="Current GPA" value={currentGpa} unit="/4" hint="Nanyang Polytechnic" {...count(2)} />
+          <KpiCard label="Public repos" value={String(publicRepoCount)} hint="Linked from case studies" {...count(3)} />
         </div>
       </aside>
     </section>

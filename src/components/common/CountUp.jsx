@@ -8,7 +8,7 @@ export default function CountUp({ value, duration = motion.duration.count, start
   const ref = useRef(null);
   const reduced = useReducedMotion();
   const numeric = /^\d+(\.\d+)?$/.test(String(value));
-  const animate = numeric && !reduced && typeof IntersectionObserver !== 'undefined';
+  const animate = numeric && !reduced && duration > 0 && typeof IntersectionObserver !== 'undefined';
   const [shown, setShown] = useState(animate ? '0' : String(value));
 
   useEffect(() => {
