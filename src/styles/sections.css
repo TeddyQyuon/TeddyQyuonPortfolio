@@ -50,7 +50,7 @@
 .project-panel-body { display: flex; flex-direction: column; gap: var(--space-3); flex: 1; }
 .project-panel h3 { font-size: 1.2rem; }
 .project-panel h3 a { color: var(--text); text-decoration: none; }
-.project-panel h3 a:hover { color: var(--accent); }
+.project-panel h3 a:is(:hover, :focus-visible) { color: var(--accent); }
 .project-subtitle { margin-top: -0.4rem; font-size: 0.85rem; color: var(--accent); }
 .project-summary {
   display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical;

@@ -12,7 +12,7 @@
 .topbar::after { content: ''; position: absolute; left: 0; right: 0; top: 100%; height: 12px; pointer-events: none; opacity: 0; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.28), transparent); }
 [data-theme='light'] .topbar::after { background: linear-gradient(to bottom, rgba(15, 23, 42, 0.08), transparent); }
 .brand { display: flex; align-items: center; gap: var(--space-3); color: var(--text); text-decoration: none; }
-.brand:hover { color: var(--text); }
+.brand:is(:hover, :focus-visible) { color: var(--text); }
 .brand-mark {
   display: grid; place-items: center;
   width: 48px; height: 48px;
@@ -40,7 +40,7 @@
   font-size: 0.9rem; font-weight: 500;
   text-decoration: none;
 }
-.nav a:hover { color: var(--text); background: var(--surface-2); }
+.nav a:is(:hover, :focus-visible) { color: var(--text); background: var(--surface-2); }
 .nav a:is(:hover, :focus-visible) { transition: color var(--dur-fast) var(--ease-out), background-color var(--dur-fast) var(--ease-out); }
 .nav a[aria-current='true'] { color: var(--text); }
 @media (min-width: 861px) {
@@ -91,9 +91,9 @@
   cursor: pointer;
   transition: transform var(--dur-instant) var(--ease-out), background-color var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
 }
-.btn:hover { color: var(--text); border-color: var(--accent); background: var(--surface-2); }
+.btn:is(:hover, :focus-visible) { color: var(--text); border-color: var(--accent); background: var(--surface-2); }
 .btn-primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
-.btn-primary:hover { background: var(--accent-strong); border-color: var(--accent-strong); color: var(--on-accent); }
+.btn-primary:is(:hover, :focus-visible) { background: var(--accent-strong); border-color: var(--accent-strong); color: var(--on-accent); }
 .btn-ghost { background: transparent; }
 .btn-small { min-height: 36px; padding: 0.4rem 0.8rem; font-size: 0.85rem; }
 
@@ -106,7 +106,9 @@
   color: var(--text);
   cursor: pointer;
 }
-.icon-button:hover { border-color: var(--accent); }
+.icon-button { transition: transform var(--dur-instant) var(--ease-out), border-color var(--dur-fast) var(--ease-out), background-color var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out); }
+.icon-button:is(:hover, :focus-visible) { border-color: var(--accent); }
+.icon { transition: transform var(--dur-fast) var(--ease-out); }
 
 /* Two-position theme switch: the thumb sits behind the active sun or moon. */
 .theme-switch {
@@ -122,7 +124,7 @@
   cursor: pointer;
   transition: border-color var(--dur-fast) var(--ease-out), background-color var(--dur-fast) var(--ease-out);
 }
-.theme-switch:hover { border-color: var(--accent); background: var(--surface-3); }
+.theme-switch:is(:hover, :focus-visible) { border-color: var(--accent); background: var(--surface-3); }
 .theme-switch-thumb {
   position: absolute;
   top: 3px;
@@ -132,7 +134,7 @@
   border-radius: 50%;
   background: var(--accent);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.28);
-  transition: transform 0.24s var(--ease);
+  transition: transform var(--dur-base) var(--ease-out);
 }
 .theme-switch[aria-checked='true'] .theme-switch-thumb { transform: translateX(32px); }
 .theme-switch-icon {
@@ -157,7 +159,7 @@
   font-weight: 600; font-size: 0.9rem; text-decoration: none;
 }
 .link-muted { color: var(--text-muted); font-weight: 500; }
-.link-muted:hover { color: var(--text); }
+.link-muted:is(:hover, :focus-visible) { color: var(--text); }
 
 
 /* ---------- Panels, badges, KPIs ---------- */
@@ -240,6 +242,7 @@ td .badge-live::before, .highlight-list .badge-live::before { display: none; }
   background: var(--surface-2);
 }
 .segmented button {
+  transition: background-color var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
   display: inline-flex; align-items: center; gap: 0.4rem;
   min-height: 34px;
   padding: 0.3rem 0.8rem;
@@ -249,7 +252,7 @@ td .badge-live::before, .highlight-list .badge-live::before { display: none; }
   font-size: 0.85rem; font-weight: 600;
   cursor: pointer;
 }
-.segmented button:hover { color: var(--text); }
+.segmented button:is(:hover, :focus-visible) { color: var(--text); }
 .segmented button[aria-pressed='true'] { background: var(--surface); color: var(--text); box-shadow: 0 0 0 1px var(--border-strong); }
 .segmented .count { font-size: 0.75rem; color: var(--text-faint); }
 
