@@ -14,16 +14,30 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: var(--font-sans);
-  font-size: 1rem;
+  font-size: var(--fs-16);
   line-height: 1.6;
   color: var(--text);
   background: var(--bg);
   -webkit-font-smoothing: antialiased;
 }
 
-/* Reserve the fallback font's fourth line so visible sections stay in place. */
+/* Reserve wrapped text while the fallback and web fonts exchange. */
+.hero-intro { min-block-size: 7lh; }
+.hero-main > .muted { min-block-size: 4lh; }
+.hero-main .btn-primary { min-inline-size: calc(var(--space-8) * 2 + var(--space-4)); }
+@media (max-width: 400px) {
+  .status-pill { min-block-size: calc(2lh + var(--space-3)); }
+}
+@media (min-width: 401px) {
+  .hero-intro { min-block-size: 6lh; }
+}
+@media (min-width: 421px) {
+  .hero-intro { min-block-size: 4lh; }
+  .hero-main > .muted { min-block-size: 2lh; }
+}
 @media (min-width: 961px) {
   .hero-intro { min-block-size: 4lh; }
+  .section-lede { min-block-size: 4lh; }
 }
 
 h1, h2, h3, h4 {
@@ -33,6 +47,8 @@ h1, h2, h3, h4 {
 }
 
 p { margin: 0; }
+h1, h2, .panel-title, .project-panel h3 { text-wrap: balance; }
+.hero-intro, .section-lede, .project-summary, .case-block p, .shot figcaption { text-wrap: pretty; }
 ul, ol { margin: 0; padding: 0; }
 img { max-width: 100%; height: auto; display: block; }
 button { font: inherit; color: inherit; }
@@ -64,7 +80,7 @@ main:focus { outline: none; }
 
 .mono { font-family: var(--font-mono); font-feature-settings: 'zero' 1; }
 .muted { color: var(--text-muted); }
-.small { font-size: 0.875rem; }
+.small { font-size: var(--fs-14); }
 .strong { font-weight: 600; }
 .block { display: block; }
 

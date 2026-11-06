@@ -5,20 +5,20 @@
   padding: 0.6rem 0.9rem 0.6rem 3rem;
   border: 1px solid var(--border); border-radius: var(--radius);
   background: var(--surface-2);
-  font-size: 0.92rem;
+  font-size: var(--fs-15);
   overflow-wrap: anywhere;
   counter-increment: step;
 }
 .pipeline li::before {
   content: counter(step, decimal-leading-zero);
   position: absolute; left: 0.9rem; top: 0.62rem;
-  font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent);
+  font-family: var(--font-mono); font-size: var(--fs-13); color: var(--accent);
 }
 .shot-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr)); gap: var(--space-4); }
 .shot { margin: 0; }
 .shot a { display: block; min-height: 44px; overflow: hidden; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface-2); }
 .shot img { width: 100%; transition: transform var(--dur-slow) var(--ease-out); }
-.shot figcaption { margin-top: var(--space-2); font-size: 0.82rem; color: var(--text-muted); }
+.shot figcaption { margin-top: var(--space-2); font-size: var(--fs-13); color: var(--text-muted); }
 .pager { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); margin-top: var(--space-4); }
 .pager-link { display: flex; flex-direction: column; gap: var(--space-1); padding: var(--space-4); color: var(--text); text-decoration: none; }
 .pager-link:is(:hover, :focus-visible) { border-color: var(--accent); color: var(--text); }
@@ -26,7 +26,7 @@
 
 /* ---------- 404 ---------- */
 .not-found .panel { max-width: 560px; margin-inline: auto; padding: var(--space-6); }
-.not-found h1 { margin-block: var(--space-2); font-size: 2.2rem; }
+.not-found h1 { margin-block: var(--space-2); font-size: var(--fs-h2); }
 
 @media (max-width: 960px) {
   /* minmax(0, 1fr) lets columns shrink below their content's min width,
