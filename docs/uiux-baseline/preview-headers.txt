@@ -1,0 +1,21 @@
+
+Key                          Value                                                                                     
+---                          -----                                                                                     
+Vary                         Origin                                                                                    
+Content-Security-Policy      default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; f...
+X-Content-Type-Options       nosniff                                                                                   
+X-Frame-Options              DENY                                                                                      
+Referrer-Policy              strict-origin-when-cross-origin                                                           
+Permissions-Policy           camera=(), microphone=(), geolocation=()                                                  
+Cross-Origin-Opener-Policy   same-origin                                                                               
+Cross-Origin-Resource-Policy same-origin                                                                               
+Connection                   keep-alive                                                                                
+Keep-Alive                   timeout=5                                                                                 
+Content-Length               3037                                                                                      
+Cache-Control                no-cache                                                                                  
+Content-Type                 text/html                                                                                 
+Date                         Fri, 06 Nov 2026 16:56:14 GMT                                                             
+ETag                         W/"bdd-W2Od4UZzB2lvs/+/VNsRxMCoF5Y"                                                       
+
+
+

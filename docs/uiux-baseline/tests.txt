@@ -1,0 +1,26 @@
+
+> teddy-portfolio-v2@2.0.0 test
+> node --test "tests/*.test.mjs"
+
+✔ every project has a unique slug and the fields the UI needs (1.5869ms)
+✔ every screenshot file exists and has alt text (2.3154ms)
+✔ external links use https and local reports exist (0.5497ms)
+✔ dashboard metrics only reference real projects and appear in that project text (0.2761ms)
+✔ removed wording stays removed (0.7644ms)
+✔ personal info has no placeholders and the résumé exists (0.7271ms)
+✔ sitemap lists the homepage and every case study (1.0698ms)
+✔ malformed fragments are ignored without throwing (0.5594ms)
+✔ valid fragments retain their intended IDs (0.1143ms)
+✔ social preview image is an absolute 1200x630 PNG (1.3893ms)
+✔ index.html has canonical URL, description and no inline scripts or styles (0.5495ms)
+✔ vercel.json keeps strict security headers (1.3095ms)
+✔ built output ships no source maps (0.2325ms)
+✔ dependencies are pinned to exact versions (0.4974ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 130.7298
