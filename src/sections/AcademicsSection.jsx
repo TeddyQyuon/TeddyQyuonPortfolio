@@ -4,6 +4,7 @@ import { SectionHeader } from '../components/common/Dashboard';
 import GpaTrendChart from '../components/charts/GpaTrendChart';
 import { currentGpa, recentHighlights, semesterResults } from '../data/academicResults';
 import { educationJourney } from '../data/education';
+import { loadProjectPage } from '../lib/loadProjectPage';
 
 const gradeTone = (g) => (g.startsWith('A') ? 'live' : g.startsWith('B') ? 'info' : 'neutral');
 const shortLabel = (s) => s.label.replace('Year ', 'Y').replace(' Semester ', 'S');
@@ -33,7 +34,7 @@ export default function AcademicsSection() {
               <li key={h.module}>
                 <span className="badge badge-live mono">{h.grade}</span>
                 <span>
-                  {h.href ? <Link to={h.href}>{h.module}</Link> : h.module}
+                  {h.href ? <Link to={h.href} onPointerEnter={loadProjectPage} onFocus={loadProjectPage}>{h.module}</Link> : h.module}
                   <span className="muted small block">{h.evidence}</span>
                 </span>
               </li>
