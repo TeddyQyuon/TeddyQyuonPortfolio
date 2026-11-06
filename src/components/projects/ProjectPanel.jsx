@@ -9,7 +9,7 @@ import {
   projectTitle,
 } from '../../lib/projectStats';
 
-export default function ProjectPanel({ project, index }) {
+export default function ProjectPanel({ project, index, motionIndex }) {
   const title = projectTitle(project);
   const cover = project.screenshots?.[0];
   const metrics = projectMetricsFor(project.slug);
@@ -17,7 +17,7 @@ export default function ProjectPanel({ project, index }) {
   const tech = project.cardTechnologies || project.technologies.slice(0, 6);
 
   return (
-    <article className="panel project-panel" aria-labelledby={headingId}>
+    <article className="panel project-panel" style={{ '--i': motionIndex }} aria-labelledby={headingId}>
       <div className="project-panel-top">
         <span className="mono panel-index">{String(index + 1).padStart(2, '0')}</span>
         <div className="badges">
