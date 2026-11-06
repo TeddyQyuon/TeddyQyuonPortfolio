@@ -1,4 +1,3 @@
-import Reveal from '../components/common/Reveal';
 import useDocumentMeta from '../hooks/useDocumentMeta';
 import HeroSection from '../sections/HeroSection';
 import ProjectsSection from '../sections/ProjectsSection';
@@ -11,10 +10,10 @@ export default function HomePage() {
   return (
     <div className="container">
       <HeroSection />
-      <Reveal><ProjectsSection /></Reveal>
-      <Reveal><StackSection /></Reveal>
-      <Reveal><AcademicsSection /></Reveal>
-      <Reveal><ContactSection /></Reveal>
+      <ProjectsSection />
+      <StackSection />
+      <AcademicsSection />
+      <ContactSection />
     </div>
   );
 }

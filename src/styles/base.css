@@ -21,6 +21,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Reserve the fallback font's fourth line so visible sections stay in place. */
+@media (min-width: 961px) {
+  .hero-intro { min-block-size: 4lh; }
+}
+
 h1, h2, h3, h4 {
   margin: 0;
   line-height: 1.2;
@@ -89,10 +94,6 @@ main:focus { outline: none; }
 .noscript { padding: 2rem; }
 .loading { padding-block: var(--space-8); color: var(--text-muted); }
 
-/* Scroll reveal; disabled for reduced motion. */
-.reveal { opacity: 0; transform: translateY(12px); transition: opacity 0.5s var(--ease), transform 0.5s var(--ease); }
-.reveal.is-visible { opacity: 1; transform: none; }
-
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
@@ -100,5 +101,4 @@ main:focus { outline: none; }
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-  .reveal { opacity: 1; transform: none; }
 }
