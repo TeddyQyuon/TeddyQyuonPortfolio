@@ -1,4 +1,5 @@
 import { useCallback, useState } from 'react';
+import { flushSync } from 'react-dom';
 
 const KEY = 'tq-theme';
 const COLORS = { dark: '#0b1120', light: '#f5f7fb' };
@@ -10,7 +11,7 @@ export default function useTheme() {
   );
 
   const toggle = useCallback(() => {
-    setTheme((current) => {
+    const apply = () => setTheme((current) => {
       const next = current === 'dark' ? 'light' : 'dark';
       document.documentElement.setAttribute('data-theme', next);
       document.head.querySelector('meta[name="theme-color"]')?.setAttribute('content', COLORS[next]);
@@ -21,6 +22,12 @@ export default function useTheme() {
       }
       return next;
     });
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduced || typeof document.startViewTransition !== 'function') {
+      apply();
+      return;
+    }
+    document.startViewTransition(() => flushSync(apply));
   }, []);
 
   return { theme, toggle };

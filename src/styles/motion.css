@@ -16,6 +16,7 @@
 .loading { animation: fade-in var(--dur-base) var(--ease-out) var(--delay-loading) backwards; }
 
 @media (prefers-reduced-motion: no-preference) {
+  ::view-transition-old(root), ::view-transition-new(root) { animation-duration: var(--dur-base); animation-timing-function: var(--ease-in-out); }
   .route-enter { animation: route-in var(--dur-base) var(--ease-out) backwards; }
   .project-grid[data-motion='swap'] > .project-panel { animation: fade-in var(--dur-base) var(--ease-out) backwards; animation-delay: calc(min(var(--i, 0), 5) * var(--stagger-tight)); }
   .menu-toggle[data-touched] .icon { animation: icon-in var(--dur-fast) var(--ease-out) backwards; }
