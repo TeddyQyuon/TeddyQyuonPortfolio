@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Badge } from '../common/Dashboard';
 import Icon from '../common/Icon';
 import TechTagList from '../common/TechTags';
+import { loadProjectPage } from '../../lib/loadProjectPage';
 import {
   projectBadges,
   projectMetricsFor,
@@ -17,7 +18,7 @@ export default function ProjectPanel({ project, index, motionIndex }) {
   const tech = project.cardTechnologies || project.technologies.slice(0, 6);
 
   return (
-    <article className="panel project-panel" style={{ '--i': motionIndex }} aria-labelledby={headingId}>
+    <article className="panel project-panel" style={{ '--i': motionIndex }} aria-labelledby={headingId} onPointerEnter={loadProjectPage} onFocus={loadProjectPage}>
       <div className="project-panel-top">
         <span className="mono panel-index">{String(index + 1).padStart(2, '0')}</span>
         <div className="badges">
