@@ -17,7 +17,7 @@
   .hero-side[data-motion='run'] .kpi-grid::after { animation: scan var(--dur-scan) var(--ease-in-out) 360ms backwards; }
   .status-dot:not([data-motion='done'])::after { animation: ping 1600ms var(--ease-out) 3 backwards; }
   .bar-fill { animation: grow var(--dur-slower) var(--ease-out) backwards; }
-  .btn:active { transform: scale(var(--press-scale)); }
+  .btn:active, .icon-button:active { transform: scale(var(--press-scale)); }
 }
 
 @supports (transition-behavior: allow-discrete) {
@@ -35,6 +35,9 @@
 }
 
 @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  :is(.btn, .link-strong, .link-muted, .pager-link, .channel-list a):is(:hover, :focus-visible) .icon-arrowRight { transform: translateX(var(--nudge)); }
+  :is(.btn, .pager-link):is(:hover, :focus-visible) .icon-arrowLeft { transform: translateX(calc(var(--nudge) * -1)); }
+  :is(.btn, .link-muted, .channel-list a):is(:hover, :focus-visible) .icon-external { transform: translate(var(--nudge-diag), calc(var(--nudge-diag) * -1)); }
   .project-panel:is(:hover, :focus-within) .project-thumb img { transform: scale(var(--zoom)); }
   .shot a:is(:hover, :focus-visible) img { transform: scale(var(--zoom-sm)); }
 }

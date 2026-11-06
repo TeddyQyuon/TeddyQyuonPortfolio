@@ -44,9 +44,9 @@
   padding: var(--space-3);
   border: 1px solid var(--border); border-radius: var(--radius);
   color: var(--text-muted); text-decoration: none;
-  transition: border-color var(--dur-fast) var(--ease-out), background-color var(--dur-fast) var(--ease-out);
+  transition: border-color var(--dur-fast) var(--ease-out), background-color var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
 }
-.channel-list a:hover { border-color: var(--accent); background: var(--surface-2); color: var(--text); }
+.channel-list a:is(:hover, :focus-visible) { border-color: var(--accent); background: var(--surface-2); color: var(--text); }
 .channel-icon { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 9px; background: var(--accent-soft); color: var(--accent); flex-shrink: 0; }
 /* The vendor marks retain their original colours on a consistently light tile. */
 .channel-icon-mail, .channel-icon-linkedin, .channel-icon-github, .channel-icon-whatsapp {
@@ -86,7 +86,7 @@
 .case-toc { position: sticky; top: calc(var(--topbar-h) + var(--space-4)); }
 .case-toc ol { display: grid; gap: 2px; margin-top: var(--space-3); list-style: none; border-left: 1px solid var(--border); }
 .case-toc a { display: block; padding: 0.35rem 0.85rem; margin-left: -1px; border-left: 2px solid transparent; color: var(--text-muted); font-size: 0.88rem; text-decoration: none; }
-.case-toc a:hover { color: var(--text); border-left-color: var(--accent); }
+.case-toc a:is(:hover, :focus-visible) { color: var(--text); border-left-color: var(--accent); }
 .case-content { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-4); min-width: 0; }
 .case-content > *, .academics-grid > *, .contact-grid > *, .stack-grid > * { min-width: 0; }
 .case-block { scroll-margin-top: calc(var(--topbar-h) + var(--space-4)); }
