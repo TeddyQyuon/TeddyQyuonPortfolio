@@ -10,6 +10,7 @@ const shortLabel = (s) => s.label.replace('Year ', 'Y').replace(' Semester ', 'S
 
 export default function AcademicsSection() {
   const [active, setActive] = useState(semesterResults[semesterResults.length - 1].id);
+  const [swapped, setSwapped] = useState(false);
   const semester = semesterResults.find((s) => s.id === active);
   const points = semesterResults.map((s) => ({ label: shortLabel(s), value: Number(s.gpa) }));
 
@@ -45,7 +46,7 @@ export default function AcademicsSection() {
             <h3 className="panel-title">Module results</h3>
             <div className="segmented" role="group" aria-label="Choose semester">
               {semesterResults.map((s) => (
-                <button key={s.id} type="button" aria-pressed={active === s.id} onClick={() => setActive(s.id)}>
+                <button key={s.id} type="button" aria-pressed={active === s.id} onClick={() => { setActive(s.id); setSwapped(true); }}>
                   {shortLabel(s)}
                 </button>
               ))}
@@ -61,7 +62,7 @@ export default function AcademicsSection() {
                   <th scope="col" className="num">Grade</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody key={semester.id} className={swapped ? 'is-swapped' : undefined}>
                 {semester.modules.map((m) => (
                   <tr key={m.name}>
                     <th scope="row">{m.name}</th>
@@ -72,7 +73,7 @@ export default function AcademicsSection() {
                   </tr>
                 ))}
               </tbody>
-              <tfoot>
+              <tfoot key={`${semester.id}-gpa`} className={swapped ? 'is-swapped' : undefined}>
                 <tr>
                   <th scope="row">{`Semester GPA · ${semester.academicYear}`}</th>
                   <td />
