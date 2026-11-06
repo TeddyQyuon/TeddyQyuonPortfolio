@@ -23,11 +23,11 @@
   border-radius: 8px;
   background: var(--accent);
   color: var(--on-accent);
-  font-weight: 800; font-size: 0.8rem;
+  font-weight: 800; font-size: var(--fs-13);
 }
 .brand-text { display: flex; flex-direction: column; line-height: 1.15; }
-.brand-name { font-weight: 700; font-size: 0.95rem; }
-.brand-path { font-size: 0.75rem; color: var(--text-faint); }
+.brand-name { font-weight: 700; font-size: var(--fs-15); }
+.brand-path { font-size: var(--fs-12); color: var(--text-faint); }
 
 .nav { margin-left: auto; }
 .nav ul { display: flex; gap: var(--space-1); list-style: none; }
@@ -38,7 +38,7 @@
   padding: 0.45rem 0.75rem;
   border-radius: var(--radius-sm);
   color: var(--text-muted);
-  font-size: 0.9rem; font-weight: 500;
+  font-size: var(--fs-15); font-weight: 500;
   text-decoration: none;
 }
 .nav a:is(:hover, :focus-visible) { color: var(--text); background: var(--surface-2); }
@@ -66,7 +66,7 @@
   }
   .nav.is-open { display: block; }
   .nav ul { flex-direction: column; }
-  .nav a { padding: 0.75rem; font-size: 1rem; }
+  .nav a { padding: 0.75rem; font-size: var(--fs-16); }
 }
 @media (max-width: 520px) {
   .btn.hide-sm { display: none; }
@@ -87,7 +87,7 @@
   border-radius: var(--radius-sm);
   background: var(--surface);
   color: var(--text);
-  font-size: 0.92rem; font-weight: 600;
+  font-size: var(--fs-15); font-weight: 600;
   text-decoration: none;
   cursor: pointer;
   transition: transform var(--dur-instant) var(--ease-out), background-color var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
@@ -96,7 +96,7 @@
 .btn-primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
 .btn-primary:is(:hover, :focus-visible) { background: var(--accent-strong); border-color: var(--accent-strong); color: var(--on-accent); }
 .btn-ghost { background: transparent; }
-.btn-small { min-height: 36px; padding: 0.4rem 0.8rem; font-size: 0.85rem; }
+.btn-small { min-height: 36px; padding: 0.4rem 0.8rem; font-size: var(--fs-14); }
 
 .icon-button {
   display: inline-grid; place-items: center;
@@ -157,7 +157,7 @@
 .link-strong, .link-muted {
   display: inline-flex; align-items: center; gap: 0.35rem;
   min-height: 44px;
-  font-weight: 600; font-size: 0.9rem; text-decoration: none;
+  font-weight: 600; font-size: var(--fs-15); text-decoration: none;
 }
 .link-muted { color: var(--text-muted); font-weight: 500; }
 .link-muted:is(:hover, :focus-visible) { color: var(--text); }
@@ -172,16 +172,16 @@
   box-shadow: var(--shadow);
 }
 .panel-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-3); margin-bottom: var(--space-4); }
-.panel-title { font-size: 1.05rem; font-weight: 700; margin-bottom: var(--space-2); }
+.panel-title { font-size: var(--fs-18); font-weight: 700; margin-bottom: var(--space-2); }
 .panel-head .panel-title { margin: 0; }
 .panel-label {
   display: inline-flex; align-items: center; gap: 0.35rem;
   font-family: var(--font-mono);
-  font-size: 0.75rem; font-weight: 500;
+  font-size: var(--fs-12); font-weight: 500;
   letter-spacing: 0.06em; text-transform: uppercase;
   color: var(--text-faint);
 }
-.panel-index { font-size: 0.8rem; color: var(--text-faint); }
+.panel-index { font-size: var(--fs-13); color: var(--text-faint); }
 
 .badges { display: flex; flex-wrap: wrap; gap: 0.4rem; }
 .badge {
@@ -189,7 +189,7 @@
   padding: 0.15rem 0.55rem;
   border: 1px solid transparent;
   border-radius: 999px;
-  font-size: 0.75rem; font-weight: 600; line-height: 1.5;
+  font-size: var(--fs-12); font-weight: 600; line-height: 1.5;
   white-space: nowrap;
 }
 .badge-live { color: var(--live); background: var(--live-soft); border-color: color-mix(in srgb, var(--live) 30%, transparent); }
@@ -206,11 +206,11 @@ td .badge-live::before, .highlight-list .badge-live::before { display: none; }
   border: 1px solid var(--border);
   border-radius: var(--radius);
 }
-.kpi-label { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-faint); }
-.kpi-value { font-family: var(--font-mono); font-size: clamp(1.6rem, 3vw, 2rem); font-weight: 600; letter-spacing: -0.03em; line-height: 1.15; }
+.kpi-label { font-family: var(--font-mono); font-size: var(--fs-12); letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-faint); }
+.kpi-value { font-family: var(--font-mono); font-size: var(--fs-kpi); font-weight: 600; letter-spacing: -0.03em; line-height: 1.15; }
 .kpi-unit { margin-left: 0.15rem; font-size: max(0.55em, 0.75rem); font-weight: 500; color: var(--text-muted); }
 .count-up { display: inline-block; text-align: end; }
-.kpi-hint { font-size: 0.8rem; color: var(--text-muted); }
+.kpi-hint { font-size: var(--fs-13); color: var(--text-muted); }
 .kpi-live .kpi-value { color: var(--live); }
 .kpi-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-3); }
 .kpi-grid-wide { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); margin-block: var(--space-4); }
@@ -223,7 +223,7 @@ td .badge-live::before, .highlight-list .badge-live::before { display: none; }
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   background: var(--surface-2);
-  font-size: 0.8rem; color: var(--text-muted);
+  font-size: var(--fs-13); color: var(--text-muted);
 }
 /* Many brand marks are dark; a light chip keeps them visible on dark panels. */
 .tech-tag .technology-logo {
@@ -250,12 +250,12 @@ td .badge-live::before, .highlight-list .badge-live::before { display: none; }
   border: 0; border-radius: 7px;
   background: transparent;
   color: var(--text-muted);
-  font-size: 0.85rem; font-weight: 600;
+  font-size: var(--fs-14); font-weight: 600;
   cursor: pointer;
 }
 .segmented button:is(:hover, :focus-visible) { color: var(--text); }
 .segmented button[aria-pressed='true'] { background: var(--surface); color: var(--text); box-shadow: 0 0 0 1px var(--border-strong); }
-.segmented .count { font-size: 0.75rem; color: var(--text-faint); }
+.segmented .count { font-size: var(--fs-12); color: var(--text-faint); }
 
 /* Exact vendor artwork: use the supplied colourways rather than tinting marks. */
 .brand-icon-pair { display: inline-flex; flex: none; }
