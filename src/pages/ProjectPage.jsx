@@ -4,6 +4,7 @@ import Icon from '../components/common/Icon';
 import { caseSections, ExternalButton } from '../components/projects/CaseParts';
 import CaseStudyBody from '../components/projects/CaseStudyBody';
 import useDocumentMeta from '../hooks/useDocumentMeta';
+import useActiveSection from '../hooks/useActiveSection';
 import { projects } from '../data/projects';
 import {
   neighbours,
@@ -17,6 +18,8 @@ import NotFoundPage from './NotFoundPage';
 export default function ProjectPage() {
   const { slug } = useParams();
   const project = projects.find((p) => p.slug === slug);
+  const toc = project ? caseSections.filter((s) => s.has(project)) : [];
+  const active = useActiveSection(toc.map((s) => s.id), { enabled: Boolean(project) });
 
   useDocumentMeta(
     project
@@ -28,7 +31,6 @@ export default function ProjectPage() {
 
   const title = projectTitle(project);
   const metrics = projectMetricsFor(project.slug);
-  const toc = caseSections.filter((s) => s.has(project));
   const has = (id) => toc.some((s) => s.id === id);
   const { prev, next } = neighbours(project.slug);
 
@@ -83,7 +85,7 @@ export default function ProjectPage() {
           <p className="panel-label">On this page</p>
           <ol>
             {toc.map((s) => (
-              <li key={s.id}><Link to={{ hash: `#${s.id}` }}>{s.label}</Link></li>
+              <li key={s.id}><Link to={{ hash: `#${s.id}` }} aria-current={active === s.id ? 'true' : undefined}>{s.label}</Link></li>
             ))}
           </ol>
         </nav>

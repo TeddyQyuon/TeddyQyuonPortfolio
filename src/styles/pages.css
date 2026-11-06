@@ -85,7 +85,9 @@
 .case-layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: var(--space-5); align-items: start; margin-top: var(--space-4); }
 .case-toc { position: sticky; top: calc(var(--topbar-h) + var(--space-4)); }
 .case-toc ol { display: grid; gap: 2px; margin-top: var(--space-3); list-style: none; border-left: 1px solid var(--border); }
-.case-toc a { display: block; padding: 0.35rem 0.85rem; margin-left: -1px; border-left: 2px solid transparent; color: var(--text-muted); font-size: 0.88rem; text-decoration: none; }
+.case-toc a { display: block; padding: 0.35rem 0.85rem; margin-left: -1px; border-left: 2px solid transparent; color: var(--text-muted); font-size: 0.88rem; text-decoration: none; transition: color var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out); }
+.case-toc a[aria-current='true'] { color: var(--text); border-left-color: var(--accent); }
+@media (max-width: 960px) { .case-toc a[aria-current='true'] { border-color: var(--accent); } }
 .case-toc a:is(:hover, :focus-visible) { color: var(--text); border-left-color: var(--accent); }
 .case-content { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-4); min-width: 0; }
 .case-content > *, .academics-grid > *, .contact-grid > *, .stack-grid > * { min-width: 0; }
