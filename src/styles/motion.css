@@ -1,12 +1,18 @@
 /* Time-based motion is opt-in; the static styles describe the final state. */
 @keyframes grow { from { transform: scaleX(0); } }
+@keyframes rise-in { from { opacity: 0; transform: translateY(var(--rise)); } }
+@keyframes scan { 0% { opacity: 0; transform: translateY(-100%); } 15%, 85% { opacity: 1; } 100% { opacity: 0; transform: translateY(290%); } }
 @keyframes ping {
   0% { opacity: 0.55; transform: scale(1); }
   80%, 100% { opacity: 0; transform: scale(2.6); }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .status-dot::after { animation: ping 1600ms var(--ease-out) 3 backwards; }
+  .hero-side[data-motion='pending'] :is(.profile-panel, .kpi) { opacity: 0; transform: translateY(var(--rise)); }
+  .hero-side[data-motion='run'] :is(.profile-panel, .kpi) { animation: rise-in var(--dur-slow) var(--ease-out) backwards; }
+  .hero-side[data-motion='run'] .kpi { animation-delay: calc(120ms + var(--i, 0) * var(--stagger)); }
+  .hero-side[data-motion='run'] .kpi-grid::after { animation: scan var(--dur-scan) var(--ease-in-out) 360ms backwards; }
+  .status-dot:not([data-motion='done'])::after { animation: ping 1600ms var(--ease-out) 3 backwards; }
   .bar-fill { animation: grow var(--dur-slower) var(--ease-out) backwards; }
   .btn:active { transform: scale(var(--press-scale)); }
 }

@@ -26,6 +26,8 @@
 .hero-meta { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-5); margin-top: var(--space-5); list-style: none; color: var(--text-muted); font-size: 0.9rem; }
 .hero-meta li { display: inline-flex; align-items: center; gap: 0.4rem; }
 .hero-side { display: grid; gap: var(--space-3); }
+.hero-side .kpi-grid { position: relative; overflow: clip; grid-auto-rows: 1fr; }
+.hero-side .kpi-grid::after { content: ''; position: absolute; inset-inline: 0; top: 0; height: 35%; pointer-events: none; opacity: 0; background: linear-gradient(to bottom, transparent, color-mix(in srgb, var(--accent) 14%, transparent) 60%, transparent); }
 .profile-panel { display: flex; align-items: center; gap: var(--space-4); }
 .profile-photo {
   width: 128px;
