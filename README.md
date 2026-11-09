@@ -35,7 +35,7 @@ This is a frontend-only application. Site content is maintained in local data mo
 Requirements: **Node.js 20.19+ within 20.x, or Node.js 22.12+**, and npm.
 
 ```bash
-git clone https://github.com/TeddyQyuon/TeddyQyuonPortfolio-main.git portfolio
+git clone https://github.com/TeddyQyuon/TeddyQyuonPortfolio.git portfolio
 cd portfolio
 npm ci
 npm run dev
