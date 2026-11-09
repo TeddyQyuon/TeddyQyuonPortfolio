@@ -1,0 +1,31 @@
+[
+  {
+    "reducedMotion": "no-preference",
+    "hoverOut": {
+      "properties": "background-color",
+      "durations": "0.15s",
+      "animations": [
+        {
+          "property": "background-color",
+          "duration": 150
+        }
+      ]
+    },
+    "scrollspy": {
+      "active": "true",
+      "animations": []
+    }
+  },
+  {
+    "reducedMotion": "reduce",
+    "hoverOut": {
+      "properties": "background-color",
+      "durations": "1e-05s",
+      "animations": []
+    },
+    "scrollspy": {
+      "active": "true",
+      "animations": []
+    }
+  }
+]

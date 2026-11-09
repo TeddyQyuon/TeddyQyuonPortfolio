@@ -1,0 +1,8 @@
+[extend]
+useDefault = true
+
+[[rules]]
+id = "plaintext-handoff-password"
+description = "Plaintext password or passcode in handoff documentation"
+regex = '''(?i)(?:password|passcode)[*]*:\s*`([^`\r\n]+)`'''
+secretGroup = 1

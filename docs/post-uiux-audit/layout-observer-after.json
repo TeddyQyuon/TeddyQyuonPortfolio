@@ -1,0 +1,3966 @@
+[
+  {
+    "device": "mobile",
+    "mode": "direct",
+    "load": {
+      "shifts": [
+        {
+          "time": 236.89999999850988,
+          "value": 0.00019357705780878972,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": "a.btn",
+              "text": "API (opens in new tab)",
+              "previousRect": {
+                "x": 209.703125,
+                "y": 498.484375,
+                "width": 81.21875,
+                "height": 43.59375,
+                "top": 498.484375,
+                "right": 290.921875,
+                "bottom": 542.078125,
+                "left": 209.703125
+              },
+              "currentRect": {
+                "x": 216.671875,
+                "y": 498.484375,
+                "width": 82.75,
+                "height": 43.59375,
+                "top": 498.484375,
+                "right": 299.421875,
+                "bottom": 542.078125,
+                "left": 216.671875
+              }
+            },
+            {
+              "node": "li.",
+              "text": "gamevault-marketplace",
+              "previousRect": {
+                "x": 164.671875,
+                "y": 88,
+                "width": 173.984375,
+                "height": 20.796875,
+                "top": 88,
+                "right": 338.65625,
+                "bottom": 108.796875,
+                "left": 164.671875
+              },
+              "currentRect": {
+                "x": 167.796875,
+                "y": 88,
+                "width": 178.015625,
+                "height": 20.796875,
+                "top": 88,
+                "right": 345.8125,
+                "bottom": 108.796875,
+                "left": 167.796875
+              }
+            }
+          ]
+        }
+      ],
+      "fontEvents": [
+        {
+          "time": 235.79999999701977,
+          "event": "loadingdone"
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        }
+      ],
+      "images": [
+        {
+          "src": "header-portrait-DxqxH9BI.webp",
+          "width": "48",
+          "height": "48",
+          "aspectRatio": "auto 48 / 48",
+          "naturalWidth": 384,
+          "naturalHeight": 384
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "1348",
+          "height": "926",
+          "aspectRatio": "auto 1348 / 926",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "1440",
+          "height": "900",
+          "aspectRatio": "auto 1440 / 900",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "1440",
+          "height": "900",
+          "aspectRatio": "auto 1440 / 900",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "linkedin-CHBsXBEb.png",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 635,
+          "naturalHeight": 540
+        }
+      ],
+      "boxes": {
+        ".project-hero": {
+          "x": 16,
+          "y": 124.796875,
+          "width": 343,
+          "height": 497.875,
+          "top": 124.796875,
+          "right": 359,
+          "bottom": 622.671875,
+          "left": 16
+        },
+        ".project-facts": {
+          "x": 41,
+          "y": 308.96875,
+          "width": 293,
+          "height": 165.515625,
+          "top": 308.96875,
+          "right": 334,
+          "bottom": 474.484375,
+          "left": 41
+        },
+        ".kpi-grid-wide": {
+          "x": 16,
+          "y": 638.671875,
+          "width": 343,
+          "height": 281.390625,
+          "top": 638.671875,
+          "right": 359,
+          "bottom": 920.0625,
+          "left": 16
+        },
+        ".case-toc": {
+          "x": 16,
+          "y": 1230.25,
+          "width": 343,
+          "height": 160.328125,
+          "top": 1230.25,
+          "right": 359,
+          "bottom": 1390.578125,
+          "left": 16
+        }
+      }
+    },
+    "scroll": [],
+    "errors": []
+  },
+  {
+    "device": "mobile",
+    "mode": "slow-chunk",
+    "load": {
+      "shifts": [],
+      "fontEvents": [
+        {
+          "time": 135.09999999403954,
+          "event": "loadingdone"
+        },
+        {
+          "time": 913.8999999985099,
+          "event": "loadingdone"
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        }
+      ],
+      "images": [
+        {
+          "src": "header-portrait-DxqxH9BI.webp",
+          "width": "48",
+          "height": "48",
+          "aspectRatio": "auto 48 / 48",
+          "naturalWidth": 384,
+          "naturalHeight": 384
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "1348",
+          "height": "926",
+          "aspectRatio": "auto 1348 / 926",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "1440",
+          "height": "900",
+          "aspectRatio": "auto 1440 / 900",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "1440",
+          "height": "900",
+          "aspectRatio": "auto 1440 / 900",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "linkedin-CHBsXBEb.png",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 635,
+          "naturalHeight": 540
+        }
+      ],
+      "boxes": {
+        ".project-hero": {
+          "x": 16,
+          "y": 124.796875,
+          "width": 343,
+          "height": 497.875,
+          "top": 124.796875,
+          "right": 359,
+          "bottom": 622.671875,
+          "left": 16
+        },
+        ".project-facts": {
+          "x": 41,
+          "y": 308.96875,
+          "width": 293,
+          "height": 165.515625,
+          "top": 308.96875,
+          "right": 334,
+          "bottom": 474.484375,
+          "left": 41
+        },
+        ".kpi-grid-wide": {
+          "x": 16,
+          "y": 638.671875,
+          "width": 343,
+          "height": 281.390625,
+          "top": 638.671875,
+          "right": 359,
+          "bottom": 920.0625,
+          "left": 16
+        },
+        ".case-toc": {
+          "x": 16,
+          "y": 1230.25,
+          "width": 343,
+          "height": 160.328125,
+          "top": 1230.25,
+          "right": 359,
+          "bottom": 1390.578125,
+          "left": 16
+        }
+      }
+    },
+    "scroll": [],
+    "errors": []
+  },
+  {
+    "device": "mobile",
+    "mode": "slow-fonts",
+    "load": {
+      "shifts": [
+        {
+          "time": 2160.2000000029802,
+          "value": 0.0000982308874406143,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": "a.btn",
+              "text": "API (opens in new tab)",
+              "previousRect": {
+                "x": 209.703125,
+                "y": 498.484375,
+                "width": 81.21875,
+                "height": 43.59375,
+                "top": 498.484375,
+                "right": 290.921875,
+                "bottom": 542.078125,
+                "left": 209.703125
+              },
+              "currentRect": {
+                "x": 216.671875,
+                "y": 498.484375,
+                "width": 82.75,
+                "height": 43.59375,
+                "top": 498.484375,
+                "right": 299.421875,
+                "bottom": 542.078125,
+                "left": 216.671875
+              }
+            }
+          ]
+        },
+        {
+          "time": 2167.9000000059605,
+          "value": 0.000045321498022540784,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": "li.",
+              "text": "gamevault-marketplace",
+              "previousRect": {
+                "x": 164.671875,
+                "y": 88,
+                "width": 173.984375,
+                "height": 20.796875,
+                "top": 88,
+                "right": 338.65625,
+                "bottom": 108.796875,
+                "left": 164.671875
+              },
+              "currentRect": {
+                "x": 167.796875,
+                "y": 88,
+                "width": 178.015625,
+                "height": 20.796875,
+                "top": 88,
+                "right": 345.8125,
+                "bottom": 108.796875,
+                "left": 167.796875
+              }
+            }
+          ]
+        }
+      ],
+      "fontEvents": [
+        {
+          "time": 2169.3000000044703,
+          "event": "loadingdone"
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        }
+      ],
+      "images": [
+        {
+          "src": "header-portrait-DxqxH9BI.webp",
+          "width": "48",
+          "height": "48",
+          "aspectRatio": "auto 48 / 48",
+          "naturalWidth": 384,
+          "naturalHeight": 384
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "1348",
+          "height": "926",
+          "aspectRatio": "auto 1348 / 926",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "1440",
+          "height": "900",
+          "aspectRatio": "auto 1440 / 900",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "1440",
+          "height": "900",
+          "aspectRatio": "auto 1440 / 900",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "linkedin-CHBsXBEb.png",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 635,
+          "naturalHeight": 540
+        }
+      ],
+      "boxes": {
+        ".project-hero": {
+          "x": 16,
+          "y": 124.796875,
+          "width": 343,
+          "height": 497.875,
+          "top": 124.796875,
+          "right": 359,
+          "bottom": 622.671875,
+          "left": 16
+        },
+        ".project-facts": {
+          "x": 41,
+          "y": 308.96875,
+          "width": 293,
+          "height": 165.515625,
+          "top": 308.96875,
+          "right": 334,
+          "bottom": 474.484375,
+          "left": 41
+        },
+        ".kpi-grid-wide": {
+          "x": 16,
+          "y": 638.671875,
+          "width": 343,
+          "height": 281.390625,
+          "top": 638.671875,
+          "right": 359,
+          "bottom": 920.0625,
+          "left": 16
+        },
+        ".case-toc": {
+          "x": 16,
+          "y": 1230.25,
+          "width": 343,
+          "height": 160.328125,
+          "top": 1230.25,
+          "right": 359,
+          "bottom": 1390.578125,
+          "left": 16
+        }
+      }
+    },
+    "scroll": [],
+    "errors": []
+  },
+  {
+    "device": "mobile",
+    "mode": "client",
+    "load": {
+      "shifts": [],
+      "fontEvents": [],
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        }
+      ],
+      "images": [
+        {
+          "src": "header-portrait-DxqxH9BI.webp",
+          "width": "48",
+          "height": "48",
+          "aspectRatio": "auto 48 / 48",
+          "naturalWidth": 384,
+          "naturalHeight": 384
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 360,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "gamevault-D5EPbCiQ.webp",
+          "width": "1348",
+          "height": "926",
+          "aspectRatio": "auto 1348 / 926",
+          "naturalWidth": 1348,
+          "naturalHeight": 926
+        },
+        {
+          "src": "",
+          "width": "1440",
+          "height": "900",
+          "aspectRatio": "auto 1440 / 900",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "1440",
+          "height": "900",
+          "aspectRatio": "auto 1440 / 900",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "linkedin-CHBsXBEb.png",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 635,
+          "naturalHeight": 540
+        }
+      ],
+      "boxes": {
+        ".project-hero": {
+          "x": 16,
+          "y": 124.796875,
+          "width": 343,
+          "height": 497.875,
+          "top": 124.796875,
+          "right": 359,
+          "bottom": 622.671875,
+          "left": 16
+        },
+        ".project-facts": {
+          "x": 41,
+          "y": 308.96875,
+          "width": 293,
+          "height": 165.515625,
+          "top": 308.96875,
+          "right": 334,
+          "bottom": 474.484375,
+          "left": 41
+        },
+        ".kpi-grid-wide": {
+          "x": 16,
+          "y": 638.671875,
+          "width": 343,
+          "height": 281.390625,
+          "top": 638.671875,
+          "right": 359,
+          "bottom": 920.0625,
+          "left": 16
+        },
+        ".case-toc": {
+          "x": 16,
+          "y": 1230.25,
+          "width": 343,
+          "height": 160.328125,
+          "top": 1230.25,
+          "right": 359,
+          "bottom": 1390.578125,
+          "left": 16
+        }
+      }
+    },
+    "scroll": [],
+    "errors": []
+  },
+  {
+    "device": "desktop",
+    "mode": "direct",
+    "load": {
+      "shifts": [
+        {
+          "time": 222.20000000298023,
+          "value": 0.005384908542711549,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": "div.case-layout",
+              "text": "On this pageOverviewMy contributionDataResultsFeaturesArchitectureScreenshotsCha",
+              "previousRect": {
+                "x": 144.5,
+                "y": 695.296875,
+                "width": 1163,
+                "height": 204.703125,
+                "top": 695.296875,
+                "right": 1307.5,
+                "bottom": 900,
+                "left": 144.5
+              },
+              "currentRect": {
+                "x": 144.5,
+                "y": 718.296875,
+                "width": 1163,
+                "height": 181.703125,
+                "top": 718.296875,
+                "right": 1307.5,
+                "bottom": 900,
+                "left": 144.5
+              }
+            },
+            {
+              "node": "h1.",
+              "text": "GameVault",
+              "previousRect": {
+                "x": 177.5,
+                "y": 194.578125,
+                "width": 1070,
+                "height": 59,
+                "top": 194.578125,
+                "right": 1247.5,
+                "bottom": 253.578125,
+                "left": 177.5
+              },
+              "currentRect": {
+                "x": 177.5,
+                "y": 197.578125,
+                "width": 1070,
+                "height": 59,
+                "top": 197.578125,
+                "right": 1247.5,
+                "bottom": 256.578125,
+                "left": 177.5
+              }
+            },
+            {
+              "node": "nav#primary-nav.nav",
+              "text": "OverviewProjectsSkillsAcademicsContact",
+              "previousRect": {
+                "x": 667.625,
+                "y": 12.3125,
+                "width": 413.484375,
+                "height": 38.375,
+                "top": 12.3125,
+                "right": 1081.109375,
+                "bottom": 50.6875,
+                "left": 667.625
+              },
+              "currentRect": {
+                "x": 640.109375,
+                "y": 12.3125,
+                "width": 436.40625,
+                "height": 38.375,
+                "top": 12.3125,
+                "right": 1076.515625,
+                "bottom": 50.6875,
+                "left": 640.109375
+              }
+            },
+            {
+              "node": "div.",
+              "text": "RoleAI-assisted personal project",
+              "previousRect": {
+                "x": 474.390625,
+                "y": 312.171875,
+                "width": 203,
+                "height": 47.171875,
+                "top": 312.171875,
+                "right": 677.390625,
+                "bottom": 359.34375,
+                "left": 474.390625
+              },
+              "currentRect": {
+                "x": 487.90625,
+                "y": 312.171875,
+                "width": 216,
+                "height": 47.171875,
+                "top": 312.171875,
+                "right": 703.90625,
+                "bottom": 359.34375,
+                "left": 487.90625
+              }
+            },
+            {
+              "node": "a.btn",
+              "text": "Source code (opens in new tab)",
+              "previousRect": {
+                "x": 439.421875,
+                "y": 383.34375,
+                "width": 141.46875,
+                "height": 43.59375,
+                "top": 383.34375,
+                "right": 580.890625,
+                "bottom": 426.9375,
+                "left": 439.421875
+              },
+              "currentRect": {
+                "x": 447.921875,
+                "y": 383.34375,
+                "width": 149.203125,
+                "height": 43.59375,
+                "top": 383.34375,
+                "right": 597.125,
+                "bottom": 426.9375,
+                "left": 447.921875
+              }
+            }
+          ]
+        }
+      ],
+      "fontEvents": [
+        {
+          "time": 225.5,
+          "event": "loadingdone"
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        }
+      ],
+      "images": [
+        {
+          "src": "header-portrait-DxqxH9BI.webp",
+          "width": "48",
+          "height": "48",
+          "aspectRatio": "auto 48 / 48",
+          "naturalWidth": 384,
+          "naturalHeight": 384
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "1348",
+          "height": "926",
+          "aspectRatio": "auto 1348 / 926",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "1440",
+          "height": "900",
+          "aspectRatio": "auto 1440 / 900",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "1440",
+          "height": "900",
+          "aspectRatio": "auto 1440 / 900",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "linkedin-CHBsXBEb.png",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 635,
+          "naturalHeight": 540
+        }
+      ],
+      "boxes": {
+        ".project-hero": {
+          "x": 144.5,
+          "y": 124.796875,
+          "width": 1136,
+          "height": 335.140625,
+          "top": 124.796875,
+          "right": 1280.5,
+          "bottom": 459.9375,
+          "left": 144.5
+        },
+        ".project-facts": {
+          "x": 177.5,
+          "y": 312.171875,
+          "width": 1070,
+          "height": 47.171875,
+          "top": 312.171875,
+          "right": 1247.5,
+          "bottom": 359.34375,
+          "left": 177.5
+        },
+        ".kpi-grid-wide": {
+          "x": 144.5,
+          "y": 475.9375,
+          "width": 1136,
+          "height": 93.171875,
+          "top": 475.9375,
+          "right": 1280.5,
+          "bottom": 569.109375,
+          "left": 144.5
+        },
+        ".case-toc": {
+          "x": 144.5,
+          "y": 735.296875,
+          "width": 220,
+          "height": 320.21875,
+          "top": 735.296875,
+          "right": 364.5,
+          "bottom": 1055.515625,
+          "left": 144.5
+        }
+      }
+    },
+    "scroll": [],
+    "errors": []
+  },
+  {
+    "device": "desktop",
+    "mode": "slow-chunk",
+    "load": {
+      "shifts": [
+        {
+          "time": 213.10000000149012,
+          "value": 0.00035177431459780095,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": "nav#primary-nav.nav",
+              "text": "OverviewProjectsSkillsAcademicsContact",
+              "previousRect": {
+                "x": 667.625,
+                "y": 12.3125,
+                "width": 413.484375,
+                "height": 38.375,
+                "top": 12.3125,
+                "right": 1081.109375,
+                "bottom": 50.6875,
+                "left": 667.625
+              },
+              "currentRect": {
+                "x": 640.109375,
+                "y": 12.3125,
+                "width": 436.40625,
+                "height": 38.375,
+                "top": 12.3125,
+                "right": 1076.515625,
+                "bottom": 50.6875,
+                "left": 640.109375
+              }
+            },
+            {
+              "node": "div.topbar-actions",
+              "text": "Résumé",
+              "previousRect": {
+                "x": 1105.109375,
+                "y": 12.90625,
+                "width": 175.390625,
+                "height": 37.171875,
+                "top": 12.90625,
+                "right": 1280.5,
+                "bottom": 50.078125,
+                "left": 1105.109375
+              },
+              "currentRect": {
+                "x": 1100.515625,
+                "y": 12.90625,
+                "width": 179.984375,
+                "height": 37.171875,
+                "top": 12.90625,
+                "right": 1280.5,
+                "bottom": 50.078125,
+                "left": 1100.515625
+              }
+            }
+          ]
+        }
+      ],
+      "fontEvents": [
+        {
+          "time": 212.5,
+          "event": "loadingdone"
+        },
+        {
+          "time": 938,
+          "event": "loadingdone"
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        }
+      ],
+      "images": [
+        {
+          "src": "header-portrait-DxqxH9BI.webp",
+          "width": "48",
+          "height": "48",
+          "aspectRatio": "auto 48 / 48",
+          "naturalWidth": 384,
+          "naturalHeight": 384
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "1348",
+          "height": "926",
+          "aspectRatio": "auto 1348 / 926",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "1440",
+          "height": "900",
+          "aspectRatio": "auto 1440 / 900",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "1440",
+          "height": "900",
+          "aspectRatio": "auto 1440 / 900",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "linkedin-CHBsXBEb.png",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 635,
+          "naturalHeight": 540
+        }
+      ],
+      "boxes": {
+        ".project-hero": {
+          "x": 144.5,
+          "y": 124.796875,
+          "width": 1136,
+          "height": 335.140625,
+          "top": 124.796875,
+          "right": 1280.5,
+          "bottom": 459.9375,
+          "left": 144.5
+        },
+        ".project-facts": {
+          "x": 177.5,
+          "y": 312.171875,
+          "width": 1070,
+          "height": 47.171875,
+          "top": 312.171875,
+          "right": 1247.5,
+          "bottom": 359.34375,
+          "left": 177.5
+        },
+        ".kpi-grid-wide": {
+          "x": 144.5,
+          "y": 475.9375,
+          "width": 1136,
+          "height": 93.171875,
+          "top": 475.9375,
+          "right": 1280.5,
+          "bottom": 569.109375,
+          "left": 144.5
+        },
+        ".case-toc": {
+          "x": 144.5,
+          "y": 735.296875,
+          "width": 220,
+          "height": 320.21875,
+          "top": 735.296875,
+          "right": 364.5,
+          "bottom": 1055.515625,
+          "left": 144.5
+        }
+      }
+    },
+    "scroll": [],
+    "errors": []
+  },
+  {
+    "device": "desktop",
+    "mode": "slow-fonts",
+    "load": {
+      "shifts": [
+        {
+          "time": 2178.2000000029802,
+          "value": 0.000017682144311556928,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": "li.",
+              "text": "gamevault-marketplace",
+              "previousRect": {
+                "x": 293.171875,
+                "y": 88,
+                "width": 173.984375,
+                "height": 20.796875,
+                "top": 88,
+                "right": 467.15625,
+                "bottom": 108.796875,
+                "left": 293.171875
+              },
+              "currentRect": {
+                "x": 296.296875,
+                "y": 88,
+                "width": 178.015625,
+                "height": 20.796875,
+                "top": 88,
+                "right": 474.3125,
+                "bottom": 108.796875,
+                "left": 296.296875
+              }
+            },
+            {
+              "node": "span.count-up",
+              "text": "110",
+              "previousRect": {
+                "x": 161.5,
+                "y": 514.3125,
+                "width": 56.875,
+                "height": 43,
+                "top": 514.3125,
+                "right": 218.375,
+                "bottom": 557.3125,
+                "left": 161.5
+              },
+              "currentRect": {
+                "x": 161.5,
+                "y": 511.3125,
+                "width": 57.59375,
+                "height": 43,
+                "top": 511.3125,
+                "right": 219.09375,
+                "bottom": 554.3125,
+                "left": 161.5
+              }
+            },
+            {
+              "node": "span.count-up",
+              "text": "37",
+              "previousRect": {
+                "x": 544.15625,
+                "y": 514.3125,
+                "width": 38.90625,
+                "height": 43,
+                "top": 514.3125,
+                "right": 583.0625,
+                "bottom": 557.3125,
+                "left": 544.15625
+              },
+              "currentRect": {
+                "x": 544.15625,
+                "y": 511.3125,
+                "width": 38.390625,
+                "height": 43,
+                "top": 511.3125,
+                "right": 582.546875,
+                "bottom": 554.3125,
+                "left": 544.15625
+              }
+            },
+            {
+              "node": "span.count-up",
+              "text": "15",
+              "previousRect": {
+                "x": 926.828125,
+                "y": 514.3125,
+                "width": 37.90625,
+                "height": 43,
+                "top": 514.3125,
+                "right": 964.734375,
+                "bottom": 557.3125,
+                "left": 926.828125
+              },
+              "currentRect": {
+                "x": 926.828125,
+                "y": 511.3125,
+                "width": 38.390625,
+                "height": 43,
+                "top": 511.3125,
+                "right": 965.21875,
+                "bottom": 554.3125,
+                "left": 926.828125
+              }
+            }
+          ]
+        },
+        {
+          "time": 2205.8000000044703,
+          "value": 0.005238074207698366,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": "div.case-layout",
+              "text": "On this pageOverviewMy contributionDataResultsFeaturesArchitectureScreenshotsCha",
+              "previousRect": {
+                "x": 144.5,
+                "y": 695.296875,
+                "width": 1163,
+                "height": 204.703125,
+                "top": 695.296875,
+                "right": 1307.5,
+                "bottom": 900,
+                "left": 144.5
+              },
+              "currentRect": {
+                "x": 144.5,
+                "y": 718.296875,
+                "width": 1163,
+                "height": 181.703125,
+                "top": 718.296875,
+                "right": 1307.5,
+                "bottom": 900,
+                "left": 144.5
+              }
+            },
+            {
+              "node": "h1.",
+              "text": "GameVault",
+              "previousRect": {
+                "x": 177.5,
+                "y": 194.578125,
+                "width": 1070,
+                "height": 59,
+                "top": 194.578125,
+                "right": 1247.5,
+                "bottom": 253.578125,
+                "left": 177.5
+              },
+              "currentRect": {
+                "x": 177.5,
+                "y": 197.578125,
+                "width": 1070,
+                "height": 59,
+                "top": 197.578125,
+                "right": 1247.5,
+                "bottom": 256.578125,
+                "left": 177.5
+              }
+            },
+            {
+              "node": "nav#primary-nav.nav",
+              "text": "OverviewProjectsSkillsAcademicsContact",
+              "previousRect": {
+                "x": 667.625,
+                "y": 12.3125,
+                "width": 413.484375,
+                "height": 38.375,
+                "top": 12.3125,
+                "right": 1081.109375,
+                "bottom": 50.6875,
+                "left": 667.625
+              },
+              "currentRect": {
+                "x": 640.109375,
+                "y": 12.3125,
+                "width": 436.40625,
+                "height": 38.375,
+                "top": 12.3125,
+                "right": 1076.515625,
+                "bottom": 50.6875,
+                "left": 640.109375
+              }
+            },
+            {
+              "node": "div.",
+              "text": "RoleAI-assisted personal project",
+              "previousRect": {
+                "x": 474.390625,
+                "y": 312.171875,
+                "width": 203,
+                "height": 47.171875,
+                "top": 312.171875,
+                "right": 677.390625,
+                "bottom": 359.34375,
+                "left": 474.390625
+              },
+              "currentRect": {
+                "x": 487.90625,
+                "y": 312.171875,
+                "width": 216,
+                "height": 47.171875,
+                "top": 312.171875,
+                "right": 703.90625,
+                "bottom": 359.34375,
+                "left": 487.90625
+              }
+            },
+            {
+              "node": "a.btn",
+              "text": "Source code (opens in new tab)",
+              "previousRect": {
+                "x": 439.421875,
+                "y": 383.34375,
+                "width": 141.46875,
+                "height": 43.59375,
+                "top": 383.34375,
+                "right": 580.890625,
+                "bottom": 426.9375,
+                "left": 439.421875
+              },
+              "currentRect": {
+                "x": 447.921875,
+                "y": 383.34375,
+                "width": 149.203125,
+                "height": 43.59375,
+                "top": 383.34375,
+                "right": 597.125,
+                "bottom": 426.9375,
+                "left": 447.921875
+              }
+            }
+          ]
+        }
+      ],
+      "fontEvents": [
+        {
+          "time": 2207.2000000029802,
+          "event": "loadingdone"
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        }
+      ],
+      "images": [
+        {
+          "src": "header-portrait-DxqxH9BI.webp",
+          "width": "48",
+          "height": "48",
+          "aspectRatio": "auto 48 / 48",
+          "naturalWidth": 384,
+          "naturalHeight": 384
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "1348",
+          "height": "926",
+          "aspectRatio": "auto 1348 / 926",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "1440",
+          "height": "900",
+          "aspectRatio": "auto 1440 / 900",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "1440",
+          "height": "900",
+          "aspectRatio": "auto 1440 / 900",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "linkedin-CHBsXBEb.png",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 635,
+          "naturalHeight": 540
+        }
+      ],
+      "boxes": {
+        ".project-hero": {
+          "x": 144.5,
+          "y": 124.796875,
+          "width": 1136,
+          "height": 335.140625,
+          "top": 124.796875,
+          "right": 1280.5,
+          "bottom": 459.9375,
+          "left": 144.5
+        },
+        ".project-facts": {
+          "x": 177.5,
+          "y": 312.171875,
+          "width": 1070,
+          "height": 47.171875,
+          "top": 312.171875,
+          "right": 1247.5,
+          "bottom": 359.34375,
+          "left": 177.5
+        },
+        ".kpi-grid-wide": {
+          "x": 144.5,
+          "y": 475.9375,
+          "width": 1136,
+          "height": 93.171875,
+          "top": 475.9375,
+          "right": 1280.5,
+          "bottom": 569.109375,
+          "left": 144.5
+        },
+        ".case-toc": {
+          "x": 144.5,
+          "y": 735.296875,
+          "width": 220,
+          "height": 320.21875,
+          "top": 735.296875,
+          "right": 364.5,
+          "bottom": 1055.515625,
+          "left": 144.5
+        }
+      }
+    },
+    "scroll": [],
+    "errors": []
+  },
+  {
+    "device": "desktop",
+    "mode": "client",
+    "load": {
+      "shifts": [
+        {
+          "time": 937.7999999970198,
+          "value": 0.10225694444444444,
+          "hadRecentInput": true,
+          "sources": [
+            {
+              "node": "footer.footer",
+              "text": "© 2026 Wai Yan Hpone Lat · SingaporeOverviewProjectsSkillsAcademicsContactGitHub",
+              "previousRect": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "currentRect": {
+                "x": 0,
+                "y": 807,
+                "width": 1425,
+                "height": 93,
+                "top": 807,
+                "right": 1425,
+                "bottom": 900,
+                "left": 0
+              }
+            }
+          ]
+        }
+      ],
+      "fontEvents": [],
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        }
+      ],
+      "images": [
+        {
+          "src": "header-portrait-DxqxH9BI.webp",
+          "width": "48",
+          "height": "48",
+          "aspectRatio": "auto 48 / 48",
+          "naturalWidth": 384,
+          "naturalHeight": 384
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 360,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "gamevault-D5EPbCiQ.webp",
+          "width": "1348",
+          "height": "926",
+          "aspectRatio": "auto 1348 / 926",
+          "naturalWidth": 1348,
+          "naturalHeight": 926
+        },
+        {
+          "src": "",
+          "width": "1440",
+          "height": "900",
+          "aspectRatio": "auto 1440 / 900",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "1440",
+          "height": "900",
+          "aspectRatio": "auto 1440 / 900",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "linkedin-CHBsXBEb.png",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 635,
+          "naturalHeight": 540
+        }
+      ],
+      "boxes": {
+        ".project-hero": {
+          "x": 144.5,
+          "y": 124.796875,
+          "width": 1136,
+          "height": 335.140625,
+          "top": 124.796875,
+          "right": 1280.5,
+          "bottom": 459.9375,
+          "left": 144.5
+        },
+        ".project-facts": {
+          "x": 177.5,
+          "y": 312.171875,
+          "width": 1070,
+          "height": 47.171875,
+          "top": 312.171875,
+          "right": 1247.5,
+          "bottom": 359.34375,
+          "left": 177.5
+        },
+        ".kpi-grid-wide": {
+          "x": 144.5,
+          "y": 475.9375,
+          "width": 1136,
+          "height": 93.171875,
+          "top": 475.9375,
+          "right": 1280.5,
+          "bottom": 569.109375,
+          "left": 144.5
+        },
+        ".case-toc": {
+          "x": 144.5,
+          "y": 735.296875,
+          "width": 220,
+          "height": 320.21875,
+          "top": 735.296875,
+          "right": 364.5,
+          "bottom": 1055.515625,
+          "left": 144.5
+        }
+      }
+    },
+    "scroll": [],
+    "errors": []
+  }
+]
