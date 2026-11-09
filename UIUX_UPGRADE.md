@@ -140,7 +140,7 @@ Mirror the values for JS in a new `src/motion/tokens.js`. Use a plain `export co
 // Keep in sync with the Motion block in src/styles/tokens.css (checked by tests/motion.test.mjs).
 export const motion = {
   duration: { instant: 80, fast: 150, base: 220, slow: 420, slower: 640, count: 800, scan: 700 },
-  stagger: { base: 60, tight: 35, maxSteps: 6, maxStepsBars: 8 },
+  stagger: { base: 60, tight: 35, maxSteps: 5, maxStepsBars: 8 },
   inView: { rootMargin: '0px 0px -10% 0px', threshold: 0.25 },
   boot: { cardsStart: 120, countLead: 120, scanDelay: 360, maxTotal: 1300 },
   delayLoading: 300,
@@ -149,7 +149,7 @@ export const motion = {
 
 Usage rules:
 
-- **Stagger.** In CSS, use `animation-delay: calc(min(var(--i, 0), 6) * var(--stagger-tight))`. Set `--i` from React with `style={{ '--i': index }}`. React passes custom properties through unchanged, without adding `px`.
+- **Stagger.** For filtered cards, use `animation-delay: calc(min(var(--i, 0), 5) * var(--stagger-tight))`; bars remain capped at 8 steps. Set `--i` from React with `style={{ '--i': index }}`. React passes custom properties through unchanged, without adding `px`.
 - **Fill mode.** Time-based animations use `animation-fill-mode: backwards`. Scroll-driven animations use `both`. Never use `forwards`.
 - **Shorthand order.** The `animation` shorthand resets `animation-timeline`, so declare `animation-timeline` and `animation-range` after it.
 
@@ -168,7 +168,7 @@ This is the complete list. Anything not in this table must not animate.
 | D1 | Bar fills (Skills, model comparison) | in view, once | scaleX(0 → 1) | 640 ms; i×35 ms, capped at 8 steps | ease-out |
 | D2 | GPA plot sweep | in view, once | scaleX(1 → 0) on an overlay | 640 ms | ease-in-out |
 | D3 | Case-study KPI numbers | in view, once (current behaviour) | text | 800 ms | easeOutCubic |
-| I1 | Project cards after a filter click | click | opacity | 220 ms; i×35 ms, capped at 6 steps | ease-out |
+| I1 | Project cards after a filter click | click | opacity | 220 ms; i×35 ms, capped at 5 steps | ease-out |
 | I2 | Semester table rows | click | opacity | 150 ms | ease-out |
 | I3 | Route enter | client-side pathname change only | opacity, translateY(4px → 0) | 220 ms | ease-out |
 | I4 | Mobile menu | open / close | opacity, translateY(-8px ↔ 0), `display` (allow-discrete) | 220 ms open, 150 ms close | ease-out / ease-in |
@@ -303,7 +303,7 @@ The status dot pings 3 times from page load (4.8 s total, inside the 5 s limit o
 @media (prefers-reduced-motion: no-preference) {
   .project-grid[data-motion='swap'] > .project-panel {
     animation: fade-in var(--dur-base) var(--ease-out) backwards;
-    animation-delay: calc(min(var(--i, 0), 6) * var(--stagger-tight));
+    animation-delay: calc(min(var(--i, 0), 5) * var(--stagger-tight));
   }
 }
 ```
@@ -881,7 +881,7 @@ The implementer must follow every rule.
 - [ ] Press 80 ms; hover and focus feedback 150 ms; small UI enter 220 ms; exits about 70% of the enter (150 ms); entrances 420 ms; data reveals 640 ms; count-up 800 ms.
 - [ ] No single element animates longer than 640 ms, except the count-up (800 ms), the scan line (700 ms) and the status ping (1600 ms × 3).
 - [ ] No sequence runs longer than 950 ms, except the hero boot at 1300 ms or less.
-- [ ] Stagger is 35 or 60 ms, capped at 6 steps (8 for bars).
+- [ ] Stagger is 35 or 60 ms, capped at 5 steps for filtered cards (8 for bars).
 - [ ] Use tokens only; no literal durations in new CSS. The only allowed literals are `1600ms` (ping), and `120ms` and `360ms` (boot offsets).
 
 **Easing**
