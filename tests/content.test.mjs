@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { loadDataModule, read, root } from './helpers.mjs';
+import { renderSitemap } from '../scripts/generate-seo.mjs';
 
 const { projects } = loadDataModule('src/data/projects.js');
 const { projectMetrics } = loadDataModule('src/data/projectMetrics.js');
@@ -68,8 +69,9 @@ test('personal info has no placeholders and the résumé exists', () => {
 });
 
 test('sitemap lists the homepage and every case study', () => {
-  const xml = read('public/sitemap.xml');
   const base = 'https://teddy-qyuon-portfolio.vercel.app';
+  const xml = renderSitemap(projects, base);
+  assert.equal(existsSync(resolve(root, 'public/sitemap.xml')), false, 'the generated sitemap is the only source');
   assert.ok(xml.includes(`<loc>${base}/</loc>`));
   for (const p of projects) assert.ok(xml.includes(`<loc>${base}/projects/${p.slug}</loc>`), `sitemap missing ${p.slug}`);
   assert.match(read('public/robots.txt'), /Sitemap: https:\/\/teddy-qyuon-portfolio\.vercel\.app\/sitemap\.xml/);

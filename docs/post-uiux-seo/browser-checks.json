@@ -1,0 +1,50 @@
+[
+  {
+    "width": 390,
+    "reducedMotion": "no-preference",
+    "directProjects": 7,
+    "directAnimation": false,
+    "clientAnimation": "route-in",
+    "metadata": true,
+    "notFoundNoindex": true,
+    "canonicalRestored": true,
+    "overflow": 0,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "reducedMotion": "reduce",
+    "directProjects": 7,
+    "directAnimation": false,
+    "clientAnimation": "none",
+    "metadata": true,
+    "notFoundNoindex": true,
+    "canonicalRestored": true,
+    "overflow": 0,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "reducedMotion": "no-preference",
+    "directProjects": 7,
+    "directAnimation": false,
+    "clientAnimation": "route-in",
+    "metadata": true,
+    "notFoundNoindex": true,
+    "canonicalRestored": true,
+    "overflow": 0,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "reducedMotion": "reduce",
+    "directProjects": 7,
+    "directAnimation": false,
+    "clientAnimation": "none",
+    "metadata": true,
+    "notFoundNoindex": true,
+    "canonicalRestored": true,
+    "overflow": 0,
+    "errors": []
+  }
+]

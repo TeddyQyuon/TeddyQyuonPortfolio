@@ -78,7 +78,7 @@ src/
   pages/        Home, project case studies and not-found routes
   sections/     Homepage sections
   styles/       Design tokens, layouts, components and motion CSS
-public/         Résumé, theme initialization, sitemap and social preview
+public/         Résumé, theme initialization, robots and social preview
 tests/          Content, routing, security and motion guardrails
 docs/           Baseline measurements, QA evidence and completion reports
 ```
@@ -88,6 +88,12 @@ docs/           Baseline measurements, QA evidence and completion reports
 Update portfolio content through `src/data/`. Site-wide metadata and navigation live in `src/config/site.js`. Motion durations are shared between `src/styles/tokens.css` and `src/motion/tokens.js`, with parity checked by tests.
 
 The production build outputs to `dist/`. `vercel.json` configures the single-page route fallback and security headers, including the Content Security Policy. Local preview uses those same headers so CSP issues can be caught before deployment.
+
+## SEO and social previews
+
+`npm.cmd run build` runs Vite, then generates one static HTML entry for each of the seven project routes and one `dist/sitemap.xml`. Project data is the sitemap source; there is no second sitemap in `public/`. The existing `useDocumentMeta` hook and the generator share helpers in `src/utils/seo.js`, so client navigation and link-preview crawlers receive matching project titles, descriptions, canonical URLs and social tags.
+
+Vercel project rewrites precede the SPA fallback. Local `npm.cmd run preview` applies the same project-file lookup under the production CSP; `curl.exe http://127.0.0.1:4174/projects/gamevault-marketplace` returns project metadata without running JavaScript. Generated pages retain Vite's hashed external assets and contain no inline scripts or styles. See [Task 7 verification](docs/post-uiux-seo/task-7.md) for results and the sitemap decision.
 
 ## Quality checks
 

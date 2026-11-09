@@ -1,0 +1,77 @@
+{
+  "headersByteIdentical": true,
+  "projectPages": [
+    {
+      "slug": "gamevault-marketplace",
+      "title": "GameVault | Wai Yan Hpone Lat",
+      "description": "A redesigned digital marketplace with 37 published products, prominent autocomplete search, category menus and compact product rails. Responsive filters, a sliding cart and clear region and delivery details connect browsing to server-priced Stripe Checkout.",
+      "canonical": "https://teddy-qyuon-portfolio.vercel.app/projects/gamevault-marketplace",
+      "assets": [
+        "/assets/index-Cdi5-Usk.js",
+        "/assets/index-D1gf22O7.css"
+      ]
+    },
+    {
+      "slug": "sole-district",
+      "title": "SOLE DISTRICT | Wai Yan Hpone Lat",
+      "description": "An editorial sneakers and streetwear storefront with 175 catalogue pieces, brand navigation, quick size selection, persistent bag and wishlist. The latest release adds clothing and accessories, reduced-motion support and Singapore address validation over a Django/PostgreSQL commerce backend.",
+      "canonical": "https://teddy-qyuon-portfolio.vercel.app/projects/sole-district",
+      "assets": [
+        "/assets/index-Cdi5-Usk.js",
+        "/assets/index-D1gf22O7.css"
+      ]
+    },
+    {
+      "slug": "scenthaus-intelligence",
+      "title": "SCENTHAUS Intelligence | Wai Yan Hpone Lat",
+      "description": "An editorial fragrance storefront with 35 houses and 150 product references. Search names, houses and notes; browse scent families; choose sizes with Quick add. Responsive WebP images, local fonts and on-demand search and checkout bundles reduce loading work.",
+      "canonical": "https://teddy-qyuon-portfolio.vercel.app/projects/scenthaus-intelligence",
+      "assets": [
+        "/assets/index-Cdi5-Usk.js",
+        "/assets/index-D1gf22O7.css"
+      ]
+    },
+    {
+      "slug": "meterwise-building-energy-analytics",
+      "title": "MeterWise | Wai Yan Hpone Lat",
+      "description": "A responsive Singapore estate dashboard with town and block filters, data-quality repair, maintenance workflows and expandable insights. Combined startup requests and lazy panels reduce initial JavaScript by 16.6%; live ML is currently unavailable and demonstration insights are labelled.",
+      "canonical": "https://teddy-qyuon-portfolio.vercel.app/projects/meterwise-building-energy-analytics",
+      "assets": [
+        "/assets/index-Cdi5-Usk.js",
+        "/assets/index-D1gf22O7.css"
+      ]
+    },
+    {
+      "slug": "playlist-port-spotify-mover",
+      "title": "Playlist Port | Wai Yan Hpone Lat",
+      "description": "Copy Spotify playlists and album links into private playlists with preserved track order. A searchable, paginated transfer queue keeps progress and Cancel within reach; empty playlists are skipped so the queue keeps moving.",
+      "canonical": "https://teddy-qyuon-portfolio.vercel.app/projects/playlist-port-spotify-mover",
+      "assets": [
+        "/assets/index-Cdi5-Usk.js",
+        "/assets/index-D1gf22O7.css"
+      ]
+    },
+    {
+      "slug": "annual-leave-management",
+      "title": "Annual Leave Management System | Wai Yan Hpone Lat",
+      "description": "A staff leave system with two-stage approval, delegated approvers, notifications and an auditable request history.",
+      "canonical": "https://teddy-qyuon-portfolio.vercel.app/projects/annual-leave-management",
+      "assets": [
+        "/assets/index-Cdi5-Usk.js",
+        "/assets/index-D1gf22O7.css"
+      ]
+    },
+    {
+      "slug": "gym-calories-predictive-analysis",
+      "title": "Gym Calories Predictive Analysis | Wai Yan Hpone Lat",
+      "description": "Prepared 950 valid gym records and compared four regression models to predict calories burned on a consistent validation split.",
+      "canonical": "https://teddy-qyuon-portfolio.vercel.app/projects/gym-calories-predictive-analysis",
+      "assets": [
+        "/assets/index-Cdi5-Usk.js",
+        "/assets/index-D1gf22O7.css"
+      ]
+    }
+  ],
+  "sitemapCount": 1,
+  "noInlineCode": true
+}
