@@ -48,7 +48,7 @@ npm.cmd test
 npm.cmd run build
 npm.cmd run preview
 # In another terminal, with Playwright available outside the project:
-$env:PLAYWRIGHT_MODULE = Join-Path $env:LOCALAPPDATA 'npm-cache\_npx\bbb8a2c4738e2b0c\node_modules\playwright'
+$env:PLAYWRIGHT_MODULE = 'D:\tools\node_modules\playwright' # replace with your own Playwright installation
 $env:QA_OUTPUT = Join-Path $env:TEMP 'portfolio-uiux-recheck'
 New-Item -ItemType Directory -Path $env:QA_OUTPUT -Force | Out-Null
 node docs/uiux-upgrade/scripts/capture.cjs
@@ -56,7 +56,7 @@ node docs/uiux-upgrade/scripts/feature-checks.cjs
 node docs/uiux-upgrade/scripts/content-lock.cjs
 ```
 
-The Playwright path above reuses this machine's existing cache; point it at another installed Playwright module on a different machine. For Lighthouse, use Chrome with `--chrome-flags=--headless=new --output=json`, the mobile default or `--preset=desktop`, three serial runs for each route/device, and five fresh runs when the spec requires a recheck. Name reports `home-mobile-1.json` etc. in QA_OUTPUT, then run `summarize.cjs` and `compare-lighthouse.cjs`. These external QA tools are not application dependencies. Raw per-run reports, trace failures/retries and original screenshots remain under `C:\Users\waiya\AppData\Local\Temp\portfolio-uiux-stepN-20261107`; compact evidence is committed here.
+Set PLAYWRIGHT_MODULE to your own Playwright installation; the path above is only a placeholder. For Lighthouse, use Chrome with `--chrome-flags=--headless=new --output=json`, the mobile default or `--preset=desktop`, three serial runs for each route/device, and five fresh runs when the spec requires a recheck. Name reports `home-mobile-1.json` etc. in QA_OUTPUT, then run `summarize.cjs` and `compare-lighthouse.cjs`. These external QA tools are not application dependencies. Raw per-run reports, trace failures/retries and original screenshots remain under `$env:TEMP\portfolio-uiux-stepN`; compact evidence is committed here.
 
 ## Implementation commits
 
