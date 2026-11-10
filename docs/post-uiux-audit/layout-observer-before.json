@@ -1,0 +1,5435 @@
+[
+  {
+    "device": "mobile",
+    "mode": "direct",
+    "load": {
+      "shifts": [
+        {
+          "time": 370.80000000447035,
+          "value": 0.20164965366387166,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": "footer.footer",
+              "text": "© 2026 Wai Yan Hpone Lat · SingaporeOverviewProjectsSkillsAcademicsContactGitHub",
+              "previousRect": {
+                "x": 0,
+                "y": 305.59375,
+                "width": 375,
+                "height": 177.796875,
+                "top": 305.59375,
+                "right": 375,
+                "bottom": 483.390625,
+                "left": 0
+              },
+              "currentRect": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ]
+        }
+      ],
+      "fontEvents": [
+        {
+          "time": 331.80000000447035,
+          "event": "loadingdone"
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        }
+      ],
+      "images": [
+        {
+          "src": "header-portrait-DxqxH9BI.webp",
+          "width": "48",
+          "height": "48",
+          "aspectRatio": "auto 48 / 48",
+          "naturalWidth": 384,
+          "naturalHeight": 384
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": null,
+          "height": null,
+          "aspectRatio": "auto",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": null,
+          "height": null,
+          "aspectRatio": "auto",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": null,
+          "height": null,
+          "aspectRatio": "auto",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "linkedin-CHBsXBEb.png",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 635,
+          "naturalHeight": 540
+        }
+      ],
+      "boxes": {
+        ".project-hero": {
+          "x": 16,
+          "y": 124.796875,
+          "width": 343,
+          "height": 497.875,
+          "top": 124.796875,
+          "right": 359,
+          "bottom": 622.671875,
+          "left": 16
+        },
+        ".project-facts": {
+          "x": 41,
+          "y": 308.96875,
+          "width": 293,
+          "height": 165.515625,
+          "top": 308.96875,
+          "right": 334,
+          "bottom": 474.484375,
+          "left": 41
+        },
+        ".kpi-grid-wide": {
+          "x": 16,
+          "y": 638.671875,
+          "width": 343,
+          "height": 281.390625,
+          "top": 638.671875,
+          "right": 359,
+          "bottom": 920.0625,
+          "left": 16
+        },
+        ".case-toc": {
+          "x": 16,
+          "y": 1230.25,
+          "width": 343,
+          "height": 160.328125,
+          "top": 1230.25,
+          "right": 359,
+          "bottom": 1390.578125,
+          "left": 16
+        }
+      }
+    },
+    "scroll": [
+      {
+        "time": 2335.10000000149,
+        "value": 0.2791998422065948,
+        "hadRecentInput": false,
+        "sources": [
+          {
+            "node": "figure.shot",
+            "text": "(open full size in new tab)Dedicated product purchase view with prominent Buy No",
+            "previousRect": {
+              "x": 41,
+              "y": 365.359375,
+              "width": 293,
+              "height": 135.1875,
+              "top": 365.359375,
+              "right": 334,
+              "bottom": 500.546875,
+              "left": 41
+            },
+            "currentRect": {
+              "x": 41,
+              "y": 523.25,
+              "width": 293,
+              "height": 275.0625,
+              "top": 523.25,
+              "right": 334,
+              "bottom": 798.3125,
+              "left": 41
+            }
+          },
+          {
+            "node": "section#reflection.panel.case-block",
+            "text": "Challenges & learningsChallengesEnsuring bulletproof separation between live and",
+            "previousRect": {
+              "x": 0,
+              "y": 654.9375,
+              "width": 375,
+              "height": 189.0625,
+              "top": 654.9375,
+              "right": 375,
+              "bottom": 844,
+              "left": 0
+            },
+            "currentRect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "node": "figcaption.",
+            "text": "Live marketplace captured on 4 November 2026. The October redesign adds a light ",
+            "previousRect": {
+              "x": 41,
+              "y": 266.171875,
+              "width": 293,
+              "height": 83.1875,
+              "top": 266.171875,
+              "right": 334,
+              "bottom": 349.359375,
+              "left": 41
+            },
+            "currentRect": {
+              "x": 41,
+              "y": 424.0625,
+              "width": 293,
+              "height": 83.1875,
+              "top": 424.0625,
+              "right": 334,
+              "bottom": 507.25,
+              "left": 41
+            }
+          },
+          {
+            "node": "figure.shot",
+            "text": "(open full size in new tab)Subscriptions directory with platform badges, direct ",
+            "previousRect": {
+              "x": 41,
+              "y": 516.546875,
+              "width": 293,
+              "height": 114.390625,
+              "top": 516.546875,
+              "right": 334,
+              "bottom": 630.9375,
+              "left": 41
+            },
+            "currentRect": {
+              "x": 41,
+              "y": 814.3125,
+              "width": 293,
+              "height": 29.6875,
+              "top": 814.3125,
+              "right": 334,
+              "bottom": 844,
+              "left": 41
+            }
+          },
+          {
+            "node": "figcaption.",
+            "text": "Subscriptions directory with platform badges, direct pricing, and one-click purc",
+            "previousRect": {
+              "x": 41,
+              "y": 568.546875,
+              "width": 293,
+              "height": 62.390625,
+              "top": 568.546875,
+              "right": 334,
+              "bottom": 630.9375,
+              "left": 41
+            },
+            "currentRect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        ]
+      }
+    ],
+    "errors": []
+  },
+  {
+    "device": "mobile",
+    "mode": "slow-chunk",
+    "load": {
+      "shifts": [
+        {
+          "time": 207.5,
+          "value": 0.00009035795517701528,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": "p.mono.footer-meta",
+              "text": "Singapore",
+              "previousRect": {
+                "x": 15,
+                "y": 332.59375,
+                "width": 275.25,
+                "height": 17,
+                "top": 332.59375,
+                "right": 290.25,
+                "bottom": 349.59375,
+                "left": 15
+              },
+              "currentRect": {
+                "x": 16,
+                "y": 331.59375,
+                "width": 280.84375,
+                "height": 17,
+                "top": 331.59375,
+                "right": 296.84375,
+                "bottom": 348.59375,
+                "left": 16
+              }
+            }
+          ]
+        },
+        {
+          "time": 213.29999999701977,
+          "value": 0.0008999408374843564,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": "li.",
+              "text": "Academics",
+              "previousRect": {
+                "x": 199.28125,
+                "y": 367.390625,
+                "width": 68,
+                "height": 44,
+                "top": 367.390625,
+                "right": 267.28125,
+                "bottom": 411.390625,
+                "left": 199.28125
+              },
+              "currentRect": {
+                "x": 214.578125,
+                "y": 367.390625,
+                "width": 73.4375,
+                "height": 44,
+                "top": 367.390625,
+                "right": 288.015625,
+                "bottom": 411.390625,
+                "left": 214.578125
+              }
+            },
+            {
+              "node": "li.",
+              "text": "Contact",
+              "previousRect": {
+                "x": 282.328125,
+                "y": 367.390625,
+                "width": 49,
+                "height": 44,
+                "top": 367.390625,
+                "right": 331.328125,
+                "bottom": 411.390625,
+                "left": 282.328125
+              },
+              "currentRect": {
+                "x": 304.015625,
+                "y": 367.390625,
+                "width": 53,
+                "height": 44,
+                "top": 367.390625,
+                "right": 357.015625,
+                "bottom": 411.390625,
+                "left": 304.015625
+              }
+            },
+            {
+              "node": "li.",
+              "text": "Projects",
+              "previousRect": {
+                "x": 88.984375,
+                "y": 367.390625,
+                "width": 49,
+                "height": 44,
+                "top": 367.390625,
+                "right": 137.984375,
+                "bottom": 411.390625,
+                "left": 88.984375
+              },
+              "currentRect": {
+                "x": 94.578125,
+                "y": 367.390625,
+                "width": 53.765625,
+                "height": 44,
+                "top": 367.390625,
+                "right": 148.34375,
+                "bottom": 411.390625,
+                "left": 94.578125
+              }
+            },
+            {
+              "node": "li.",
+              "text": "Skills",
+              "previousRect": {
+                "x": 153.765625,
+                "y": 367.390625,
+                "width": 31,
+                "height": 44,
+                "top": 367.390625,
+                "right": 184.765625,
+                "bottom": 411.390625,
+                "left": 153.765625
+              },
+              "currentRect": {
+                "x": 164.34375,
+                "y": 367.390625,
+                "width": 34.234375,
+                "height": 44,
+                "top": 367.390625,
+                "right": 198.578125,
+                "bottom": 411.390625,
+                "left": 164.34375
+              }
+            }
+          ]
+        },
+        {
+          "time": 976.3999999985099,
+          "value": 0.20164965366387166,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": "footer.footer",
+              "text": "© 2026 Wai Yan Hpone Lat · SingaporeOverviewProjectsSkillsAcademicsContactGitHub",
+              "previousRect": {
+                "x": 0,
+                "y": 305.59375,
+                "width": 375,
+                "height": 177.796875,
+                "top": 305.59375,
+                "right": 375,
+                "bottom": 483.390625,
+                "left": 0
+              },
+              "currentRect": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ]
+        }
+      ],
+      "fontEvents": [
+        {
+          "time": 213,
+          "event": "loadingdone"
+        },
+        {
+          "time": 980.8999999985099,
+          "event": "loadingdone"
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        }
+      ],
+      "images": [
+        {
+          "src": "header-portrait-DxqxH9BI.webp",
+          "width": "48",
+          "height": "48",
+          "aspectRatio": "auto 48 / 48",
+          "naturalWidth": 384,
+          "naturalHeight": 384
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": null,
+          "height": null,
+          "aspectRatio": "auto",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": null,
+          "height": null,
+          "aspectRatio": "auto",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": null,
+          "height": null,
+          "aspectRatio": "auto",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "linkedin-CHBsXBEb.png",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 635,
+          "naturalHeight": 540
+        }
+      ],
+      "boxes": {
+        ".project-hero": {
+          "x": 16,
+          "y": 124.796875,
+          "width": 343,
+          "height": 497.875,
+          "top": 124.796875,
+          "right": 359,
+          "bottom": 622.671875,
+          "left": 16
+        },
+        ".project-facts": {
+          "x": 41,
+          "y": 308.96875,
+          "width": 293,
+          "height": 165.515625,
+          "top": 308.96875,
+          "right": 334,
+          "bottom": 474.484375,
+          "left": 41
+        },
+        ".kpi-grid-wide": {
+          "x": 16,
+          "y": 638.671875,
+          "width": 343,
+          "height": 281.390625,
+          "top": 638.671875,
+          "right": 359,
+          "bottom": 920.0625,
+          "left": 16
+        },
+        ".case-toc": {
+          "x": 16,
+          "y": 1230.25,
+          "width": 343,
+          "height": 160.328125,
+          "top": 1230.25,
+          "right": 359,
+          "bottom": 1390.578125,
+          "left": 16
+        }
+      }
+    },
+    "scroll": [
+      {
+        "time": 2977,
+        "value": 0.2791998422065948,
+        "hadRecentInput": false,
+        "sources": [
+          {
+            "node": "figure.shot",
+            "text": "(open full size in new tab)Dedicated product purchase view with prominent Buy No",
+            "previousRect": {
+              "x": 41,
+              "y": 365.359375,
+              "width": 293,
+              "height": 135.1875,
+              "top": 365.359375,
+              "right": 334,
+              "bottom": 500.546875,
+              "left": 41
+            },
+            "currentRect": {
+              "x": 41,
+              "y": 523.25,
+              "width": 293,
+              "height": 275.0625,
+              "top": 523.25,
+              "right": 334,
+              "bottom": 798.3125,
+              "left": 41
+            }
+          },
+          {
+            "node": "section#reflection.panel.case-block",
+            "text": "Challenges & learningsChallengesEnsuring bulletproof separation between live and",
+            "previousRect": {
+              "x": 0,
+              "y": 654.9375,
+              "width": 375,
+              "height": 189.0625,
+              "top": 654.9375,
+              "right": 375,
+              "bottom": 844,
+              "left": 0
+            },
+            "currentRect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "node": "figcaption.",
+            "text": "Live marketplace captured on 4 November 2026. The October redesign adds a light ",
+            "previousRect": {
+              "x": 41,
+              "y": 266.171875,
+              "width": 293,
+              "height": 83.1875,
+              "top": 266.171875,
+              "right": 334,
+              "bottom": 349.359375,
+              "left": 41
+            },
+            "currentRect": {
+              "x": 41,
+              "y": 424.0625,
+              "width": 293,
+              "height": 83.1875,
+              "top": 424.0625,
+              "right": 334,
+              "bottom": 507.25,
+              "left": 41
+            }
+          },
+          {
+            "node": "figure.shot",
+            "text": "(open full size in new tab)Subscriptions directory with platform badges, direct ",
+            "previousRect": {
+              "x": 41,
+              "y": 516.546875,
+              "width": 293,
+              "height": 114.390625,
+              "top": 516.546875,
+              "right": 334,
+              "bottom": 630.9375,
+              "left": 41
+            },
+            "currentRect": {
+              "x": 41,
+              "y": 814.3125,
+              "width": 293,
+              "height": 29.6875,
+              "top": 814.3125,
+              "right": 334,
+              "bottom": 844,
+              "left": 41
+            }
+          },
+          {
+            "node": "figcaption.",
+            "text": "Subscriptions directory with platform badges, direct pricing, and one-click purc",
+            "previousRect": {
+              "x": 41,
+              "y": 568.546875,
+              "width": 293,
+              "height": 62.390625,
+              "top": 568.546875,
+              "right": 334,
+              "bottom": 630.9375,
+              "left": 41
+            },
+            "currentRect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        ]
+      }
+    ],
+    "errors": []
+  },
+  {
+    "device": "mobile",
+    "mode": "slow-fonts",
+    "load": {
+      "shifts": [
+        {
+          "time": 1208.1000000014901,
+          "value": 0.20164965366387166,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": "footer.footer",
+              "text": "© 2026 Wai Yan Hpone Lat · SingaporeOverviewProjectsSkillsAcademicsContactGitHub",
+              "previousRect": {
+                "x": 0,
+                "y": 305.59375,
+                "width": 375,
+                "height": 177.796875,
+                "top": 305.59375,
+                "right": 375,
+                "bottom": 483.390625,
+                "left": 0
+              },
+              "currentRect": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ]
+        },
+        {
+          "time": 2202.3000000044703,
+          "value": 0.0000982308874406143,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": "a.btn",
+              "text": "API (opens in new tab)",
+              "previousRect": {
+                "x": 209.703125,
+                "y": 498.484375,
+                "width": 81.21875,
+                "height": 43.59375,
+                "top": 498.484375,
+                "right": 290.921875,
+                "bottom": 542.078125,
+                "left": 209.703125
+              },
+              "currentRect": {
+                "x": 216.671875,
+                "y": 498.484375,
+                "width": 82.75,
+                "height": 43.59375,
+                "top": 498.484375,
+                "right": 299.421875,
+                "bottom": 542.078125,
+                "left": 216.671875
+              }
+            }
+          ]
+        },
+        {
+          "time": 2213.60000000149,
+          "value": 0.000045321498022540784,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": "li.",
+              "text": "gamevault-marketplace",
+              "previousRect": {
+                "x": 164.671875,
+                "y": 88,
+                "width": 173.984375,
+                "height": 20.796875,
+                "top": 88,
+                "right": 338.65625,
+                "bottom": 108.796875,
+                "left": 164.671875
+              },
+              "currentRect": {
+                "x": 167.796875,
+                "y": 88,
+                "width": 178.015625,
+                "height": 20.796875,
+                "top": 88,
+                "right": 345.8125,
+                "bottom": 108.796875,
+                "left": 167.796875
+              }
+            }
+          ]
+        }
+      ],
+      "fontEvents": [
+        {
+          "time": 2215.60000000149,
+          "event": "loadingdone"
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        }
+      ],
+      "images": [
+        {
+          "src": "header-portrait-DxqxH9BI.webp",
+          "width": "48",
+          "height": "48",
+          "aspectRatio": "auto 48 / 48",
+          "naturalWidth": 384,
+          "naturalHeight": 384
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": null,
+          "height": null,
+          "aspectRatio": "auto",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": null,
+          "height": null,
+          "aspectRatio": "auto",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": null,
+          "height": null,
+          "aspectRatio": "auto",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "linkedin-CHBsXBEb.png",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 635,
+          "naturalHeight": 540
+        }
+      ],
+      "boxes": {
+        ".project-hero": {
+          "x": 16,
+          "y": 124.796875,
+          "width": 343,
+          "height": 497.875,
+          "top": 124.796875,
+          "right": 359,
+          "bottom": 622.671875,
+          "left": 16
+        },
+        ".project-facts": {
+          "x": 41,
+          "y": 308.96875,
+          "width": 293,
+          "height": 165.515625,
+          "top": 308.96875,
+          "right": 334,
+          "bottom": 474.484375,
+          "left": 41
+        },
+        ".kpi-grid-wide": {
+          "x": 16,
+          "y": 638.671875,
+          "width": 343,
+          "height": 281.390625,
+          "top": 638.671875,
+          "right": 359,
+          "bottom": 920.0625,
+          "left": 16
+        },
+        ".case-toc": {
+          "x": 16,
+          "y": 1230.25,
+          "width": 343,
+          "height": 160.328125,
+          "top": 1230.25,
+          "right": 359,
+          "bottom": 1390.578125,
+          "left": 16
+        }
+      }
+    },
+    "scroll": [
+      {
+        "time": 4243,
+        "value": 0.2791998422065948,
+        "hadRecentInput": false,
+        "sources": [
+          {
+            "node": "figure.shot",
+            "text": "(open full size in new tab)Dedicated product purchase view with prominent Buy No",
+            "previousRect": {
+              "x": 41,
+              "y": 365.359375,
+              "width": 293,
+              "height": 135.1875,
+              "top": 365.359375,
+              "right": 334,
+              "bottom": 500.546875,
+              "left": 41
+            },
+            "currentRect": {
+              "x": 41,
+              "y": 523.25,
+              "width": 293,
+              "height": 275.0625,
+              "top": 523.25,
+              "right": 334,
+              "bottom": 798.3125,
+              "left": 41
+            }
+          },
+          {
+            "node": "section#reflection.panel.case-block",
+            "text": "Challenges & learningsChallengesEnsuring bulletproof separation between live and",
+            "previousRect": {
+              "x": 0,
+              "y": 654.9375,
+              "width": 375,
+              "height": 189.0625,
+              "top": 654.9375,
+              "right": 375,
+              "bottom": 844,
+              "left": 0
+            },
+            "currentRect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "node": "figcaption.",
+            "text": "Live marketplace captured on 4 November 2026. The October redesign adds a light ",
+            "previousRect": {
+              "x": 41,
+              "y": 266.171875,
+              "width": 293,
+              "height": 83.1875,
+              "top": 266.171875,
+              "right": 334,
+              "bottom": 349.359375,
+              "left": 41
+            },
+            "currentRect": {
+              "x": 41,
+              "y": 424.0625,
+              "width": 293,
+              "height": 83.1875,
+              "top": 424.0625,
+              "right": 334,
+              "bottom": 507.25,
+              "left": 41
+            }
+          },
+          {
+            "node": "figure.shot",
+            "text": "(open full size in new tab)Subscriptions directory with platform badges, direct ",
+            "previousRect": {
+              "x": 41,
+              "y": 516.546875,
+              "width": 293,
+              "height": 114.390625,
+              "top": 516.546875,
+              "right": 334,
+              "bottom": 630.9375,
+              "left": 41
+            },
+            "currentRect": {
+              "x": 41,
+              "y": 814.3125,
+              "width": 293,
+              "height": 29.6875,
+              "top": 814.3125,
+              "right": 334,
+              "bottom": 844,
+              "left": 41
+            }
+          },
+          {
+            "node": "figcaption.",
+            "text": "Subscriptions directory with platform badges, direct pricing, and one-click purc",
+            "previousRect": {
+              "x": 41,
+              "y": 568.546875,
+              "width": 293,
+              "height": 62.390625,
+              "top": 568.546875,
+              "right": 334,
+              "bottom": 630.9375,
+              "left": 41
+            },
+            "currentRect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        ]
+      }
+    ],
+    "errors": []
+  },
+  {
+    "device": "mobile",
+    "mode": "client",
+    "load": {
+      "shifts": [
+        {
+          "time": 952,
+          "value": 0.20164965366387166,
+          "hadRecentInput": true,
+          "sources": [
+            {
+              "node": "footer.footer",
+              "text": "© 2026 Wai Yan Hpone Lat · SingaporeOverviewProjectsSkillsAcademicsContactGitHub",
+              "previousRect": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "currentRect": {
+                "x": 0,
+                "y": 305.59375,
+                "width": 375,
+                "height": 177.796875,
+                "top": 305.59375,
+                "right": 375,
+                "bottom": 483.390625,
+                "left": 0
+              }
+            }
+          ]
+        },
+        {
+          "time": 977.3999999985099,
+          "value": 0.20164965366387166,
+          "hadRecentInput": true,
+          "sources": [
+            {
+              "node": "footer.footer",
+              "text": "© 2026 Wai Yan Hpone Lat · SingaporeOverviewProjectsSkillsAcademicsContactGitHub",
+              "previousRect": {
+                "x": 0,
+                "y": 305.59375,
+                "width": 375,
+                "height": 177.796875,
+                "top": 305.59375,
+                "right": 375,
+                "bottom": 483.390625,
+                "left": 0
+              },
+              "currentRect": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ]
+        }
+      ],
+      "fontEvents": [],
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        }
+      ],
+      "images": [
+        {
+          "src": "header-portrait-DxqxH9BI.webp",
+          "width": "48",
+          "height": "48",
+          "aspectRatio": "auto 48 / 48",
+          "naturalWidth": 384,
+          "naturalHeight": 384
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 360,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "gamevault-D5EPbCiQ.webp",
+          "width": null,
+          "height": null,
+          "aspectRatio": "auto",
+          "naturalWidth": 1348,
+          "naturalHeight": 926
+        },
+        {
+          "src": "",
+          "width": null,
+          "height": null,
+          "aspectRatio": "auto",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": null,
+          "height": null,
+          "aspectRatio": "auto",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "linkedin-CHBsXBEb.png",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 635,
+          "naturalHeight": 540
+        }
+      ],
+      "boxes": {
+        ".project-hero": {
+          "x": 16,
+          "y": 124.796875,
+          "width": 343,
+          "height": 497.875,
+          "top": 124.796875,
+          "right": 359,
+          "bottom": 622.671875,
+          "left": 16
+        },
+        ".project-facts": {
+          "x": 41,
+          "y": 308.96875,
+          "width": 293,
+          "height": 165.515625,
+          "top": 308.96875,
+          "right": 334,
+          "bottom": 474.484375,
+          "left": 41
+        },
+        ".kpi-grid-wide": {
+          "x": 16,
+          "y": 638.671875,
+          "width": 343,
+          "height": 281.390625,
+          "top": 638.671875,
+          "right": 359,
+          "bottom": 920.0625,
+          "left": 16
+        },
+        ".case-toc": {
+          "x": 16,
+          "y": 1230.25,
+          "width": 343,
+          "height": 160.328125,
+          "top": 1230.25,
+          "right": 359,
+          "bottom": 1390.578125,
+          "left": 16
+        }
+      }
+    },
+    "scroll": [
+      {
+        "time": 2495.3000000044703,
+        "value": 0.07278044457844439,
+        "hadRecentInput": false,
+        "sources": [
+          {
+            "node": "figcaption.",
+            "text": "Dedicated product purchase view with prominent Buy Now and Add to Cart actions, ",
+            "previousRect": {
+              "x": 41,
+              "y": 575.25,
+              "width": 293,
+              "height": 83.1875,
+              "top": 575.25,
+              "right": 334,
+              "bottom": 658.4375,
+              "left": 41
+            },
+            "currentRect": {
+              "x": 41,
+              "y": 715.125,
+              "width": 293,
+              "height": 83.1875,
+              "top": 715.125,
+              "right": 334,
+              "bottom": 798.3125,
+              "left": 41
+            }
+          },
+          {
+            "node": "figure.shot",
+            "text": "(open full size in new tab)Subscriptions directory with platform badges, direct ",
+            "previousRect": {
+              "x": 41,
+              "y": 674.4375,
+              "width": 293,
+              "height": 114.390625,
+              "top": 674.4375,
+              "right": 334,
+              "bottom": 788.828125,
+              "left": 41
+            },
+            "currentRect": {
+              "x": 41,
+              "y": 814.3125,
+              "width": 293,
+              "height": 29.6875,
+              "top": 814.3125,
+              "right": 334,
+              "bottom": 844,
+              "left": 41
+            }
+          },
+          {
+            "node": "figcaption.",
+            "text": "Subscriptions directory with platform badges, direct pricing, and one-click purc",
+            "previousRect": {
+              "x": 41,
+              "y": 726.4375,
+              "width": 293,
+              "height": 62.390625,
+              "top": 726.4375,
+              "right": 334,
+              "bottom": 788.828125,
+              "left": 41
+            },
+            "currentRect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "node": "section#reflection.panel.case-block",
+            "text": "Challenges & learningsChallengesEnsuring bulletproof separation between live and",
+            "previousRect": {
+              "x": 0,
+              "y": 812.828125,
+              "width": 375,
+              "height": 31.171875,
+              "top": 812.828125,
+              "right": 375,
+              "bottom": 844,
+              "left": 0
+            },
+            "currentRect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        ]
+      }
+    ],
+    "errors": []
+  },
+  {
+    "device": "desktop",
+    "mode": "direct",
+    "load": {
+      "shifts": [
+        {
+          "time": 218.10000000149012,
+          "value": 0.10225694444444444,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": "footer.footer",
+              "text": "© 2026 Wai Yan Hpone Lat · SingaporeOverviewProjectsSkillsAcademicsContactGitHub",
+              "previousRect": {
+                "x": 0,
+                "y": 305.59375,
+                "width": 1425,
+                "height": 93,
+                "top": 305.59375,
+                "right": 1425,
+                "bottom": 398.59375,
+                "left": 0
+              },
+              "currentRect": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ]
+        },
+        {
+          "time": 256.5,
+          "value": 0.005238074207698366,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": "div.case-layout",
+              "text": "On this pageOverviewMy contributionDataResultsFeaturesArchitectureScreenshotsCha",
+              "previousRect": {
+                "x": 144.5,
+                "y": 695.296875,
+                "width": 1163,
+                "height": 204.703125,
+                "top": 695.296875,
+                "right": 1307.5,
+                "bottom": 900,
+                "left": 144.5
+              },
+              "currentRect": {
+                "x": 144.5,
+                "y": 718.296875,
+                "width": 1163,
+                "height": 181.703125,
+                "top": 718.296875,
+                "right": 1307.5,
+                "bottom": 900,
+                "left": 144.5
+              }
+            },
+            {
+              "node": "h1.",
+              "text": "GameVault",
+              "previousRect": {
+                "x": 177.5,
+                "y": 194.578125,
+                "width": 1070,
+                "height": 59,
+                "top": 194.578125,
+                "right": 1247.5,
+                "bottom": 253.578125,
+                "left": 177.5
+              },
+              "currentRect": {
+                "x": 177.5,
+                "y": 197.578125,
+                "width": 1070,
+                "height": 59,
+                "top": 197.578125,
+                "right": 1247.5,
+                "bottom": 256.578125,
+                "left": 177.5
+              }
+            },
+            {
+              "node": "nav#primary-nav.nav",
+              "text": "OverviewProjectsSkillsAcademicsContact",
+              "previousRect": {
+                "x": 667.625,
+                "y": 12.3125,
+                "width": 413.484375,
+                "height": 38.375,
+                "top": 12.3125,
+                "right": 1081.109375,
+                "bottom": 50.6875,
+                "left": 667.625
+              },
+              "currentRect": {
+                "x": 640.109375,
+                "y": 12.3125,
+                "width": 436.40625,
+                "height": 38.375,
+                "top": 12.3125,
+                "right": 1076.515625,
+                "bottom": 50.6875,
+                "left": 640.109375
+              }
+            },
+            {
+              "node": "div.",
+              "text": "RoleAI-assisted personal project",
+              "previousRect": {
+                "x": 474.390625,
+                "y": 312.171875,
+                "width": 203,
+                "height": 47.171875,
+                "top": 312.171875,
+                "right": 677.390625,
+                "bottom": 359.34375,
+                "left": 474.390625
+              },
+              "currentRect": {
+                "x": 487.90625,
+                "y": 312.171875,
+                "width": 216,
+                "height": 47.171875,
+                "top": 312.171875,
+                "right": 703.90625,
+                "bottom": 359.34375,
+                "left": 487.90625
+              }
+            },
+            {
+              "node": "a.btn",
+              "text": "Source code (opens in new tab)",
+              "previousRect": {
+                "x": 439.421875,
+                "y": 383.34375,
+                "width": 141.46875,
+                "height": 43.59375,
+                "top": 383.34375,
+                "right": 580.890625,
+                "bottom": 426.9375,
+                "left": 439.421875
+              },
+              "currentRect": {
+                "x": 447.921875,
+                "y": 383.34375,
+                "width": 149.1875,
+                "height": 43.59375,
+                "top": 383.34375,
+                "right": 597.109375,
+                "bottom": 426.9375,
+                "left": 447.921875
+              }
+            }
+          ]
+        },
+        {
+          "time": 268.6000000014901,
+          "value": 0.00001767681943372771,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": "li.",
+              "text": "gamevault-marketplace",
+              "previousRect": {
+                "x": 293.171875,
+                "y": 88,
+                "width": 173.984375,
+                "height": 20.796875,
+                "top": 88,
+                "right": 467.15625,
+                "bottom": 108.796875,
+                "left": 293.171875
+              },
+              "currentRect": {
+                "x": 296.296875,
+                "y": 88,
+                "width": 178.015625,
+                "height": 20.796875,
+                "top": 88,
+                "right": 474.3125,
+                "bottom": 108.796875,
+                "left": 296.296875
+              }
+            },
+            {
+              "node": null,
+              "previousRect": {
+                "x": 161.5,
+                "y": 514.3125,
+                "width": 56.453125,
+                "height": 43,
+                "top": 514.3125,
+                "right": 217.953125,
+                "bottom": 557.3125,
+                "left": 161.5
+              },
+              "currentRect": {
+                "x": 161.5,
+                "y": 511.3125,
+                "width": 57.59375,
+                "height": 43,
+                "top": 511.3125,
+                "right": 219.09375,
+                "bottom": 554.3125,
+                "left": 161.5
+              }
+            },
+            {
+              "node": "span.count-up",
+              "text": "4",
+              "previousRect": {
+                "x": 544.15625,
+                "y": 514.3125,
+                "width": 37.703125,
+                "height": 43,
+                "top": 514.3125,
+                "right": 581.859375,
+                "bottom": 557.3125,
+                "left": 544.15625
+              },
+              "currentRect": {
+                "x": 544.15625,
+                "y": 511.3125,
+                "width": 38.390625,
+                "height": 43,
+                "top": 511.3125,
+                "right": 582.546875,
+                "bottom": 554.3125,
+                "left": 544.15625
+              }
+            },
+            {
+              "node": "span.count-up",
+              "text": "2",
+              "previousRect": {
+                "x": 926.828125,
+                "y": 514.3125,
+                "width": 37.703125,
+                "height": 43,
+                "top": 514.3125,
+                "right": 964.53125,
+                "bottom": 557.3125,
+                "left": 926.828125
+              },
+              "currentRect": {
+                "x": 926.828125,
+                "y": 511.3125,
+                "width": 38.390625,
+                "height": 43,
+                "top": 511.3125,
+                "right": 965.21875,
+                "bottom": 554.3125,
+                "left": 926.828125
+              }
+            }
+          ]
+        }
+      ],
+      "fontEvents": [
+        {
+          "time": 274.29999999701977,
+          "event": "loadingdone"
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        }
+      ],
+      "images": [
+        {
+          "src": "header-portrait-DxqxH9BI.webp",
+          "width": "48",
+          "height": "48",
+          "aspectRatio": "auto 48 / 48",
+          "naturalWidth": 384,
+          "naturalHeight": 384
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": null,
+          "height": null,
+          "aspectRatio": "auto",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": null,
+          "height": null,
+          "aspectRatio": "auto",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": null,
+          "height": null,
+          "aspectRatio": "auto",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "linkedin-CHBsXBEb.png",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 635,
+          "naturalHeight": 540
+        }
+      ],
+      "boxes": {
+        ".project-hero": {
+          "x": 144.5,
+          "y": 124.796875,
+          "width": 1136,
+          "height": 335.140625,
+          "top": 124.796875,
+          "right": 1280.5,
+          "bottom": 459.9375,
+          "left": 144.5
+        },
+        ".project-facts": {
+          "x": 177.5,
+          "y": 312.171875,
+          "width": 1070,
+          "height": 47.171875,
+          "top": 312.171875,
+          "right": 1247.5,
+          "bottom": 359.34375,
+          "left": 177.5
+        },
+        ".kpi-grid-wide": {
+          "x": 144.5,
+          "y": 475.9375,
+          "width": 1136,
+          "height": 93.171875,
+          "top": 475.9375,
+          "right": 1280.5,
+          "bottom": 569.109375,
+          "left": 144.5
+        },
+        ".case-toc": {
+          "x": 144.5,
+          "y": 735.296875,
+          "width": 220,
+          "height": 320.21875,
+          "top": 735.296875,
+          "right": 364.5,
+          "bottom": 1055.515625,
+          "left": 144.5
+        }
+      }
+    },
+    "scroll": [
+      {
+        "time": 2307.89999999851,
+        "value": 0.12216509964554398,
+        "hadRecentInput": false,
+        "sources": [
+          {
+            "node": "section#reflection.panel.case-block",
+            "text": "Challenges & learningsChallengesEnsuring bulletproof separation between live and",
+            "previousRect": {
+              "x": 361.5,
+              "y": 462.53125,
+              "width": 946,
+              "height": 339.9375,
+              "top": 462.53125,
+              "right": 1307.5,
+              "bottom": 802.46875,
+              "left": 361.5
+            },
+            "currentRect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "node": "figure.shot",
+            "text": "(open full size in new tab)Subscriptions directory with platform badges, direct ",
+            "previousRect": {
+              "x": 413.5,
+              "y": 344.9375,
+              "width": 413,
+              "height": 93.59375,
+              "top": 344.9375,
+              "right": 826.5,
+              "bottom": 438.53125,
+              "left": 413.5
+            },
+            "currentRect": {
+              "x": 413.5,
+              "y": 585.265625,
+              "width": 413,
+              "height": 308.46875,
+              "top": 585.265625,
+              "right": 826.5,
+              "bottom": 893.734375,
+              "left": 413.5
+            }
+          },
+          {
+            "node": "nav.pager",
+            "text": "Next SOLE DISTRICT",
+            "previousRect": {
+              "x": 388.5,
+              "y": 780.46875,
+              "width": 919,
+              "height": 119.53125,
+              "top": 780.46875,
+              "right": 1307.5,
+              "bottom": 900,
+              "left": 388.5
+            },
+            "currentRect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "node": "figcaption.",
+            "text": "Live marketplace captured on 4 November 2026. The October redesign adds a light ",
+            "previousRect": {
+              "x": 413.5,
+              "y": 266.546875,
+              "width": 414,
+              "height": 62.390625,
+              "top": 266.546875,
+              "right": 827.5,
+              "bottom": 328.9375,
+              "left": 413.5
+            },
+            "currentRect": {
+              "x": 413.5,
+              "y": 506.875,
+              "width": 414,
+              "height": 62.390625,
+              "top": 506.875,
+              "right": 827.5,
+              "bottom": 569.265625,
+              "left": 413.5
+            }
+          },
+          {
+            "node": "figcaption.",
+            "text": "Dedicated product purchase view with prominent Buy Now and Add to Cart actions, ",
+            "previousRect": {
+              "x": 842.5,
+              "y": 266.546875,
+              "width": 413,
+              "height": 62.390625,
+              "top": 266.546875,
+              "right": 1255.5,
+              "bottom": 328.9375,
+              "left": 842.5
+            },
+            "currentRect": {
+              "x": 842.5,
+              "y": 481.421875,
+              "width": 413,
+              "height": 62.390625,
+              "top": 481.421875,
+              "right": 1255.5,
+              "bottom": 543.8125,
+              "left": 842.5
+            }
+          }
+        ]
+      }
+    ],
+    "errors": []
+  },
+  {
+    "device": "desktop",
+    "mode": "slow-chunk",
+    "load": {
+      "shifts": [
+        {
+          "time": 310.5,
+          "value": 0.000013405689715685013,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": "p.mono.footer-meta",
+              "text": "Singapore",
+              "previousRect": {
+                "x": 143.5,
+                "y": 344.1875,
+                "width": 275.25,
+                "height": 17,
+                "top": 344.1875,
+                "right": 418.75,
+                "bottom": 361.1875,
+                "left": 143.5
+              },
+              "currentRect": {
+                "x": 144.5,
+                "y": 343.1875,
+                "width": 280.84375,
+                "height": 17,
+                "top": 343.1875,
+                "right": 425.34375,
+                "bottom": 360.1875,
+                "left": 144.5
+              }
+            }
+          ]
+        },
+        {
+          "time": 370,
+          "value": 0.0007793454268341692,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": "nav.",
+              "text": "OverviewProjectsSkillsAcademicsContactGitHub (opens in new tab)LinkedIn (opens i",
+              "previousRect": {
+                "x": 797.1875,
+                "y": 330.59375,
+                "width": 484.234375,
+                "height": 44,
+                "top": 330.59375,
+                "right": 1281.421875,
+                "bottom": 374.59375,
+                "left": 797.1875
+              },
+              "currentRect": {
+                "x": 765.921875,
+                "y": 330.59375,
+                "width": 514.578125,
+                "height": 44,
+                "top": 330.59375,
+                "right": 1280.5,
+                "bottom": 374.59375,
+                "left": 765.921875
+              }
+            },
+            {
+              "node": "nav#primary-nav.nav",
+              "text": "OverviewProjectsSkillsAcademicsContact",
+              "previousRect": {
+                "x": 667.625,
+                "y": 12.3125,
+                "width": 413.484375,
+                "height": 38.375,
+                "top": 12.3125,
+                "right": 1081.109375,
+                "bottom": 50.6875,
+                "left": 667.625
+              },
+              "currentRect": {
+                "x": 640.109375,
+                "y": 12.3125,
+                "width": 436.40625,
+                "height": 38.375,
+                "top": 12.3125,
+                "right": 1076.515625,
+                "bottom": 50.6875,
+                "left": 640.109375
+              }
+            },
+            {
+              "node": "div.topbar-actions",
+              "text": "Résumé",
+              "previousRect": {
+                "x": 1105.109375,
+                "y": 12.90625,
+                "width": 175.390625,
+                "height": 37.171875,
+                "top": 12.90625,
+                "right": 1280.5,
+                "bottom": 50.078125,
+                "left": 1105.109375
+              },
+              "currentRect": {
+                "x": 1100.515625,
+                "y": 12.90625,
+                "width": 179.984375,
+                "height": 37.171875,
+                "top": 12.90625,
+                "right": 1280.5,
+                "bottom": 50.078125,
+                "left": 1100.515625
+              }
+            }
+          ]
+        },
+        {
+          "time": 1020.6000000014901,
+          "value": 0.10225694444444444,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": "footer.footer",
+              "text": "© 2026 Wai Yan Hpone Lat · SingaporeOverviewProjectsSkillsAcademicsContactGitHub",
+              "previousRect": {
+                "x": 0,
+                "y": 305.59375,
+                "width": 1425,
+                "height": 93,
+                "top": 305.59375,
+                "right": 1425,
+                "bottom": 398.59375,
+                "left": 0
+              },
+              "currentRect": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ]
+        }
+      ],
+      "fontEvents": [
+        {
+          "time": 369.6000000014901,
+          "event": "loadingdone"
+        },
+        {
+          "time": 1024.6999999955297,
+          "event": "loadingdone"
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        }
+      ],
+      "images": [
+        {
+          "src": "header-portrait-DxqxH9BI.webp",
+          "width": "48",
+          "height": "48",
+          "aspectRatio": "auto 48 / 48",
+          "naturalWidth": 384,
+          "naturalHeight": 384
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": null,
+          "height": null,
+          "aspectRatio": "auto",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": null,
+          "height": null,
+          "aspectRatio": "auto",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": null,
+          "height": null,
+          "aspectRatio": "auto",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "linkedin-CHBsXBEb.png",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 635,
+          "naturalHeight": 540
+        }
+      ],
+      "boxes": {
+        ".project-hero": {
+          "x": 144.5,
+          "y": 124.796875,
+          "width": 1136,
+          "height": 335.140625,
+          "top": 124.796875,
+          "right": 1280.5,
+          "bottom": 459.9375,
+          "left": 144.5
+        },
+        ".project-facts": {
+          "x": 177.5,
+          "y": 312.171875,
+          "width": 1070,
+          "height": 47.171875,
+          "top": 312.171875,
+          "right": 1247.5,
+          "bottom": 359.34375,
+          "left": 177.5
+        },
+        ".kpi-grid-wide": {
+          "x": 144.5,
+          "y": 475.9375,
+          "width": 1136,
+          "height": 93.171875,
+          "top": 475.9375,
+          "right": 1280.5,
+          "bottom": 569.109375,
+          "left": 144.5
+        },
+        ".case-toc": {
+          "x": 144.5,
+          "y": 735.296875,
+          "width": 220,
+          "height": 320.21875,
+          "top": 735.296875,
+          "right": 364.5,
+          "bottom": 1055.515625,
+          "left": 144.5
+        }
+      }
+    },
+    "scroll": [
+      {
+        "time": 3027.1999999955297,
+        "value": 0.12216509964554398,
+        "hadRecentInput": false,
+        "sources": [
+          {
+            "node": "section#reflection.panel.case-block",
+            "text": "Challenges & learningsChallengesEnsuring bulletproof separation between live and",
+            "previousRect": {
+              "x": 361.5,
+              "y": 462.53125,
+              "width": 946,
+              "height": 339.9375,
+              "top": 462.53125,
+              "right": 1307.5,
+              "bottom": 802.46875,
+              "left": 361.5
+            },
+            "currentRect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "node": "figure.shot",
+            "text": "(open full size in new tab)Subscriptions directory with platform badges, direct ",
+            "previousRect": {
+              "x": 413.5,
+              "y": 344.9375,
+              "width": 413,
+              "height": 93.59375,
+              "top": 344.9375,
+              "right": 826.5,
+              "bottom": 438.53125,
+              "left": 413.5
+            },
+            "currentRect": {
+              "x": 413.5,
+              "y": 585.265625,
+              "width": 413,
+              "height": 308.46875,
+              "top": 585.265625,
+              "right": 826.5,
+              "bottom": 893.734375,
+              "left": 413.5
+            }
+          },
+          {
+            "node": "nav.pager",
+            "text": "Next SOLE DISTRICT",
+            "previousRect": {
+              "x": 388.5,
+              "y": 780.46875,
+              "width": 919,
+              "height": 119.53125,
+              "top": 780.46875,
+              "right": 1307.5,
+              "bottom": 900,
+              "left": 388.5
+            },
+            "currentRect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "node": "figcaption.",
+            "text": "Live marketplace captured on 4 November 2026. The October redesign adds a light ",
+            "previousRect": {
+              "x": 413.5,
+              "y": 266.546875,
+              "width": 414,
+              "height": 62.390625,
+              "top": 266.546875,
+              "right": 827.5,
+              "bottom": 328.9375,
+              "left": 413.5
+            },
+            "currentRect": {
+              "x": 413.5,
+              "y": 506.875,
+              "width": 414,
+              "height": 62.390625,
+              "top": 506.875,
+              "right": 827.5,
+              "bottom": 569.265625,
+              "left": 413.5
+            }
+          },
+          {
+            "node": "figcaption.",
+            "text": "Dedicated product purchase view with prominent Buy Now and Add to Cart actions, ",
+            "previousRect": {
+              "x": 842.5,
+              "y": 266.546875,
+              "width": 413,
+              "height": 62.390625,
+              "top": 266.546875,
+              "right": 1255.5,
+              "bottom": 328.9375,
+              "left": 842.5
+            },
+            "currentRect": {
+              "x": 842.5,
+              "y": 481.421875,
+              "width": 413,
+              "height": 62.390625,
+              "top": 481.421875,
+              "right": 1255.5,
+              "bottom": 543.8125,
+              "left": 842.5
+            }
+          }
+        ]
+      }
+    ],
+    "errors": []
+  },
+  {
+    "device": "desktop",
+    "mode": "slow-fonts",
+    "load": {
+      "shifts": [
+        {
+          "time": 1177.7999999970198,
+          "value": 0.10225694444444444,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": "footer.footer",
+              "text": "© 2026 Wai Yan Hpone Lat · SingaporeOverviewProjectsSkillsAcademicsContactGitHub",
+              "previousRect": {
+                "x": 0,
+                "y": 305.59375,
+                "width": 1425,
+                "height": 93,
+                "top": 305.59375,
+                "right": 1425,
+                "bottom": 398.59375,
+                "left": 0
+              },
+              "currentRect": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ]
+        },
+        {
+          "time": 2164.2999999970198,
+          "value": 0.000017682144311556928,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": "li.",
+              "text": "gamevault-marketplace",
+              "previousRect": {
+                "x": 293.171875,
+                "y": 88,
+                "width": 173.984375,
+                "height": 20.796875,
+                "top": 88,
+                "right": 467.15625,
+                "bottom": 108.796875,
+                "left": 293.171875
+              },
+              "currentRect": {
+                "x": 296.296875,
+                "y": 88,
+                "width": 178.015625,
+                "height": 20.796875,
+                "top": 88,
+                "right": 474.3125,
+                "bottom": 108.796875,
+                "left": 296.296875
+              }
+            },
+            {
+              "node": "span.count-up",
+              "text": "110",
+              "previousRect": {
+                "x": 161.5,
+                "y": 514.3125,
+                "width": 56.875,
+                "height": 43,
+                "top": 514.3125,
+                "right": 218.375,
+                "bottom": 557.3125,
+                "left": 161.5
+              },
+              "currentRect": {
+                "x": 161.5,
+                "y": 511.3125,
+                "width": 57.59375,
+                "height": 43,
+                "top": 511.3125,
+                "right": 219.09375,
+                "bottom": 554.3125,
+                "left": 161.5
+              }
+            },
+            {
+              "node": "span.count-up",
+              "text": "37",
+              "previousRect": {
+                "x": 544.15625,
+                "y": 514.3125,
+                "width": 38.90625,
+                "height": 43,
+                "top": 514.3125,
+                "right": 583.0625,
+                "bottom": 557.3125,
+                "left": 544.15625
+              },
+              "currentRect": {
+                "x": 544.15625,
+                "y": 511.3125,
+                "width": 38.390625,
+                "height": 43,
+                "top": 511.3125,
+                "right": 582.546875,
+                "bottom": 554.3125,
+                "left": 544.15625
+              }
+            },
+            {
+              "node": "span.count-up",
+              "text": "15",
+              "previousRect": {
+                "x": 926.828125,
+                "y": 514.3125,
+                "width": 37.90625,
+                "height": 43,
+                "top": 514.3125,
+                "right": 964.734375,
+                "bottom": 557.3125,
+                "left": 926.828125
+              },
+              "currentRect": {
+                "x": 926.828125,
+                "y": 511.3125,
+                "width": 38.390625,
+                "height": 43,
+                "top": 511.3125,
+                "right": 965.21875,
+                "bottom": 554.3125,
+                "left": 926.828125
+              }
+            }
+          ]
+        },
+        {
+          "time": 2189.7000000029802,
+          "value": 0.005238074207698366,
+          "hadRecentInput": false,
+          "sources": [
+            {
+              "node": "div.case-layout",
+              "text": "On this pageOverviewMy contributionDataResultsFeaturesArchitectureScreenshotsCha",
+              "previousRect": {
+                "x": 144.5,
+                "y": 695.296875,
+                "width": 1163,
+                "height": 204.703125,
+                "top": 695.296875,
+                "right": 1307.5,
+                "bottom": 900,
+                "left": 144.5
+              },
+              "currentRect": {
+                "x": 144.5,
+                "y": 718.296875,
+                "width": 1163,
+                "height": 181.703125,
+                "top": 718.296875,
+                "right": 1307.5,
+                "bottom": 900,
+                "left": 144.5
+              }
+            },
+            {
+              "node": "h1.",
+              "text": "GameVault",
+              "previousRect": {
+                "x": 177.5,
+                "y": 194.578125,
+                "width": 1070,
+                "height": 59,
+                "top": 194.578125,
+                "right": 1247.5,
+                "bottom": 253.578125,
+                "left": 177.5
+              },
+              "currentRect": {
+                "x": 177.5,
+                "y": 197.578125,
+                "width": 1070,
+                "height": 59,
+                "top": 197.578125,
+                "right": 1247.5,
+                "bottom": 256.578125,
+                "left": 177.5
+              }
+            },
+            {
+              "node": "nav#primary-nav.nav",
+              "text": "OverviewProjectsSkillsAcademicsContact",
+              "previousRect": {
+                "x": 667.625,
+                "y": 12.3125,
+                "width": 413.484375,
+                "height": 38.375,
+                "top": 12.3125,
+                "right": 1081.109375,
+                "bottom": 50.6875,
+                "left": 667.625
+              },
+              "currentRect": {
+                "x": 640.109375,
+                "y": 12.3125,
+                "width": 436.40625,
+                "height": 38.375,
+                "top": 12.3125,
+                "right": 1076.515625,
+                "bottom": 50.6875,
+                "left": 640.109375
+              }
+            },
+            {
+              "node": "div.",
+              "text": "RoleAI-assisted personal project",
+              "previousRect": {
+                "x": 474.390625,
+                "y": 312.171875,
+                "width": 203,
+                "height": 47.171875,
+                "top": 312.171875,
+                "right": 677.390625,
+                "bottom": 359.34375,
+                "left": 474.390625
+              },
+              "currentRect": {
+                "x": 487.90625,
+                "y": 312.171875,
+                "width": 216,
+                "height": 47.171875,
+                "top": 312.171875,
+                "right": 703.90625,
+                "bottom": 359.34375,
+                "left": 487.90625
+              }
+            },
+            {
+              "node": "a.btn",
+              "text": "Source code (opens in new tab)",
+              "previousRect": {
+                "x": 439.421875,
+                "y": 383.34375,
+                "width": 141.46875,
+                "height": 43.59375,
+                "top": 383.34375,
+                "right": 580.890625,
+                "bottom": 426.9375,
+                "left": 439.421875
+              },
+              "currentRect": {
+                "x": 447.921875,
+                "y": 383.34375,
+                "width": 149.203125,
+                "height": 43.59375,
+                "top": 383.34375,
+                "right": 597.125,
+                "bottom": 426.9375,
+                "left": 447.921875
+              }
+            }
+          ]
+        }
+      ],
+      "fontEvents": [
+        {
+          "time": 2191.10000000149,
+          "event": "loadingdone"
+        }
+      ],
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        }
+      ],
+      "images": [
+        {
+          "src": "header-portrait-DxqxH9BI.webp",
+          "width": "48",
+          "height": "48",
+          "aspectRatio": "auto 48 / 48",
+          "naturalWidth": 384,
+          "naturalHeight": 384
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": null,
+          "height": null,
+          "aspectRatio": "auto",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": null,
+          "height": null,
+          "aspectRatio": "auto",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": null,
+          "height": null,
+          "aspectRatio": "auto",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "linkedin-CHBsXBEb.png",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 635,
+          "naturalHeight": 540
+        }
+      ],
+      "boxes": {
+        ".project-hero": {
+          "x": 144.5,
+          "y": 124.796875,
+          "width": 1136,
+          "height": 335.140625,
+          "top": 124.796875,
+          "right": 1280.5,
+          "bottom": 459.9375,
+          "left": 144.5
+        },
+        ".project-facts": {
+          "x": 177.5,
+          "y": 312.171875,
+          "width": 1070,
+          "height": 47.171875,
+          "top": 312.171875,
+          "right": 1247.5,
+          "bottom": 359.34375,
+          "left": 177.5
+        },
+        ".kpi-grid-wide": {
+          "x": 144.5,
+          "y": 475.9375,
+          "width": 1136,
+          "height": 93.171875,
+          "top": 475.9375,
+          "right": 1280.5,
+          "bottom": 569.109375,
+          "left": 144.5
+        },
+        ".case-toc": {
+          "x": 144.5,
+          "y": 735.296875,
+          "width": 220,
+          "height": 320.21875,
+          "top": 735.296875,
+          "right": 364.5,
+          "bottom": 1055.515625,
+          "left": 144.5
+        }
+      }
+    },
+    "scroll": [
+      {
+        "time": 4202.89999999851,
+        "value": 0.12216509964554398,
+        "hadRecentInput": false,
+        "sources": [
+          {
+            "node": "section#reflection.panel.case-block",
+            "text": "Challenges & learningsChallengesEnsuring bulletproof separation between live and",
+            "previousRect": {
+              "x": 361.5,
+              "y": 462.53125,
+              "width": 946,
+              "height": 339.9375,
+              "top": 462.53125,
+              "right": 1307.5,
+              "bottom": 802.46875,
+              "left": 361.5
+            },
+            "currentRect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "node": "figure.shot",
+            "text": "(open full size in new tab)Subscriptions directory with platform badges, direct ",
+            "previousRect": {
+              "x": 413.5,
+              "y": 344.9375,
+              "width": 413,
+              "height": 93.59375,
+              "top": 344.9375,
+              "right": 826.5,
+              "bottom": 438.53125,
+              "left": 413.5
+            },
+            "currentRect": {
+              "x": 413.5,
+              "y": 585.265625,
+              "width": 413,
+              "height": 308.46875,
+              "top": 585.265625,
+              "right": 826.5,
+              "bottom": 893.734375,
+              "left": 413.5
+            }
+          },
+          {
+            "node": "nav.pager",
+            "text": "Next SOLE DISTRICT",
+            "previousRect": {
+              "x": 388.5,
+              "y": 780.46875,
+              "width": 919,
+              "height": 119.53125,
+              "top": 780.46875,
+              "right": 1307.5,
+              "bottom": 900,
+              "left": 388.5
+            },
+            "currentRect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "node": "figcaption.",
+            "text": "Live marketplace captured on 4 November 2026. The October redesign adds a light ",
+            "previousRect": {
+              "x": 413.5,
+              "y": 266.546875,
+              "width": 414,
+              "height": 62.390625,
+              "top": 266.546875,
+              "right": 827.5,
+              "bottom": 328.9375,
+              "left": 413.5
+            },
+            "currentRect": {
+              "x": 413.5,
+              "y": 506.875,
+              "width": 414,
+              "height": 62.390625,
+              "top": 506.875,
+              "right": 827.5,
+              "bottom": 569.265625,
+              "left": 413.5
+            }
+          },
+          {
+            "node": "figcaption.",
+            "text": "Dedicated product purchase view with prominent Buy Now and Add to Cart actions, ",
+            "previousRect": {
+              "x": 842.5,
+              "y": 266.546875,
+              "width": 413,
+              "height": 62.390625,
+              "top": 266.546875,
+              "right": 1255.5,
+              "bottom": 328.9375,
+              "left": 842.5
+            },
+            "currentRect": {
+              "x": 842.5,
+              "y": 481.421875,
+              "width": 413,
+              "height": 62.390625,
+              "top": 481.421875,
+              "right": 1255.5,
+              "bottom": 543.8125,
+              "left": 842.5
+            }
+          }
+        ]
+      }
+    ],
+    "errors": []
+  },
+  {
+    "device": "desktop",
+    "mode": "client",
+    "load": {
+      "shifts": [
+        {
+          "time": 863.3999999985099,
+          "value": 0.10225694444444444,
+          "hadRecentInput": true,
+          "sources": [
+            {
+              "node": "footer.footer",
+              "text": "© 2026 Wai Yan Hpone Lat · SingaporeOverviewProjectsSkillsAcademicsContactGitHub",
+              "previousRect": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "currentRect": {
+                "x": 0,
+                "y": 305.59375,
+                "width": 1425,
+                "height": 93,
+                "top": 305.59375,
+                "right": 1425,
+                "bottom": 398.59375,
+                "left": 0
+              }
+            }
+          ]
+        },
+        {
+          "time": 898.1999999955297,
+          "value": 0.10225694444444444,
+          "hadRecentInput": true,
+          "sources": [
+            {
+              "node": "footer.footer",
+              "text": "© 2026 Wai Yan Hpone Lat · SingaporeOverviewProjectsSkillsAcademicsContactGitHub",
+              "previousRect": {
+                "x": 0,
+                "y": 305.59375,
+                "width": 1425,
+                "height": 93,
+                "top": 305.59375,
+                "right": 1425,
+                "bottom": 398.59375,
+                "left": 0
+              },
+              "currentRect": {
+                "x": 0,
+                "y": 0,
+                "width": 0,
+                "height": 0,
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              }
+            }
+          ]
+        }
+      ],
+      "fontEvents": [],
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "unloaded"
+        },
+        {
+          "family": "JetBrains Mono",
+          "status": "loaded"
+        }
+      ],
+      "images": [
+        {
+          "src": "header-portrait-DxqxH9BI.webp",
+          "width": "48",
+          "height": "48",
+          "aspectRatio": "auto 48 / 48",
+          "naturalWidth": 384,
+          "naturalHeight": 384
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "16",
+          "height": "16",
+          "aspectRatio": "auto 16 / 16",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 360,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "svg%3e",
+          "width": "14",
+          "height": "14",
+          "aspectRatio": "auto 14 / 14",
+          "naturalWidth": 150,
+          "naturalHeight": 150
+        },
+        {
+          "src": "gamevault-D5EPbCiQ.webp",
+          "width": null,
+          "height": null,
+          "aspectRatio": "auto",
+          "naturalWidth": 1348,
+          "naturalHeight": 926
+        },
+        {
+          "src": "",
+          "width": null,
+          "height": null,
+          "aspectRatio": "auto",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "",
+          "width": null,
+          "height": null,
+          "aspectRatio": "auto",
+          "naturalWidth": 0,
+          "naturalHeight": 0
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "svg%3e",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 98,
+          "naturalHeight": 96
+        },
+        {
+          "src": "linkedin-CHBsXBEb.png",
+          "width": "15",
+          "height": "15",
+          "aspectRatio": "auto 15 / 15",
+          "naturalWidth": 635,
+          "naturalHeight": 540
+        }
+      ],
+      "boxes": {
+        ".project-hero": {
+          "x": 144.5,
+          "y": 124.796875,
+          "width": 1136,
+          "height": 335.140625,
+          "top": 124.796875,
+          "right": 1280.5,
+          "bottom": 459.9375,
+          "left": 144.5
+        },
+        ".project-facts": {
+          "x": 177.5,
+          "y": 312.171875,
+          "width": 1070,
+          "height": 47.171875,
+          "top": 312.171875,
+          "right": 1247.5,
+          "bottom": 359.34375,
+          "left": 177.5
+        },
+        ".kpi-grid-wide": {
+          "x": 144.5,
+          "y": 475.9375,
+          "width": 1136,
+          "height": 93.171875,
+          "top": 475.9375,
+          "right": 1280.5,
+          "bottom": 569.109375,
+          "left": 144.5
+        },
+        ".case-toc": {
+          "x": 144.5,
+          "y": 735.296875,
+          "width": 220,
+          "height": 320.21875,
+          "top": 735.296875,
+          "right": 364.5,
+          "bottom": 1055.515625,
+          "left": 144.5
+        }
+      }
+    },
+    "scroll": [
+      {
+        "time": 2393.60000000149,
+        "value": 0.02939851164641204,
+        "hadRecentInput": false,
+        "sources": [
+          {
+            "node": "section#reflection.panel.case-block",
+            "text": "Challenges & learningsChallengesEnsuring bulletproof separation between live and",
+            "previousRect": {
+              "x": 361.5,
+              "y": 702.859375,
+              "width": 946,
+              "height": 197.140625,
+              "top": 702.859375,
+              "right": 1307.5,
+              "bottom": 900,
+              "left": 361.5
+            },
+            "currentRect": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "node": "figcaption.",
+            "text": "Dedicated product purchase view with prominent Buy Now and Add to Cart actions, ",
+            "previousRect": {
+              "x": 842.5,
+              "y": 266.546875,
+              "width": 413,
+              "height": 62.390625,
+              "top": 266.546875,
+              "right": 1255.5,
+              "bottom": 328.9375,
+              "left": 842.5
+            },
+            "currentRect": {
+              "x": 842.5,
+              "y": 481.421875,
+              "width": 413,
+              "height": 62.390625,
+              "top": 481.421875,
+              "right": 1255.5,
+              "bottom": 543.8125,
+              "left": 842.5
+            }
+          },
+          {
+            "node": "figcaption.",
+            "text": "Subscriptions directory with platform badges, direct pricing, and one-click purc",
+            "previousRect": {
+              "x": 413.5,
+              "y": 637.265625,
+              "width": 413,
+              "height": 41.59375,
+              "top": 637.265625,
+              "right": 826.5,
+              "bottom": 678.859375,
+              "left": 413.5
+            },
+            "currentRect": {
+              "x": 413.5,
+              "y": 852.140625,
+              "width": 413,
+              "height": 41.59375,
+              "top": 852.140625,
+              "right": 826.5,
+              "bottom": 893.734375,
+              "left": 413.5
+            }
+          }
+        ]
+      }
+    ],
+    "errors": []
+  }
+]

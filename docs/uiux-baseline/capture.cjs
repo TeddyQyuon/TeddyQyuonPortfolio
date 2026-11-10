@@ -1,5 +1,5 @@
 // External cached Playwright; no project dependency is added.
-const { chromium } = require('C:/Users/waiya/AppData/Local/npm-cache/_npx/bbb8a2c4738e2b0c/node_modules/playwright');
+const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
 const fs = require('node:fs');
 const path = require('node:path');
 const out = __dirname;

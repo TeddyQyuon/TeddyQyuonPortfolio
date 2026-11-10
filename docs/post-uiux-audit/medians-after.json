@@ -1,0 +1,83 @@
+[
+  {
+    "page": "home",
+    "device": "mobile",
+    "cls": 0.00001013762123631046,
+    "lcp": 1377.3057999999999,
+    "performance": 100,
+    "lcpElements": [
+      "div.container > section#overview > div.hero-main > p.hero-intro"
+    ]
+  },
+  {
+    "page": "home",
+    "device": "desktop",
+    "cls": 0.006986193540795736,
+    "lcp": 385.85524999999996,
+    "performance": 100,
+    "lcpElements": [
+      "div.container > section#overview > div.hero-main > p.hero-intro"
+    ]
+  },
+  {
+    "page": "gamevault",
+    "device": "mobile",
+    "cls": 0.0001938097769369282,
+    "lcp": 3460.7271,
+    "performance": 91,
+    "lcpElements": [
+      "div.route-view > div.container > header.panel > p.hero-role"
+    ]
+  },
+  {
+    "page": "gamevault",
+    "device": "desktop",
+    "cls": 0.006618865797012042,
+    "lcp": 804.7500499999999,
+    "performance": 100,
+    "lcpElements": [
+      "div.case-layout > div.case-content > section#overview > p.lead"
+    ]
+  },
+  {
+    "page": "sole",
+    "device": "mobile",
+    "cls": 0.0002338153513027263,
+    "lcp": 3383.2365,
+    "performance": 91,
+    "lcpElements": [
+      "div.route-view > div.container > header.panel > p.hero-role"
+    ]
+  },
+  {
+    "page": "sole",
+    "device": "desktop",
+    "cls": 0.0003918692937169442,
+    "lcp": 766.85235,
+    "performance": 100,
+    "lcpElements": [
+      "div.case-layout > div.case-content > section#overview > p.lead"
+    ]
+  },
+  {
+    "page": "gym",
+    "device": "mobile",
+    "cls": 0.00003566667068492493,
+    "lcp": 3460.3521,
+    "performance": 91,
+    "lcpElements": [
+      "div.route-view > div.container > header.panel > h1"
+    ]
+  },
+  {
+    "page": "gym",
+    "device": "desktop",
+    "cls": 0.0003918692937169442,
+    "lcp": 968.72025,
+    "performance": 99,
+    "lcpElements": [
+      "div.route-view > div.container > header.panel > h1",
+      "div.case-content > section#overview > div.field > p"
+    ]
+  }
+]

@@ -1,0 +1,284 @@
+[
+  {
+    "page": "home",
+    "device": "mobile",
+    "before": {
+      "page": "home",
+      "device": "mobile",
+      "cls": 0.00001013762123631046,
+      "lcp": 1377.5649999999998,
+      "performance": 100,
+      "lcpElements": [
+        "div.container > section#overview > div.hero-main > p.hero-intro"
+      ]
+    },
+    "after": {
+      "page": "home",
+      "device": "mobile",
+      "cls": 0.00001013762123631046,
+      "lcp": 1377.3057999999999,
+      "performance": 100,
+      "lcpElements": [
+        "div.container > section#overview > div.hero-main > p.hero-intro"
+      ]
+    },
+    "deltas": {
+      "cls": 0,
+      "lcp": -0.25919999999996435,
+      "performance": 0
+    },
+    "checks": {
+      "cls": true,
+      "lcp": true,
+      "performance": true,
+      "sameLcp": true
+    }
+  },
+  {
+    "page": "home",
+    "device": "desktop",
+    "before": {
+      "page": "home",
+      "device": "desktop",
+      "cls": 0.006986193540795736,
+      "lcp": 393.74989999999997,
+      "performance": 100,
+      "lcpElements": [
+        "div.container > section#overview > div.hero-main > p.hero-intro"
+      ]
+    },
+    "after": {
+      "page": "home",
+      "device": "desktop",
+      "cls": 0.006986193540795736,
+      "lcp": 385.85524999999996,
+      "performance": 100,
+      "lcpElements": [
+        "div.container > section#overview > div.hero-main > p.hero-intro"
+      ]
+    },
+    "deltas": {
+      "cls": 0,
+      "lcp": -7.894650000000013,
+      "performance": 0
+    },
+    "checks": {
+      "cls": true,
+      "lcp": true,
+      "performance": true,
+      "sameLcp": true
+    }
+  },
+  {
+    "page": "gamevault",
+    "device": "mobile",
+    "before": {
+      "page": "gamevault",
+      "device": "mobile",
+      "cls": 0.2152606384525141,
+      "lcp": 3459.1521,
+      "performance": 80,
+      "lcpElements": [
+        "div.route-view > div.container > header.panel > p.hero-role"
+      ]
+    },
+    "after": {
+      "page": "gamevault",
+      "device": "mobile",
+      "cls": 0.0001938097769369282,
+      "lcp": 3460.7271,
+      "performance": 91,
+      "lcpElements": [
+        "div.route-view > div.container > header.panel > p.hero-role"
+      ]
+    },
+    "deltas": {
+      "cls": -0.2150668286755772,
+      "lcp": 1.5750000000002728,
+      "performance": 11
+    },
+    "checks": {
+      "cls": true,
+      "lcp": true,
+      "performance": true,
+      "sameLcp": true
+    }
+  },
+  {
+    "page": "gamevault",
+    "device": "desktop",
+    "before": {
+      "page": "gamevault",
+      "device": "desktop",
+      "cls": 0.10569890887272454,
+      "lcp": 824.3674500000002,
+      "performance": 96,
+      "lcpElements": [
+        "div.case-layout > div.case-content > section#overview > p.lead"
+      ]
+    },
+    "after": {
+      "page": "gamevault",
+      "device": "desktop",
+      "cls": 0.006618865797012042,
+      "lcp": 804.7500499999999,
+      "performance": 100,
+      "lcpElements": [
+        "div.case-layout > div.case-content > section#overview > p.lead"
+      ]
+    },
+    "deltas": {
+      "cls": -0.0990800430757125,
+      "lcp": -19.617400000000316,
+      "performance": 4
+    },
+    "checks": {
+      "cls": true,
+      "lcp": true,
+      "performance": true,
+      "sameLcp": true
+    }
+  },
+  {
+    "page": "sole",
+    "device": "mobile",
+    "before": {
+      "page": "sole",
+      "device": "mobile",
+      "cls": 0.21530064402687993,
+      "lcp": 3460.7823000000003,
+      "performance": 80,
+      "lcpElements": [
+        "div.route-view > div.container > header.panel > p.hero-role"
+      ]
+    },
+    "after": {
+      "page": "sole",
+      "device": "mobile",
+      "cls": 0.0002338153513027263,
+      "lcp": 3383.2365,
+      "performance": 91,
+      "lcpElements": [
+        "div.route-view > div.container > header.panel > p.hero-role"
+      ]
+    },
+    "deltas": {
+      "cls": -0.2150668286755772,
+      "lcp": -77.54580000000033,
+      "performance": 11
+    },
+    "checks": {
+      "cls": true,
+      "lcp": true,
+      "performance": true,
+      "sameLcp": true
+    }
+  },
+  {
+    "page": "sole",
+    "device": "desktop",
+    "before": {
+      "page": "sole",
+      "device": "desktop",
+      "cls": 0.1179488405450634,
+      "lcp": 811.6835000000001,
+      "performance": 96,
+      "lcpElements": [
+        "div.case-layout > div.case-content > section#overview > p.lead"
+      ]
+    },
+    "after": {
+      "page": "sole",
+      "device": "desktop",
+      "cls": 0.0003918692937169442,
+      "lcp": 766.85235,
+      "performance": 100,
+      "lcpElements": [
+        "div.case-layout > div.case-content > section#overview > p.lead"
+      ]
+    },
+    "deltas": {
+      "cls": -0.11755697125134645,
+      "lcp": -44.83115000000009,
+      "performance": 4
+    },
+    "checks": {
+      "cls": true,
+      "lcp": true,
+      "performance": true,
+      "sameLcp": true
+    }
+  },
+  {
+    "page": "gym",
+    "device": "mobile",
+    "before": {
+      "page": "gym",
+      "device": "mobile",
+      "cls": 0.2151024953462621,
+      "lcp": 3461.1087,
+      "performance": 80,
+      "lcpElements": [
+        "div.route-view > div.container > header.panel > h1"
+      ]
+    },
+    "after": {
+      "page": "gym",
+      "device": "mobile",
+      "cls": 0.00003566667068492493,
+      "lcp": 3460.3521,
+      "performance": 91,
+      "lcpElements": [
+        "div.route-view > div.container > header.panel > h1"
+      ]
+    },
+    "deltas": {
+      "cls": -0.2150668286755772,
+      "lcp": -0.7566000000001623,
+      "performance": 11
+    },
+    "checks": {
+      "cls": true,
+      "lcp": true,
+      "performance": true,
+      "sameLcp": true
+    }
+  },
+  {
+    "page": "gym",
+    "device": "desktop",
+    "before": {
+      "page": "gym",
+      "device": "desktop",
+      "cls": 0.10165116982999675,
+      "lcp": 965.7808999999999,
+      "performance": 96,
+      "lcpElements": [
+        "div.route-view > div.container > header.panel > h1",
+        "div.case-content > section#overview > div.field > p"
+      ]
+    },
+    "after": {
+      "page": "gym",
+      "device": "desktop",
+      "cls": 0.0003918692937169442,
+      "lcp": 968.72025,
+      "performance": 99,
+      "lcpElements": [
+        "div.route-view > div.container > header.panel > h1",
+        "div.case-content > section#overview > div.field > p"
+      ]
+    },
+    "deltas": {
+      "cls": -0.10125930053627981,
+      "lcp": 2.939350000000104,
+      "performance": 3
+    },
+    "checks": {
+      "cls": true,
+      "lcp": true,
+      "performance": true,
+      "sameLcp": true
+    }
+  }
+]

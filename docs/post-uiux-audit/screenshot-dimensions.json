@@ -1,0 +1,107 @@
+[
+  {
+    "file": "src/assets/images/projects/current/gamevault.webp",
+    "width": 1348,
+    "height": 926
+  },
+  {
+    "file": "src/assets/images/projects/gamevault/gamevault-product.jpg",
+    "width": 1440,
+    "height": 900
+  },
+  {
+    "file": "src/assets/images/projects/gamevault/gamevault-subscriptions.jpg",
+    "width": 1440,
+    "height": 900
+  },
+  {
+    "file": "src/assets/images/projects/current/sole-district.webp",
+    "width": 1348,
+    "height": 926
+  },
+  {
+    "file": "src/assets/images/projects/sole-district/product-20261008.jpg",
+    "width": 1348,
+    "height": 926
+  },
+  {
+    "file": "src/assets/images/projects/sole-district/checkout-20261008.jpg",
+    "width": 1348,
+    "height": 926
+  },
+  {
+    "file": "src/assets/images/projects/current/scenthaus.webp",
+    "width": 1348,
+    "height": 926
+  },
+  {
+    "file": "src/assets/images/projects/scenthaus/storefront-verified.jpg",
+    "width": 1348,
+    "height": 926
+  },
+  {
+    "file": "src/assets/images/projects/scenthaus/quick-add-verified.jpg",
+    "width": 1363,
+    "height": 936
+  },
+  {
+    "file": "src/assets/images/projects/scenthaus/checkout-verified.jpg",
+    "width": 1348,
+    "height": 2053
+  },
+  {
+    "file": "src/assets/images/projects/scenthaus/payment-confirmed.jpg",
+    "width": 790,
+    "height": 936
+  },
+  {
+    "file": "src/assets/images/projects/scenthaus/admin-overview.png",
+    "width": 1440,
+    "height": 2147
+  },
+  {
+    "file": "src/assets/images/projects/current/meterwise.webp",
+    "width": 1348,
+    "height": 926
+  },
+  {
+    "file": "src/assets/images/projects/meterwise/work-order-audit.jpg",
+    "width": 1363,
+    "height": 936
+  },
+  {
+    "file": "src/assets/images/projects/current/playlist-port.webp",
+    "width": 1353,
+    "height": 929
+  },
+  {
+    "file": "src/assets/images/projects/annual-leave/sign-in-rbac.png",
+    "width": 1400,
+    "height": 788
+  },
+  {
+    "file": "src/assets/images/projects/gym-calories-predictive-analysis/calories-vs-duration.png",
+    "width": 1400,
+    "height": 535
+  },
+  {
+    "file": "src/assets/images/projects/gym-calories-predictive-analysis/knime-preparation-workflow.png",
+    "width": 1400,
+    "height": 451
+  },
+  {
+    "file": "src/assets/images/projects/gym-calories-predictive-analysis/train-validation-partition.png",
+    "width": 1400,
+    "height": 870
+  },
+  {
+    "file": "src/assets/images/projects/gym-calories-predictive-analysis/calories-by-workout-type.png",
+    "width": 1400,
+    "height": 285
+  },
+  {
+    "file": "src/assets/images/projects/gym-calories-predictive-analysis/model-comparison.png",
+    "width": 1400,
+    "height": 608
+  }
+]

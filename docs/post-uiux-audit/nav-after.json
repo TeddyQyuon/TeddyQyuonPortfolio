@@ -1,0 +1,45 @@
+[
+  {
+    "reducedMotion": "no-preference",
+    "hoverOut": {
+      "properties": "color, background-color",
+      "durations": "0.15s, 0.15s",
+      "animations": [
+        {
+          "property": "background-color",
+          "duration": 150
+        },
+        {
+          "property": "color",
+          "duration": 150
+        }
+      ]
+    },
+    "scrollspy": {
+      "active": "true",
+      "animations": [
+        {
+          "property": "color",
+          "duration": 150
+        }
+      ]
+    }
+  },
+  {
+    "reducedMotion": "reduce",
+    "hoverOut": {
+      "properties": "color, background-color",
+      "durations": "1e-05s",
+      "animations": []
+    },
+    "scrollspy": {
+      "active": "true",
+      "animations": [
+        {
+          "property": "color",
+          "duration": 0.01
+        }
+      ]
+    }
+  }
+]

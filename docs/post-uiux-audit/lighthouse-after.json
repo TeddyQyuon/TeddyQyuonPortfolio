@@ -1,0 +1,665 @@
+[
+  {
+    "page": "home",
+    "device": "mobile",
+    "run": 1,
+    "performance": 100,
+    "cls": 0.00001013762123631046,
+    "lcp": 1380.0874000000003,
+    "lcpElement": {
+      "selector": "div.container > section#overview > div.hero-main > p.hero-intro",
+      "label": "I’m Teddy, a Year 2 Applied AI & Analytics student at Nanyang Polytechnic. I bu…"
+    },
+    "shiftingElements": [
+      {
+        "selector": "div.hero-main > div.hero-actions > a.btn > svg.icon",
+        "score": 0.00001013762123631046,
+        "attributedCauses": [
+          {
+            "selector": "div.hero-main > div.hero-actions > a.btn > img.icon",
+            "cause": "Media element lacking an explicit size"
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  {
+    "page": "home",
+    "device": "mobile",
+    "run": 2,
+    "performance": 100,
+    "cls": 0.00001013762123631046,
+    "lcp": 1377.3057999999999,
+    "lcpElement": {
+      "selector": "div.container > section#overview > div.hero-main > p.hero-intro",
+      "label": "I’m Teddy, a Year 2 Applied AI & Analytics student at Nanyang Polytechnic. I bu…"
+    },
+    "shiftingElements": [
+      {
+        "selector": "div.hero-main > div.hero-actions > a.btn > svg.icon",
+        "score": 0.00001013762123631046,
+        "attributedCauses": [
+          {
+            "selector": "div.hero-main > div.hero-actions > a.btn > img.icon",
+            "cause": "Media element lacking an explicit size"
+          },
+          {
+            "cause": "Web font loaded"
+          },
+          {
+            "cause": "Web font loaded"
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  {
+    "page": "home",
+    "device": "mobile",
+    "run": 3,
+    "performance": 100,
+    "cls": 0.00001013762123631046,
+    "lcp": 1369.5112,
+    "lcpElement": {
+      "selector": "div.container > section#overview > div.hero-main > p.hero-intro",
+      "label": "I’m Teddy, a Year 2 Applied AI & Analytics student at Nanyang Polytechnic. I bu…"
+    },
+    "shiftingElements": [
+      {
+        "selector": "div.hero-main > div.hero-actions > a.btn > svg.icon",
+        "score": 0.00001013762123631046,
+        "attributedCauses": [
+          {
+            "selector": "div.hero-main > div.hero-actions > a.btn > img.icon",
+            "cause": "Media element lacking an explicit size"
+          },
+          {
+            "cause": "Web font loaded"
+          },
+          {
+            "cause": "Web font loaded"
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  {
+    "page": "home",
+    "device": "desktop",
+    "run": 1,
+    "performance": 100,
+    "cls": 0.006986193540795736,
+    "lcp": 387.41895000000005,
+    "lcpElement": {
+      "selector": "div.container > section#overview > div.hero-main > p.hero-intro",
+      "label": "I’m Teddy, a Year 2 Applied AI & Analytics student at Nanyang Polytechnic. I bu…"
+    },
+    "shiftingElements": [
+      {
+        "selector": "div.container > section#overview > div.hero-main > h1#hero-title",
+        "score": 0.006986193540795736,
+        "attributedCauses": [
+          {
+            "selector": "div.hero-main > div.hero-actions > a.btn > img.icon",
+            "cause": "Media element lacking an explicit size"
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  {
+    "page": "home",
+    "device": "desktop",
+    "run": 2,
+    "performance": 100,
+    "cls": 0.006986193540795736,
+    "lcp": 385.85524999999996,
+    "lcpElement": {
+      "selector": "div.container > section#overview > div.hero-main > p.hero-intro",
+      "label": "I’m Teddy, a Year 2 Applied AI & Analytics student at Nanyang Polytechnic. I bu…"
+    },
+    "shiftingElements": [
+      {
+        "selector": "div.container > section#overview > div.hero-main > h1#hero-title",
+        "score": 0.006986193540795736,
+        "attributedCauses": [
+          {
+            "selector": "div.hero-main > div.hero-actions > a.btn > img.icon",
+            "cause": "Media element lacking an explicit size"
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  {
+    "page": "home",
+    "device": "desktop",
+    "run": 3,
+    "performance": 100,
+    "cls": 0.006986193540795736,
+    "lcp": 385.54315,
+    "lcpElement": {
+      "selector": "div.container > section#overview > div.hero-main > p.hero-intro",
+      "label": "I’m Teddy, a Year 2 Applied AI & Analytics student at Nanyang Polytechnic. I bu…"
+    },
+    "shiftingElements": [
+      {
+        "selector": "div.container > section#overview > div.hero-main > h1#hero-title",
+        "score": 0.006986193540795736,
+        "attributedCauses": [
+          {
+            "selector": "div.hero-main > div.hero-actions > a.btn > img.icon",
+            "cause": "Media element lacking an explicit size"
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  {
+    "page": "gamevault",
+    "device": "mobile",
+    "run": 1,
+    "performance": 91,
+    "cls": 0.00009889018382556829,
+    "lcp": 3460.7271,
+    "lcpElement": {
+      "selector": "div.route-view > div.container > header.panel > p.hero-role",
+      "label": "Responsive digital marketplace, product rails & Stripe checkout"
+    },
+    "shiftingElements": [
+      {
+        "selector": "div.container > header.panel > div.hero-actions > a.btn",
+        "score": 0.00009889018382556829,
+        "attributedCauses": [
+          {
+            "selector": "div.hero-actions > a.btn > span.icon > img.brand-on-dark",
+            "cause": "Media element lacking an explicit size"
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  {
+    "page": "gamevault",
+    "device": "mobile",
+    "run": 2,
+    "performance": 91,
+    "cls": 0.0001938097769369282,
+    "lcp": 3460.5276000000003,
+    "lcpElement": {
+      "selector": "div.route-view > div.container > header.panel > p.hero-role",
+      "label": "Responsive digital marketplace, product rails & Stripe checkout"
+    },
+    "shiftingElements": [
+      {
+        "selector": "div.container > header.panel > div.hero-actions > a.btn",
+        "score": 0.0001938097769369282,
+        "attributedCauses": [
+          {
+            "selector": "div.hero-actions > a.btn > span.icon > img.brand-on-dark",
+            "cause": "Media element lacking an explicit size"
+          },
+          {
+            "cause": "Web font loaded"
+          },
+          {
+            "cause": "Web font loaded"
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  {
+    "page": "gamevault",
+    "device": "mobile",
+    "run": 3,
+    "performance": 91,
+    "cls": 0.0001938097769369282,
+    "lcp": 3467.3594999999996,
+    "lcpElement": {
+      "selector": "div.route-view > div.container > header.panel > p.hero-role",
+      "label": "Responsive digital marketplace, product rails & Stripe checkout"
+    },
+    "shiftingElements": [
+      {
+        "selector": "div.container > header.panel > div.hero-actions > a.btn",
+        "score": 0.0001938097769369282,
+        "attributedCauses": [
+          {
+            "selector": "div.hero-actions > a.btn > span.icon > img.brand-on-dark",
+            "cause": "Media element lacking an explicit size"
+          },
+          {
+            "cause": "Web font loaded"
+          },
+          {
+            "cause": "Web font loaded"
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  {
+    "page": "gamevault",
+    "device": "desktop",
+    "run": 1,
+    "performance": 100,
+    "cls": 0.0003918692937169442,
+    "lcp": 804.7500499999999,
+    "lcpElement": {
+      "selector": "div.case-layout > div.case-content > section#overview > p.lead",
+      "label": "A responsive full-stack digital marketplace built with React/Vite, Vercel Serve…"
+    },
+    "shiftingElements": [
+      {
+        "selector": "div#root > header.topbar > div.topbar-inner > nav#primary-nav",
+        "score": 0.0003918692937169442,
+        "attributedCauses": [
+          {
+            "selector": "div.hero-actions > a.btn > span.icon > img.brand-on-dark",
+            "cause": "Media element lacking an explicit size"
+          },
+          {
+            "cause": "Web font loaded"
+          },
+          {
+            "cause": "Web font loaded"
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  {
+    "page": "gamevault",
+    "device": "desktop",
+    "run": 2,
+    "performance": 100,
+    "cls": 0.006618865797012042,
+    "lcp": 728.454,
+    "lcpElement": {
+      "selector": "div.case-layout > div.case-content > section#overview > p.lead",
+      "label": "A responsive full-stack digital marketplace built with React/Vite, Vercel Serve…"
+    },
+    "shiftingElements": [
+      {
+        "selector": "main#main-content > div.route-view > div.container > div.case-layout",
+        "score": 0.006599168254823116,
+        "attributedCauses": [
+          {
+            "selector": "div.hero-actions > a.btn > span.icon > img.brand-on-dark",
+            "cause": "Media element lacking an explicit size"
+          }
+        ]
+      },
+      {
+        "selector": "div.container > nav.breadcrumb > ol > li",
+        "score": 0.00001969754218892652,
+        "attributedCauses": [
+          {
+            "selector": "div.hero-actions > a.btn > span.icon > img.brand-on-dark",
+            "cause": "Media element lacking an explicit size"
+          },
+          {
+            "cause": "Web font loaded"
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  {
+    "page": "gamevault",
+    "device": "desktop",
+    "run": 3,
+    "performance": 99,
+    "cls": 0.00676273865995858,
+    "lcp": 826.0848750000001,
+    "lcpElement": {
+      "selector": "div.case-layout > div.case-content > section#overview > p.lead",
+      "label": "A responsive full-stack digital marketplace built with React/Vite, Vercel Serve…"
+    },
+    "shiftingElements": [
+      {
+        "selector": "main#main-content > div.route-view > div.container > div.case-layout",
+        "score": 0.00676273865995858,
+        "attributedCauses": [
+          {
+            "selector": "div.hero-actions > a.btn > span.icon > img.brand-on-dark",
+            "cause": "Media element lacking an explicit size"
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  {
+    "page": "sole",
+    "device": "mobile",
+    "run": 1,
+    "performance": 92,
+    "cls": 0,
+    "lcp": 3353.63175,
+    "lcpElement": {
+      "selector": "div.route-view > div.container > header.panel > p.hero-role",
+      "label": "175-piece streetwear catalogue, editorial motion & Django commerce"
+    },
+    "shiftingElements": [],
+    "warnings": []
+  },
+  {
+    "page": "sole",
+    "device": "mobile",
+    "run": 2,
+    "performance": 91,
+    "cls": 0.0002338153513027263,
+    "lcp": 3459.5543999999995,
+    "lcpElement": {
+      "selector": "div.route-view > div.container > header.panel > p.hero-role",
+      "label": "175-piece streetwear catalogue, editorial motion & Django commerce"
+    },
+    "shiftingElements": [
+      {
+        "selector": "div.container > header.panel > div.hero-actions > a.btn",
+        "score": 0.0002338153513027263,
+        "attributedCauses": [
+          {
+            "selector": "div.hero-actions > a.btn > span.icon > img.brand-on-dark",
+            "cause": "Media element lacking an explicit size"
+          },
+          {
+            "cause": "Web font loaded"
+          },
+          {
+            "cause": "Web font loaded"
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  {
+    "page": "sole",
+    "device": "mobile",
+    "run": 3,
+    "performance": 91,
+    "cls": 0.0002338153513027263,
+    "lcp": 3383.2365,
+    "lcpElement": {
+      "selector": "div.route-view > div.container > header.panel > p.hero-role",
+      "label": "175-piece streetwear catalogue, editorial motion & Django commerce"
+    },
+    "shiftingElements": [
+      {
+        "selector": "div.container > header.panel > div.hero-actions > a.btn",
+        "score": 0.0002338153513027263,
+        "attributedCauses": [
+          {
+            "selector": "div.hero-actions > a.btn > span.icon > img.brand-on-dark",
+            "cause": "Media element lacking an explicit size"
+          },
+          {
+            "cause": "Web font loaded"
+          },
+          {
+            "cause": "Web font loaded"
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  {
+    "page": "sole",
+    "device": "desktop",
+    "run": 1,
+    "performance": 100,
+    "cls": 0.0003918692937169442,
+    "lcp": 766.85235,
+    "lcpElement": {
+      "selector": "div.case-layout > div.case-content > section#overview > p.lead",
+      "label": "A React/Vite storefront and Python/Django commerce system for one curated stree…"
+    },
+    "shiftingElements": [
+      {
+        "selector": "div#root > header.topbar > div.topbar-inner > nav#primary-nav",
+        "score": 0.0003918692937169442,
+        "attributedCauses": [
+          {
+            "selector": "div.hero-actions > a.btn > span.icon > img.brand-on-dark",
+            "cause": "Media element lacking an explicit size"
+          },
+          {
+            "cause": "Web font loaded"
+          },
+          {
+            "cause": "Web font loaded"
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  {
+    "page": "sole",
+    "device": "desktop",
+    "run": 2,
+    "performance": 100,
+    "cls": 0.0003918692937169442,
+    "lcp": 761.4611499999999,
+    "lcpElement": {
+      "selector": "div.case-layout > div.case-content > section#overview > p.lead",
+      "label": "A React/Vite storefront and Python/Django commerce system for one curated stree…"
+    },
+    "shiftingElements": [
+      {
+        "selector": "div#root > header.topbar > div.topbar-inner > nav#primary-nav",
+        "score": 0.0003918692937169442,
+        "attributedCauses": [
+          {
+            "selector": "div.hero-actions > a.btn > span.icon > img.brand-on-dark",
+            "cause": "Media element lacking an explicit size"
+          },
+          {
+            "cause": "Web font loaded"
+          },
+          {
+            "cause": "Web font loaded"
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  {
+    "page": "sole",
+    "device": "desktop",
+    "run": 3,
+    "performance": 100,
+    "cls": 0.006718228588875429,
+    "lcp": 806.0843,
+    "lcpElement": {
+      "selector": "div.case-layout > div.case-content > section#overview > p.lead",
+      "label": "A React/Vite storefront and Python/Django commerce system for one curated stree…"
+    },
+    "shiftingElements": [
+      {
+        "selector": "main#main-content > div.route-view > div.container > div.case-layout",
+        "score": 0.006718228588875429,
+        "attributedCauses": [
+          {
+            "selector": "div.hero-actions > a.btn > span.icon > img.brand-on-dark",
+            "cause": "Media element lacking an explicit size"
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  {
+    "page": "gym",
+    "device": "mobile",
+    "run": 1,
+    "performance": 95,
+    "cls": 0.00003566667068492493,
+    "lcp": 2888.6168,
+    "lcpElement": {
+      "selector": "div.route-view > div.container > header.panel > h1",
+      "label": "Gym Calories Predictive Analysis"
+    },
+    "shiftingElements": [
+      {
+        "selector": "div.container > header.panel > div.badges > span.badge",
+        "score": 0.00003566667068492493,
+        "attributedCauses": [
+          {
+            "selector": "li > a > span.icon > img.brand-on-dark",
+            "cause": "Media element lacking an explicit size"
+          },
+          {
+            "cause": "Web font loaded"
+          },
+          {
+            "cause": "Web font loaded"
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  {
+    "page": "gym",
+    "device": "mobile",
+    "run": 2,
+    "performance": 91,
+    "cls": 0.00003566667068492493,
+    "lcp": 3460.3521,
+    "lcpElement": {
+      "selector": "div.route-view > div.container > header.panel > h1",
+      "label": "Gym Calories Predictive Analysis"
+    },
+    "shiftingElements": [
+      {
+        "selector": "div.container > header.panel > div.badges > span.badge",
+        "score": 0.00003566667068492493,
+        "attributedCauses": [
+          {
+            "selector": "li > a > span.icon > img.brand-on-dark",
+            "cause": "Media element lacking an explicit size"
+          },
+          {
+            "cause": "Web font loaded"
+          },
+          {
+            "cause": "Web font loaded"
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  {
+    "page": "gym",
+    "device": "mobile",
+    "run": 3,
+    "performance": 91,
+    "cls": 0,
+    "lcp": 3467.3619,
+    "lcpElement": {
+      "selector": "div.route-view > div.container > header.panel > h1",
+      "label": "Gym Calories Predictive Analysis"
+    },
+    "shiftingElements": [],
+    "warnings": []
+  },
+  {
+    "page": "gym",
+    "device": "desktop",
+    "run": 1,
+    "performance": 99,
+    "cls": 0.002714999617230793,
+    "lcp": 951.2568750000003,
+    "lcpElement": {
+      "selector": "div.route-view > div.container > header.panel > h1",
+      "label": "Gym Calories Predictive Analysis"
+    },
+    "shiftingElements": [
+      {
+        "selector": "div.route-view > div.container > header.panel > h1",
+        "score": 0.002714999617230793
+      }
+    ],
+    "warnings": []
+  },
+  {
+    "page": "gym",
+    "device": "desktop",
+    "run": 2,
+    "performance": 99,
+    "cls": 0.0003918692937169442,
+    "lcp": 968.72025,
+    "lcpElement": {
+      "selector": "div.case-content > section#overview > div.field > p",
+      "label": "Cleaned and validated the dataset in KNIME, then partitioned the cleaned data 7…"
+    },
+    "shiftingElements": [
+      {
+        "selector": "div#root > header.topbar > div.topbar-inner > nav#primary-nav",
+        "score": 0.0003918692937169442,
+        "attributedCauses": [
+          {
+            "selector": "li > a > span.icon > img.brand-on-dark",
+            "cause": "Media element lacking an explicit size"
+          },
+          {
+            "cause": "Web font loaded"
+          },
+          {
+            "cause": "Web font loaded"
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  },
+  {
+    "page": "gym",
+    "device": "desktop",
+    "run": 3,
+    "performance": 99,
+    "cls": 0.0003918692937169442,
+    "lcp": 970.42205,
+    "lcpElement": {
+      "selector": "div.case-content > section#overview > div.field > p",
+      "label": "Cleaned and validated the dataset in KNIME, then partitioned the cleaned data 7…"
+    },
+    "shiftingElements": [
+      {
+        "selector": "div#root > header.topbar > div.topbar-inner > nav#primary-nav",
+        "score": 0.0003918692937169442,
+        "attributedCauses": [
+          {
+            "selector": "li > a > span.icon > img.brand-on-dark",
+            "cause": "Media element lacking an explicit size"
+          },
+          {
+            "cause": "Web font loaded"
+          },
+          {
+            "cause": "Web font loaded"
+          }
+        ]
+      }
+    ],
+    "warnings": []
+  }
+]
