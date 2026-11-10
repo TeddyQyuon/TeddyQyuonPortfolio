@@ -1,27 +1,39 @@
 import { useEffect } from 'react';
-import { DEFAULT_DESCRIPTION, DEFAULT_TITLE, SITE_URL } from '../config/site';
+import { documentMeta } from '../utils/seo';
 
-function setMeta(selector, attr, value) {
-  const el = document.head.querySelector(selector);
-  if (el) el.setAttribute(attr, value);
+function setMeta(attribute, key, value) {
+  let el = document.head.querySelector(`meta[${attribute}="${key}"]`);
+  if (!el) {
+    el = document.createElement('meta');
+    el.setAttribute(attribute, key);
+    document.head.appendChild(el);
+  }
+  el.setAttribute('content', value);
 }
 
-// Per-route title, description and canonical URL. Search engines that run
-// JavaScript pick these up; static link-preview scrapers still read the
-// defaults in index.html.
-export default function useDocumentMeta({ title, description, path } = {}) {
+// Static project entries and client navigation use the same metadata values.
+export default function useDocumentMeta({ title, description, path, image, imageAlt, type, noindex } = {}) {
   useEffect(() => {
-    const fullTitle = title ? `${title} | Wai Yan Hpone Lat` : DEFAULT_TITLE;
-    const desc = description || DEFAULT_DESCRIPTION;
-    const url = SITE_URL + (path ?? window.location.pathname);
+    const meta = documentMeta({ title, description, path: path ?? window.location.pathname, image, imageAlt, type, noindex });
+    document.title = meta.title;
+    setMeta('name', 'description', meta.description);
+    setMeta('name', 'robots', meta.robots);
 
-    document.title = fullTitle;
-    setMeta('meta[name="description"]', 'content', desc);
-    setMeta('link[rel="canonical"]', 'href', url);
-    setMeta('meta[property="og:url"]', 'content', url);
-    setMeta('meta[property="og:title"]', 'content', fullTitle);
-    setMeta('meta[property="og:description"]', 'content', desc);
-    setMeta('meta[name="twitter:title"]', 'content', fullTitle);
-    setMeta('meta[name="twitter:description"]', 'content', desc);
-  }, [title, description, path]);
+    for (const [key, value] of Object.entries({ title: meta.title, description: meta.description, type: meta.type, url: meta.canonical, image: meta.image, 'image:type': 'image/png', 'image:width': '1200', 'image:height': '630', 'image:alt': meta.imageAlt, site_name: meta.siteName })) {
+      setMeta('property', `og:${key}`, value);
+    }
+    for (const [key, value] of Object.entries({ card: 'summary_large_image', title: meta.title, description: meta.description, image: meta.image, 'image:alt': meta.imageAlt })) {
+      setMeta('name', `twitter:${key}`, value);
+    }
+    let canonical = document.head.querySelector('link[rel="canonical"]');
+    if (meta.noindex) canonical?.remove();
+    else {
+      if (!canonical) {
+        canonical = document.createElement('link');
+        canonical.setAttribute('rel', 'canonical');
+        document.head.appendChild(canonical);
+      }
+      canonical.setAttribute('href', meta.canonical);
+    }
+  }, [title, description, path, image, imageAlt, type, noindex]);
 }

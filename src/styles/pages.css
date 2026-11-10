@@ -94,7 +94,7 @@
 .case-toc a:is(:hover, :focus-visible) { color: var(--text); border-left-color: var(--accent); }
 .case-content { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-4); min-width: 0; }
 .case-content > *, .academics-grid > *, .contact-grid > *, .stack-grid > * { min-width: 0; }
-.case-block { scroll-margin-top: calc(var(--topbar-h) + var(--space-4)); }
+.case-block { scroll-margin-top: var(--space-4); }
 .case-block p + p, .case-block .field + .field, .case-block .lead + .field { margin-top: var(--space-4); }
 .case-block .lead { font-size: var(--fs-18); }
 .field .panel-label { display: block; margin-bottom: var(--space-1); }

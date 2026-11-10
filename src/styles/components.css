@@ -33,7 +33,7 @@
 .nav ul { display: flex; gap: var(--space-1); list-style: none; }
 .nav a {
   position: relative;
-  transition: background-color var(--dur-fast) var(--ease-out);
+  transition: color var(--dur-fast) var(--ease-out), background-color var(--dur-fast) var(--ease-out);
   display: block;
   padding: 0.45rem 0.75rem;
   border-radius: var(--radius-sm);
@@ -42,7 +42,6 @@
   text-decoration: none;
 }
 .nav a:is(:hover, :focus-visible) { color: var(--text); background: var(--surface-2); }
-.nav a:is(:hover, :focus-visible) { transition: color var(--dur-fast) var(--ease-out), background-color var(--dur-fast) var(--ease-out); }
 .nav a[aria-current='true'] { color: var(--text); }
 @media (min-width: 861px) {
   .nav a::after { content: ''; position: absolute; left: 0.75rem; right: 0.75rem; bottom: 0.2rem; height: 2px; border-radius: 1px; background: var(--accent); transform: scaleX(0); transition: transform var(--dur-base) var(--ease-out); }

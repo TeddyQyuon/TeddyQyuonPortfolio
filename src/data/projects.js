@@ -305,7 +305,6 @@ const projectData = [
       'REST APIs',
     ],
     features: [
-      "Multi-tenant development branch: tenant-scoped queries, expiring DNS ownership proof and private response caching; production retains the separate single-store release",
       'Leave request submission with validation',
       'Supervisor → Manager two-stage approval workflow',
       'Approval comments and rejection reasons',
@@ -385,7 +384,6 @@ const projectData = [
     },
     technologies: ['KNIME', 'SAS Viya'],
     features: [
-      "Multi-tenant development branch: tenant-scoped queries, expiring DNS ownership proof and private response caching; production retains the separate single-store release",
       'Duplicate detection and removal (3,892 rows)',
       'Heart-rate consistency validation (23 records removed)',
       'BMI recalculation and validation',

@@ -6,7 +6,7 @@
 
 html {
   scrollbar-gutter: stable;
-  scroll-padding-top: calc(var(--topbar-h) + 16px);
+  scroll-padding-top: var(--topbar-h);
   -webkit-text-size-adjust: 100%;
 }
 
@@ -68,6 +68,8 @@ a:is(:hover, :focus-visible) { color: var(--accent-strong); text-decoration-colo
   border-radius: 4px;
 }
 main:focus { outline: none; }
+/* Keep the footer below the viewport while a lazy route is loading. */
+.route-view { min-block-size: calc(100vh - var(--topbar-h)); min-block-size: calc(100svh - var(--topbar-h)); }
 
 ::selection { background: var(--accent-soft); }
 
