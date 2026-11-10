@@ -1,103 +1,64 @@
-# Teddy Qyuon Portfolio
+# Wai Yan Hpone Lat · Portfolio
 
-Personal portfolio for **Wai Yan Hpone Lat (Teddy)**, an Applied AI & Analytics student at Nanyang Polytechnic. It brings together verified project work, technical skills, academic results, résumé access and contact links.
+I’m an Applied AI & Analytics student at Nanyang Polytechnic. This portfolio presents my projects, skills, academic results and résumé, with contributions and verification limits explained in each case study.
 
-**[View the live portfolio](https://teddy-qyuon-portfolio.vercel.app)** · [UI/UX completion report](docs/uiux-upgrade/README.md)
+**[teddy-qyuon-portfolio.vercel.app](https://teddy-qyuon-portfolio.vercel.app)**
 
-![Desktop preview of the portfolio in dark mode](docs/uiux-upgrade/screenshots/home-dark-no-preference-1440x900.png)
+![Portfolio homepage in dark mode, showing the introduction, navigation and project dashboard](.github/preview.png)
 
-## Features
+## Highlights
 
-- Seven project case studies with screenshots, architecture, results and clearly attributed contributions.
-- Project filters for personal work and coursework.
+- Project case studies with screenshots and filters for personal projects and coursework.
 - Skills charts, semester results and a GPA trend chart.
-- Responsive navigation, active section links and case-study reading progress.
-- Persistent light/dark themes, keyboard focus states and reduced-motion support.
-- A dashboard boot sequence, stable number counters and data reveals triggered on entering view.
-- Lazy-loaded case studies with hover/focus preloading and delayed loading feedback.
-- Downloadable résumé, direct contact links and a custom not-found page.
+- Persistent light and dark themes across desktop and mobile layouts.
+- Keyboard navigation, screen-reader labels and reduced-motion support.
+- A strict Content Security Policy, applied to production and local preview.
+- Automated checks for content, asset references, routing, security headers and motion.
 
-## Built with
+Personal projects are AI-assisted. The case studies distinguish my contributions, historical measurements and current verification limits.
 
-| Technology | Version / purpose |
-|---|---|
-| React | 18.3.1 |
-| React DOM | 18.3.1 |
-| React Router | 7.18.4 |
-| Vite | 7.3.7 |
-| Styling | Plain CSS, shared design tokens and native browser motion features |
-| Hosting | Vercel |
+## Tech stack
 
-This is a frontend-only application. Site content is maintained in local data modules; no backend, database or environment variables are required to run it.
+React 18, React Router, Vite, plain CSS with design tokens, the Node test runner and Vercel.
 
 ## Run locally
 
-Requirements: **Node.js 20.19+ within 20.x, or Node.js 22.12+**, and npm.
+Use Node.js 20.19 or later within 20.x, or Node.js 22.12 or later.
 
 ```bash
-git clone https://github.com/TeddyQyuon/TeddyQyuonPortfolio-main.git portfolio
-cd portfolio
+git clone https://github.com/TeddyQyuon/TeddyQyuonPortfolio.git
+cd TeddyQyuonPortfolio
 npm ci
 npm run dev
 ```
 
-Open **http://127.0.0.1:5173**.
-
-On Windows PowerShell, use `npm.cmd` in place of `npm` if your execution policy blocks the PowerShell launcher.
-
-## Commands
-
-| Command | Purpose |
-|---|---|
-| `npm run dev` | Start the local development server on port 5173 |
-| `npm test` | Run the Node test suite |
-| `npm run build` | Create the production bundle in `dist/` |
-| `npm run preview` | Serve the built site on port 4174 with production security headers |
-
-To check the production build locally:
+Run checks and create the production bundle:
 
 ```bash
 npm test
 npm run build
-npm run preview
 ```
 
-Open **http://127.0.0.1:4174**. The development server and preview server use fixed ports.
+`npm run preview` serves the production build with the production security headers.
+Production builds also generate project HTML and the sitemap from project metadata.
+To regenerate the social preview image on Windows, run `powershell -File scripts/build-og-image.ps1`.
 
 ## Project structure
 
 ```text
 src/
-  assets/       Project screenshots, portraits and technology icons
-  components/   Shared UI, layout, charts and case-study components
-  config/       Site metadata and navigation configuration
-  data/         Project, skills, education, academic and personal content
-  hooks/        Theme, navigation, metadata and motion behavior
+  assets/       Project screenshots, portraits and icons
+  components/   Shared UI, charts and case-study components
+  config/       Metadata and navigation
+  data/         Personal, project, skills and academic content
+  hooks/        Theme, navigation, metadata and motion
   lib/          Project helpers and route preloading
   motion/       Shared JavaScript motion tokens
-  pages/        Home, project case studies and not-found routes
+  pages/        Home, case studies and not-found page
   sections/     Homepage sections
-  styles/       Design tokens, layouts, components and motion CSS
-public/         Résumé, theme initialization, sitemap and social preview
-tests/          Content, routing, security and motion guardrails
-docs/           Baseline measurements, QA evidence and completion reports
+  styles/       Design tokens, layouts, components and motion
 ```
 
-## Content and deployment
+## Contact
 
-Update portfolio content through `src/data/`. Site-wide metadata and navigation live in `src/config/site.js`. Motion durations are shared between `src/styles/tokens.css` and `src/motion/tokens.js`, with parity checked by tests.
-
-The production build outputs to `dist/`. `vercel.json` configures the single-page route fallback and security headers, including the Content Security Policy. Local preview uses those same headers so CSP issues can be caught before deployment.
-
-## Quality checks
-
-The test suite checks content integrity, asset references, hash handling, pinned dependencies, security headers and motion constraints. The recorded UI/UX validation also covers responsive layouts, keyboard navigation, reduced motion, theme switching and live production smoke checks.
-
-- [UI/UX specification](UIUX_UPGRADE.md)
-- [Baseline measurements](docs/uiux-baseline/README.md)
-- [Completion report, results and verification limits](docs/uiux-upgrade/README.md)
-- [Production smoke-check results](docs/uiux-upgrade/release-checks.json)
-
-## Author
-
-**Wai Yan Hpone Lat (Teddy)** · [GitHub](https://github.com/TeddyQyuon) · [LinkedIn](https://www.linkedin.com/in/waiyanhponelat)
+[GitHub](https://github.com/TeddyQyuon) · [LinkedIn](https://www.linkedin.com/in/waiyanhponelat) · [Email](mailto:waiyanhponelat.eduvalor.2024g@gmail.com)

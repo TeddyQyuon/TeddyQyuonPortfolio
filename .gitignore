@@ -6,3 +6,10 @@ dist/
 .env.*
 .DS_Store
 .vercel/
+
+# Internal specifications and QA working evidence
+UIUX_UPGRADE.md
+docs/uiux-baseline/
+docs/uiux-upgrade/
+docs/post-uiux-audit/
+docs/post-uiux-seo/

@@ -1,3 +1,0 @@
-Run the final responsive, reduced-motion and keyboard matrix on both pages, both themes and all five viewports. Validate all seven project routes, both not-found paths, interactions and token contrast in Chrome and Edge. Compare fresh Lighthouse medians against step 0, keep the cumulative gzip budgets and JSX/protected-content lock, and archive compact evidence with reproducible scripts.
-
-Native DevTools Lighthouse UI, paint flashing, Layout Shifts track, Safari and Firefox are unavailable in this Windows environment. The same supplemental CLI and PerformanceObserver method used for the baseline is retained; these native-tool/browser limitations are documented rather than claimed as verified.

@@ -1,3 +1,0 @@
-﻿Run the hero dashboard boot once per document, triggered by its first in-view intersection. Preserve static reading text; stagger the profile/KPIs and scan using the shared tokens. Hero counters show final values immediately on reduced-motion, missing-observer, and return visits. The status ping also stays settled on return visits.
-
-The browser trace confirms the 420ms entrances, 120/180/240/300ms card delays, 240/300/360/420ms count timers, 700ms scan at 360ms, completion within 1300ms, mobile scroll trigger, and no replay after case-study navigation. A zero-duration counter path supports the settled state without flashing zero. See feature-checks.json.
