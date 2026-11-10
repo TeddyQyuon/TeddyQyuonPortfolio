@@ -56,7 +56,7 @@ export default function HeroSection() {
 
       <aside className="hero-side" ref={ref} data-motion={state} aria-label="At a glance">
         <div className="panel profile-panel">
-          <img className="profile-photo" src={profilePhoto} alt={`Portrait of ${personalInfo.name}`} width="128" height="128" />
+          <img className="profile-photo" src={profilePhoto} alt={`Portrait of ${personalInfo.name}`} width="128" height="128" fetchPriority="high" decoding="async" />
           <div>
             <p className="panel-label">Internship window</p>
             <p className="mono profile-window">{start} → {end}</p>

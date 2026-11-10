@@ -18,6 +18,7 @@ export default function TopBar() {
   const caseMatch = /^\/projects\/([^/]+)$/.exec(location.pathname);
   const isCaseStudy = caseMatch && projects.some((project) => project.slug === caseMatch[1]);
   const active = useActiveSection(sectionLinks.map((section) => section.id), { enabled: location.pathname === '/' });
+  const currentSection = isCaseStudy ? 'projects' : active;
 
   // Close the mobile menu after any navigation.
   useEffect(() => setOpen(false), [location.pathname, location.hash]);
@@ -49,7 +50,7 @@ export default function TopBar() {
           <ul>
             {sectionLinks.map((s) => (
               <li key={s.id}>
-                <Link to={{ pathname: '/', hash: `#${s.id}` }} aria-current={active === s.id ? 'true' : undefined}>{s.label}</Link>
+                <Link to={{ pathname: '/', hash: `#${s.id}` }} aria-current={currentSection === s.id ? 'true' : undefined}>{s.label}</Link>
               </li>
             ))}
           </ul>
