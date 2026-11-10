@@ -18,10 +18,10 @@ export default function useActiveSection(ids, { enabled = true } = {}) {
       // A short final section cannot reach the reading line at document end.
       const last = ordered[ordered.length - 1];
       const final = document.getElementById(last);
-      const shortEnd = final && document.documentElement.scrollHeight - (final.getBoundingClientRect().top + window.scrollY) < window.innerHeight - topbar - 16;
+      const shortEnd = final && document.documentElement.scrollHeight - (final.getBoundingClientRect().top + window.scrollY) < window.innerHeight - topbar - 24;
       const next = shortEnd && visible.get(last) ? last : ordered.find((id) => visible.get(id));
       if (next) setActive(next);
-    }, { threshold: 0, rootMargin: `-${topbar + 16}px 0px -55% 0px` });
+    }, { threshold: 0, rootMargin: `-${topbar + 24}px 0px -55% 0px` });
     ordered.forEach((id) => {
       const element = document.getElementById(id);
       if (element) observer.observe(element);

@@ -40,6 +40,7 @@ npm run build
 ```
 
 `npm run preview` serves the production build with the production security headers.
+Production builds also generate project HTML and the sitemap from project metadata.
 To regenerate the social preview image on Windows, run `powershell -File scripts/build-og-image.ps1`.
 
 ## Project structure

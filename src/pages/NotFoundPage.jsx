@@ -3,7 +3,7 @@ import Icon from '../components/common/Icon';
 import useDocumentMeta from '../hooks/useDocumentMeta';
 
 export default function NotFoundPage() {
-  useDocumentMeta({ title: 'Page not found', description: 'This page does not exist.' });
+  useDocumentMeta({ title: 'Page not found', description: 'This page does not exist.', noindex: true });
   return (
     <section className="container section not-found" aria-labelledby="nf-title">
       <div className="panel">

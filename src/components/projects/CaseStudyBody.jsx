@@ -1,6 +1,7 @@
 import ModelComparison from '../charts/ModelComparison';
 import TechTagList from '../common/TechTags';
 import { Block, Field } from './CaseParts';
+import { screenshotDimensions } from './screenshotDimensions';
 
 export default function CaseStudyBody({ project, title, has }) {
   const p = project;
@@ -65,7 +66,7 @@ export default function CaseStudyBody({ project, title, has }) {
             {p.screenshots.map((s) => (
               <figure key={s.src} className="shot">
                 <a href={s.src} target="_blank" rel="noopener">
-                  <img src={s.src} alt={s.alt} loading="lazy" decoding="async" />
+                  <img src={s.src} alt={s.alt} width={screenshotDimensions[s.src]?.[0]} height={screenshotDimensions[s.src]?.[1]} loading="lazy" decoding="async" />
                   <span className="sr-only"> (open full size in new tab)</span>
                 </a>
                 {s.caption && <figcaption>{s.caption}</figcaption>}

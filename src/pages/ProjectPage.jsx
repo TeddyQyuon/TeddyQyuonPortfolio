@@ -14,6 +14,7 @@ import {
   projectTitle,
 } from '../lib/projectStats';
 import NotFoundPage from './NotFoundPage';
+import { projectMeta } from '../utils/seo';
 
 export default function ProjectPage() {
   const { slug } = useParams();
@@ -23,8 +24,8 @@ export default function ProjectPage() {
 
   useDocumentMeta(
     project
-      ? { title: projectTitle(project), description: project.cardSummary, path: `/projects/${slug}` }
-      : { title: 'Page not found' },
+      ? projectMeta(project)
+      : { title: 'Page not found', description: 'This page does not exist.', noindex: true },
   );
 
   if (!project) return <NotFoundPage />;
